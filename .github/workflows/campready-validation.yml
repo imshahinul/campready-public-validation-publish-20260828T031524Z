@@ -39,8 +39,11 @@ jobs:
           git add -A \
             campready-prospective-validation/state \
             campready-prospective-validation/runs \
-            campready-prospective-validation/review-queue \
             campready-prospective-validation/history.jsonl
+
+          if [ -d campready-prospective-validation/review-queue ]; then
+            git add -A campready-prospective-validation/review-queue
+          fi
 
           if [ -f campready-prospective-validation/validation-complete.json ]; then
             git add campready-prospective-validation/validation-complete.json
