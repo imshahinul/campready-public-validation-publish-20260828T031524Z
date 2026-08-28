@@ -1,0 +1,60 @@
+{
+  "validated_at_utc": "2026-08-28T15:39:33.703604+00:00",
+  "baseline": {
+    "path": "campready-prospective-validation/state/current-state.json",
+    "sha256": "6568b8ac77f8a97edb7d9d89fbe05db940efcb4ae45b514b0bc1ee120df87809",
+    "created_at_utc": "2026-08-28T03:27:29.561647+00:00"
+  },
+  "second_observation": {
+    "path": "campready-prospective-validation/runs/20260828T153834Z/observation.json",
+    "sha256": "116617da5955384978d014b11db78c4a5b4f41f89cea24958bdc0d0ae01e5a53",
+    "created_at_utc": "2026-08-28T15:38:34.739107+00:00"
+  },
+  "invariants": {
+    "baseline_hash_matches_report": true,
+    "second_hash_matches_report": true,
+    "second_capture_pass": true,
+    "full_live_health": true,
+    "frozen_inputs_same": true,
+    "policy_same": true,
+    "identity_unique": true,
+    "candidate_dedup_ok": true,
+    "unchanged_candidate_count_zero": true,
+    "relationship_drift_zero": true,
+    "removal_safety_ok": true,
+    "recreation_auto_notify_ok": true,
+    "unsafe_candidate_count_zero": true,
+    "second_capture_zero_notifications": true
+  },
+  "summary": {
+    "source_delta_count": 0,
+    "delta_counts": {},
+    "notification_candidate_count": 0,
+    "review_required": false,
+    "relationship_drift_count": 0,
+    "unsafe_candidate_count": 0,
+    "baseline_usfs_alert_count": 31,
+    "second_usfs_alert_count": 31,
+    "baseline_recreation_count": 10,
+    "second_recreation_count": 10,
+    "baseline_nws_event_count": 0,
+    "second_nws_event_count": 0
+  },
+  "deltas": [],
+  "notification_candidates": [],
+  "unsafe_candidates": [],
+  "duplicate_identity_evidence": {
+    "baseline_usfs": [],
+    "second_usfs": [],
+    "baseline_recreation": [],
+    "second_recreation": [],
+    "baseline_nws": [],
+    "second_nws": [],
+    "baseline_usfs_relationships": [],
+    "second_usfs_relationships": [],
+    "baseline_nws_relationships": [],
+    "second_nws_relationships": []
+  },
+  "decision": "PASS_CONTROLLED_SECOND_OBSERVATION",
+  "next_scope_if_accepted": "If this controlled second observation is mechanically PASS and any reported live deltas are human-reviewed as genuine/non-unsafe, authorize the prospective unattended validation harness. Do not reinterpret historical baseline events as new notifications."
+}
