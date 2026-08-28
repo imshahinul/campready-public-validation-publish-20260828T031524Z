@@ -2,6 +2,8 @@ name: CampReady Prospective Validation
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '40 * * * *'
 
 permissions:
   contents: write
