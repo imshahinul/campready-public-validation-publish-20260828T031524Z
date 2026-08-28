@@ -1,0 +1,54 @@
+name: CampReady Prospective Validation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: campready-prospective-validation
+  cancel-in-progress: false
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout validation repository
+        uses: actions/checkout@v7
+
+      - name: Runtime information
+        run: |
+          python3 --version
+          git --version
+
+      - name: Run CampReady validation
+        run: |
+          python3 campready-prospective-validation/github_job.py
+
+      - name: Persist validation state
+        if: always()
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A \
+            campready-prospective-validation/state \
+            campready-prospective-validation/runs \
+            campready-prospective-validation/review-queue \
+            campready-prospective-validation/history.jsonl
+
+          if [ -f campready-prospective-validation/validation-complete.json ]; then
+            git add campready-prospective-validation/validation-complete.json
+          fi
+
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "CampReady validation state ${GITHUB_RUN_ID}"
+            git push
+          else
+            echo "No validation-state changes to persist."
+          fi

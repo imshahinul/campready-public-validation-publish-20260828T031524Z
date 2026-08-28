@@ -1,0 +1,59 @@
+{
+  "schema_version": "campready-prospective-validation-v1",
+  "created_at_utc": "2026-08-28T02:14:01.642845+00:00",
+  "validation_window": {
+    "duration_days": 15,
+    "start_at_utc": "2026-08-28T02:14:01.642845+00:00",
+    "end_at_utc": "2026-09-12T02:14:01.642845+00:00",
+    "intended_cadence_minutes": 60,
+    "cadence_is_validation_only": true,
+    "production_cadence_frozen": false
+  },
+  "paths": {
+    "mapping": "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json",
+    "parser": "campready-prospective-validation/frozen/phase3a4_live_replay.py",
+    "classifier": "campready-prospective-validation/frozen/phase3a4_r3_replay.py",
+    "capture_harness": "campready-prospective-validation/frozen/phase3b3_live_baseline.py",
+    "comparator": "campready-prospective-validation/frozen/phase3b4_compare.py",
+    "current_state": "campready-prospective-validation/state/current-state.json",
+    "current_report": "campready-prospective-validation/state/current-capture-report.json",
+    "canonical_baseline": "campready-prospective-validation/state/canonical-baseline.json",
+    "canonical_baseline_report": "campready-prospective-validation/state/canonical-baseline-report.json",
+    "runs_dir": "campready-prospective-validation/runs",
+    "review_dir": "campready-prospective-validation/review-queue",
+    "history_jsonl": "campready-prospective-validation/history.jsonl"
+  },
+  "frozen_hashes": {
+    "mapping": "eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590",
+    "parser": "8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+    "classifier": "a7e5a73c586ba9f30314968be5c848bfb276392561dc1677e5ef62774e88568c",
+    "capture_harness": "8374e6d8ae7606e154381518bd57534865e306ed34ac588a675eaa972b23ddb1",
+    "comparator": "87f92fecc7bee19cbd29a1c9617efccff67660e7c3d20e698771e8cb1c797193",
+    "seed_current_state": "0e42d2ba9bb0945839785ba3bf3a0b4bbf60ed46b9dd8ed34ff4fac8deb90513",
+    "canonical_baseline": "3583be7a75660fc2f42f9dbc965c878a47864839b0d0f1d5a77feea179e7b351"
+  },
+  "policy": {
+    "send_real_notifications": false,
+    "record_would_notify_candidates": true,
+    "unknown_notifications": false,
+    "expired_notifications": false,
+    "scheduled_notifications": false,
+    "removal_as_resolution": false,
+    "safety_inference_from_disappearance": false,
+    "advance_state_only_after_pass": true,
+    "preserve_previous_state_on_failure": true
+  },
+  "provenance": {
+    "phase3b4_audit": "audit/campready_phase3b4_controlled_second_observation_20260828T020945Z.txt",
+    "phase3b4_seed_state_sha256": "0e42d2ba9bb0945839785ba3bf3a0b4bbf60ed46b9dd8ed34ff4fac8deb90513",
+    "phase3b3_baseline_sha256": "3583be7a75660fc2f42f9dbc965c878a47864839b0d0f1d5a77feea179e7b351"
+  },
+  "migration": {
+    "execution_host": "github-actions-hosted-runner",
+    "local_launchd_disabled": true,
+    "migration_current_state_sha256": "db8d660917670b712ed8524897cb1eab5f291fd6ca650abdcb6d1da0678ce3a2",
+    "migration_current_report_sha256": "08b3ac73eb393e47e13ad0585af12e4bd5c5a5e711c01c6c69442a4a16d03a7e",
+    "github_schedule_enabled": false,
+    "github_manual_gate_required": true
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "validated_at_utc": "2026-08-28T01:06:20.516186+00:00",
+  "contract": {
+    "phase": "3A-2",
+    "required_fields_must_be_complete": true,
+    "optional_unknown_is_valid": true,
+    "proximity_inference": false,
+    "ai_only_mapping": false
+  },
+  "rows": [
+    {
+      "canonical_key": "andrews-cove",
+      "canonical_name": "Andrews Cove Campground",
+      "aliases": [
+        "Andrews Cove Campground",
+        "Andrews Cove",
+        "Andrew's Cove",
+        "Andrew's Cove Campground"
+      ],
+      "usfs_recarea_id": 10487,
+      "latitude": 34.77777778,
+      "longitude": -83.73666667,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "FFC",
+      "nws_forecast_zone": "GAZ016",
+      "nws_county_zone": "GAC311",
+      "nws_fire_weather_zone": "GAZ016",
+      "access_roads": [],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "low-gap",
+      "canonical_name": "Low Gap Campground",
+      "aliases": [
+        "Low Gap Campground",
+        "Low Gap"
+      ],
+      "usfs_recarea_id": 10491,
+      "latitude": 34.75111111,
+      "longitude": -83.78333333,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "FFC",
+      "nws_forecast_zone": "GAZ016",
+      "nws_county_zone": "GAC311",
+      "nws_fire_weather_zone": "GAZ016",
+      "access_roads": [],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "canonical_name": "Upper Chattahoochee River Campground",
+      "aliases": [
+        "Upper Chattahoochee River Campground",
+        "Upper Chattahoochee Campground",
+        "Upper Chattahoochee River"
+      ],
+      "usfs_recarea_id": 10501,
+      "latitude": 34.78694,
+      "longitude": -83.78287,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "FFC",
+      "nws_forecast_zone": "GAZ016",
+      "nws_county_zone": "GAC311",
+      "nws_fire_weather_zone": "GAZ016",
+      "access_roads": [],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "canonical_name": "Sarah's Creek Campground",
+      "aliases": [
+        "Sarah's Creek Campground",
+        "Sarahs Creek Campground",
+        "Sarah's Creek",
+        "Sarahs Creek"
+      ],
+      "usfs_recarea_id": 10497,
+      "latitude": 34.92833333,
+      "longitude": -83.26416667,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "GSP",
+      "nws_forecast_zone": "GAZ010",
+      "nws_county_zone": "GAC241",
+      "nws_fire_weather_zone": "GAZ010",
+      "access_roads": [
+        {
+          "identifier": "Forest Service Road 156",
+          "type": "FOREST_SERVICE_ROAD",
+          "provenance": "Live official USFS recreation-page Getting There/Directions text"
+        }
+      ],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "tate-branch",
+      "canonical_name": "Tate Branch Campground",
+      "aliases": [
+        "Tate Branch Campground",
+        "Tate Branch"
+      ],
+      "usfs_recarea_id": 10500,
+      "latitude": 34.95444444,
+      "longitude": -83.5525,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "FFC",
+      "nws_forecast_zone": "GAZ009",
+      "nws_county_zone": "GAC281",
+      "nws_fire_weather_zone": "GAZ009",
+      "access_roads": [
+        {
+          "identifier": "Forest Service Road 70",
+          "type": "FOREST_SERVICE_ROAD",
+          "provenance": "Live official USFS recreation-page Getting There/Directions text"
+        }
+      ],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "lake-russell",
+      "canonical_name": "Lake Russell Recreation Area Campground",
+      "aliases": [
+        "Lake Russell Recreation Area Campground",
+        "Lake Russell Campground",
+        "Lake Russell Recreation Area",
+        "Lake Russell"
+      ],
+      "usfs_recarea_id": 84393,
+      "latitude": 34.4925,
+      "longitude": -83.50083333,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "GSP",
+      "nws_forecast_zone": "GAZ017",
+      "nws_county_zone": "GAC137",
+      "nws_fire_weather_zone": "GAZ017",
+      "access_roads": [],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-russell-recreation-area-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-russell-recreation-area-campground",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "canonical_name": "Lake Rabun Beach Recreation Area",
+      "aliases": [
+        "Lake Rabun Beach Recreation Area",
+        "Lake Rabun Beach Recreation Area Campground",
+        "Rabun Beach Recreation Area",
+        "Rabun Beach"
+      ],
+      "usfs_recarea_id": 10488,
+      "latitude": 34.7575,
+      "longitude": -83.47666667,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "GSP",
+      "nws_forecast_zone": "GAZ010",
+      "nws_county_zone": "GAC241",
+      "nws_fire_weather_zone": "GAZ010",
+      "access_roads": [],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "willis-knob",
+      "canonical_name": "Willis Knob Horse Camp",
+      "aliases": [
+        "Willis Knob Horse Camp",
+        "Willis Knob"
+      ],
+      "usfs_recarea_id": 10506,
+      "latitude": 34.90027778,
+      "longitude": -83.2225,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "GSP",
+      "nws_forecast_zone": "GAZ010",
+      "nws_county_zone": "GAC241",
+      "nws_fire_weather_zone": "GAZ010",
+      "access_roads": [
+        {
+          "identifier": "Forest Service Road 157",
+          "type": "FOREST_SERVICE_ROAD",
+          "provenance": "Live official USFS recreation-page Getting There/Directions text"
+        }
+      ],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "canonical_name": "Wildcat Creek Campground #1 Lower",
+      "aliases": [
+        "Wildcat Creek Campground #1 Lower",
+        "Wildcat Creek Campground #1",
+        "Wildcat Creek Campground 1",
+        "Wildcat Campground #1",
+        "Wildcat Campground 1"
+      ],
+      "usfs_recarea_id": 10503,
+      "latitude": 34.8275,
+      "longitude": -83.61888889,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "GSP",
+      "nws_forecast_zone": "GAZ010",
+      "nws_county_zone": "GAC241",
+      "nws_fire_weather_zone": "GAZ010",
+      "access_roads": [
+        {
+          "identifier": "Wildcat Road",
+          "type": "OFFICIAL_ROAD_NAME",
+          "provenance": "Phase2 USFS recreation current-condition evidence: campground closure explicitly tied to Wildcat Road damage"
+        }
+      ],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-1-lower",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-1-lower",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [],
+      "required_missing": []
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "canonical_name": "Wildcat Creek Campground #2 Upper",
+      "aliases": [
+        "Wildcat Creek Campground #2 Upper",
+        "Wildcat Creek Campground #2",
+        "Wildcat Creek Campground 2",
+        "Wildcat Campground #2",
+        "Wildcat Campground 2"
+      ],
+      "usfs_recarea_id": 10504,
+      "latitude": 34.83222222,
+      "longitude": -83.62611111,
+      "forest": "Chattahoochee-Oconee National Forest",
+      "recreation_region": "Chattooga River District",
+      "nws_cwa": "GSP",
+      "nws_forecast_zone": "GAZ010",
+      "nws_county_zone": "GAC241",
+      "nws_fire_weather_zone": "GAZ010",
+      "access_roads": [
+        {
+          "identifier": "West Wildcat Road",
+          "type": "OFFICIAL_ROAD_NAME",
+          "provenance": "Phase2 USFS recreation current-condition evidence: damage explicitly described as preventing safe vehicle access to campground"
+        },
+        {
+          "identifier": "Wildcat Road",
+          "type": "OFFICIAL_ROAD_NAME",
+          "provenance": "Phase2 USFS recreation current-condition evidence: campground closure explicitly tied to Wildcat Road damage"
+        }
+      ],
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-2-upper",
+      "recreation_page_http_status": 200,
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-2-upper",
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "unresolved_fields": [],
+      "required_missing": []
+    }
+  ],
+  "summary": {
+    "row_count": 10,
+    "row_count_ok": true,
+    "unique_keys_ok": true,
+    "unique_usfs_ids_ok": true,
+    "required_complete_score": "10/10",
+    "recreation_page_access_score": "10/10",
+    "district_known_score": "10/10",
+    "access_road_known_score": "5/10",
+    "district_consistency_ok": true,
+    "invalid_district_rows": [],
+    "road_relationships": [
+      {
+        "campground": "sarahs-creek",
+        "identifier": "Forest Service Road 156",
+        "type": "FOREST_SERVICE_ROAD"
+      },
+      {
+        "campground": "tate-branch",
+        "identifier": "Forest Service Road 70",
+        "type": "FOREST_SERVICE_ROAD"
+      },
+      {
+        "campground": "willis-knob",
+        "identifier": "Forest Service Road 157",
+        "type": "FOREST_SERVICE_ROAD"
+      },
+      {
+        "campground": "wildcat-1",
+        "identifier": "Wildcat Road",
+        "type": "OFFICIAL_ROAD_NAME"
+      },
+      {
+        "campground": "wildcat-2",
+        "identifier": "West Wildcat Road",
+        "type": "OFFICIAL_ROAD_NAME"
+      },
+      {
+        "campground": "wildcat-2",
+        "identifier": "Wildcat Road",
+        "type": "OFFICIAL_ROAD_NAME"
+      }
+    ]
+  },
+  "decision": "PASS_CANONICAL_10_SITE_RELEVANCE_MAPPING"
+}
