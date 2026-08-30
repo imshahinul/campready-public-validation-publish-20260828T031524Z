@@ -1,0 +1,16 @@
+CampReady Phase 3B-3: HOLD_FIRST_LIVE_BASELINE_CAPTURE
+Mapping gate: True
+Classifier binding: True
+USFS alert index: 200
+USFS alerts: 31
+USFS detail fetch: 30/31
+USFS detail parse: 30/31
+USFS relevance: {'EXCLUDE': 249, 'INCLUDE': 21, 'UNKNOWN': 30}
+Recreation fetch: 7/10
+Recreation parse: 7/10
+NWS query: 10/10
+NWS valid payload: 10/10
+NWS active source events: 0
+Baseline notifications: 0
+Notification ledger: 0
+Baseline SHA256: 2d3142964b3057525105090578bfaec05929ac2f68fdfbff1d5bc2850c8a5a47
