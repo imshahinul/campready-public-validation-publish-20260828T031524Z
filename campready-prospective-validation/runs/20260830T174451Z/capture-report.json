@@ -1,0 +1,222 @@
+{
+  "validated_at_utc": "2026-08-30T17:45:12.576130+00:00",
+  "inputs": {
+    "mapping_path": "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json",
+    "mapping_sha256": "eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590",
+    "parser_path": "campready-prospective-validation/frozen/phase3a4_live_replay.py",
+    "parser_sha256": "8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+    "classifier_path": "campready-prospective-validation/frozen/phase3a4_r3_replay.py",
+    "classifier_sha256": "a7e5a73c586ba9f30314968be5c848bfb276392561dc1677e5ef62774e88568c",
+    "expected_classifier_sha256": "a7e5a73c586ba9f30314968be5c848bfb276392561dc1677e5ef62774e88568c"
+  },
+  "gates": {
+    "mapping_gate": true,
+    "parser_symbol_gate": true,
+    "classifier_symbol_gate": true,
+    "classifier_binding_gate": true,
+    "usfs_index_gate": true,
+    "usfs_alert_gate": true,
+    "recreation_gate": true,
+    "nws_gate": true,
+    "baseline_notification_gate": true,
+    "persistence_gate": true,
+    "source_identity_unique": true,
+    "relationship_unique": true
+  },
+  "summary": {
+    "usfs_alert_index_http": 200,
+    "usfs_live_alert_count": 31,
+    "usfs_alert_fetch_success": "31/31",
+    "usfs_alert_parse_success": "31/31",
+    "usfs_required_95pct_count": 30,
+    "usfs_relationship_count": 310,
+    "usfs_relevance_counts": {
+      "EXCLUDE": 259,
+      "INCLUDE": 21,
+      "UNKNOWN": 30
+    },
+    "usfs_reason_counts": {
+      "OUTSIDE_V1_SCOPE": 62,
+      "GENERIC_EDUCATIONAL_NOTICE": 60,
+      "OFFICIAL_FIRE_RESTRICTION": 20,
+      "WRONG_CAMPGROUND": 7,
+      "EXACT_CAMPGROUND": 1,
+      "PRESCRIBED_FIRE_NO_OPERATIONAL_IMPACT": 20,
+      "WRONG_DISTRICT": 90,
+      "ROAD_RELATION_UNPROVEN": 20,
+      "WRONG_FOREST": 10,
+      "AMBIGUOUS_SCOPE": 10,
+      "NO_CAMPGROUND_MATCH": 10
+    },
+    "recreation_fetch_success": "10/10",
+    "recreation_parse_success": "10/10",
+    "nws_query_success": "10/10",
+    "nws_payload_success": "10/10",
+    "nws_unique_active_source_events": 0,
+    "nws_relationship_count": 0,
+    "nws_event_conflict_count": 0,
+    "total_persisted_source_events": 41,
+    "total_persisted_relationships": 310,
+    "baseline_notification_count": 0,
+    "notification_ledger_count": 0,
+    "baseline_bytes": 208882,
+    "baseline_sha256": "4037d8cb6f693c46c6a19322e805f4822b75717714789ca3c2ecff945c593578"
+  },
+  "nws_site_queries": [
+    {
+      "campground": "andrews-cove",
+      "url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "lake-rabun",
+      "url": "https://api.weather.gov/alerts/active?point=34.7575,-83.47666667",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "lake-russell",
+      "url": "https://api.weather.gov/alerts/active?point=34.4925,-83.50083333",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "low-gap",
+      "url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "sarahs-creek",
+      "url": "https://api.weather.gov/alerts/active?point=34.92833333,-83.26416667",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "tate-branch",
+      "url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "upper-chattahoochee",
+      "url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "wildcat-1",
+      "url": "https://api.weather.gov/alerts/active?point=34.8275,-83.61888889",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "wildcat-2",
+      "url": "https://api.weather.gov/alerts/active?point=34.83222222,-83.62611111",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    },
+    {
+      "campground": "willis-knob",
+      "url": "https://api.weather.gov/alerts/active?point=34.90027778,-83.2225",
+      "http_status": 200,
+      "valid_features_list": true,
+      "active_alert_ids": [],
+      "error": null
+    }
+  ],
+  "recreation_pages": [
+    {
+      "campground": "andrews-cove",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "b568d6070f9201cc0a819295ea833bae3ffd09bca2307b8a23ba0726e354364e"
+    },
+    {
+      "campground": "lake-rabun",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "2a727f792da82ada8fb38b0c6e861c5ac9ac2c88e026672c153c7984b07bc948"
+    },
+    {
+      "campground": "lake-russell",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "68f0590f7a1447099b422f66816b683a82978065483590dc012dfb9253a5e74b"
+    },
+    {
+      "campground": "low-gap",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "dd1b0d24cb1400731fd444a395378dfbab1a319ba95441b8cec3089a3f574ef3"
+    },
+    {
+      "campground": "sarahs-creek",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "cbe582561bfcef0e596fab3d2e7a6134931746c2211de09a98c0c13b89a3e236"
+    },
+    {
+      "campground": "tate-branch",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "0ca960696c19f1fa2db90fc1f7046570cdb2c829f109ac2484059db08ffdeeeb"
+    },
+    {
+      "campground": "upper-chattahoochee",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "14ed9f1892403d94a699f08cea1334104750e025ae24ac0d4de8e8779b427b15"
+    },
+    {
+      "campground": "wildcat-1",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "a2da18bf3f007a924ab995bb8b00c194a6a380e0770828e62ceee999cdeeb93e"
+    },
+    {
+      "campground": "wildcat-2",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "18475e7b0d5d2d13a1c495bfab798fa45463e1ab26bcbee293555f886b863203"
+    },
+    {
+      "campground": "willis-knob",
+      "http_status": 200,
+      "article_found": true,
+      "quality": "OK",
+      "semantic_fingerprint": "a3d641c6b30332eeecc718818ba8ef67249280bb58653ac8f0035fc647ef15ed"
+    }
+  ],
+  "nws_event_conflicts": [],
+  "decision": "PASS_FIRST_LIVE_BASELINE_CAPTURE",
+  "next_scope_if_pass": "PHASE 3B-4 — perform one immediate controlled second live observation against this persisted baseline and prove unchanged/repeated evidence does not produce duplicate notifications. The unattended multi-day cycle remains unauthorized until that controlled second-observation gate passes."
+}
