@@ -1,0 +1,28 @@
+CampReady Phase 3B-4: HOLD_CONTROLLED_SECOND_OBSERVATION
+Second live capture: True
+Full live health: True
+Frozen inputs unchanged: True
+Source deltas: 2
+Delta types: {'SOURCE_EVENT_CHANGED': 1, 'RULE_OR_RELATIONSHIP_DRIFT': 1}
+Notification candidates: 0
+Relationship drift: 1
+Unsafe candidates: 0
+Review required: True
+
+PASS baseline_hash_matches_report
+PASS second_hash_matches_report
+PASS second_capture_pass
+PASS full_live_health
+PASS frozen_inputs_same
+PASS policy_same
+PASS identity_unique
+PASS candidate_dedup_ok
+PASS unchanged_candidate_count_zero
+FAIL relationship_drift_zero
+PASS removal_safety_ok
+PASS recreation_auto_notify_ok
+PASS unsafe_candidate_count_zero
+PASS second_capture_zero_notifications
+
+DELTA USFS_ALERT_INDEX SOURCE_EVENT_CHANGED Peavine Sheeds Road Closure for repairs candidate_count=0
+DELTA USFS_ALERT_INDEX RULE_OR_RELATIONSHIP_DRIFT Forest Service Road 76 (Piney Ridge) temporarily closed candidate_count=0
