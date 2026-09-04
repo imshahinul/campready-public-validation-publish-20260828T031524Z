@@ -27,8 +27,37 @@ jobs:
           git --version
 
       - name: Run CampReady validation
+        id: campready_validation
         run: |
+          set +e
+
+          history="campready-prospective-validation/history.jsonl"
+          before_count=0
+
+          if [ -f "$history" ]; then
+            before_count="$(grep -cve '^[[:space:]]*$' "$history" || true)"
+          fi
+
           python3 campready-prospective-validation/github_job.py
+          rc=$?
+
+          after_count=0
+
+          if [ -f "$history" ]; then
+            after_count="$(grep -cve '^[[:space:]]*$' "$history" || true)"
+          fi
+
+          {
+            echo "exit_code=$rc"
+            echo "history_before=$before_count"
+            echo "history_after=$after_count"
+          } >> "$GITHUB_OUTPUT"
+
+          echo "CampReady validation exit code: $rc"
+          echo "History records before: $before_count"
+          echo "History records after: $after_count"
+
+          exit 0
 
       - name: Persist validation state
         if: always()
@@ -57,3 +86,206 @@ jobs:
           else
             echo "No validation-state changes to persist."
           fi
+
+      - name: Classify validation outcome
+        if: always()
+        env:
+          VALIDATION_EXIT_CODE: ${{ steps.campready_validation.outputs.exit_code }}
+          HISTORY_BEFORE: ${{ steps.campready_validation.outputs.history_before }}
+          HISTORY_AFTER: ${{ steps.campready_validation.outputs.history_after }}
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PYCLASSIFY'
+          import json
+          import os
+          import sys
+          from pathlib import Path
+
+          history = Path(
+              "campready-prospective-validation/history.jsonl"
+          )
+
+          try:
+              rc = int(
+                  os.environ[
+                      "VALIDATION_EXIT_CODE"
+                  ]
+              )
+              before = int(
+                  os.environ[
+                      "HISTORY_BEFORE"
+                  ]
+              )
+              after = int(
+                  os.environ[
+                      "HISTORY_AFTER"
+                  ]
+              )
+          except Exception as exc:
+              print(
+                  "::error title=CampReady outcome classification failure::"
+                  "Missing or invalid validation outputs: "
+                  + repr(exc)
+              )
+              raise SystemExit(1)
+
+          if rc == 0:
+              print(
+                  "CampReady validation outcome: PASS"
+              )
+              raise SystemExit(0)
+
+          if rc != 2:
+              print(
+                  "::error title=CampReady unexpected validation failure::"
+                  f"github_job.py returned unexpected exit code {rc}"
+              )
+              raise SystemExit(1)
+
+          if after != before + 1:
+              print(
+                  "::error title=CampReady guarded HOLD validation failure::"
+                  f"Expected exactly one new history record; "
+                  f"before={before}, after={after}"
+              )
+              raise SystemExit(1)
+
+          if not history.is_file():
+              print(
+                  "::error title=CampReady guarded HOLD validation failure::"
+                  "History file is missing."
+              )
+              raise SystemExit(1)
+
+          lines = [
+              line.strip()
+              for line in history.read_text(
+                  encoding="utf-8"
+              ).splitlines()
+              if line.strip()
+          ]
+
+          if len(lines) != after:
+              print(
+                  "::error title=CampReady guarded HOLD validation failure::"
+                  f"History line count mismatch: "
+                  f"observed={len(lines)}, expected={after}"
+              )
+              raise SystemExit(1)
+
+          try:
+              record = json.loads(
+                  lines[-1]
+              )
+          except Exception as exc:
+              print(
+                  "::error title=CampReady guarded HOLD validation failure::"
+                  "Newest history record is invalid JSON: "
+                  + repr(exc)
+              )
+              raise SystemExit(1)
+
+          status = record.get(
+              "status"
+          )
+
+          bindings = record.get(
+              "frozen_bindings",
+              {},
+          )
+
+          common_ok = all([
+              record.get(
+                  "state_advanced"
+              ) is False,
+              record.get(
+                  "prior_state_sha256"
+              )
+              == record.get(
+                  "current_state_sha256"
+              ),
+              record.get(
+                  "real_notifications_sent"
+              )
+              == 0,
+              int(
+                  record.get(
+                      "unsafe_candidate_count",
+                      0,
+                  )
+                  or 0
+              )
+              == 0,
+              bool(bindings),
+              all(
+                  value is True
+                  for value
+                  in bindings.values()
+              ),
+          ])
+
+          capture_hold_ok = (
+              status
+              == "HOLD_CAPTURE_FAILURE"
+              and record.get(
+                  "capture_exit_code"
+              )
+              == 2
+              and record.get(
+                  "comparison_exit_code"
+              )
+              is None
+              and record.get(
+                  "comparison_decision"
+              )
+              is None
+          )
+
+          comparison_hold_ok = (
+              status
+              == "HOLD_COMPARISON_FAILURE"
+              and record.get(
+                  "capture_exit_code"
+              )
+              == 0
+              and record.get(
+                  "comparison_exit_code"
+              )
+              == 2
+              and record.get(
+                  "comparison_decision"
+              )
+              == "HOLD_CONTROLLED_SECOND_OBSERVATION"
+          )
+
+          if not (
+              common_ok
+              and (
+                  capture_hold_ok
+                  or comparison_hold_ok
+              )
+          ):
+              print(
+                  "::error title=CampReady unsafe or unrecognized HOLD::"
+                  + json.dumps(
+                      record,
+                      sort_keys=True,
+                  )
+              )
+              raise SystemExit(1)
+
+          print(
+              "::warning title=CampReady guarded HOLD::"
+              f"status={status}; "
+              f"run_id={record.get('run_id')}; "
+              f"source_deltas={record.get('source_delta_count', 0)}; "
+              f"review_required={record.get('review_required', False)}"
+          )
+
+          print(
+              "CampReady guarded HOLD accepted as a non-fatal "
+              "workflow outcome; evidence was persisted."
+          )
+          PYCLASSIFY
+
