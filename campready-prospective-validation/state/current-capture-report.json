@@ -1,5 +1,5 @@
 {
-  "validated_at_utc": "2026-09-04T05:04:16.093721+00:00",
+  "validated_at_utc": "2026-08-29T22:47:31.369941+00:00",
   "inputs": {
     "mapping_path": "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json",
     "mapping_sha256": "eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590",
@@ -25,13 +25,13 @@
   },
   "summary": {
     "usfs_alert_index_http": 200,
-    "usfs_live_alert_count": 26,
-    "usfs_alert_fetch_success": "26/26",
-    "usfs_alert_parse_success": "26/26",
-    "usfs_required_95pct_count": 25,
-    "usfs_relationship_count": 260,
+    "usfs_live_alert_count": 31,
+    "usfs_alert_fetch_success": "31/31",
+    "usfs_alert_parse_success": "31/31",
+    "usfs_required_95pct_count": 30,
+    "usfs_relationship_count": 310,
     "usfs_relevance_counts": {
-      "EXCLUDE": 209,
+      "EXCLUDE": 259,
       "INCLUDE": 21,
       "UNKNOWN": 30
     },
@@ -42,7 +42,7 @@
       "WRONG_CAMPGROUND": 7,
       "EXACT_CAMPGROUND": 1,
       "PRESCRIBED_FIRE_NO_OPERATIONAL_IMPACT": 20,
-      "WRONG_DISTRICT": 40,
+      "WRONG_DISTRICT": 90,
       "ROAD_RELATION_UNPROVEN": 20,
       "WRONG_FOREST": 10,
       "AMBIGUOUS_SCOPE": 10,
@@ -55,12 +55,12 @@
     "nws_unique_active_source_events": 0,
     "nws_relationship_count": 0,
     "nws_event_conflict_count": 0,
-    "total_persisted_source_events": 36,
-    "total_persisted_relationships": 260,
+    "total_persisted_source_events": 41,
+    "total_persisted_relationships": 310,
     "baseline_notification_count": 0,
     "notification_ledger_count": 0,
-    "baseline_bytes": 187036,
-    "baseline_sha256": "f1ba62cad1dadaadea8e08fbcb9574ae341f03b18ece3d3bc36a4981a6933214"
+    "baseline_bytes": 208772,
+    "baseline_sha256": "6aa81806df61f44af85a4025cde372f78db30b1aff04dc68ec35833e624e5414"
   },
   "nws_site_queries": [
     {

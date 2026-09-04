@@ -61,8 +61,20 @@ jobs:
 
       - name: Persist validation state
         if: always()
+        env:
+          VALIDATION_EXIT_CODE: ${{ steps.campready_validation.outputs.exit_code }}
         run: |
           set -euo pipefail
+
+          case "${VALIDATION_EXIT_CODE:-}" in
+            0|2)
+              ;;
+            *)
+              git restore --worktree --source=HEAD -- \
+                campready-prospective-validation/state/current-state.json \
+                campready-prospective-validation/state/current-capture-report.json
+              ;;
+          esac
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

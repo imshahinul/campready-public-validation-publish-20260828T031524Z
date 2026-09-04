@@ -1,8 +1,8 @@
 {
   "schema_version": "campready-live-baseline-v1",
-  "baseline_id": "campready:2026-09-04T05:03:11.934132+00:00",
-  "created_at_utc": "2026-09-04T05:03:11.934132+00:00",
-  "reference_date_utc": "2026-09-04",
+  "baseline_id": "campready:2026-08-29T22:46:48.201112+00:00",
+  "created_at_utc": "2026-08-29T22:46:48.201112+00:00",
+  "reference_date_utc": "2026-08-29",
   "frozen_inputs": {
     "mapping_sha256": "eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590",
     "parser_sha256": "8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
@@ -35,8 +35,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "877bb67071b4e3013c85212bbf4e6b627efa001f28742b565b6a295118b422d4",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:ca7deafacdc3d7142792",
@@ -54,8 +54,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "8018ff5f2d0069bbc0a2d38579a96aa8bf94caabc263b83d3a513d8c71ecfe44",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:63634b9592afb426427d",
@@ -73,8 +73,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "09ed160133feb553463fb282ad9c987278e462054520d79da55d806a82db8791",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:3c1dbb0c5362a14996f6",
@@ -92,8 +92,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "dc0885c296120f48258e4ea586599bded343e58d27c118d63c652194fb92ab09",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:8ac74b35a3bd2cf5fca0",
@@ -115,8 +115,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "5dcca6debb2e5985e483065a17805dcc7f921a1f1c7b3eb4c5238a13acc60245",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:e8e695aceb36215aab94",
@@ -147,8 +147,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "d029225599abd751e41431768c37d61cda578b245df14af1ed92fbc6dd8e9f90",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:3bc9064b3656838e98ce",
@@ -166,8 +166,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "4d12ef1e18899b876b9b8784ebcd895c0db66ea19aa1b14a6c28a0d5af632cdf",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:978375b0dd48c6f7105f",
@@ -185,8 +185,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "af5c46a4264428f806f185e0367e663320bbde5b4dc83c7522e755f96db65b0f",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:30d271861b372e2b9e15",
@@ -206,8 +206,8 @@
           "operational_effective_date": "August 5, 2026"
         },
         "semantic_fingerprint": "9fc0033ee6b6281bdd370bf1e8193eacedaebbad2d4236ab1f4745ff46b7f6b3",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:c475b126558bf80c91b4",
@@ -225,8 +225,27 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "4c3838851ffab6fa2ce4557dc17906beda1fa9feaeed184978b9ed1532fe26ef",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "source_family": "USFS_ALERT_INDEX",
+        "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/forest-service-road-205-taylor-ridge-temporarily-closed",
+        "quality": "OK",
+        "semantic": {
+          "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/forest-service-road-205-taylor-ridge-temporarily-closed",
+          "title": "Forest Service Road 205, Taylor Ridge temporarily closed.",
+          "alert_start_date": "July 10, 2026",
+          "alert_end_date": null,
+          "order_number": null,
+          "bounded_official_text": "Forest Service Road 205, Taylor Ridge temporarily closed.\nFS 205 Taylor Ridge has been graded and the recent rains have left some slick areas.  In the interest of public safety and to protect the resource, the road will be temporarily closed until gravel has been applied.\nAlert Start Date: July 10, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nConasauga Ranger District\nContact Number:\n706-695-6736",
+          "rec_sites_affected": [],
+          "operational_effective_date": null
+        },
+        "semantic_fingerprint": "e6de38378742f84ada66a7350836316e85d1cf879a3adb2fde98bae662551f2c",
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:8a1f53e4c0e54d585500",
@@ -244,8 +263,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "0f6f6c6e1081035d88a7f2dba4436c828f5a95f7dfac06506304ebb862fb4d13",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:172f596c86f5a8af9990",
@@ -263,8 +282,27 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "8e71d235ef95d3d8f997819010340d3197b12f6c21d7ed443bc86b30c9f7f01a",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "source_family": "USFS_ALERT_INDEX",
+        "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/forest-service-roads-207-and-207a-stover-creek-temporarily-closed",
+        "quality": "OK",
+        "semantic": {
+          "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/forest-service-roads-207-and-207a-stover-creek-temporarily-closed",
+          "title": "Forest Service Roads 207 and 207A (Stover Creek) temporarily closed due to road maintenance.",
+          "alert_start_date": "July 23, 2026",
+          "alert_end_date": null,
+          "order_number": null,
+          "bounded_official_text": "Forest Service Roads 207 and 207A (Stover  Creek) temporarily closed due to road maintenance.\nForest Service roads 207 and 207A (Stover Creek) are temporarily closed due to road maintenance and for public safety.\nAlert Start Date: July 23, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nConasauga Ranger District\nContact Number:\n706-695-6736",
+          "rec_sites_affected": [],
+          "operational_effective_date": null
+        },
+        "semantic_fingerprint": "34dfb0bcc09e8504c54cea671933f9eebce9938800de2806c05384ccbeea5fe5",
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:57941ed798f3f5f7d8a0",
@@ -282,8 +320,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "b190bedd0c24b479a8cb709656dd04f08fb977219a94791751d6d98766ad6ec6",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:0a52202095298f2ff5d7",
@@ -301,8 +339,46 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "58f9257bb2a612f0d3afd49f2265432846b9bcbebc851b35cd82f7a3a11072bd",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "source_family": "USFS_ALERT_INDEX",
+        "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/heavy-equipment-forest-service-roads-17-64-and-22",
+        "quality": "OK",
+        "semantic": {
+          "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/heavy-equipment-forest-service-roads-17-64-and-22",
+          "title": "Heavy Equipment on Forest Service Roads 17, 64, and 22.",
+          "alert_start_date": "June 24, 2026",
+          "alert_end_date": null,
+          "order_number": null,
+          "bounded_official_text": "Heavy Equipment on Forest Service Roads 17, 64, and 22.\nBe prepared to meet heavy equipment grading West Cowpen (FS 17), Three Forks (FS 64), and Tumbling Creek (FS 22).\nInteractive Visitor Map\nMap of Conasauga District - (PDF)\nAlert Start Date: June 24, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nConasauga Ranger District\nContact Number:\n706-695-6736",
+          "rec_sites_affected": [],
+          "operational_effective_date": null
+        },
+        "semantic_fingerprint": "8ffe7f1d8017d33cc0ea1058b03c2630809727adde7eacbfff1bc4216b4e0d4e",
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "source_family": "USFS_ALERT_INDEX",
+        "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/heavy-equipment-forest-service-roads-201-205-and-630",
+        "quality": "OK",
+        "semantic": {
+          "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/heavy-equipment-forest-service-roads-201-205-and-630",
+          "title": "Heavy Equipment on Forest Service Roads 201, 205 and 630.",
+          "alert_start_date": "July 8, 2026",
+          "alert_end_date": null,
+          "order_number": null,
+          "bounded_official_text": "Heavy Equipment on Forest Service Roads 201, 205 and 630.\nBe prepared to meet heavy equipment grading these roads on the Conasauga Ranger District:  FS 201 Jenkins Gap, FS 205 Taylor Ridge, and FS 630 Mill Creek.\nAlert Start Date: July 8, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nConasauga Ranger District\nContact Number:\n706-695-6736",
+          "rec_sites_affected": [],
+          "operational_effective_date": null
+        },
+        "semantic_fingerprint": "8ec4c005cef4ea5171ca846fc0e77a848e65df228be9526d0e7d9637d3e9e5db",
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:b5649b94cee89d57283b",
@@ -322,8 +398,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "70bee8fee31635c89e40065ab079bea343059ca70e0a1f3cf6598640d09f40dc",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:b2f6f4db8b8b1f480e6c",
@@ -341,8 +417,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "3972273766cc35b37ed8418c0264312b7694413dae2234bd8bf4e2f026515a3e",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:e694df3d9e09096909f8",
@@ -362,8 +438,8 @@
           "operational_effective_date": "September 8, 2026"
         },
         "semantic_fingerprint": "9dbbfef2c5693f9c1487f1af37b2293d30efd3d4f7ab4c1b9d8aaaba55e132a2",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:83145dd994d3e0183399",
@@ -376,16 +452,16 @@
           "alert_start_date": "July 16, 2026",
           "alert_end_date": null,
           "order_number": null,
-          "bounded_official_text": "Peavine Sheeds Road Closure for repairs\nPhase one road construction on Peavine Sheeds Creek Road/FS 221, on the Cherokee National Forest north of the Jacks River bridge into Tennessee will be closed heading west from July  20 – Sept 14.\nPhase two construction beginning September 15-January 4 will close Peavine Sheeds Creek Road/FS 221 east,  from the Jacks River Bridge to the northern end of Big Frog Road/FS 62. This will restrict access to the Beech Bottom Trailhead from the south end of Big Frog Road/FS 62 during the closure. The northern end of FS 62/Big Frog Road will remain open, so access to Beech Bottom is possible from that direction.\nFor more information about this project, please see the Alert on the Cherokee National Forest website, or reach out to the Ocoee Ranger District (423-338-3300) or the Cherokee National Forest Supervisor’s Office (423-476-9700).\nAlert Start Date: July 16, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nOcoee Ranger District\nContact Number:\n423-338-3300\nContact Email:sm.fs.chattoconeenf@usda.gov\nRec Sites Affected\nCohutta Wilderness Trailheads\nCottonwood Patch Campground",
+          "bounded_official_text": "Peavine Sheeds Road Closure for repairs\nPhase one road construction on Peavine Sheeds Creek Road/FS 221, on the Cherokee National Forest north of the Jacks River bridge into Tennessee will be closed heading west from July  20 – Sept 14.\nPhase two construction beginning September 15 will close Peavine Sheeds Creek Road/FS 221 east,  from the Jacks River Bridge to the northern end of Big Frog Road/FS 62. This will restrict access to the Beech Bottom Trailhead from the south end of Big Frog Road/FS 62 during the closure.\nFor more information about this project, please see the Alert on the Cherokee National Forest website, or reach out to the Ocoee Ranger District (423-338-3300) or the Cherokee National Forest Supervisor’s Office (423-476-9700).\nAlert Start Date: July 16, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nOcoee Ranger District\nContact Number:\n423-338-3300\nContact Email:sm.fs.chattoconeenf@usda.gov\nRec Sites Affected\nCohutta Wilderness Trailheads\nCottonwood Patch Campground",
           "rec_sites_affected": [
             "Cohutta Wilderness Trailheads",
             "Cottonwood Patch Campground"
           ],
           "operational_effective_date": "September 15, 2026"
         },
-        "semantic_fingerprint": "9683411da85d28b439e50fd9b6a9a79499c987117c2f0939bf7a9473a2c22fe4",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "semantic_fingerprint": "56e2e52b4f40e70b236673b56d894cb1fa0345701a12aafadca6278e450d7fac",
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:bebd957a0d78a78f6eca",
@@ -403,8 +479,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "84773c0201be5a4a5af4c0d38dbd0fccab8e5124d4b472357237d620924c5a29",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:e9c336b272a7c7ee843e",
@@ -422,8 +498,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "3120bca653f2a707ed288e108f058cab65650173a26874ea2029de6bb0ddfdaf",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:56ce8709550188850971",
@@ -448,8 +524,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "2315258794d7c146db2b12dcbc9341045df9ee56defe606aac76ad4a94d78f07",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:50422964a907576a0f89",
@@ -467,8 +543,27 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "ef656e526fa36dec5f46dbaccab7308f7768e6538c45b72affa70ca01e4c0f74",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "source_family": "USFS_ALERT_INDEX",
+        "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/temporary-closure-hidden-creek-roads-955e-955b-955d",
+        "quality": "OK",
+        "semantic": {
+          "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/temporary-closure-hidden-creek-roads-955e-955b-955d",
+          "title": "Temporary Closure of Hidden Creek Roads 955E, 955B, 955D",
+          "alert_start_date": "November 17, 2025",
+          "alert_end_date": null,
+          "order_number": null,
+          "bounded_official_text": "Temporary Closure of Hidden Creek Roads 955E, 955B, 955D\nRoad repair work is being done in the Hidden Creek area over the next several months. Currently, 955E, 955B and 955D are closed to vehicle traffic. Roads will be reopened when repairs are complete, and they are safe to drive.\nAlert Start Date: November 17, 2025\nAlert End Date:\nN/A\nContact Information\nContact Name:\nConasauga Ranger District\nContact Number:\n(706) 695-6736\nRec Sites Affected",
+          "rec_sites_affected": [],
+          "operational_effective_date": null
+        },
+        "semantic_fingerprint": "a47e2b8f96ef2e576c2419514242264b847cdeab4af3471c04894956cb6cdae3",
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:23d75fb29a0f752e1178",
@@ -489,8 +584,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "6b594bd135bedc66fbff5e7d1ee216ee20b57d7c8e3fcafd7970270dc6a5ed4d",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:40a539ddfe725c926d5b",
@@ -508,8 +603,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "9bb49109613c86acc2cdce593be84c8e77957085049f03c9ab6d54de11e1fe3c",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:c1263125c03dcd9c7331",
@@ -527,8 +622,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "5dc70195ce97a19e55db2ec64f54ee919324da6205c60612384d8ecf8b242082",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       },
       {
         "source_event_id": "usfs:050495451e7f71c8611f",
@@ -546,8 +641,8 @@
           "operational_effective_date": null
         },
         "semantic_fingerprint": "d5e20b57ec24bf4ed937e71e65814e76b2b8636712862a5d873c309d7bb63ba2",
-        "first_observed": "2026-09-04T05:03:11.934132+00:00",
-        "last_observed": "2026-09-04T05:03:11.934132+00:00"
+        "first_observed": "2026-08-29T22:46:48.201112+00:00",
+        "last_observed": "2026-08-29T22:46:48.201112+00:00"
       }
     ],
     "relationships": [
@@ -1452,11 +1547,101 @@
         "resolution": false
       },
       {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "andrews-cove",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "lake-rabun",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "lake-russell",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "low-gap",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "sarahs-creek",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "tate-branch",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "upper-chattahoochee",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "wildcat-1",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "wildcat-2",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:daa7e8265e8c3076fa65",
+        "campground": "willis-knob",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
         "source_event_id": "usfs:8a1f53e4c0e54d585500",
         "campground": "andrews-cove",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1465,7 +1650,7 @@
         "campground": "lake-rabun",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1474,7 +1659,7 @@
         "campground": "lake-russell",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1483,7 +1668,7 @@
         "campground": "low-gap",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1492,7 +1677,7 @@
         "campground": "sarahs-creek",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1501,7 +1686,7 @@
         "campground": "tate-branch",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1510,7 +1695,7 @@
         "campground": "upper-chattahoochee",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1519,7 +1704,7 @@
         "campground": "wildcat-1",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1528,7 +1713,7 @@
         "campground": "wildcat-2",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1537,7 +1722,7 @@
         "campground": "willis-knob",
         "relevance": "UNKNOWN",
         "reason": "ROAD_RELATION_UNPROVEN",
-        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "lifecycle": "SCHEDULED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -1632,6 +1817,96 @@
         "resolution": false
       },
       {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "andrews-cove",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "lake-rabun",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "lake-russell",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "low-gap",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "sarahs-creek",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "tate-branch",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "upper-chattahoochee",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "wildcat-1",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "wildcat-2",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:09963bc2ce83283a3a9e",
+        "campground": "willis-knob",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
         "source_event_id": "usfs:57941ed798f3f5f7d8a0",
         "campground": "andrews-cove",
         "relevance": "EXCLUDE",
@@ -1804,6 +2079,186 @@
       },
       {
         "source_event_id": "usfs:0a52202095298f2ff5d7",
+        "campground": "willis-knob",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "andrews-cove",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "lake-rabun",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "lake-russell",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "low-gap",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "sarahs-creek",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "tate-branch",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "upper-chattahoochee",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "wildcat-1",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "wildcat-2",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:ee4e31f0981e27308a0c",
+        "campground": "willis-knob",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "andrews-cove",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "lake-rabun",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "lake-russell",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "low-gap",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "sarahs-creek",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "tate-branch",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "upper-chattahoochee",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "wildcat-1",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
+        "campground": "wildcat-2",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:70240fc116ca4da63d57",
         "campground": "willis-knob",
         "relevance": "EXCLUDE",
         "reason": "WRONG_DISTRICT",
@@ -2528,6 +2983,96 @@
         "relevance": "INCLUDE",
         "reason": "OFFICIAL_FIRE_RESTRICTION",
         "lifecycle": "EXPIRED_BY_EXPLICIT_DATE",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "andrews-cove",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "lake-rabun",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "lake-russell",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "low-gap",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "sarahs-creek",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "tate-branch",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "upper-chattahoochee",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "wildcat-1",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "wildcat-2",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
+        "baseline_notification_eligible": false,
+        "resolution": false
+      },
+      {
+        "source_event_id": "usfs:07578f6f30b8c607da06",
+        "campground": "willis-knob",
+        "relevance": "EXCLUDE",
+        "reason": "WRONG_DISTRICT",
+        "lifecycle": "CURRENT_OR_UNBOUNDED",
         "baseline_notification_eligible": false,
         "resolution": false
       },
@@ -2914,8 +3459,8 @@
         }
       },
       "semantic_fingerprint": "b568d6070f9201cc0a819295ea833bae3ffd09bca2307b8a23ba0726e354364e",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -2938,8 +3483,8 @@
         }
       },
       "semantic_fingerprint": "2a727f792da82ada8fb38b0c6e861c5ac9ac2c88e026672c153c7984b07bc948",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -2962,8 +3507,8 @@
         }
       },
       "semantic_fingerprint": "68f0590f7a1447099b422f66816b683a82978065483590dc012dfb9253a5e74b",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -2986,8 +3531,8 @@
         }
       },
       "semantic_fingerprint": "dd1b0d24cb1400731fd444a395378dfbab1a319ba95441b8cec3089a3f574ef3",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -3010,8 +3555,8 @@
         }
       },
       "semantic_fingerprint": "cbe582561bfcef0e596fab3d2e7a6134931746c2211de09a98c0c13b89a3e236",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -3034,8 +3579,8 @@
         }
       },
       "semantic_fingerprint": "0ca960696c19f1fa2db90fc1f7046570cdb2c829f109ac2484059db08ffdeeeb",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -3058,8 +3603,8 @@
         }
       },
       "semantic_fingerprint": "14ed9f1892403d94a699f08cea1334104750e025ae24ac0d4de8e8779b427b15",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -3082,8 +3627,8 @@
         }
       },
       "semantic_fingerprint": "a2da18bf3f007a924ab995bb8b00c194a6a380e0770828e62ceee999cdeeb93e",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -3106,8 +3651,8 @@
         }
       },
       "semantic_fingerprint": "18475e7b0d5d2d13a1c495bfab798fa45463e1ab26bcbee293555f886b863203",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     },
     {
@@ -3130,8 +3675,8 @@
         }
       },
       "semantic_fingerprint": "a3d641c6b30332eeecc718818ba8ef67249280bb58653ac8f0035fc647ef15ed",
-      "first_observed": "2026-09-04T05:03:11.934132+00:00",
-      "last_observed": "2026-09-04T05:03:11.934132+00:00",
+      "first_observed": "2026-08-29T22:46:48.201112+00:00",
+      "last_observed": "2026-08-29T22:46:48.201112+00:00",
       "baseline_notification_eligible": false
     }
   ],

@@ -1,0 +1,19 @@
+{
+  "schema_version": "campready-phase3b8c-recovery-v1",
+  "checkpoint": "PHASE_3B_8C",
+  "checkpoint_run_id": "20260904T073632Z",
+  "created_at_utc": "2026-09-04T07:36:39.207278+00:00",
+  "failed_github_run_id": "33839047047",
+  "failed_prospective_run_id": "20260904T050311Z",
+  "failed_run_head": "6a40745c68c8e8d5ef2c557aeb834bc38d25e0cf",
+  "failed_persistence_commit": "1b8f52a44e275a981b4b8c49b0f6ce6e21cff651",
+  "failure_class": "REVIEW_QUEUE_DIRECTORY_NOT_CREATED",
+  "comparison_had_passed": true,
+  "state_was_persisted_without_history": true,
+  "orphan_persisted_state_sha256": "f1ba62cad1dadaadea8e08fbcb9574ae341f03b18ece3d3bc36a4981a6933214",
+  "restored_history_consistent_state_sha256": "6aa81806df61f44af85a4025cde372f78db30b1aff04dc68ec35833e624e5414",
+  "history_rewrite": false,
+  "failed_run_evidence_preserved": true,
+  "real_notifications_enabled": false,
+  "workflow_hardening": "UNEXPECTED_EXIT_RESTORES_STATE_BEFORE_PERSIST"
+}

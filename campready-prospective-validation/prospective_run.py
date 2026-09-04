@@ -447,12 +447,19 @@ def main():
             ),
         }
 
+        review_dir = Path(
+            paths[
+                "review_dir"
+            ]
+        )
+
+        review_dir.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
         (
-            Path(
-                paths[
-                    "review_dir"
-                ]
-            )
+            review_dir
             / (
                 run_id
                 + ".json"
