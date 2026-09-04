@@ -1,0 +1,131 @@
+{
+  "run_id": "20260904T073651Z",
+  "created_at_utc": "2026-09-04T07:37:33.523810+00:00",
+  "source_delta_count": 7,
+  "notification_candidate_count": 0,
+  "unsafe_candidate_count": 0,
+  "deltas": [
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:07578f6f30b8c607da06",
+      "title": "Temporary Closure of Hidden Creek Roads 955E, 955B, 955D",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:09963bc2ce83283a3a9e",
+      "title": "Forest Service Roads 207 and 207A (Stover Creek) temporarily closed due to road maintenance.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:70240fc116ca4da63d57",
+      "title": "Heavy Equipment on Forest Service Roads 201, 205 and 630.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:83145dd994d3e0183399",
+      "title": "Peavine Sheeds Road Closure for repairs",
+      "delta_type": "SOURCE_EVENT_CHANGED",
+      "changed_semantic_fields": [
+        "bounded_official_text"
+      ],
+      "notification_candidate_count": 0
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:8a1f53e4c0e54d585500",
+      "title": "Forest Service Road 76 (Piney Ridge) temporarily closed",
+      "delta_type": "TIME_DRIVEN_UNKNOWN_ROAD_LIFECYCLE_TRANSITION",
+      "notification_candidate_count": 0,
+      "time_transition": {
+        "effective_date": "August 30, 2026",
+        "baseline_reference_date": "2026-08-29",
+        "second_reference_date": "2026-09-04",
+        "relationship_count": 10,
+        "relationships": [
+          {
+            "campground": "andrews-cove",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "lake-rabun",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "lake-russell",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "low-gap",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "sarahs-creek",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "tate-branch",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "upper-chattahoochee",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "wildcat-1",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "wildcat-2",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          },
+          {
+            "campground": "willis-knob",
+            "before_lifecycle": "SCHEDULED",
+            "after_lifecycle": "CURRENT_OR_UNBOUNDED"
+          }
+        ]
+      }
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:daa7e8265e8c3076fa65",
+      "title": "Forest Service Road 205, Taylor Ridge temporarily closed.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:ee4e31f0981e27308a0c",
+      "title": "Heavy Equipment on Forest Service Roads 17, 64, and 22.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    }
+  ],
+  "notification_candidates": [],
+  "comparison_path": "campready-prospective-validation/runs/20260904T073651Z/comparison.json"
+}
