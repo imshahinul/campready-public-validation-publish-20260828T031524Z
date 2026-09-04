@@ -87,6 +87,179 @@ def changed_fields(
     return changed
 
 
+def parsed_observation_date(value):
+    if not value:
+        return None
+
+    try:
+        return datetime.fromisoformat(
+            str(value)
+        ).date()
+    except ValueError:
+        pass
+
+    for fmt in (
+        "%B %d, %Y",
+        "%Y-%m-%d",
+    ):
+        try:
+            return datetime.strptime(
+                str(value),
+                fmt,
+            ).date()
+        except ValueError:
+            continue
+
+    return None
+
+
+def expected_unknown_road_time_transition(
+    event,
+    before_relationships,
+    after_relationships,
+    baseline,
+    second,
+):
+    if (
+        not before_relationships
+        or set(before_relationships)
+        != set(after_relationships)
+    ):
+        return None
+
+    semantic = event.get(
+        "semantic",
+        {},
+    )
+
+    effective_raw = (
+        semantic.get(
+            "operational_effective_date"
+        )
+        or semantic.get(
+            "alert_start_date"
+        )
+    )
+
+    effective = parsed_observation_date(
+        effective_raw
+    )
+
+    baseline_reference = parsed_observation_date(
+        baseline.get(
+            "reference_date_utc"
+        )
+    )
+
+    second_reference = parsed_observation_date(
+        second.get(
+            "reference_date_utc"
+        )
+    )
+
+    if (
+        effective is None
+        or baseline_reference is None
+        or second_reference is None
+        or not (
+            baseline_reference
+            < effective
+            <= second_reference
+        )
+    ):
+        return None
+
+    transitions = []
+
+    for key in sorted(
+        before_relationships
+    ):
+        before = before_relationships[key]
+        after = after_relationships[key]
+
+        if before == after:
+            continue
+
+        before_rest = dict(before)
+        after_rest = dict(after)
+
+        before_lifecycle = before_rest.pop(
+            "lifecycle",
+            None,
+        )
+
+        after_lifecycle = after_rest.pop(
+            "lifecycle",
+            None,
+        )
+
+        if before_rest != after_rest:
+            return None
+
+        if (
+            before_lifecycle
+            != "SCHEDULED"
+            or after_lifecycle
+            != CURRENT
+        ):
+            return None
+
+        if (
+            before.get("relevance")
+            != "UNKNOWN"
+            or after.get("relevance")
+            != "UNKNOWN"
+            or before.get("reason")
+            != "ROAD_RELATION_UNPROVEN"
+            or after.get("reason")
+            != "ROAD_RELATION_UNPROVEN"
+            or before.get("resolution")
+            is not False
+            or after.get("resolution")
+            is not False
+            or before.get(
+                "baseline_notification_eligible"
+            )
+            is not False
+            or after.get(
+                "baseline_notification_eligible"
+            )
+            is not False
+        ):
+            return None
+
+        transitions.append({
+            "campground": key[1],
+            "before_lifecycle": (
+                before_lifecycle
+            ),
+            "after_lifecycle": (
+                after_lifecycle
+            ),
+        })
+
+    if not transitions:
+        return None
+
+    return {
+        "effective_date": effective_raw,
+        "baseline_reference_date": (
+            baseline.get(
+                "reference_date_utc"
+            )
+        ),
+        "second_reference_date": (
+            second.get(
+                "reference_date_utc"
+            )
+        ),
+        "relationship_count": len(
+            transitions
+        ),
+        "relationships": transitions,
+    }
+
+
 def event_title(item):
     semantic = item.get(
         "semantic",
@@ -633,7 +806,6 @@ def main():
                 if key[0]
                 == event_id
             }
-
             after_rel = {
                 key: value
                 for key, value
@@ -641,29 +813,63 @@ def main():
                 if key[0]
                 == event_id
             }
-
             if (
                 before_rel
                 != after_rel
             ):
-                deltas.append({
-                    "source_family": (
-                        "USFS_ALERT_INDEX"
-                    ),
-                    "source_event_id": (
-                        event_id
-                    ),
-                    "title": (
-                        event_title(
-                            after
-                        )
-                    ),
-                    "delta_type": (
-                        "RULE_OR_RELATIONSHIP_DRIFT"
-                    ),
-                    "notification_candidate_count": 0,
-                })
+                time_transition = (
+                    expected_unknown_road_time_transition(
+                        after,
+                        before_rel,
+                        after_rel,
+                        baseline,
+                        second,
+                    )
+                )
 
+                if (
+                    time_transition
+                    is not None
+                ):
+                    deltas.append({
+                        "source_family": (
+                            "USFS_ALERT_INDEX"
+                        ),
+                        "source_event_id": (
+                            event_id
+                        ),
+                        "title": (
+                            event_title(
+                                after
+                            )
+                        ),
+                        "delta_type": (
+                            "TIME_DRIVEN_UNKNOWN_ROAD_"
+                            "LIFECYCLE_TRANSITION"
+                        ),
+                        "notification_candidate_count": 0,
+                        "time_transition": (
+                            time_transition
+                        ),
+                    })
+                else:
+                    deltas.append({
+                        "source_family": (
+                            "USFS_ALERT_INDEX"
+                        ),
+                        "source_event_id": (
+                            event_id
+                        ),
+                        "title": (
+                            event_title(
+                                after
+                            )
+                        ),
+                        "delta_type": (
+                            "RULE_OR_RELATIONSHIP_DRIFT"
+                        ),
+                        "notification_candidate_count": 0,
+                    })
             continue
 
         candidate_rel = (
