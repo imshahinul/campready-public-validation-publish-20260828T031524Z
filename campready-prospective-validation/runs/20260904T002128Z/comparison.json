@@ -1,0 +1,127 @@
+{
+  "validated_at_utc": "2026-09-04T00:22:34.337708+00:00",
+  "baseline": {
+    "path": "campready-prospective-validation/state/current-state.json",
+    "sha256": "6aa81806df61f44af85a4025cde372f78db30b1aff04dc68ec35833e624e5414",
+    "created_at_utc": "2026-08-29T22:46:48.201112+00:00"
+  },
+  "second_observation": {
+    "path": "campready-prospective-validation/runs/20260904T002128Z/observation.json",
+    "sha256": "56fef3cc19b8ac88948686ea483daa11cd2313690a77d6c22331802f6308b70c",
+    "created_at_utc": "2026-09-04T00:21:28.542800+00:00"
+  },
+  "invariants": {
+    "baseline_hash_matches_report": true,
+    "second_hash_matches_report": true,
+    "second_capture_pass": true,
+    "full_live_health": true,
+    "frozen_inputs_same": true,
+    "policy_same": true,
+    "identity_unique": true,
+    "candidate_dedup_ok": true,
+    "unchanged_candidate_count_zero": true,
+    "relationship_drift_zero": false,
+    "removal_safety_ok": true,
+    "recreation_auto_notify_ok": true,
+    "unsafe_candidate_count_zero": true,
+    "second_capture_zero_notifications": true
+  },
+  "summary": {
+    "source_delta_count": 7,
+    "delta_counts": {
+      "SOURCE_EVENT_REMOVED_FROM_INDEX": 5,
+      "SOURCE_EVENT_CHANGED": 1,
+      "RULE_OR_RELATIONSHIP_DRIFT": 1
+    },
+    "notification_candidate_count": 0,
+    "review_required": true,
+    "relationship_drift_count": 1,
+    "unsafe_candidate_count": 0,
+    "baseline_usfs_alert_count": 31,
+    "second_usfs_alert_count": 26,
+    "baseline_recreation_count": 10,
+    "second_recreation_count": 10,
+    "baseline_nws_event_count": 0,
+    "second_nws_event_count": 0
+  },
+  "deltas": [
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:07578f6f30b8c607da06",
+      "title": "Temporary Closure of Hidden Creek Roads 955E, 955B, 955D",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:09963bc2ce83283a3a9e",
+      "title": "Forest Service Roads 207 and 207A (Stover Creek) temporarily closed due to road maintenance.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:70240fc116ca4da63d57",
+      "title": "Heavy Equipment on Forest Service Roads 201, 205 and 630.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:83145dd994d3e0183399",
+      "title": "Peavine Sheeds Road Closure for repairs",
+      "delta_type": "SOURCE_EVENT_CHANGED",
+      "changed_semantic_fields": [
+        "bounded_official_text"
+      ],
+      "notification_candidate_count": 0
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:8a1f53e4c0e54d585500",
+      "title": "Forest Service Road 76 (Piney Ridge) temporarily closed",
+      "delta_type": "RULE_OR_RELATIONSHIP_DRIFT",
+      "notification_candidate_count": 0
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:daa7e8265e8c3076fa65",
+      "title": "Forest Service Road 205, Taylor Ridge temporarily closed.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    },
+    {
+      "source_family": "USFS_ALERT_INDEX",
+      "source_event_id": "usfs:ee4e31f0981e27308a0c",
+      "title": "Heavy Equipment on Forest Service Roads 17, 64, and 22.",
+      "delta_type": "SOURCE_EVENT_REMOVED_FROM_INDEX",
+      "notification_candidate_count": 0,
+      "resolution": false,
+      "safety_inference": false
+    }
+  ],
+  "notification_candidates": [],
+  "unsafe_candidates": [],
+  "duplicate_identity_evidence": {
+    "baseline_usfs": [],
+    "second_usfs": [],
+    "baseline_recreation": [],
+    "second_recreation": [],
+    "baseline_nws": [],
+    "second_nws": [],
+    "baseline_usfs_relationships": [],
+    "second_usfs_relationships": [],
+    "baseline_nws_relationships": [],
+    "second_nws_relationships": []
+  },
+  "decision": "HOLD_CONTROLLED_SECOND_OBSERVATION",
+  "next_scope_if_accepted": "If this controlled second observation is mechanically PASS and any reported live deltas are human-reviewed as genuine/non-unsafe, authorize the prospective unattended validation harness. Do not reinterpret historical baseline events as new notifications."
+}
