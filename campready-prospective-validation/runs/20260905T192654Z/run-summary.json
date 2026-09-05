@@ -1,0 +1,27 @@
+{
+  "run_id": "20260905T192654Z",
+  "started_at_utc": "2026-09-05T19:26:54.837564+00:00",
+  "finished_at_utc": "2026-09-05T19:28:02.021464+00:00",
+  "runtime_seconds": 67.184,
+  "status": "PASS",
+  "capture_exit_code": 0,
+  "comparison_exit_code": 0,
+  "comparison_decision": "PASS_CONTROLLED_SECOND_OBSERVATION",
+  "source_delta_count": 0,
+  "delta_counts": {},
+  "notification_candidate_count": 0,
+  "unsafe_candidate_count": 0,
+  "review_required": false,
+  "state_advanced": true,
+  "prior_state_sha256": "1f99026de67663579a049036c34b3b12de774ecb2f39406d1af39df3ec549145",
+  "current_state_sha256": "57f5881f5fe1f84892a276c24dbfecba240fc24103f126160ee7491bc86d865c",
+  "real_notifications_sent": 0,
+  "frozen_bindings": {
+    "mapping": true,
+    "parser": true,
+    "classifier": true,
+    "capture_harness": true,
+    "comparator": true
+  },
+  "run_directory": "campready-prospective-validation/runs/20260905T192654Z"
+}
