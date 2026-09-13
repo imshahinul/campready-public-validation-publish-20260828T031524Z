@@ -1,0 +1,239 @@
+CAMPREADY — PHASE 4B-R2
+30-DAY WINDOW FREEZE + HOURLY SCHEDULE ACTIVATION
+
+RUNID: 20260913T034703Z
+EVIDENCE_GENERATED_UTC: 2026-09-13T03:48:00Z
+CANONICAL_REPOSITORY: https://github.com/imshahinul/campready-public-validation-publish-20260828T031524Z
+
+A. PREFLIGHT
+branch: main
+HEAD: 9b7948906f2e74fa93cfc1e2e6d4cc0a5ff3ea7a
+tree: eca05f96ccdad599d61158e5023aa2f3df243746
+origin/main: 9b7948906f2e74fa93cfc1e2e6d4cc0a5ff3ea7a
+divergence: 0/0
+worktree: clean
+git fetch origin: PASS
+remote divergence gate: PASS
+
+B. R1 PREDECESSOR VERIFICATION
+Canonical R1 final commit exact match: 9b7948906f2e74fa93cfc1e2e6d4cc0a5ff3ea7a — PASS
+Canonical R1 final tree exact match: eca05f96ccdad599d61158e5023aa2f3df243746 — PASS
+Accepted repair commit d78fa2aa2550bb8852234cff11424159a6f9dbad is an ancestor of R1 final — PASS
+Hosted baseline persistence commit 64919423e7f09e348640bea179e7d91f2a77d56c is an ancestor of R1 final — PASS
+Accepted hosted baseline run: 34735398271
+
+C. ACCEPTED BASELINE-STATE SHA VERIFICATION
+File: campready-phase4b/state/current.json
+Required SHA-256: 26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c
+Observed SHA-256 before activation: 26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c
+Result: PASS
+
+D. HISTORY PRESERVATION PROOF
+Nonblank historical records before and after activation: 2
+Failed hosted attempt preserved:
+  run_id=20260913T025758Z
+  status=HOLD_RUNTIME_FAILURE
+  failure=IndexError: list index out of range
+  state_advanced=false
+Successful controlled hosted baseline preserved:
+  run_id=20260913T032428Z
+  workflow_run_id=34735398271
+  trigger=workflow_dispatch
+  status=PASS
+  prior_state_sha256=null
+  accepted_state_sha256=26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c
+  state_advanced=true
+  would_notify_candidate_count=0
+  review_candidate_count=0
+  unsafe_candidate_count=0
+  real_notifications=0
+State run_id and accepted_at_utc match the successful baseline history record — PASS
+No history record was added for activation — PASS
+Activation did not masquerade as a source observation — PASS
+
+E. FILES CHANGED BY ACTIVATION COMMIT
+.github/workflows/campready-validation.yml
+campready-phase4b/config.json
+campready-phase4b/frozen-hashes.json
+campready-phase4b/test_phase4b.py
+
+F. EXACT VALIDATION START UTC
+validation_start_utc=2026-09-13T04:00:00+00:00
+Selection rule: deterministic UTC boundary immediately following canonical activation adoption.
+Activation adoption/publication completed at 2026-09-13T03:47:03Z.
+The start is later than publication, is offset-aware UTC, was not backdated, and was not rounded backward.
+
+G. EXACT VALIDATION END UTC
+validation_end_utc=2026-10-13T04:00:00+00:00
+
+H. EXACT 30-DAY ARITHMETIC PROOF
+Method: Python offset-aware datetime arithmetic, end = start + timedelta(days=30).
+end - start = 2592000 seconds
+end - start = 30 days
+Required exact duration: 30 consecutive days
+Result: PASS
+
+I. EXACT HOURLY CRON
+schedule_enabled=true
+hourly_cron=40 * * * *
+Schedule count: exactly 1
+Shape: minute 40 of every hour, non-zero minute, hourly
+Duplicate cron entries: 0
+Result: PASS
+
+J. WORKFLOW_DISPATCH RETENTION
+Canonical workflow contains workflow_dispatch — PASS
+No manual dispatch was performed in R2.
+
+K. CONCURRENCY CONFIGURATION
+concurrency.group=campready-prospective-validation
+concurrency.cancel-in-progress=false
+One validation execution is admitted at a time, and a later hourly slot does not cancel an already-running validation — PASS
+
+L. ZERO-FETCH-AFTER-END PROOF
+Deterministic guard exercised at validation_end_utc and immediately after validation_end_utc.
+Both invocations returned exit code 0 and status VALIDATION_WINDOW_COMPLETE.
+Capture was patched to raise if invoked; it was not invoked.
+USFS network fetches: 0
+NWS requests: 0
+NC State Parks requests: 0
+NPS requests: 0
+USACE transport requests: 0
+Semantic state advances: 0
+Review candidates created: 0
+Real notifications: 0
+State bytes unchanged: true
+History bytes unchanged: true
+Run directory created: false
+Result: PASS
+
+M. NOTIFICATION-DISABLED PROOF
+campready-phase4b/config.json policy.send_real_notifications=false
+Remote origin/main config policy.send_real_notifications=false
+Phase 4B notification-disabled test: PASS
+Result: PASS
+
+N. BEHAVIOR-BEARING HASHES
+eb3323e272f0c5df0a8fed3deeead65d73010911cda615bf1cc2ce9496013f7c  .github/workflows/campready-validation.yml
+dccd6793c10bf2362d5ffc42bdef02a420877406cdf0ba6efa45abff191f0f45  campready-authority-adapters/authority_adapters.py
+a090c492e129c394cef8a2cc4a4ee6e53be6aa78b428f72ca040e62ad6d9e329  campready-authority-adapters/authority_sites.json
+fe2bd73504896ffcf8030d84893c22e9d2926094f88a1859c71ab9d6b9280c0d  campready-phase4a3/canonical_35site_mapping.json
+53cff715bf6acf3305736fb396704ed7d3e594fc7aa157e7234b080db9357d13  campready-phase4b/capture.py
+e509c49a44ccdc3b65d5f54ccf3c6bb0c07d37584f93259c2e69a717015ecc88  campready-phase4b/config.json
+d1825f2299aae3053011fb01b2312b809aa0f2a89e2d3fc73d3a4ddd31b97669  campready-phase4b/run.py
+eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590  campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json
+8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c  campready-prospective-validation/frozen/phase3a4_live_replay.py
+a7e5a73c586ba9f30314968be5c848bfb276392561dc1677e5ef62774e88568c  campready-prospective-validation/frozen/phase3a4_r3_replay.py
+8374e6d8ae7606e154381518bd57534865e306ed34ac588a675eaa972b23ddb1  campready-prospective-validation/frozen/phase3b3_live_baseline.py
+569f26593e082f6a0ecf7bdf1f2abd6b9dd7acf912a132330f34f1913ef8fb89  campready-prospective-validation/frozen/phase3b4_compare.py
+Manifest verification against every listed file: PASS
+Activation-only hash changes: workflow and Phase 4B config; binding manifest rebuilt accordingly.
+All parser, relevance, comparator, capture, runner, mapping, authority-adapter, and authority-site hashes remained unchanged.
+
+O. ALL TEST / REGRESSION RESULTS
+Phase 4B suite: 23 tests, PASS
+R1 IndexError definition-loader regression: 1 focused test, PASS
+Authority-adapter suite: 27 tests, PASS
+Phase 4A-3 mapping/metric suite: 11 tests, PASS
+Combined suites: 61 tests, PASS
+Canonical 35-site validator: PASS
+  row_count=35
+  supported_core_size=32
+  transport_challenge_count=3
+  unique_key_count=35
+Frozen USFS/parser SHA verification through manifest: PASS
+Frozen NWS/relevance binding SHA verification through manifest: PASS
+Baseline state/hash verification: PASS
+History/state consistency: PASS
+Validation-duration test: PASS
+Cron-shape test: PASS
+Single-schedule-entry test: PASS
+workflow_dispatch-retention test: PASS
+Concurrency test: PASS
+Zero-fetch-after-end test: PASS
+Notification-disabled test: PASS
+Root-README-absent test: PASS
+Python compileall/static checks: PASS
+git diff --check: PASS
+
+P. ACTIVATION-ONLY DIFF PROOF
+Diff from canonical R1 final contains exactly four paths listed in section E.
+Config changes only activation.schedule_enabled, validation_start_utc, validation_end_utc, and activation.hourly_cron.
+Workflow changes only add one exact schedule trigger while preserving workflow_dispatch and existing safe concurrency.
+Frozen hash binding changes only workflow and Phase 4B config hashes.
+The Phase 4B schedule assertion changed from pre-activation expectations to activated expectations.
+No cohort, mapping, parser, relevance, comparator, capture, runner, adapter, state, history, maintenance, USACE policy, useful-coverage, metric-definition, or notification-policy drift occurred.
+Result: PASS
+
+Q. ACTIVATION COMMIT / TREE SHA
+Commit: b9806c4a2d3866c6c2a69de537e2fa7973c26037
+Tree: ab13fa266705360d8dbc91ef24de6b1a4101fab9
+Commit message: Activate Phase 4B 30-day validation schedule
+Worktree immediately after activation commit: clean
+
+R. GUARDED PUSH RESULT
+Pre-push git fetch origin: PASS
+origin/main before push: 9b7948906f2e74fa93cfc1e2e6d4cc0a5ff3ea7a
+origin/main was an ancestor of local HEAD: true
+Push form: normal git push origin main:main
+Force push: false
+Push result: 9b79489..b9806c4 main -> main
+Post-push git fetch origin: PASS
+Result: PASS
+
+S. REMOTE WORKFLOW VERIFICATION
+Verification sources: canonical origin/main blobs and GitHub API workflow metadata.
+Workflow id: 344292079
+Workflow state: active
+Workflow path: .github/workflows/campready-validation.yml
+workflow_dispatch present: true
+schedule trigger count: 1
+cron: 40 * * * *
+concurrency present: true
+cancel-in-progress: false
+Remote validation_start_utc: 2026-09-13T04:00:00+00:00
+Remote validation_end_utc: 2026-10-13T04:00:00+00:00
+Remote send_real_notifications: false
+Result: PASS
+
+T. FINAL ACTIVATION-ADOPTION STATE
+HEAD: b9806c4a2d3866c6c2a69de537e2fa7973c26037
+origin/main: b9806c4a2d3866c6c2a69de537e2fa7973c26037
+divergence: 0/0
+worktree: clean
+Result: PASS
+
+U. STATE-PRESERVATION HASH BEFORE / AFTER
+Before activation: 26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c
+After activation commit: 26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c
+After remote adoption: 26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c
+Identical: true
+Second baseline created: false
+Result: PASS
+
+V. ROOT README ABSENCE
+Case-insensitive root README search found no file.
+Result: PASS
+
+W. GITHUB MANUAL DISPATCHES DURING CHECKPOINT
+GitHub API query for workflow_dispatch runs created since R2 checkpoint start 2026-09-13T03:39:14Z returned: 0
+GitHub manual dispatches during checkpoint: 0
+No workflow was manually dispatched.
+Result: PASS
+
+X. NEXT NOMINAL SCHEDULED UTC
+ACTIVATION_PUBLICATION_UTC=2026-09-13T03:47:03Z
+NEXT_NOMINAL_SCHEDULE_UTC=2026-09-13T04:40:00Z
+Calculation: first minute-40 hourly cron slot strictly after activation adoption.
+No claim is made that this run occurred.
+The first natural scheduled execution was not evaluated in R2.
+
+Y. EXACT FINAL DECISION
+PASS_30DAY_WINDOW_AND_SCHEDULE_ACTIVATED
+
+Z. NEXT AUTHORIZED CHECKPOINT
+PHASE 4B-1 — FIRST NATURAL SCHEDULED-RUN ACCEPTANCE
+Authorized only for the first genuine event=schedule after activation.
+Phase 4B-1 work was not performed in this checkpoint.
+
+STOP — R2 scope complete.
