@@ -1,0 +1,26 @@
+{
+  "run_id": "20260913T025758Z",
+  "started_at_utc": "2026-09-13T02:57:58.240819+00:00",
+  "finished_at_utc": "2026-09-13T02:57:58.252898+00:00",
+  "status": "HOLD_RUNTIME_FAILURE",
+  "failure": "IndexError: list index out of range",
+  "prior_state_sha256": null,
+  "accepted_state_sha256": null,
+  "state_advanced": false,
+  "unsafe_candidate_count": 0,
+  "real_notifications": 0,
+  "frozen_bindings": {
+    ".github/workflows/campready-validation.yml": true,
+    "campready-authority-adapters/authority_adapters.py": true,
+    "campready-authority-adapters/authority_sites.json": true,
+    "campready-phase4a3/canonical_35site_mapping.json": true,
+    "campready-phase4b/capture.py": true,
+    "campready-phase4b/config.json": true,
+    "campready-phase4b/run.py": true,
+    "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json": true,
+    "campready-prospective-validation/frozen/phase3a4_live_replay.py": true,
+    "campready-prospective-validation/frozen/phase3a4_r3_replay.py": true,
+    "campready-prospective-validation/frozen/phase3b3_live_baseline.py": true,
+    "campready-prospective-validation/frozen/phase3b4_compare.py": true
+  }
+}
