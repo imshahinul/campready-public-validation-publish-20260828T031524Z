@@ -1,1 +1,2 @@
 
+{"affected_component":"campready-phase4b/capture.py definition-only module loader","classification":"PRE_ACTIVATION_ENGINEERING_SETUP","commit":"d78fa2aa2550bb8852234cff11424159a6f9dbad","maintenance_minutes":null,"reason":"Repair Phase 4B frozen dependency loading after hosted baseline IndexError","semantic_rule_change":false,"timestamp_utc":"2026-09-13T03:23:32Z"}

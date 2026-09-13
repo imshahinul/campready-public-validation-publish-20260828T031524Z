@@ -1,0 +1,210 @@
+CAMPREADY — PHASE 4B-R1
+HOSTED BASELINE INDEXERROR DIAGNOSIS + BOUNDED REPAIR + CONTROLLED RETRY
+Evidence generated: 2026-09-13T03:30:00Z
+
+A. PREFLIGHT HEAD / TREE / ORIGIN / DIVERGENCE / CLEAN STATE
+Repository: /Users/smshahinulislam/Desktop/campReady/campready-public-validation-publish-20260828T031524Z
+Branch: main
+HEAD: b06db0a11bdd0bbaea2c6281b1aa6eacc1aff4e8
+Tree: 35f6d6cb46dfc3969607d595c1223d10ff704adf
+origin/main after git fetch: b06db0a11bdd0bbaea2c6281b1aa6eacc1aff4e8
+Divergence (HEAD...origin/main): 0 0
+Worktree: clean
+Canonical ancestor b06db0a11bdd0bbaea2c6281b1aa6eacc1aff4e8: true (equal to preflight HEAD)
+Preflight decision: proceed; no remote divergence.
+
+B. README-ABSENCE PROOF
+`test -e README.md` was false and `git ls-files README.md` found no tracked root README.
+No root README was created by this checkpoint. No product-facing documentation was added.
+
+C. PREVIOUS FAILED RUN IDENTIFICATION
+Workflow: CampReady Phase 4B Heterogeneous Validation
+Run ID: 34734310749
+Event: workflow_dispatch
+Tested commit: a27f2ee3fd7cc3e98571f888a21630e27deb553d
+Started: 2026-09-13T02:57:51Z
+Completed/updated: 2026-09-13T02:58:02Z
+Job: validation
+Failed step: Classify validation outcome
+Conclusion: failure
+Harness report status: HOLD_RUNTIME_FAILURE
+Validation process exit code: 2
+Classification step/process exit code: 1
+Persisted report: campready-phase4b/runs/20260913T025758Z/run-report.json
+No GitHub Actions artifacts were attached to the run.
+
+D. EXACT RETRIEVED FAILURE / TRACEBACK
+The hosted log and persisted report expose the exact caught exception as:
+  "failure": "IndexError: list index out of range"
+The hosted harness caught the exception in campready-phase4b/run.py, so GitHub logs did not persist Python traceback frames. The exact same code and argv shape were reproduced locally before repair, yielding:
+Traceback (most recent call last):
+  File "<stdin>", line 11, in <module>
+  File "campready-phase4b/capture.py", line 85, in capture
+    legacy = load_module(root / config["paths"]["legacy_capture"], "phase4b_legacy_capture")
+  File "campready-phase4b/capture.py", line 31, in load_module
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "campready-prospective-validation/frozen/phase3b3_live_baseline.py", line 1815, in <module>
+    main()
+  File "campready-prospective-validation/frozen/phase3b3_live_baseline.py", line 435, in main
+    sys.argv[1]
+IndexError: list index out of range
+Function: phase3b3_live_baseline.main
+Exact source line: mapping_path = Path(sys.argv[1]) at line 435.
+Safely reproduced local shape: sys.argv contained only the harness script name; no positional items existed at indexes 1 through 5.
+
+E. EXACT ROOT CAUSE
+campready-phase4b.capture.load_module used importlib's normal module execution path to obtain reusable functions from a frozen CLI program. The frozen dependency has an unconditional final `raise SystemExit(main())`, not an `if __name__ == "__main__"` guard. Import therefore executed main(), which requires sys.argv[1] through sys.argv[5]. The hosted harness supplied no such dependency CLI arguments. The violated assumption was that importing the frozen CLI file was definition-only and would not invoke its command-line entrypoint.
+This is a generic harness composition defect, not a source retrieval failure and not a heterogeneous semantic-model failure.
+
+F. DETERMINISTIC PRE-REPAIR REPRODUCTION
+A synthetic frozen dependency exactly represented the triggering shape:
+  import sys
+  def reusable(): return "loaded"
+  def main(): return sys.argv[1]
+  raise SystemExit(main())
+With sys.argv == ["capture.py"], test_definition_loader_does_not_execute_cli_entrypoint_without_arguments failed against pre-repair load_module with `IndexError: list index out of range`. A direct invocation of capture() also reproduced the full traceback above before any live request began. This proves the same structural cause independently of source data.
+Why existing tests missed it: tests imported capture.py and exercised FetchOnce/compare/policy behavior, but none called load_module against an executable frozen dependency or invoked the full capture path.
+
+G. FILES CHANGED BY BOUNDED REPAIR
+campready-phase4b/capture.py
+campready-phase4b/test_phase4b.py
+campready-phase4b/frozen-hashes.json
+The later required software/config-change accounting appended one pre-activation record to campready-phase4b/software-changes/software-config-changes.jsonl. No mapping, identity, authority configuration, parser/classifier semantics, source semantics, notification policy, validation duration, schedule, or workflow trigger was modified.
+
+H. REPAIR DESIGN
+load_module now parses the dependency with Python ast, removes only a final top-level `raise SystemExit(...)` CLI entrypoint, and executes the remaining definitions in the module namespace. It does not alter the frozen dependency. It does not catch or reinterpret parser/source data, fabricate semantic values, or add source/site-specific rescue. Any other load/compile/execution defect remains an exception and is handled by the existing fail-closed HOLD_RUNTIME_FAILURE transaction.
+The capture.py binding in frozen-hashes.json was regenerated; every other frozen binding remained byte-for-byte unchanged.
+
+I. NEW REGRESSION TEST
+Test: test_definition_loader_does_not_execute_cli_entrypoint_without_arguments
+Exact trigger represented: argv list with one item and an unconditional frozen CLI entrypoint indexing sys.argv[1].
+Pre-repair result: ERROR, IndexError, 22 adjacent tests passed.
+Post-repair result: PASS; reusable definition loaded; no IndexError.
+Safety properties remain covered by existing deterministic tests: first observation has zero notify candidates; retrieval/parser failures do not create semantic deltas; transport failure cannot change semantic state; unknown is non-notifying; USACE cannot enter semantic support; guarded HOLD does not advance state.
+
+J. FULL LOCAL TEST / REGRESSION RESULTS
+Combined suites: 61 tests, PASS.
+- Phase 4B suite: 23 tests, PASS.
+- Authority-adapter suite: PASS.
+- Phase 4A-3 mapping/metric suite: 11 tests, PASS.
+Canonical validation: PASS; row_count=35; supported_core_size=32; transport_challenge_count=3; unique_key_count=35.
+Python compileall: PASS.
+git diff --check: PASS.
+
+K. FROZEN SEMANTICS / HASH VERIFICATION
+All entries in campready-phase4b/frozen-hashes.json matched their files after the authorized capture binding update.
+Frozen USFS parser SHA256: 8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c PASS.
+Frozen USFS classifier SHA256: a7e5a73c586ba9f30314968be5c848bfb276392561dc1677e5ef62774e88568c PASS.
+Frozen legacy capture SHA256: 8374e6d8ae7606e154381518bd57534865e306ed34ac588a675eaa972b23ddb1 PASS.
+Hurricane Creek identifier 71807: present.
+Wrong identifier 33555: absent.
+Site-specific capture branches: 0.
+USACE semantic support: false; 3 sites remain transport-only.
+Strict Useful Coverage remains 31 / 35 = 88.57%.
+
+L. REPAIR COMMIT / TREE SHA
+Repair commit: d78fa2aa2550bb8852234cff11424159a6f9dbad
+Repair tree: d3548011b9884cc0d3fdbe42a168c1ac27ce0892
+Commit scope: capture.py, test_phase4b.py, frozen-hashes.json only.
+Worktree after repair commit: clean.
+
+M. GUARDED PUSH / REMOTE ADOPTION PROOF
+Fetched origin immediately before push.
+origin/main before push: b06db0a11bdd0bbaea2c6281b1aa6eacc1aff4e8
+origin/main was an ancestor of local repair HEAD: true.
+Pre-push divergence: 1 0.
+Normal push main:main succeeded; no force push.
+Post-push fetch local HEAD == origin/main == d78fa2aa2550bb8852234cff11424159a6f9dbad; divergence 0 0; clean.
+
+N. CONTROLLED RETRY RUN ID
+Exactly one retry was dispatched in this checkpoint.
+Run ID: 34735398271
+Workflow: CampReady Phase 4B Heterogeneous Validation
+Event: workflow_dispatch
+Tested commit: d78fa2aa2550bb8852234cff11424159a6f9dbad
+Created/started: 2026-09-13T03:24:22Z
+Completed/updated: 2026-09-13T03:26:48Z
+No second retry was dispatched.
+
+O. CONTROLLED RETRY CONCLUSION
+GitHub Actions conclusion: success
+Harness run-report status: PASS
+Uncaught runtime failure: none
+
+P. HOSTED CAPTURE SUMMARY
+Persisted capture: campready-phase4b/runs/20260913T032428Z/capture.json
+Capture SHA256: 522075f0931d304c889a9a11075a272b47bb5d614d4ddd6e218d410557fcc002
+Cohort: experimental=35; supported_core=32; strict_useful=31; usace_transport_only=3.
+Network fetches=105; unique URLs=105; source request records=105.
+Supported-source capture: completed; 102/102 retrievals successful.
+Parser pipeline: completed; 0 failures among 102 successfully retrieved parseable records.
+USFS evidence: 25 recreation pages parsed; 8 alert indexes and 26 alert details parsed.
+NWS evidence: 32 point-active-alert requests parsed; all 32 supported sites have NWS parser_result=PARSED.
+Authority adapters: completed; NC State Parks produced 3 PARSED and 4 PARSED_IDENTITY_UNRESOLVED request results; NPS produced 2 NO_CURRENT_EVENT and 2 PARSED_IDENTITY_UNRESOLVED results. Identity-unresolved results remained bounded/non-fabricating.
+USACE independent transport: 3 attempted, 2 successful; every item semantic_event_count=0; failed transport did not enter semantic state.
+
+Q. EXPLICIT CANDIDATE / NOTIFICATION COUNTS
+The run report explicitly records, rather than implying from absence:
+consumer_relevant_event_count=0
+would_notify_candidate_count=0
+review_candidate_count=0
+unsafe_candidate_count=0
+real_notifications=0
+The persisted comparison explicitly contains empty review_candidates, would_notify_candidates, and unsafe_candidates arrays and baseline=true.
+
+R. PRIOR / ACCEPTED BASELINE STATE SHA
+Prior accepted state SHA256: null.
+Accepted baseline state SHA256: 26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c.
+Computed SHA256 of persisted campready-phase4b/state/current.json: 26d1ec173fcdb8e932182a7aeb8f6b237e66057c83c728ad7f02f2168728fb4c.
+state_advanced=true.
+
+S. HISTORY / STATE CONSISTENCY
+History entries after retry: 2.
+Prior failed HOLD_RUNTIME_FAILURE entry preserved: yes, exactly 1.
+Accepted PASS baseline entry: yes, exactly 1 for run 20260913T032428Z.
+Latest history object equals persisted run report: true.
+Accepted state hash equals report/history accepted_state_sha256: true.
+State cannot be ahead of history: PASS.
+Retry review-queue files: 0.
+Notification-ledger entries/files: 0; no notification ledger path was produced.
+
+T. PERSISTENCE COMMIT
+Hosted persistence commit: 64919423e7f09e348640bea179e7d91f2a77d56c
+Persistence tree: a5e8d7ad01a16280e5637107fd4e8c464c3915ce
+Authorized paths only:
+- campready-phase4b/history/history.jsonl
+- campready-phase4b/runs/20260913T032428Z/capture.json
+- campready-phase4b/runs/20260913T032428Z/comparison.json
+- campready-phase4b/runs/20260913T032428Z/run-report.json
+- campready-phase4b/state/current.json
+Local main was fast-forwarded to this remote commit. No push overwrote hosted evidence.
+
+U. SCHEDULE-DISABLED PROOF
+campready-phase4b/config.json activation.schedule_enabled=false.
+activation.hourly_cron=null.
+.github/workflows/campready-validation.yml contains workflow_dispatch and no schedule: or cron: trigger.
+
+V. VALIDATION WINDOW NOT STARTED PROOF
+activation.validation_start_utc=null.
+activation.validation_end_utc=null.
+Hosted run report explicitly records validation_start_utc=null and validation_end_utc=null.
+This work is PRE_ACTIVATION_ENGINEERING_SETUP. No prospective maintenance minutes were invented or retrospectively added.
+
+W. FINAL HEAD / ORIGIN / DIVERGENCE / CLEAN STATE
+Final content-integrity base before this evidence/accounting-only commit:
+HEAD=64919423e7f09e348640bea179e7d91f2a77d56c
+Tree=a5e8d7ad01a16280e5637107fd4e8c464c3915ce
+origin/main=64919423e7f09e348640bea179e7d91f2a77d56c
+Divergence=0 0
+Worktree=clean
+The evidence/accounting integration commit is identified as SELF in this file because a Git commit cannot contain its own SHA. Final post-push command evidence requires local HEAD == origin/main, divergence 0 0, and a clean worktree.
+Final policy gates require root README absent, schedule absent, workflow_dispatch retained, notifications disabled, and validation window null.
+
+X. EXACT FINAL DECISION
+PASS_HOSTED_BASELINE_RECOVERED
+
+Y. NEXT AUTHORIZED SCOPE
+PHASE 4B-R2 — 30-DAY WINDOW FREEZE + HOURLY SCHEDULE ACTIVATION
+R1 did not set validation_start_utc, did not set validation_end_utc, did not add cron, did not activate hourly scheduling, and did not dispatch another workflow. The first natural scheduled run remains a separate later verification.
