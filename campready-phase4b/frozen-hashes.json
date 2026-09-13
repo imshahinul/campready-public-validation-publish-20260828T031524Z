@@ -1,12 +1,12 @@
 {
   "schema_version": "campready-phase4b-frozen-hashes-v1",
   "sha256": {
-    ".github/workflows/campready-validation.yml": "41e1df58fc42c0839ccac35cb5a66144fea6cdc6b6046619ff4a9b407aba6445",
+    ".github/workflows/campready-validation.yml": "eb3323e272f0c5df0a8fed3deeead65d73010911cda615bf1cc2ce9496013f7c",
     "campready-authority-adapters/authority_adapters.py": "dccd6793c10bf2362d5ffc42bdef02a420877406cdf0ba6efa45abff191f0f45",
     "campready-authority-adapters/authority_sites.json": "a090c492e129c394cef8a2cc4a4ee6e53be6aa78b428f72ca040e62ad6d9e329",
     "campready-phase4a3/canonical_35site_mapping.json": "fe2bd73504896ffcf8030d84893c22e9d2926094f88a1859c71ab9d6b9280c0d",
     "campready-phase4b/capture.py": "53cff715bf6acf3305736fb396704ed7d3e594fc7aa157e7234b080db9357d13",
-    "campready-phase4b/config.json": "ae2588dee46f2ee5c3f8c9a697eeaa3e29fd2ec5afac23c810a50efaa32dc7f5",
+    "campready-phase4b/config.json": "e509c49a44ccdc3b65d5f54ccf3c6bb0c07d37584f93259c2e69a717015ecc88",
     "campready-phase4b/run.py": "d1825f2299aae3053011fb01b2312b809aa0f2a89e2d3fc73d3a4ddd31b97669",
     "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json": "eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590",
     "campready-prospective-validation/frozen/phase3a4_live_replay.py": "8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",

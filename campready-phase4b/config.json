@@ -2,11 +2,11 @@
   "schema_version": "campready-phase4b-config-v1",
   "phase": "4B",
   "activation": {
-    "schedule_enabled": false,
-    "validation_start_utc": null,
-    "validation_end_utc": null,
+    "schedule_enabled": true,
+    "validation_start_utc": "2026-09-13T04:00:00+00:00",
+    "validation_end_utc": "2026-10-13T04:00:00+00:00",
     "duration_days": 30,
-    "hourly_cron": null
+    "hourly_cron": "40 * * * *"
   },
   "cohort": {
     "experimental_sites": 35,
