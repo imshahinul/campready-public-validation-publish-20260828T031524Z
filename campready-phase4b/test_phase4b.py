@@ -40,6 +40,21 @@ class Phase4BTests(unittest.TestCase):
         count=0
         def fake(url,accept="x"): nonlocal count; count+=1; return {"ok":True}
         cache=capture_mod.FetchOnce(fake); cache.get("u"); cache.get("u"); self.assertEqual(count,1)
+    def test_definition_loader_does_not_execute_cli_entrypoint_without_arguments(self):
+        source = """\
+import sys
+def reusable():
+    return "loaded"
+def main():
+    return sys.argv[1]
+raise SystemExit(main())
+"""
+        with tempfile.TemporaryDirectory() as td:
+            path = Path(td) / "frozen_dependency.py"
+            path.write_text(source)
+            with patch.object(sys, "argv", ["capture.py"]):
+                loaded = capture_mod.load_module(path, "definition_loader_regression")
+            self.assertEqual(loaded.reusable(), "loaded")
     def test_validation_end_guard_zero_network(self):
         cfg=json.loads((ROOT/"campready-phase4b/config.json").read_text()); cfg["activation"]["validation_end_utc"]="2026-01-01T00:00:00+00:00"
         with tempfile.TemporaryDirectory() as td:

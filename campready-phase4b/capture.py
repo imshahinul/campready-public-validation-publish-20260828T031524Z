@@ -1,6 +1,7 @@
 """Phase 4B heterogeneous read-only capture; no notification transport exists here."""
 from __future__ import annotations
 
+import ast
 import hashlib
 import importlib.util
 import json
@@ -24,11 +25,17 @@ def canonical_hash(value: Any) -> str:
 
 def load_module(path: Path, name: str):
     spec = importlib.util.spec_from_file_location(name, path)
-    if not spec or not spec.loader:
+    if not spec:
         raise RuntimeError(f"cannot load {path}")
+    source = path.read_text(encoding="utf-8")
+    tree = ast.parse(source, filename=str(path))
+    if tree.body and isinstance(tree.body[-1], ast.Raise):
+        exc = tree.body[-1].exc
+        if isinstance(exc, ast.Call) and isinstance(exc.func, ast.Name) and exc.func.id == "SystemExit":
+            tree.body.pop()
     module = importlib.util.module_from_spec(spec)
     sys.modules[name] = module
-    spec.loader.exec_module(module)
+    exec(compile(tree, str(path), "exec"), module.__dict__)
     return module
 
 

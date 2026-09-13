@@ -5,7 +5,7 @@
     "campready-authority-adapters/authority_adapters.py": "dccd6793c10bf2362d5ffc42bdef02a420877406cdf0ba6efa45abff191f0f45",
     "campready-authority-adapters/authority_sites.json": "a090c492e129c394cef8a2cc4a4ee6e53be6aa78b428f72ca040e62ad6d9e329",
     "campready-phase4a3/canonical_35site_mapping.json": "fe2bd73504896ffcf8030d84893c22e9d2926094f88a1859c71ab9d6b9280c0d",
-    "campready-phase4b/capture.py": "3dcdffa545ea1508ed7964fec4e12d782a42ca47af5dc19233e7ee4a48f2cdb6",
+    "campready-phase4b/capture.py": "53cff715bf6acf3305736fb396704ed7d3e594fc7aa157e7234b080db9357d13",
     "campready-phase4b/config.json": "ae2588dee46f2ee5c3f8c9a697eeaa3e29fd2ec5afac23c810a50efaa32dc7f5",
     "campready-phase4b/run.py": "d1825f2299aae3053011fb01b2312b809aa0f2a89e2d3fc73d3a4ddd31b97669",
     "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json": "eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590",
