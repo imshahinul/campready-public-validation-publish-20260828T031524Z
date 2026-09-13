@@ -1,0 +1,138 @@
+CAMPREADY — PHASE 4A-2-R1
+SHARED AUTHORITY ADAPTER SEMANTIC GUARD + LIVE DEDUP HARDENING
+==========================================================================
+RUN ID: 20260913T020640Z
+
+A. BASELINE BRANCH / HEAD / TREE / CLEAN STATE
+Branch: main
+Baseline HEAD: 579695b511955e8d41bc2ffddc941ec02d36c6bd
+Baseline tree: 9e6ddd04cb1f7358f89d65a1e5de2382647808d1
+Clean worktree before editing: TRUE (git status --porcelain emitted no paths)
+Accepted predecessor commit: b222ba1326ad6a0da32ee37f255678fcac7df6eb
+Accepted predecessor tree: 23ef043639391baa8091bbaa749a1e4315bca094
+Predecessor object type: commit
+Predecessor tree verified exactly: TRUE
+git merge-base --is-ancestor predecessor HEAD: exit 0 / TRUE
+Only intervening baseline commit: 579695b Bind Phase 4A-2 evidence to foundation commit; it changed only the prior evidence attestation.
+
+B. EXACT FILES CHANGED
+Implementation commit files:
+  campready-authority-adapters/authority_adapters.py
+  campready-authority-adapters/live_validate.py
+  campready-authority-adapters/tests/test_authority_adapters.py
+Evidence attestation file:
+  audit/campready_phase4a2_r1_shared_adapter_semantic_guard_20260913T020640Z.txt
+No authority site configuration changed. No fixture-data file changed. No file outside the bounded shared-adapter implementation/tests/live reporting and this evidence file changed.
+
+C. SEMANTIC SCOPE RULE
+Generic authority-independent guard vocabulary identifies an explicitly status-bearing non-campground resource: boat ramps, marinas, beaches, picnic areas, visitor centers, trails, roads, restrooms, bathrooms, and facilities.
+When such a resource is the status target, the observation is retained only as UNKNOWN, relevant=false, campground_key=null, notifying=false, with an explicit reason: "Explicit <resource> status is outside campground operational scope."
+An explicit configured campground alias remains authoritative. A jointly scoped sentence is preserved only when an alias containing campground/camping/campsite precedes the facility resource, so "Hibernia Campground and its restrooms are closed" survives while "the boat ramp at Hibernia is closed" does not become campground CLOSED.
+Existing authority-specific authorized whole-park ACCESS_ALERT/FIRE_RESTRICTION rules remain unchanged in meaning. Retrieval/parser failures remain data-quality outcomes. No disappearance, safety, passability, reservation, or availability inference was introduced.
+
+D. DEDUP RULE
+Evidence is first bounded to operational sentence-level clauses, preventing mixed short page blocks from joining unrelated campground and facility status.
+Semantic dedup is deterministic and markup-independent. Candidates are sorted by normalized text length/content, so the shortest stable canonical excerpt wins independent of DOM order. Events collapse when signal, lifecycle, relevance, and effective dates match and normalized text is identical/contained, or when token overlap is at least 75 percent and an operational cause agrees. Materially different causes or effective dates remain separate.
+The selected canonical normalized text continues to generate the stable source_event_id and fingerprint. Tests prove repeated fetch content, repeated fragments, responsive-fragment ordering, and duplicate insertion do not synthesize new identities. Dedup changes neither lifecycle nor notification semantics.
+
+E. PROOF ZERO SITE-SPECIFIC PRODUCTION BRANCHES
+AST source scan covered every production If, IfExp, and Match node in authority_adapters.py against all seven configured campground keys, canonical names, and aliases.
+Result: site_specific_branch_count=0.
+No production conditional names a frozen campground or campground key. Configuration-driven aliases are consumed generically.
+
+F. DETERMINISTIC TEST RESULTS
+Command: python3 -m unittest discover -s campready-authority-adapters/tests -v
+Result: PASS — 26 tests, 0 failures, 0 errors.
+New deterministic coverage includes mixed campground plus boat-ramp closure; boat-ramp-only closure; restroom-only closure; explicit campground plus facility preservation; repeated identical fragments; overlapping short/long closure; DOM-order identity stability; materially different closures; Hanging Rock, Holly Point, and Hibernia preservation; irrelevant job notice; and both NPS facility-scope cases.
+Python compilation and git diff --check: PASS.
+
+G. PREDECESSOR TEST RESULTS
+All 15 predecessor tests remain present and passing within the 26-test suite: retrieval normalization; seven configured identities; closure; reopening; scheduled closure; irrelevant general park alert; ambiguous UNKNOWN/non-notifying; empty state; parser failure; HTTP failure; stable identity/fingerprint; closure precedence; reservation non-interpretation; NC operational examples; and NPS whole-park access.
+Result: PASS — no predecessor-test regression.
+
+H. LEGACY USFS/NWS SHA REGRESSION
+All frozen SHA-256 values exactly equal campready-prospective-validation/config.json:
+  mapping: eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590 MATCH
+  USFS parser: 8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c MATCH
+  relevance classifier: a7e5a73c586ba9f30314968be5c848bfb276392561dc1677e5ef62774e88568c MATCH
+  capture harness: 8374e6d8ae7606e154381518bd57534865e306ed34ac588a675eaa972b23ddb1 MATCH
+  comparator: 569f26593e082f6a0ecf7bdf1f2abd6b9dd7acf912a132330f34f1913ef8fb89 MATCH
+Frozen directory, config, prospective runner, GitHub job, and .github/workflows are unchanged from baseline. No NWS semantic code was changed. NWS semantics unchanged: TRUE.
+
+I. SEVEN-SITE BOUNDED LIVE VALIDATION
+The one-shot live validator fetched two configured official sources per site. All 14 retrievals returned HTTP 200. All seven campground pages resolved identity. Shared closure-index identity remained unresolved for Carolina Beach, Stone Mountain, and Kerr/Hibernia, exactly as a bounded identity failure rather than fabricated status.
+
+ncsp-carolina-beach | Carolina Beach State Park Campground
+  CAMPGROUND_PAGE HTTP=200 IDENTITY=true RAW=25 POST_SCOPE=0 POST_DEDUP=3 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  CONDITIONS_PAGE HTTP=200 IDENTITY=false RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  Employment/job material did not become operational evidence; emitted evidence is UNKNOWN/non-relevant/non-notifying or absent.
+
+ncsp-stone-mountain | Stone Mountain Family Campground
+  CAMPGROUND_PAGE HTTP=200 IDENTITY=true RAW=64 POST_SCOPE=0 POST_DEDUP=11 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  CONDITIONS_PAGE HTTP=200 IDENTITY=false RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  Trail/road/facility and generic informational excerpts are UNKNOWN/non-relevant; no campground event fabricated.
+
+ncsp-hanging-rock | Hanging Rock Family Campground
+  CAMPGROUND_PAGE HTTP=200 IDENTITY=true RAW=12 POST_SCOPE=1 POST_DEDUP=2 RELEVANT=CLOSED/CAMPGROUND_STATUS NOTIFYING=0
+  CONDITIONS_PAGE HTTP=200 IDENTITY=true RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  Preserved canonical event: "The Family Campground is closed for campground improvement."
+
+ncsp-falls-holly-point | Falls Lake — Holly Point Campground
+  CAMPGROUND_PAGE HTTP=200 IDENTITY=true RAW=21 POST_SCOPE=1 POST_DEDUP=6 RELEVANT=CLOSED/OTHER_OPERATIONAL_ALERT NOTIFYING=0
+  CONDITIONS_PAGE HTTP=200 IDENTITY=true RAW=3 POST_SCOPE=1 POST_DEDUP=3 RELEVANT=CLOSED/OTHER_OPERATIONAL_ALERT NOTIFYING=0
+  Preserved canonical event per source: "Falls Lake Construction Project Impacts Holly Point is currently closed for construction."
+  Bathroom/facility closure is UNKNOWN/non-relevant with explicit outside-scope reason.
+
+ncsp-kerr-hibernia | Kerr Lake — Hibernia Campground
+  CAMPGROUND_PAGE HTTP=200 IDENTITY=true RAW=35 POST_SCOPE=1 POST_DEDUP=4 RELEVANT=CLOSED/OTHER_OPERATIONAL_ALERT NOTIFYING=0
+  CONDITIONS_PAGE HTTP=200 IDENTITY=false RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  Preserved canonical event: "Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season."
+  Two boat-ramp clauses remain only UNKNOWN/non-relevant/non-notifying evidence with explicit outside-scope reason.
+
+nps-elkmont | Elkmont Campground
+  CAMPGROUND_PAGE HTTP=200 IDENTITY=true RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  CONDITIONS_PAGE HTTP=200 IDENTITY=true RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+
+nps-big-meadows | Big Meadows Campground
+  CAMPGROUND_PAGE HTTP=200 IDENTITY=true RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+  CONDITIONS_PAGE HTTP=200 IDENTITY=true RAW=0 POST_SCOPE=0 POST_DEDUP=0 OPERATIONAL_SIGNALS=none NOTIFYING=0
+
+J. BEFORE-VS-AFTER EVENT COUNTS
+Counts compare predecessor live evidence relevant observations with hardened live relevant post-scope/dedup events. Counts are per official source; materially identical events on distinct URLs retain source provenance.
+  Hanging Rock campground page: before 4 CLOSED observations; after 1 CLOSED semantic event.
+  Holly Point campground page: before 3 CLOSED observations; after 1 CLOSED semantic event.
+  Holly Point conditions page: before 1 CLOSED observation; after 1 CLOSED semantic event.
+  Hibernia campground page: before 12 CLOSED observations total (including boat-ramp contamination); after 1 campground-scoped CLOSED semantic event.
+Duplicate live closures are materially collapsed while genuine campground closures survive.
+
+K. EXPLICIT PROOF BOAT-RAMP CLOSURE IS NOT CAMPGROUND CLOSED
+Live excerpt "Most boat ramps at Kerr Lake closed due to low water levels." now emits:
+  operational_signal=UNKNOWN
+  relevant=false
+  campground_key=null
+  notifying=false
+  unknown_reason="Explicit boat ramps status is outside campground operational scope"
+Live excerpt identifying the open Kimball Point/Hibernia boat ramps has the same non-campground-scope disposition.
+Assertion scanned every Hibernia observation and proved zero relevant CLOSED observations containing "boat ramp".
+The separate August 1 Hibernia seasonal closure remains relevant CLOSED. Mixed-page gate: PASS.
+
+L. NOTIFICATION / STATE / SCHEDULE ACCOUNTING
+Observation.notifying is hard-disabled; all live observations had notifying=false. Real notifications: 0.
+authority_sites.json notification_policy: disabled.
+config policy send_real_notifications: false.
+Prospective-state writes: 0. No prospective runner or state command executed. Temporary live output only supported this audit and is not an intended upload.
+Monitoring/scheduling changes: 0. github_schedule_enabled remains false. Workflow unchanged. GitHub dispatches: 0.
+USACE changes: 0; no tracked USACE implementation path exists. USFS changes: 0. NWS changes: 0.
+Reservation monitoring, trails, boat-ramp monitoring, route monitoring, AQI, event-class expansion, notifications, and Phase 4A-3 work: 0.
+
+M. FINAL COMMIT / TREE SHA
+Bounded semantic-hardening implementation commit: cbc9fd2927b31e04a9a8e95564d309f112b9a09e
+Bounded semantic-hardening implementation tree: 992ecb371463698ddd3c18a89ad8c9d92ab19fc4
+This evidence attestation is committed separately because a commit cannot embed its own content-derived SHA. Final evidence-attestation commit/tree and clean-state proof are recorded in the completion record produced after this file is committed.
+
+N. EXACT FINAL DECISION
+PASS_SHARED_ADAPTER_SEMANTIC_GUARD
+
+O. NEXT AUTHORIZED SCOPE
+Phase 4A-3 — Canonical 35-Site Mapping + Final Prospective-Run Readiness Freeze
+Phase 4A-3 and the 30-day run were not started.
