@@ -1,4 +1,4 @@
-name: CampReady Prospective Validation
+name: CampReady Phase 4B Heterogeneous Validation
 
 on:
   workflow_dispatch:
@@ -29,14 +29,14 @@ jobs:
         run: |
           set +e
 
-          history="campready-prospective-validation/history.jsonl"
+          history="campready-phase4b/history/history.jsonl"
           before_count=0
 
           if [ -f "$history" ]; then
             before_count="$(grep -cve '^[[:space:]]*$' "$history" || true)"
           fi
 
-          python3 campready-prospective-validation/github_job.py
+          python3 campready-phase4b/run.py
           rc=$?
 
           after_count=0
@@ -69,8 +69,7 @@ jobs:
               ;;
             *)
               git restore --worktree --source=HEAD -- \
-                campready-prospective-validation/state/current-state.json \
-                campready-prospective-validation/state/current-capture-report.json
+                campready-phase4b/state/current.json
               ;;
           esac
 
@@ -78,16 +77,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A \
-            campready-prospective-validation/state \
-            campready-prospective-validation/runs \
-            campready-prospective-validation/history.jsonl
+            campready-phase4b/state \
+            campready-phase4b/runs \
+            campready-phase4b/history/history.jsonl
 
-          if [ -d campready-prospective-validation/review-queue ]; then
-            git add -A campready-prospective-validation/review-queue
-          fi
-
-          if [ -f campready-prospective-validation/validation-complete.json ]; then
-            git add campready-prospective-validation/validation-complete.json
+          if [ -d campready-phase4b/review-queue ]; then
+            git add -A campready-phase4b/review-queue
           fi
 
           if [ -n "$(git status --porcelain)" ]; then
@@ -113,7 +108,7 @@ jobs:
           from pathlib import Path
 
           history = Path(
-              "campready-prospective-validation/history.jsonl"
+              "campready-phase4b/history/history.jsonl"
           )
 
           try:
@@ -298,4 +293,3 @@ jobs:
               "workflow outcome; evidence was persisted."
           )
           PYCLASSIFY
-

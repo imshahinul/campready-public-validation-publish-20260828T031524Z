@@ -1,0 +1,73 @@
+{
+  "schema_version": "campready-phase4b-config-v1",
+  "phase": "4B",
+  "activation": {
+    "schedule_enabled": false,
+    "validation_start_utc": null,
+    "validation_end_utc": null,
+    "duration_days": 30,
+    "hourly_cron": null
+  },
+  "cohort": {
+    "experimental_sites": 35,
+    "supported_semantic_core": 32,
+    "strict_useful_sites": 31,
+    "usace_transport_only_sites": 3
+  },
+  "frozen_metrics": {
+    "supported_core_dlr": "32 / 5 = 6.40",
+    "gross_experimental_dlr": "35 / 6 = 5.83",
+    "supported_core_scr": "32 / 4 = 8.00",
+    "gross_scr": "35 / 5 = 7.00",
+    "authority_adapter_leverage": "32 / 3 = 10.67",
+    "strict_useful_coverage": "31 / 35 = 88.57%"
+  },
+  "targets": {
+    "supported_source_retrieval_reliability_minimum": 0.95,
+    "parser_failure_rate_maximum_exclusive": 0.05,
+    "strict_useful_coverage_minimum": 0.8,
+    "unsafe_candidate_count": 0,
+    "real_notification_count": 0,
+    "preferred_human_maintenance_hours_per_week_maximum_exclusive": 2
+  },
+  "policy": {
+    "send_real_notifications": false,
+    "review_only": true,
+    "first_observation_is_zero_notify_baseline": true,
+    "unknown_is_non_notifying": true,
+    "retrieval_or_parser_failure_is_not_semantic_change": true,
+    "disappearance_is_not_resolution": true,
+    "scheduled_is_not_current": true,
+    "explicit_official_evidence_required_for_lift": true,
+    "source_conflicts_preserved": true,
+    "site_specific_source_rescue": false,
+    "usace_semantic_support": false
+  },
+  "paths": {
+    "mapping": "campready-phase4a3/canonical_35site_mapping.json",
+    "usfs_parser": "campready-prospective-validation/frozen/phase3a4_live_replay.py",
+    "usfs_classifier": "campready-prospective-validation/frozen/phase3a4_r3_replay.py",
+    "legacy_capture": "campready-prospective-validation/frozen/phase3b3_live_baseline.py",
+    "authority_adapters": "campready-authority-adapters/authority_adapters.py",
+    "authority_sites": "campready-authority-adapters/authority_sites.json",
+    "capture": "campready-phase4b/capture.py",
+    "runner": "campready-phase4b/run.py",
+    "workflow": ".github/workflows/campready-validation.yml",
+    "hash_manifest": "campready-phase4b/frozen-hashes.json",
+    "state": "campready-phase4b/state/current.json",
+    "history": "campready-phase4b/history/history.jsonl",
+    "runs": "campready-phase4b/runs",
+    "review_queue": "campready-phase4b/review-queue"
+  },
+  "reliability_denominators": {
+    "supported_core": "successful supported semantic source retrievals / attempted supported semantic source retrievals",
+    "parser_failure": "parser failures / successfully retrieved parseable supported sources",
+    "usace_transport": "successful USACE transport checks / attempted USACE transport checks",
+    "workflow_execution": "actual scheduled workflow executions / expected scheduled slots"
+  },
+  "maintenance_policy": {
+    "minutes_are_explicit_human_input_only": true,
+    "zero_maintenance_attestation_supported": true,
+    "alert_leverage_zero_hours": "UNDEFINED/INFINITE-NOT-INTERPRETED"
+  }
+}
