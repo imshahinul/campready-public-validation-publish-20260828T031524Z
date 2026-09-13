@@ -1,0 +1,129 @@
+CAMPREADY PHASE 4A-2 — SHARED AUTHORITY ADAPTER FOUNDATION
+==========================================================================
+RUN ID: 20260913T015448Z
+
+A. BASELINE
+BRANCH: main
+HEAD: 0322cdb27c23a04d8ea281e8d79f8b104ea0c31c
+TREE SHA: 36f7a7c708f80024cd2fb0633289bc130ee9f184
+CLEAN STATUS BEFORE EDITING: TRUE
+NOTE: workspace root is not a Git repository; canonical implementation repository is campready-public-validation-publish-20260828T031524Z.
+
+B. FILES CHANGED
+campready-authority-adapters/authority_adapters.py
+campready-authority-adapters/authority_sites.json
+campready-authority-adapters/live_validate.py
+campready-authority-adapters/build_evidence.py
+campready-authority-adapters/tests/fixtures/authority_cases.json
+campready-authority-adapters/tests/test_authority_adapters.py
+audit/campready_phase4a2_shared_authority_adapter_foundation_20260913T015448Z.txt
+
+C. ARCHITECTURE / INTERFACE SUMMARY
+One SharedAuthorityAdapter contract normalizes retrieval separately from parsing and emits immutable Observation records. NCStateParksAdapter and NPSAdapter override only authority-level deterministic relevance. All observations retain authority, URL/role, keys, stable ID/fingerprint, text, checked time, dates, lifecycle/signal/class, excerpt provenance, parser version, confidence, and explicit UNKNOWN reason.
+
+D. NC STATE PARKS CONFIGURATION
+{"aliases": ["Carolina Beach State Park Campground", "Carolina Beach", "family campground"], "authority_family": "NC_STATE_PARKS", "campground_key": "ncsp-carolina-beach", "campground_name": "Carolina Beach State Park Campground", "campground_url": "https://www.ncparks.gov/state-parks/carolina-beach-state-park/camping", "conditions_url": "https://www.ncparks.gov/blog-category/closures", "park_aliases": ["Carolina Beach State Park"], "park_key": "carolina-beach-state-park", "park_name": "Carolina Beach State Park"}
+{"aliases": ["Stone Mountain Family Campground", "family campground"], "authority_family": "NC_STATE_PARKS", "campground_key": "ncsp-stone-mountain", "campground_name": "Stone Mountain Family Campground", "campground_url": "https://www.ncparks.gov/state-parks/stone-mountain-state-park/camping", "conditions_url": "https://www.ncparks.gov/blog-category/closures", "park_aliases": ["Stone Mountain State Park", "Stone Mountain"], "park_key": "stone-mountain-state-park", "park_name": "Stone Mountain State Park"}
+{"aliases": ["Hanging Rock Family Campground", "family campground"], "authority_family": "NC_STATE_PARKS", "campground_key": "ncsp-hanging-rock", "campground_name": "Hanging Rock Family Campground", "campground_url": "https://www.ncparks.gov/state-parks/hanging-rock-state-park/camping-hanging-rock", "conditions_url": "https://www.ncparks.gov/blog-category/closures", "park_aliases": ["Hanging Rock State Park", "Hanging Rock"], "park_key": "hanging-rock-state-park", "park_name": "Hanging Rock State Park"}
+{"aliases": ["Holly Point Campground", "Holly Point"], "authority_family": "NC_STATE_PARKS", "campground_key": "ncsp-falls-holly-point", "campground_name": "Falls Lake \u2014 Holly Point Campground", "campground_url": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/camping-falls-lake", "conditions_url": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/news/campground-closures", "park_aliases": ["Falls Lake State Recreation Area", "Falls Lake"], "park_key": "falls-lake-state-recreation-area", "park_name": "Falls Lake State Recreation Area"}
+{"aliases": ["Hibernia Campground", "Hibernia recreation area", "Hibernia"], "authority_family": "NC_STATE_PARKS", "campground_key": "ncsp-kerr-hibernia", "campground_name": "Kerr Lake \u2014 Hibernia Campground", "campground_url": "https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area/camping-kerr-lake", "conditions_url": "https://www.ncparks.gov/blog-category/closures", "park_aliases": ["Kerr Lake State Recreation Area", "Kerr Lake"], "park_key": "kerr-lake-state-recreation-area", "park_name": "Kerr Lake State Recreation Area"}
+
+E. NPS CONFIGURATION
+{"aliases": ["Elkmont Campground", "Elkmont"], "authority_family": "NPS", "campground_key": "nps-elkmont", "campground_name": "Elkmont Campground", "campground_url": "https://www.nps.gov/grsm/planyourvisit/elkmont-campground.htm", "conditions_url": "https://www.nps.gov/grsm/planyourvisit/conditions.htm", "park_aliases": ["Great Smoky Mountains National Park", "Great Smoky Mountains", "park-wide", "all park areas"], "park_code": "grsm", "park_key": "grsm", "park_name": "Great Smoky Mountains National Park"}
+{"aliases": ["Big Meadows Campground", "Big Meadows"], "authority_family": "NPS", "campground_key": "nps-big-meadows", "campground_name": "Big Meadows Campground", "campground_url": "https://www.nps.gov/shen/planyourvisit/big-meadows-campground.htm", "conditions_url": "https://www.nps.gov/shen/planyourvisit/conditions.htm", "park_aliases": ["Shenandoah National Park", "park-wide", "all park areas"], "park_code": "shen", "park_key": "shen", "park_name": "Shenandoah National Park"}
+
+F. ZERO CAMPGROUND-SPECIFIC PARSER BRANCHES
+STATIC SCAN: PASS — no parser conditional names any frozen campground; all aliases, keys, URLs, and park mappings are data.
+SITE-SPECIFIC PARSER BRANCH COUNT: 0
+
+G. FIXTURE TEST RESULTS
+python3 -m unittest discover -s campready-authority-adapters/tests -v
+RESULT: PASS — 15 tests, 0 failures, 0 errors.
+Covered retrieval normalization, 7/7 identity mapping, closure, reopening, scheduled closure, irrelevant park alert, ambiguous UNKNOWN/non-notifying, empty state, parser and HTTP failures, stable identity/fingerprint, closure precedence, no reservation interpretation, NC construction/prescribed-burn examples, and NPS whole-park access relevance.
+
+H. LEGACY USFS/NWS REGRESSION RESULTS
+RESULT: PASS — frozen mapping, USFS parser, relevance classifier, capture harness, and comparator SHA-256 values all exactly match config.json. No frozen file, NWS semantic file, workflow, or existing configuration changed.
+
+I. BOUNDED LIVE VALIDATION — ALL SEVEN SITES
+SITE: ncsp-carolina-beach | Carolina Beach State Park Campground | NC_STATE_PARKS
+  ROLE=CAMPGROUND_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/state-parks/carolina-beach-state-park/camping PARSER=PARSED IDENTITY=True RELEVANT_SIGNALS=['UNKNOWN'] EXCEPTION_NEEDED=False
+    UNKNOWN | UNKNOWN | Now hiring: Carolina Beach is currently accepting applications for a Marina Clerk. For more information on the positions and how to apply, please visit our Jobs page.
+  ROLE=CONDITIONS_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/blog-category/closures PARSER=PARSED_IDENTITY_UNRESOLVED IDENTITY=False RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+SITE: ncsp-stone-mountain | Stone Mountain Family Campground | NC_STATE_PARKS
+  ROLE=CAMPGROUND_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/state-parks/stone-mountain-state-park/camping PARSER=PARSED IDENTITY=True RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+  ROLE=CONDITIONS_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/blog-category/closures PARSER=PARSED_IDENTITY_UNRESOLVED IDENTITY=False RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+SITE: ncsp-hanging-rock | Hanging Rock Family Campground | NC_STATE_PARKS
+  ROLE=CAMPGROUND_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/state-parks/hanging-rock-state-park/camping-hanging-rock PARSER=PARSED IDENTITY=True RELEVANT_SIGNALS=['CLOSED'] EXCEPTION_NEEDED=False
+    CLOSED | CAMPGROUND_STATUS | Skip to main content The Family Campground is closed for campground improvement.
+    CLOSED | CAMPGROUND_STATUS | The Family Campground is closed for campground improvement.
+    CLOSED | CAMPGROUND_STATUS | The Family Campground is closed for campground improvement. The Family Campground will be closed for approximately 10-12 months for the construction of two new shower house facilities and campsite improvement.
+    CLOSED | CAMPGROUND_STATUS | The Family Campground will be closed for approximately 10-12 months for the construction of two new shower house facilities and campsite improvement.
+  ROLE=CONDITIONS_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/blog-category/closures PARSER=NO_CURRENT_EVENT IDENTITY=True RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+SITE: ncsp-falls-holly-point | Falls Lake — Holly Point Campground | NC_STATE_PARKS
+  ROLE=CAMPGROUND_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/camping-falls-lake PARSER=PARSED IDENTITY=True RELEVANT_SIGNALS=['CLOSED'] EXCEPTION_NEEDED=False
+    CLOSED | OTHER_OPERATIONAL_ALERT | Falls Lake Construction Project Impacts Holly Point is currently closed for construction. All other areas are open as normal. Some bathrooms/facilities are closed in some areas; portable toilets are available. Please see our blog for more information.
+    CLOSED | OTHER_OPERATIONAL_ALERT | Skip to main content Falls Lake Construction Project Impacts Holly Point is currently closed for construction.
+    CLOSED | OTHER_OPERATIONAL_ALERT | Falls Lake Construction Project Impacts Holly Point is currently closed for construction. All other areas are open as normal. Some bathrooms/facilities are closed in some areas; portable toilets are available. Please see our blog for more information. Now hiring: Falls Lake is currently accepting applications for General Utility Workers. For more information on the positions and how to apply, please visit our Jobs page. Previous Pause Play Next
+  ROLE=CONDITIONS_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/news/campground-closures PARSER=PARSED IDENTITY=True RELEVANT_SIGNALS=['CLOSED'] EXCEPTION_NEEDED=False
+    CLOSED | OTHER_OPERATIONAL_ALERT | Falls Lake Construction Project Impacts Holly Point is currently closed for construction. All other areas are open as normal. Some bathrooms/facilities are closed in some areas; portable toilets are available. Please see our blog for more information.
+SITE: ncsp-kerr-hibernia | Kerr Lake — Hibernia Campground | NC_STATE_PARKS
+  ROLE=CAMPGROUND_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area/camping-kerr-lake PARSER=PARSED IDENTITY=True RELEVANT_SIGNALS=['CLOSED'] EXCEPTION_NEEDED=False
+    CLOSED | CAMPGROUND_STATUS | *Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season to improve campgrounds and restrooms. Area 1 - Electric/RV Hookup and Non-electric 70 sites total Shower house Bathroom Book Now Area 2 - Electric/RV Hookup 32 sites total 2 double sites 1 campground host site Shower house Book Now Area 3 - Non-electric 37 sites Shower house Book Now
+    CLOSED | CAMPGROUND_STATUS | *Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season to improve campgrounds and restrooms. Area 1 - Electric/RV Hookup 32 sites total 1 campground host site 1 double site Shower house Book Now Area 3 - Electric/RV Hook-up and Non-electric 37 sites total 1 campground host site Shower house Playground Book Now Area 4 - Non-electric 12 sites total Bathroom Book Now
+    CLOSED | CAMPGROUND_STATUS | Area 1 - Electric/RV Hookup and Non-electric 70 sites total Shower house Bathroom Book Now Area 2 - Electric/RV Hookup 32 sites total 2 double sites 1 campground host site Shower house Book Now Area 3 - Non-electric 37 sites Shower house Book Now JC Cooper* *Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season to improve campgrounds and restrooms.
+    CLOSED | CAMPGROUND_STATUS | Area 1 - Electric/RV Hookup and Non-electric 65 sites total 2 campground host sites 1 double site Shower house Bathroom Playground Book Now Area 2 - Electric/RV Hookup and Non-electric 30 sites total Book Now Area 3 - Non-electric 12 sites total Shower house Book Now Group Site 10 person minimum 100 person maximum Kimball Point Area 1 - Electric/RV Hookup and Non-electric 35 sites total 1 campground host site 2 double sites Shower house Bathroom Book Now Area 2 - Electric/RV Hookup 39 sites tota
+    CLOSED | CAMPGROUND_STATUS | Bullocksville Electric/RV Hookup and Non-electric 59 sites total 1 campground host site 2 double sites 2 shower houses Bathroom Book Now County Line Electric/RV Hookup and Non-electric 55 sites total 1 campground host site 5 double sites 1 shower house 2 bathrooms Playground Book Now Henderson Area 1 - Non-electric 32 sites total 1 group site 2 campground host sites 2 double sites Shower house Book Now Area 2 - Electric/RV Hookups 43 sites total 3 campground host sites 3 double sites Shower hous
+    CLOSED | CAMPGROUND_STATUS | Tab/Accordion Items Bullocksville Electric/RV Hookup and Non-electric 59 sites total 1 campground host site 2 double sites 2 shower houses Bathroom Book Now County Line Electric/RV Hookup and Non-electric 55 sites total 1 campground host site 5 double sites 1 shower house 2 bathrooms Playground Book Now Henderson Area 1 - Non-electric 32 sites total 1 group site 2 campground host sites 2 double sites Shower house Book Now Area 2 - Electric/RV Hookups 43 sites total 3 campground host sites 3 doub
+    CLOSED | CAMPGROUND_STATUS | *Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season to improve campgrounds and restrooms. Area 1 - Electric/RV Hookup and Non-electric 65 sites total 2 campground host sites 1 double site Shower house Bathroom Playground Book Now Area 2 - Electric/RV Hookup and Non-electric 30 sites total Book Now Area 3 - Non-electric 12 sites total Shower house Book Now Group Site 10 person minimum 100 person maximum
+    CLOSED | OTHER_OPERATIONAL_ALERT | Kerr Lake SRA will have ongoing extensive construction to improve campgrounds and restrooms. Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season. Feel free to email the park with any questions you may have.
+    CLOSED | OTHER_OPERATIONAL_ALERT | Most boat ramps at Kerr Lake closed due to low water levels. Our boat ramp at Kimball Point and the NC Wildlife boat ramp at Hibernia are the only boat ramps open at Kerr Lake on the North Carolina side.
+    CLOSED | OTHER_OPERATIONAL_ALERT | Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season.
+    CLOSED | OTHER_OPERATIONAL_ALERT | Most boat ramps at Kerr Lake closed due to low water levels. Our boat ramp at Kimball Point and the NC Wildlife boat ramp at Hibernia are the only boat ramps open at Kerr Lake on the North Carolina side. Kerr Lake SRA will have ongoing extensive construction to improve campgrounds and restrooms. Beginning August 1, 2026, JC Cooper, Nutbush Area 1(North), Nutbush Area 3&4(South) and Hibernia will be closed for the season. Feel free to email the park with any questions you may have. Previous Pause
+    CLOSED | CAMPGROUND_STATUS | Bullocksville County Line Henderson Hibernia* JC Cooper* Kimball Point Nutbush* Tab/Accordion Items Bullocksville Electric/RV Hookup and Non-electric 59 sites total 1 campground host site 2 double sites 2 shower houses Bathroom Book Now County Line Electric/RV Hookup and Non-electric 55 sites total 1 campground host site 5 double sites 1 shower house 2 bathrooms Playground Book Now Henderson Area 1 - Non-electric 32 sites total 1 group site 2 campground host sites 2 double sites Shower house Boo
+  ROLE=CONDITIONS_PAGE HTTP=200 FINAL_URL=https://www.ncparks.gov/blog-category/closures PARSER=PARSED_IDENTITY_UNRESOLVED IDENTITY=False RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+SITE: nps-elkmont | Elkmont Campground | NPS
+  ROLE=CAMPGROUND_PAGE HTTP=200 FINAL_URL=https://www.nps.gov/grsm/planyourvisit/elkmont-campground.htm PARSER=NO_CURRENT_EVENT IDENTITY=True RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+  ROLE=CONDITIONS_PAGE HTTP=200 FINAL_URL=https://www.nps.gov/grsm/planyourvisit/conditions.htm PARSER=NO_CURRENT_EVENT IDENTITY=True RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+SITE: nps-big-meadows | Big Meadows Campground | NPS
+  ROLE=CAMPGROUND_PAGE HTTP=200 FINAL_URL=https://www.nps.gov/shen/planyourvisit/big-meadows-campground.htm PARSER=NO_CURRENT_EVENT IDENTITY=True RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+  ROLE=CONDITIONS_PAGE HTTP=200 FINAL_URL=https://www.nps.gov/shen/planyourvisit/conditions.htm PARSER=NO_CURRENT_EVENT IDENTITY=True RELEVANT_SIGNALS=['NONE'] EXCEPTION_NEEDED=False
+
+J. PER-SITE CLASSIFICATION
+ncsp-carolina-beach: LIVE_PATH_PARSED / UNKNOWN evidence only; no unsafe OPEN inference
+ncsp-stone-mountain: LIVE_PATH_PARSED / no deterministically current campground event
+ncsp-hanging-rock: LIVE_PATH_PARSED / campground closure evidence preserved
+ncsp-falls-holly-point: LIVE_PATH_PARSED / explicit construction closure preserved
+ncsp-kerr-hibernia: LIVE_PATH_PARSED / explicit seasonal construction closure preserved
+nps-elkmont: LIVE_PATH_PARSED / no current deterministic campground event
+nps-big-meadows: LIVE_PATH_PARSED / no current deterministic campground event
+
+K. PARSER / SOURCE FAILURES
+No HTTP or parser failure for any campground page. Shared NC closure index did not resolve three park identities and is retained as PARSED_IDENTITY_UNRESOLVED rather than operational evidence; site campground pages still satisfy 5/5 identity and 5/5 live parse gates. No outage. No workaround added.
+
+L. CONFIGURATION-VERSUS-ENGINEERING METRICS
+NC STATE PARKS: 5 sites / 1 authority adapter; 4 sites added by configuration after first site.
+NPS: 2 sites / 1 authority adapter; 1 site added by configuration after first site.
+PRODUCTION AUTHORITY PARSER IMPLEMENTATIONS ADDED: 2
+SHARED CONTRACT IMPLEMENTATIONS: 1 base contract + 2 authority relevance policies
+SITE-SPECIFIC BRANCHES: 0
+RESULTING LEVERAGE: 7 sites / 2 authority adapters = 3.5 sites per adapter.
+
+M. MUTATION / SAFETY ACCOUNTING
+Real notifications: 0; notification eligibility emitted by adapters: always false.
+Prospective state writes: 0. Monitoring/scheduling/workflow changes: 0. GitHub dispatches: 0.
+USACE/AQI/routes/trails/wildfire modeling/social media/Recreation.gov availability implementations: 0.
+USFS/NWS semantic changes: 0. Campground-specific parsers: 0.
+Disappearance-as-resolution: prohibited. Retrieval/parser failure-as-status: prohibited. Safety/passability claims: none.
+Correct Hurricane Creek identity remains site_id 71807 / 35.055139234541436,-83.51003863980785 / managing_org 081111 / CWA GSP; incorrect 33555 is absent from implementation.
+
+N. COMMIT / TREE
+FINAL COMMIT SHA: PENDING FINAL COMMIT (the commit cannot contain its own SHA without self-reference)
+FINAL TREE SHA: PENDING FINAL COMMIT
+
+O. EXACT FINAL DECISION
+PASS_SHARED_ADAPTER_FOUNDATION
+
+P. NEXT AUTHORIZED SCOPE
+Phase 4A-3 — Canonical 35-Site Mapping + Final Prospective-Run Readiness Freeze. Do not start the 30-day monitoring run automatically.
+
+LIVE VALIDATION PAYLOAD SHA256: 40d0c38934d4db3a5baf2ca2638c46381d4c431d1e84ea550cc7d8aeeb6ea364

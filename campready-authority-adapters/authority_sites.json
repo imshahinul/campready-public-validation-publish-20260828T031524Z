@@ -1,0 +1,85 @@
+{
+  "schema_version": "campready-authority-sites-v1",
+  "notification_policy": "disabled",
+  "sites": [
+    {
+      "authority_family": "NC_STATE_PARKS",
+      "campground_key": "ncsp-carolina-beach",
+      "park_key": "carolina-beach-state-park",
+      "park_name": "Carolina Beach State Park",
+      "campground_name": "Carolina Beach State Park Campground",
+      "aliases": ["Carolina Beach State Park Campground", "Carolina Beach", "family campground"],
+      "park_aliases": ["Carolina Beach State Park"],
+      "campground_url": "https://www.ncparks.gov/state-parks/carolina-beach-state-park/camping",
+      "conditions_url": "https://www.ncparks.gov/blog-category/closures"
+    },
+    {
+      "authority_family": "NC_STATE_PARKS",
+      "campground_key": "ncsp-stone-mountain",
+      "park_key": "stone-mountain-state-park",
+      "park_name": "Stone Mountain State Park",
+      "campground_name": "Stone Mountain Family Campground",
+      "aliases": ["Stone Mountain Family Campground", "family campground"],
+      "park_aliases": ["Stone Mountain State Park", "Stone Mountain"],
+      "campground_url": "https://www.ncparks.gov/state-parks/stone-mountain-state-park/camping",
+      "conditions_url": "https://www.ncparks.gov/blog-category/closures"
+    },
+    {
+      "authority_family": "NC_STATE_PARKS",
+      "campground_key": "ncsp-hanging-rock",
+      "park_key": "hanging-rock-state-park",
+      "park_name": "Hanging Rock State Park",
+      "campground_name": "Hanging Rock Family Campground",
+      "aliases": ["Hanging Rock Family Campground", "family campground"],
+      "park_aliases": ["Hanging Rock State Park", "Hanging Rock"],
+      "campground_url": "https://www.ncparks.gov/state-parks/hanging-rock-state-park/camping-hanging-rock",
+      "conditions_url": "https://www.ncparks.gov/blog-category/closures"
+    },
+    {
+      "authority_family": "NC_STATE_PARKS",
+      "campground_key": "ncsp-falls-holly-point",
+      "park_key": "falls-lake-state-recreation-area",
+      "park_name": "Falls Lake State Recreation Area",
+      "campground_name": "Falls Lake — Holly Point Campground",
+      "aliases": ["Holly Point Campground", "Holly Point"],
+      "park_aliases": ["Falls Lake State Recreation Area", "Falls Lake"],
+      "campground_url": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/camping-falls-lake",
+      "conditions_url": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/news/campground-closures"
+    },
+    {
+      "authority_family": "NC_STATE_PARKS",
+      "campground_key": "ncsp-kerr-hibernia",
+      "park_key": "kerr-lake-state-recreation-area",
+      "park_name": "Kerr Lake State Recreation Area",
+      "campground_name": "Kerr Lake — Hibernia Campground",
+      "aliases": ["Hibernia Campground", "Hibernia recreation area", "Hibernia"],
+      "park_aliases": ["Kerr Lake State Recreation Area", "Kerr Lake"],
+      "campground_url": "https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area/camping-kerr-lake",
+      "conditions_url": "https://www.ncparks.gov/blog-category/closures"
+    },
+    {
+      "authority_family": "NPS",
+      "campground_key": "nps-elkmont",
+      "park_key": "grsm",
+      "park_code": "grsm",
+      "park_name": "Great Smoky Mountains National Park",
+      "campground_name": "Elkmont Campground",
+      "aliases": ["Elkmont Campground", "Elkmont"],
+      "park_aliases": ["Great Smoky Mountains National Park", "Great Smoky Mountains", "park-wide", "all park areas"],
+      "campground_url": "https://www.nps.gov/grsm/planyourvisit/elkmont-campground.htm",
+      "conditions_url": "https://www.nps.gov/grsm/planyourvisit/conditions.htm"
+    },
+    {
+      "authority_family": "NPS",
+      "campground_key": "nps-big-meadows",
+      "park_key": "shen",
+      "park_code": "shen",
+      "park_name": "Shenandoah National Park",
+      "campground_name": "Big Meadows Campground",
+      "aliases": ["Big Meadows Campground", "Big Meadows"],
+      "park_aliases": ["Shenandoah National Park", "park-wide", "all park areas"],
+      "campground_url": "https://www.nps.gov/shen/planyourvisit/big-meadows-campground.htm",
+      "conditions_url": "https://www.nps.gov/shen/planyourvisit/conditions.htm"
+    }
+  ]
+}

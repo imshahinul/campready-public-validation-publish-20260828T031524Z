@@ -1,0 +1,12 @@
+{
+  "closure": "Elkmont Campground is closed due to construction.",
+  "reopening": "Holly Point Campground reopened after repairs.",
+  "scheduled": "Big Meadows Campground will be closed from January 10, 2099 through January 20, 2099.",
+  "general_unmapped": "A trail on the north side of Shenandoah National Park is closed.",
+  "ambiguous": "Visitors should use caution because conditions may change.",
+  "specific_over_generic": "Elkmont Campground is closed due to flooding. The park visitor center is open.",
+  "reservation": "Big Meadows Campground reservations are available and campsites may be booked online.",
+  "nc_burn": "Hanging Rock Family Campground access is closed during a prescribed burn.",
+  "nc_construction": "Hibernia Campground is closed for construction.",
+  "whole_park_access": "Great Smoky Mountains National Park: all park areas and all entrances are closed."
+}
