@@ -1,0 +1,150 @@
+CAMPREADY PHASE 4A-3 — CANONICAL 35-SITE PROSPECTIVE READINESS FREEZE
+===============================================================================
+RUN ID: 20260913T022954Z
+
+A. PREFLIGHT BRANCH / HEAD / TREE / ORIGIN / CLEAN STATE
+----------------------------------------------------------
+BRANCH: main
+PREFLIGHT HEAD: f8967253a6983b04755a8757e3d4e43ebf39e906
+PREFLIGHT TREE: 7adf5f1b0f6371a5fc1fbcaf9be649169ef6d119
+PREFLIGHT ORIGIN/MAIN: 0322cdb27c23a04d8ea281e8d79f8b104ea0c31c
+PREFLIGHT DIVERGENCE (origin/main...HEAD): 0 4
+PREFLIGHT CLEAN WORKTREE: PASS
+
+B. PREDECESSOR COMMIT VERIFICATION
+----------------------------------
+ACCEPTED COMMIT: cbc9fd2927b31e04a9a8e95564d309f112b9a09e
+MERGE-BASE ANCESTOR CHECK: PASS
+
+C. FILES CHANGED
+----------------
+- audit/campready_phase4a2_r1_shared_adapter_semantic_guard_20260913T020640Z.txt
+- audit/campready_phase4a2_shared_authority_adapter_foundation_20260913T015448Z.txt
+- campready-authority-adapters/authority_adapters.py
+- campready-authority-adapters/authority_sites.json
+- campready-authority-adapters/build_evidence.py
+- campready-authority-adapters/live_validate.py
+- campready-authority-adapters/tests/fixtures/authority_cases.json
+- campready-authority-adapters/tests/test_authority_adapters.py
+- campready-prospective-validation/config.json
+
+D. COMPLETE CANONICAL 35-SITE MAPPING SUMMARY
+----------------------------------------------
+MAPPING: campready-phase4a3/canonical_35site_mapping.json
+MAPPING SHA-256: fe2bd73504896ffcf8030d84893c22e9d2926094f88a1859c71ab9d6b9280c0d
+01. andrews-cove | Andrews Cove Campground | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10487 | 34.77777778,-83.73666667 | NWS=FFC/GAZ016/GAC311/GAZ016 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+02. low-gap | Low Gap Campground | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10491 | 34.75111111,-83.78333333 | NWS=FFC/GAZ016/GAC311/GAZ016 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+03. upper-chattahoochee | Upper Chattahoochee River Campground | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10501 | 34.78694,-83.78287 | NWS=FFC/GAZ016/GAC311/GAZ016 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+04. sarahs-creek | Sarah's Creek Campground | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10497 | 34.92833333,-83.26416667 | NWS=GSP/GAZ010/GAC241/GAZ010 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+05. tate-branch | Tate Branch Campground | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10500 | 34.95444444,-83.5525 | NWS=FFC/GAZ009/GAC281/GAZ009 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+06. lake-russell | Lake Russell Recreation Area Campground | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=84393 | 34.4925,-83.50083333 | NWS=GSP/GAZ017/GAC137/GAZ017 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+07. lake-rabun | Lake Rabun Beach Recreation Area | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10488 | 34.7575,-83.47666667 | NWS=GSP/GAZ010/GAC241/GAZ010 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+08. willis-knob | Willis Knob Horse Camp | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10506 | 34.90027778,-83.2225 | NWS=GSP/GAZ010/GAC241/GAZ010 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+09. wildcat-1 | Wildcat Creek Campground #1 Lower | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10503 | 34.8275,-83.61888889 | NWS=GSP/GAZ010/GAC241/GAZ010 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+10. wildcat-2 | Wildcat Creek Campground #2 Upper | GA | USFS_ORIGINAL_GEORGIA | CONFIG_ONLY | USFS_RECAREA_ID=10504 | 34.83222222,-83.62611111 | NWS=GSP/GAZ010/GAC241/GAZ010 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+11. nc-north-mills-river | North Mills River Campground | NC | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=70715 | 35.40763785194335,-82.64453978597471 | NWS=GSP/NCZ065/NCC089/NCZ065 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+12. nc-van-hook-glade | Van Hook Glade Campground | NC | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=70521 | 35.07781941962203,-83.24275127287943 | NWS=GSP/NCZ062/NCC113/NCZ062 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+13. nc-hurricane-creek | Hurricane Creek Horse & Primitive Camp | NC | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=71807 | 35.055139234541436,-83.51003863980785 | NWS=GSP/NCZ062/NCC113/NCZ062 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+14. sc-burrells-ford | Burrell's Ford Campground | SC | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=22577 | 34.969011731480045,-83.11813693019847 | NWS=GSP/SCZ101/SCC073/SCZ101 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+15. sc-brick-house | Brick House Campground | SC | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=22527 | 34.4483552228186,-81.70729094668407 | NWS=CAE/SCZ020/SCC071/SCZ020 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+16. al-payne-lake | Payne Lake Recreation Area | AL | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=15359 | 32.88127128524199,-87.44588002762968 | NWS=BMX/ALZ032/ALC065/ALZ032 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+17. al-clear-creek | Clear Creek Recreation Area | AL | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=40002 | 34.012149379185814,-87.26569143919073 | NWS=BMX/ALZ014/ALC133/ALZ014 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+18. al-coleman-lake | Coleman Lake Recreation Area | AL | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=40000 | 33.78491626799285,-85.55892526139627 | NWS=BMX/ALZ021/ALC029/ALZ021 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+19. tn-indian-boundary | Indian Boundary Campground | TN | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=50434 | 35.399906793049205,-84.10690421414178 | NWS=MRX/TNZ087/TNC123/TNZ087 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+20. tn-rock-creek | Rock Creek Recreation Area | TN | USFS_ADDITIONAL_R8 | CONFIG_ONLY | USFS_INFRA_SITE_ID=50532 | 36.1379070156318,-82.3506037419644 | NWS=MRX/TNZ045/TNC171/TNZ045 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+21. wv-big-rock | Big Rock Campground | WV | USFS_ADDITIONAL_R9 | CONFIG_ONLY | USFS_INFRA_SITE_ID=90200 | 38.295872528260354,-80.52466232970298 | NWS=RLX/WVZ520/WVC067/WVZ520 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+22. wv-seneca-shadows | Seneca Shadows Campground | WV | USFS_ADDITIONAL_R9 | LIMITED_GENERIC_SUPPORT | USFS_INFRA_SITE_ID=90533 | 38.82136767916264,-79.38632101654947 | NWS=LWX/WVZ505/WVC071/WVZ505 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+23. wv-bear-heaven | Bear Heaven Campground | WV | USFS_ADDITIONAL_R9 | CONFIG_ONLY | USFS_INFRA_SITE_ID=90107 | 38.931559689167464,-79.68056611411481 | NWS=RLX/WVZ526/WVC083/WVZ526 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+24. or-spinreel | Spinreel Campground | OR | USFS_ADDITIONAL_R6 | CONFIG_ONLY | USFS_INFRA_SITE_ID=63029 | 43.56988519945235,-124.2060143315852 | NWS=MFR/ORZ021/ORC011/ORZ615 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+25. or-cold-springs | Cold Springs Campground | OR | USFS_ADDITIONAL_R6 | CONFIG_ONLY | USFS_INFRA_SITE_ID=12617 | 44.30904716503235,-121.63058907709843 | NWS=PDT/ORZ509/ORC017/ORZ704 | ADAPTER=FROZEN_USFS_GENERIC_PARSER
+26. ncsp-carolina-beach | Carolina Beach State Park Campground | NC | NC_STATE_PARKS | GENERIC_AUTHORITY_ADAPTER | NC_PARK_OR_ACCESS_KEY=carolina-beach-state-park | 34.0472,-77.9066 | NWS=ILM/NCZ108/NCC129/NCZ108 | ADAPTER=NCStateParksAdapter
+27. ncsp-stone-mountain | Stone Mountain Family Campground | NC | NC_STATE_PARKS | GENERIC_AUTHORITY_ADAPTER | NC_PARK_OR_ACCESS_KEY=stone-mountain-state-park | 36.3873,-81.0273 | NWS=RNK/NCZ002/NCC005/NCZ002 | ADAPTER=NCStateParksAdapter
+28. ncsp-hanging-rock | Hanging Rock Family Campground | NC | NC_STATE_PARKS | GENERIC_AUTHORITY_ADAPTER | NC_PARK_OR_ACCESS_KEY=hanging-rock-state-park | 36.4119,-80.2541 | NWS=RNK/NCZ004/NCC169/NCZ004 | ADAPTER=NCStateParksAdapter
+29. ncsp-falls-holly-point | Falls Lake — Holly Point Campground | NC | NC_STATE_PARKS | GENERIC_AUTHORITY_ADAPTER | NC_PARK_OR_ACCESS_KEY=falls-lake-state-recreation-area:holly-point | 36.01,-78.6575 | NWS=RAH/NCZ041/NCC183/NCZ041 | ADAPTER=NCStateParksAdapter
+30. ncsp-kerr-hibernia | Kerr Lake — Hibernia Campground | NC | NC_STATE_PARKS | GENERIC_AUTHORITY_ADAPTER | NC_PARK_OR_ACCESS_KEY=kerr-lake-state-recreation-area:hibernia | 36.5047,-78.3761 | NWS=RAH/NCZ009/NCC181/NCZ009 | ADAPTER=NCStateParksAdapter
+31. nps-elkmont | Elkmont Campground | TN | NPS | GENERIC_AUTHORITY_ADAPTER | NPS_CAMPGROUND_UUID=63D37502-C1A6-44B7-A2C3-C4F784C03318 | 35.65875714573239,-83.58274047425141 | NWS=MRX/TNZ074/TNC155/TNZ074 | ADAPTER=NPSAdapter
+32. nps-big-meadows | Big Meadows Campground | VA | NPS | GENERIC_AUTHORITY_ADAPTER | NPS_CAMPGROUND_UUID=75E4DC88-1332-456C-9F06-05E9F4E1CAB6 | 38.5279623,-78.4369404 | NWS=LWX/VAZ507/VAC113/VAZ507 | ADAPTER=NPSAdapter
+33. usace-modoc | Modoc Campground | SC | USACE_TRANSPORT_CHALLENGE | TRANSPORT_CHALLENGE | UNKNOWN=UNKNOWN | None,None | NWS=NOT_MAPPED/-/-/- | ADAPTER=NONE
+34. usace-gunter-hill | Gunter Hill Campground | AL | USACE_TRANSPORT_CHALLENGE | TRANSPORT_CHALLENGE | UNKNOWN=UNKNOWN | None,None | NWS=NOT_MAPPED/-/-/- | ADAPTER=NONE
+35. usace-seven-points | Seven Points Campground | TN | USACE_TRANSPORT_CHALLENGE | TRANSPORT_CHALLENGE | UNKNOWN=UNKNOWN | None,None | NWS=NOT_MAPPED/-/-/- | ADAPTER=NONE
+
+E. HURRICANE CREEK STALE-ID REJECTION PROOF
+--------------------------------------------
+ADOPTED: site_id=71807; name=Hurricane Creek Horse & Primitive Camp; managing_org=081111; coordinates=35.055139234541436,-83.51003863980785; CWA=GSP.
+FORBIDDEN ID 33555 IN ADOPTED CONFIGURATION: ABSENT. Wrong Oregon/PDT binding rejected.
+
+F. 7-SITE NON-USFS COORDINATE + NWS MAPPING
+-----------------------------------------------
+ncsp-carolina-beach: 34.0472,-77.9066 (Official park address GPS point); CWA=ILM; forecast=NCZ108; county=NCC129; fire=NCZ108; /points=200; /alerts/active?point=200.
+ncsp-stone-mountain: 36.3873,-81.0273 (Official park address GPS point; park-level representative coordinate); CWA=RNK; forecast=NCZ002; county=NCC005; fire=NCZ002; /points=200; /alerts/active?point=200.
+ncsp-hanging-rock: 36.4119,-80.2541 (Official main entrance/visitor-center GPS point; park-level representative coordinate); CWA=RNK; forecast=NCZ004; county=NCC169; fire=NCZ004; /points=200; /alerts/active?point=200.
+ncsp-falls-holly-point: 36.01,-78.6575 (Official Holly Point Campground GPS point); CWA=RAH; forecast=NCZ041; county=NCC183; fire=NCZ041; /points=200; /alerts/active?point=200.
+ncsp-kerr-hibernia: 36.5047,-78.3761 (Official Hibernia Access GPS point); CWA=RAH; forecast=NCZ009; county=NCC181; fire=NCZ009; /points=200; /alerts/active?point=200.
+nps-elkmont: 35.65875714573239,-83.58274047425141 (Official NPS Campgrounds API exact-name record); CWA=MRX; forecast=TNZ074; county=TNC155; fire=TNZ074; /points=200; /alerts/active?point=200.
+nps-big-meadows: 38.5279623,-78.4369404 (Official NPS Campgrounds API exact-name record); CWA=LWX; forecast=VAZ507; county=VAC113; fire=VAZ507; /points=200; /alerts/active?point=200.
+
+G. USACE BOUNDED TRANSPORT RESULT
+---------------------------------
+Exactly one bounded local investigation was performed for the three configured state operational-status URLs; no hosted dispatch was necessary.
+Modoc/SC: HTTP=200; final URL unchanged; content-type=text/html;charset=UTF-8; bytes=84749; sha256=54b6482aac6bb1b67e80bfd88a82658ff9d5d8626ac50dd23bc5721c597bf6ad; identity=true; status structure=true.
+Gunter Hill/AL: HTTP=200; final URL unchanged; content-type=text/html;charset=UTF-8; bytes=117941; sha256=8eb3e99d5c9ce20debc726fb3abbce6f17584923e2bbef9a7d45f3ed5aef98c5; identity=true; status structure=true.
+Seven Points/TN: HTTP=200; final URL unchanged; content-type=text/html;charset=UTF-8; bytes=101234; sha256=c5bdd757bbbf372c36ee099a09692f5ad3fe4efe37d178a151d5540ef22abe36; identity=true; status structure=true.
+CLASSIFICATION: HOSTED_ACCESSIBLE_ADAPTER_NOT_IMPLEMENTED. This is transport evidence only; semantic support is explicitly not claimed.
+
+H. TELEMETRY-COUNTER CORRECTION AND TESTS
+-------------------------------------------
+Replaced ambiguous POST_SCOPE/POST_DEDUP labels with raw_candidate_count, parsed_observation_count, deduplicated_observation_count, relevant_operational_event_count, unknown_nonrelevant_count.
+The first three are one extraction/parse/dedup population and satisfy raw_candidate_count = parsed_observation_count >= deduplicated_observation_count. Semantic behavior is unchanged. Counter fixture test: PASS.
+
+I. 35-SITE VALIDATION RESULTS
+-----------------------------
+Rows=35 PASS; unique keys=35 PASS; unique authority-native identities PASS; USFS identities/coordinates=25/25 PASS; non-USFS supported coordinates=7/7 PASS; core NWS mappings=32/32 PASS; source URL syntax PASS; adapter paths PASS; no site-specific parser PASS; original Georgia frozen mapping regression PASS.
+
+J. SUPPORTED-CORE VS TRANSPORT-LANE CLASSIFICATION
+---------------------------------------------------
+SUPPORTED SEMANTIC CORE: 32 ({'USFS': 25, 'NC_STATE_PARKS': 5, 'NPS': 2}). TRANSPORT CHALLENGE: 3 ({'USACE': 3}).
+
+K. USEFUL COVERAGE
+------------------
+GROSS EXPERIMENTAL USEFUL COVERAGE: 32/35 = 91.43%.
+CORE SUPPORTED COHORT SIZE: 32. TRANSPORT-CHALLENGE COUNT: 3.
+PER LANE: USFS original Georgia 10/10; additional USFS R8 10/10; R9 3/3 (Seneca limited generic support); R6 2/2; NC State Parks 5/5; NPS 2/2; USACE semantic support 0/3.
+
+L. DLR / SCR / AUTHORITY ADAPTER LEVERAGE
+------------------------------------------
+SUPPORTED-CORE DLR (sites / maintained source families): 32/4 = 8.00.
+GROSS-ARCHITECTURE DLR: 35/5 = 7.00.
+SUPPORTED-CORE SCR (1 - source families/sites): 0.8750 (87.50%).
+GROSS SCR: 0.8571 (85.71%).
+AUTHORITY ADAPTER LEVERAGE: 32/3 = 10.67 supported sites per semantic adapter/parser family. Gross including non-semantic USACE boundary: 35/4 = 8.75 rows per architecture boundary.
+Distinct maintenance boundaries are counted as USFS web, NWS, NC State Parks, NPS, and (gross only) USACE transport.
+
+M. CONFIGURATION-ONLY AND CROSS-REGION REUSE METRICS
+---------------------------------------------------
+ADDITIONAL-USFS CONFIG_ONLY: 14/15 = 93.33%; including limited generic Seneca support, reusable generic onboarding=15/15.
+CROSS-REGION USFS CONFIG_ONLY (R9+R6): 4/5 = 80.00%; generic reuse including Seneca limited support=5/5.
+
+N. ALL TESTS / REGRESSIONS
+--------------------------
+Authority-adapter + semantic-guard tests: 27/27 PASS. Phase4A3 deterministic tests: 3/3 PASS. Live NWS point/alerts mapping: 32/32 PASS. Frozen SHA regression: 5/5 MATCH. Python compileall: PASS. git diff --check: PASS.
+
+O. PROSPECTIVE 30-DAY GATES
+----------------------------
+Frozen but NOT ACTIVATED: 30 consecutive days; supported-source retrieval reliability >=95%; parser failure <5%; useful coverage >=80%; unsafe notification candidates=0; real notifications=0; maintenance <2 hours/week preferred; >2-3 actual hours/week is strong kill/pivot signal; contemporaneous maintenance log; no site-specific rescue; actionable closure/reopening/access/fire/NWS changes; Alert Leverage; zero denominator precision is UNDEFINED, never 100%.
+
+P. MUTATION / SAFETY ACCOUNTING
+------------------------------
+Prospective state mutations: 0. GitHub dispatches: 0. Schedule activation: 0. Polling activation: 0. Notifications sent: 0. Real notifications remain disabled. Review-only, first observation baseline/zero-notify, UNKNOWN non-notifying, failures/disappearance non-semantic, conflicts preserved, future/current distinct, deterministic relevance only.
+
+Q. FINAL COMMIT / TREE SHA
+--------------------------
+FINAL COMMIT SHA: 701f5d726585c4d5051dfc22f8eedc75f55489c6
+FINAL TREE SHA: 7b1cd696ac3bfeb1b820c96ebeb6ca2e48666bcc
+
+R. EXACT FINAL DECISION
+-----------------------
+PASS_35SITE_PROSPECTIVE_READINESS_FREEZE
+
+S. NEXT AUTHORIZED SCOPE
+------------------------
+PHASE 4B — 30-DAY HETEROGENEOUS PROSPECTIVE VALIDATION ACTIVATION. Phase 4B was not begun in this run.
