@@ -1,0 +1,151 @@
+CAMPREADY — PHASE 4B 30-DAY HETEROGENEOUS PROSPECTIVE VALIDATION ACTIVATION
+RUNID: 20260913T025758Z
+
+A. PREFLIGHT
+branch: main
+HEAD before work: ff5acf211c44231cf2a3179bbe4202e429407429
+tree SHA before work: 2549239e97680a1c5a65d99b93562105fbb3f77b
+origin/main after fetch: ff5acf211c44231cf2a3179bbe4202e429407429
+divergence: 0/0
+worktree clean: true
+
+B. CANONICAL PREDECESSOR
+Required predecessor ff5acf211c44231cf2a3179bbe4202e429407429 was HEAD, origin/main, and a verified ancestor before integration.
+
+C. FILES CHANGED BY MANUAL-ONLY INTEGRATION COMMIT
+Integration commit: a27f2ee3fd7cc3e98571f888a21630e27deb553d
+Integration tree: d97528dc9a97b8d7286ba9011ad3cba03fa922b2
+.github/workflows/campready-validation.yml
+campready-phase4b/build_hashes.py
+campready-phase4b/capture.py
+campready-phase4b/config.json
+campready-phase4b/frozen-hashes.json
+campready-phase4b/history/history.jsonl
+campready-phase4b/maintenance.py
+campready-phase4b/maintenance/human-maintenance.jsonl
+campready-phase4b/metrics/.gitkeep
+campready-phase4b/review-queue/.gitkeep
+campready-phase4b/run.py
+campready-phase4b/runs/.gitkeep
+campready-phase4b/software-changes/software-config-changes.jsonl
+campready-phase4b/state/.gitkeep
+campready-phase4b/test_phase4b.py
+
+D. FROZEN COHORT
+Experimental cohort: 35
+Supported semantic core: 32
+USFS: 25
+NC State Parks: 5
+NPS: 2
+USACE: 3 transport-only challenge rows and zero semantic support
+Limited generic support: wv-seneca-shadows
+
+E. STRICT USEFUL COVERAGE
+31/35 = 88.57%
+
+F. FROZEN LEVERAGE METRICS
+Supported-core DLR: 32/5 = 6.40
+Gross experimental DLR: 35/6 = 5.83
+Supported-core SCR: 32/4 = 8.00
+Gross SCR: 35/5 = 7.00
+Authority Adapter Leverage: 32/3 = 10.67
+
+G. HETEROGENEOUS CAPTURE ARCHITECTURE
+The manual-only integration bound the frozen USFS parser/classifier and recreation capture, point-specific NWS active alerts for the 32 supported sites, the accepted NCStateParksAdapter for five sites, the accepted NPSAdapter for two sites, and a non-semantic USACE transport lane for three rows. Candidate delivery remains review-only and no real-notification transport was added.
+
+H. SOURCE REQUEST DEDUPLICATION
+A per-run FetchOnce cache keys requests by URL and Accept type. Shared authority pages and duplicate event URLs are retrieved once and deterministically fanned out to configured campgrounds. The deterministic shared-URL test passed.
+
+I. SUPPORTED-CORE RELIABILITY DENOMINATOR
+successful supported semantic source retrievals / attempted supported semantic source retrievals. USACE transport requests are excluded.
+
+J. USACE TRANSPORT DENOMINATOR
+successful USACE transport checks / attempted USACE transport checks. It is reported separately and cannot create campground semantic events.
+
+K. CORRECTED TELEMETRY
+raw_candidate_count
+parsed_observation_count
+deduplicated_observation_count
+relevant_operational_event_count
+unknown_nonrelevant_count
+Ambiguous POST_SCOPE and POST_DEDUP labels are absent.
+
+L. MAINTENANCE LOG
+Append-only log: campready-phase4b/maintenance/human-maintenance.jsonl
+Helper: python3 campready-phase4b/maintenance.py --minutes <explicit integer> --category <allowed category> --site-or-source <value> --reason <value> --action <value>
+The helper requires human-supplied minutes, rejects negative time, and permits minutes=0 only with reason NO_HUMAN_MAINTENANCE_THIS_WEEK plus an explicit week number. No human time was inferred or retrospectively estimated in this activation attempt.
+
+M. VALIDATION-END ZERO-FETCH GUARD
+Deterministic test test_validation_end_guard_zero_network passed. At or after validation_end_utc, run.py emits VALIDATION_WINDOW_COMPLETE before capture, records network_request_started=false and state_advanced=false, and sends zero notifications.
+
+N. DETERMINISTIC TESTS
+Python compilation/static checks: PASS
+Phase 4B tests: 22/22 PASS
+git diff --check: PASS
+Pre-activation schedule-disabled gate: PASS
+
+O. REGRESSIONS
+Authority-adapter tests: 27/27 PASS
+Phase 4A-3 metric/mapping tests: 11/11 PASS
+35-site mapping validator: PASS; rows=35, supported_core=32, USACE transport=3, USFS=25
+Frozen USFS/NWS behavior-bearing hashes were recorded in campready-phase4b/frozen-hashes.json and all hosted pre-capture drift bindings evaluated true.
+Hurricane Creek site_id: 71807
+Wrong site_id 33555 absent: true
+
+P. CONTROLLED HOSTED BASELINE
+GitHub workflow run ID: 34734310749
+URL: https://github.com/imshahinul/campready-public-validation-publish-20260828T031524Z/actions/runs/34734310749
+event: workflow_dispatch
+tested commit: a27f2ee3fd7cc3e98571f888a21630e27deb553d
+created_at_utc: 2026-09-13T02:57:51Z
+completed_at_utc: 2026-09-13T02:58:02Z
+conclusion: failure
+runtime decision: HOLD_RUNTIME_FAILURE
+failure: IndexError: list index out of range
+This was the one controlled hosted baseline. It failed; no retry was dispatched and schedule activation stopped as required.
+
+Q. BASELINE CAPTURE SUMMARY
+No healthy accepted baseline exists. Capture did not complete, so the required 32-site/35-site live capture, source health, parser health, and NWS health acceptance evidence is unavailable. Frozen cohort cardinalities were validated before dispatch but are not substituted for hosted capture success.
+
+R. BASELINE STATE/HISTORY CONSISTENCY
+prior_state_sha256: null
+accepted_state_sha256: null
+state_advanced: false
+The attempted run was recorded in history and its run report persisted by GitHub Actions commit 6f47447bb199046a35bd1b301e873d2f40a13cab. No accepted semantic state file was created. Guarded failure therefore left accepted state unchanged and history auditable.
+
+S. NOTIFICATION / REVIEW / UNSAFE PROOF
+real_notifications: 0
+unsafe_candidate_count: 0
+No accepted comparison was produced. Therefore required baseline review_candidate_count=0 and would_notify_candidate_count=0 were not established. This missing evidence prevents activation; zero is not inferred from absence.
+
+T. VALIDATION START
+NOT FROZEN — hosted baseline gate failed.
+
+U. VALIDATION END
+NOT FROZEN — hosted baseline gate failed. No 30-day window was started.
+
+V. HOURLY CRON
+NOT FROZEN / NOT ENABLED. Preferred non-zero-minute hourly cadence was not activated.
+
+W. SCHEDULE ACTIVATION
+NOT ACTIVATED. Workflow retained workflow_dispatch only. Phase 4B config schedule_enabled=false and hourly_cron=null.
+
+X. REAL NOTIFICATIONS
+Disabled in Phase 4B config. Hosted failure report recorded real_notifications=0. No real-notification code path was added.
+
+Y. ACTIVATION COMMIT/TREE
+No activation commit or activation tree exists because the hosted baseline failed. Manual-only integration commit/tree are a27f2ee3fd7cc3e98571f888a21630e27deb553d / d97528dc9a97b8d7286ba9011ad3cba03fa922b2. Guarded hosted-HOLD persistence commit is 6f47447bb199046a35bd1b301e873d2f40a13cab / tree 3f0a1e60b632c77169cb11bf2a1f77a00c6ed98a.
+
+Z. FINAL REPOSITORY INTEGRITY BEFORE EVIDENCE COMMIT
+branch: main
+HEAD: 6f47447bb199046a35bd1b301e873d2f40a13cab
+origin/main: 6f47447bb199046a35bd1b301e873d2f40a13cab
+divergence: 0/0
+worktree clean: true
+Final evidence-commit synchronization is recorded by the repository commit containing this file.
+
+AA. EXACT FINAL DECISION
+HOLD_HOSTED_BASELINE
+
+AB. NEXT CHECKPOINT
+No Phase 4B-1 checkpoint is authorized. The first natural scheduled-run checkpoint applies only after a successful hosted baseline and activation. The schedule remains disabled. Investigation of the recorded generic harness IndexError requires a separately authorized activation attempt; this run stops here.
