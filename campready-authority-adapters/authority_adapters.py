@@ -76,8 +76,10 @@ class ParseResult:
     observations: tuple[Observation, ...]
     failure_detail: str | None = None
     raw_candidate_count: int = 0
-    post_scope_filter_count: int = 0
-    pre_dedup_observation_count: int = 0
+    parsed_observation_count: int = 0
+    deduplicated_observation_count: int = 0
+    relevant_operational_event_count: int = 0
+    unknown_nonrelevant_count: int = 0
 
 
 class CommonPageParser(HTMLParser):
@@ -272,8 +274,24 @@ class SharedAuthorityAdapter:
             snippets.extend(_evidence_snippets(block["text"]))
         before_dedup = tuple(self._observation(site, retrieval, source_role, snippet) for snippet in snippets)
         observations = self._deduplicate_and_precede(before_dedup)
-        scoped_count = sum(item.relevant for item in observations)
-        return ParseResult("PARSED" if observations else "NO_CURRENT_EVENT", True, observations, raw_candidate_count=len(snippets), post_scope_filter_count=scoped_count, pre_dedup_observation_count=len(before_dedup))
+        relevant_operational = sum(
+            item.relevant and item.operational_signal not in {"UNKNOWN", "EXPIRED"}
+            for item in observations
+        )
+        unknown_nonrelevant = sum(
+            item.operational_signal == "UNKNOWN" or not item.relevant
+            for item in observations
+        )
+        return ParseResult(
+            "PARSED" if observations else "NO_CURRENT_EVENT",
+            True,
+            observations,
+            raw_candidate_count=len(snippets),
+            parsed_observation_count=len(before_dedup),
+            deduplicated_observation_count=len(observations),
+            relevant_operational_event_count=relevant_operational,
+            unknown_nonrelevant_count=unknown_nonrelevant,
+        )
 
     def identity_resolved(self, site: dict[str, Any], parser: CommonPageParser, final_url: str) -> bool:
         evidence = f"{parser.title} {final_url} " + " ".join(block["text"] for block in parser.blocks[-20:])

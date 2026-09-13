@@ -29,10 +29,11 @@ def main() -> int:
                 "parser_result": parsed.status,
                 "parser_failure": parsed.failure_detail,
                 "identity_resolved": parsed.identity_resolved,
-                "raw_extracted_candidate_count": parsed.raw_candidate_count,
-                "post_scope_filter_event_count": parsed.post_scope_filter_count,
-                "pre_dedup_observation_count": parsed.pre_dedup_observation_count,
-                "post_dedup_event_count": len(parsed.observations),
+                "raw_candidate_count": parsed.raw_candidate_count,
+                "parsed_observation_count": parsed.parsed_observation_count,
+                "deduplicated_observation_count": parsed.deduplicated_observation_count,
+                "relevant_operational_event_count": parsed.relevant_operational_event_count,
+                "unknown_nonrelevant_count": parsed.unknown_nonrelevant_count,
                 "observations": [item.to_dict() for item in parsed.observations],
                 "parser_specific_exception_needed": False
             })

@@ -133,7 +133,18 @@ class AuthorityAdapterTests(unittest.TestCase):
         fragment = '<section class="alert">Hanging Rock Family Campground is closed for improvement.</section>'
         result = MODULE.NCStateParksAdapter().parse(site, self.retrieval(site, fragment * 3), "CAMPGROUND_PAGE")
         self.assertEqual(sum(item.operational_signal == "CLOSED" for item in result.observations), 1)
-        self.assertEqual(result.post_scope_filter_count, 1)
+        self.assertEqual(result.relevant_operational_event_count, 1)
+
+    def test_telemetry_names_describe_their_populations(self):
+        site = self.sites[2]
+        duplicate = '<section class="alert">Hanging Rock Family Campground is closed for improvement.</section>'
+        irrelevant = '<section class="alert">The visitor center is closed for repair.</section>'
+        result = MODULE.NCStateParksAdapter().parse(site, self.retrieval(site, duplicate * 2 + irrelevant), "CAMPGROUND_PAGE")
+        self.assertEqual(result.raw_candidate_count, result.parsed_observation_count)
+        self.assertGreaterEqual(result.parsed_observation_count, result.deduplicated_observation_count)
+        self.assertEqual(result.relevant_operational_event_count, 1)
+        self.assertGreaterEqual(result.unknown_nonrelevant_count, 1)
+        self.assertEqual(result.deduplicated_observation_count, len(result.observations))
 
     def test_overlapping_short_and_long_closures_collapse(self):
         result = self.parse_case(self.sites[2], "Hanging Rock Family Campground is closed for campground improvement. Hanging Rock Family Campground is closed for campground improvement while two shower houses and campsites are reconstructed.")

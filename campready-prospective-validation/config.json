@@ -55,5 +55,21 @@
     "migration_current_report_sha256": "08b3ac73eb393e47e13ad0585af12e4bd5c5a5e711c01c6c69442a4a16d03a7e",
     "github_schedule_enabled": false,
     "github_manual_gate_required": true
+  },
+  "phase4a3_readiness_freeze": {
+    "mapping": "campready-phase4a3/canonical_35site_mapping.json",
+    "experimental_cohort_size": 35,
+    "supported_semantic_core_size": 32,
+    "transport_challenge_size": 3,
+    "future_duration_days": 30,
+    "activated": false,
+    "supported_core_retrieval_reliability_minimum": 0.95,
+    "parser_failure_maximum_exclusive": 0.05,
+    "useful_coverage_minimum": 0.8,
+    "strata": ["SUPPORTED_SEMANTIC_CORE", "USFS", "NC_STATE_PARKS", "NPS", "USACE_TRANSPORT_CHALLENGE"],
+    "usace_excluded_from_supported_core_reliability_denominator": true,
+    "gross_all_lane_failures_reported_separately": true,
+    "real_notifications_enabled": false,
+    "review_only": true
   }
 }

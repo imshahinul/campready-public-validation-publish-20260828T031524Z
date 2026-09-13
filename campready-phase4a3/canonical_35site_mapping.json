@@ -1,0 +1,2225 @@
+{
+  "activation_status": "FROZEN_NOT_STARTED",
+  "phase": "4A-3",
+  "prospective_gates": {
+    "activated": false,
+    "alert_leverage_reported": true,
+    "consumer_actionable_classes": [
+      "campground closure",
+      "reopening/lift",
+      "access alert",
+      "official fire restriction/lift",
+      "NWS severe-weather change"
+    ],
+    "duration_consecutive_days": 30,
+    "human_maintenance_hours_per_week_preferred_maximum_exclusive": 2,
+    "human_maintenance_kill_pivot_signal_hours_per_week": ">2-3",
+    "maintenance_logged_contemporaneously": true,
+    "parser_failure_maximum_exclusive": 0.05,
+    "real_notifications": 0,
+    "site_specific_source_rescue": false,
+    "supported_source_retrieval_reliability_minimum": 0.95,
+    "unsafe_notification_candidates": 0,
+    "useful_coverage_minimum": 0.8,
+    "zero_denominator_precision_reported_as": "UNDEFINED_NOT_100_PERCENT"
+  },
+  "rows": [
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Andrews Cove Campground",
+        "Andrews Cove",
+        "Andrew's Cove",
+        "Andrew's Cove Campground"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10487"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+      "canonical_key": "andrews-cove",
+      "canonical_name": "Andrews Cove Campground",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.77777778,
+      "longitude": -83.73666667,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC311",
+        "cwa": "FFC",
+        "fire_weather_zone": "GAZ016",
+        "forecast_zone": "GAZ016",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC311",
+      "nws_cwa": "FFC",
+      "nws_fire_weather_zone": "GAZ016",
+      "nws_forecast_zone": "GAZ016",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": 10487
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Low Gap Campground",
+        "Low Gap"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10491"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
+      "canonical_key": "low-gap",
+      "canonical_name": "Low Gap Campground",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.75111111,
+      "longitude": -83.78333333,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC311",
+        "cwa": "FFC",
+        "fire_weather_zone": "GAZ016",
+        "forecast_zone": "GAZ016",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC311",
+      "nws_cwa": "FFC",
+      "nws_fire_weather_zone": "GAZ016",
+      "nws_forecast_zone": "GAZ016",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": 10491
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Upper Chattahoochee River Campground",
+        "Upper Chattahoochee Campground",
+        "Upper Chattahoochee River"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10501"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "canonical_key": "upper-chattahoochee",
+      "canonical_name": "Upper Chattahoochee River Campground",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.78694,
+      "longitude": -83.78287,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC311",
+        "cwa": "FFC",
+        "fire_weather_zone": "GAZ016",
+        "forecast_zone": "GAZ016",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC311",
+      "nws_cwa": "FFC",
+      "nws_fire_weather_zone": "GAZ016",
+      "nws_forecast_zone": "GAZ016",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": 10501
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [
+        {
+          "identifier": "Forest Service Road 156",
+          "provenance": "Live official USFS recreation-page Getting There/Directions text",
+          "type": "FOREST_SERVICE_ROAD"
+        }
+      ],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Sarah's Creek Campground",
+        "Sarahs Creek Campground",
+        "Sarah's Creek",
+        "Sarahs Creek"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10497"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+      "canonical_key": "sarahs-creek",
+      "canonical_name": "Sarah's Creek Campground",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.92833333,
+      "longitude": -83.26416667,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC241",
+        "cwa": "GSP",
+        "fire_weather_zone": "GAZ010",
+        "forecast_zone": "GAZ010",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC241",
+      "nws_cwa": "GSP",
+      "nws_fire_weather_zone": "GAZ010",
+      "nws_forecast_zone": "GAZ010",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [],
+      "unresolved_optional_fields": [],
+      "usfs_recarea_id": 10497
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [
+        {
+          "identifier": "Forest Service Road 70",
+          "provenance": "Live official USFS recreation-page Getting There/Directions text",
+          "type": "FOREST_SERVICE_ROAD"
+        }
+      ],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Tate Branch Campground",
+        "Tate Branch"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10500"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "canonical_key": "tate-branch",
+      "canonical_name": "Tate Branch Campground",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.95444444,
+      "longitude": -83.5525,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC281",
+        "cwa": "FFC",
+        "fire_weather_zone": "GAZ009",
+        "forecast_zone": "GAZ009",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC281",
+      "nws_cwa": "FFC",
+      "nws_fire_weather_zone": "GAZ009",
+      "nws_forecast_zone": "GAZ009",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [],
+      "unresolved_optional_fields": [],
+      "usfs_recarea_id": 10500
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Lake Russell Recreation Area Campground",
+        "Lake Russell Campground",
+        "Lake Russell Recreation Area",
+        "Lake Russell"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "84393"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-russell-recreation-area-campground",
+      "canonical_key": "lake-russell",
+      "canonical_name": "Lake Russell Recreation Area Campground",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.4925,
+      "longitude": -83.50083333,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC137",
+        "cwa": "GSP",
+        "fire_weather_zone": "GAZ017",
+        "forecast_zone": "GAZ017",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC137",
+      "nws_cwa": "GSP",
+      "nws_fire_weather_zone": "GAZ017",
+      "nws_forecast_zone": "GAZ017",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-russell-recreation-area-campground",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-russell-recreation-area-campground",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": 84393
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Lake Rabun Beach Recreation Area",
+        "Lake Rabun Beach Recreation Area Campground",
+        "Rabun Beach Recreation Area",
+        "Rabun Beach"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10488"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "canonical_key": "lake-rabun",
+      "canonical_name": "Lake Rabun Beach Recreation Area",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.7575,
+      "longitude": -83.47666667,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC241",
+        "cwa": "GSP",
+        "fire_weather_zone": "GAZ010",
+        "forecast_zone": "GAZ010",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC241",
+      "nws_cwa": "GSP",
+      "nws_fire_weather_zone": "GAZ010",
+      "nws_forecast_zone": "GAZ010",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [
+        "access_roads"
+      ],
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": 10488
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [
+        {
+          "identifier": "Forest Service Road 157",
+          "provenance": "Live official USFS recreation-page Getting There/Directions text",
+          "type": "FOREST_SERVICE_ROAD"
+        }
+      ],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Willis Knob Horse Camp",
+        "Willis Knob"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10506"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp",
+      "canonical_key": "willis-knob",
+      "canonical_name": "Willis Knob Horse Camp",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.90027778,
+      "longitude": -83.2225,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC241",
+        "cwa": "GSP",
+        "fire_weather_zone": "GAZ010",
+        "forecast_zone": "GAZ010",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC241",
+      "nws_cwa": "GSP",
+      "nws_fire_weather_zone": "GAZ010",
+      "nws_forecast_zone": "GAZ010",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [],
+      "unresolved_optional_fields": [],
+      "usfs_recarea_id": 10506
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [
+        {
+          "identifier": "Wildcat Road",
+          "provenance": "Phase2 USFS recreation current-condition evidence: campground closure explicitly tied to Wildcat Road damage",
+          "type": "OFFICIAL_ROAD_NAME"
+        }
+      ],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Wildcat Creek Campground #1 Lower",
+        "Wildcat Creek Campground #1",
+        "Wildcat Creek Campground 1",
+        "Wildcat Campground #1",
+        "Wildcat Campground 1"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10503"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-1-lower",
+      "canonical_key": "wildcat-1",
+      "canonical_name": "Wildcat Creek Campground #1 Lower",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.8275,
+      "longitude": -83.61888889,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC241",
+        "cwa": "GSP",
+        "fire_weather_zone": "GAZ010",
+        "forecast_zone": "GAZ010",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC241",
+      "nws_cwa": "GSP",
+      "nws_fire_weather_zone": "GAZ010",
+      "nws_forecast_zone": "GAZ010",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-1-lower",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-1-lower",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [],
+      "unresolved_optional_fields": [],
+      "usfs_recarea_id": 10503
+    },
+    {
+      "access_road_policy": "Only explicit official directions/current-condition relationships; no proximity inference",
+      "access_roads": [
+        {
+          "identifier": "West Wildcat Road",
+          "provenance": "Phase2 USFS recreation current-condition evidence: damage explicitly described as preventing safe vehicle access to campground",
+          "type": "OFFICIAL_ROAD_NAME"
+        },
+        {
+          "identifier": "Wildcat Road",
+          "provenance": "Phase2 USFS recreation current-condition evidence: campground closure explicitly tied to Wildcat Road damage",
+          "type": "OFFICIAL_ROAD_NAME"
+        }
+      ],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "aliases": [
+        "Wildcat Creek Campground #2 Upper",
+        "Wildcat Creek Campground #2",
+        "Wildcat Creek Campground 2",
+        "Wildcat Campground #2",
+        "Wildcat Campground 2"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_RECAREA_ID",
+        "value": "10504"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-2-upper",
+      "canonical_key": "wildcat-2",
+      "canonical_name": "Wildcat Creek Campground #2 Upper",
+      "coordinate_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "district_provenance": "Live official USFS recreation-page Recreation Region field",
+      "experimental_lane": "USFS_ORIGINAL_GEORGIA",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+      "forest": "Chattahoochee-Oconee National Forest",
+      "identity_provenance": "Accepted Phase 2 USFS identity/configuration evidence",
+      "latitude": 34.83222222,
+      "longitude": -83.62611111,
+      "managing_authority": "USDA Forest Service",
+      "mapping_provenance": [
+        {
+          "claim": "All original identity, name, aliases, coordinates, NWS zones, district and access-road claims preserved verbatim",
+          "source": "Accepted frozen Phase 3A mapping SHA-256 eebaa421e00a120aba3077f5db8608178e71454587452d2659e28f3336cf0590"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "GAC241",
+        "cwa": "GSP",
+        "fire_weather_zone": "GAZ010",
+        "forecast_zone": "GAZ010",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "nws_county_zone": "GAC241",
+      "nws_cwa": "GSP",
+      "nws_fire_weather_zone": "GAZ010",
+      "nws_forecast_zone": "GAZ010",
+      "nws_provenance": "Accepted Phase 2E NWS point-mapping evidence",
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "recreation_page_final_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-2-upper",
+      "recreation_page_http_status": 200,
+      "recreation_page_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/wildcat-creek-campground-2-upper",
+      "recreation_region": "Chattooga River District",
+      "required_missing": [],
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "GA",
+      "unresolved_fields": [],
+      "unresolved_optional_fields": [],
+      "usfs_recarea_id": 10504
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/northcarolina/alerts",
+      "aliases": [
+        "North Mills River Campground",
+        "North Mills River"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "70715"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground",
+      "canonical_key": "nc-north-mills-river",
+      "canonical_name": "North Mills River Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/northcarolina/alerts",
+      "forest_park_project": "National Forests in North Carolina",
+      "latitude": 35.40763785194335,
+      "longitude": -82.64453978597471,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "081107",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC089",
+        "cwa": "GSP",
+        "fire_weather_zone": "NCZ065",
+        "forecast_zone": "NCZ065",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "48148"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/northcarolina/alerts",
+      "aliases": [
+        "Van Hook Glade Campground",
+        "Van Hook Glade"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "70521"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+      "canonical_key": "nc-van-hook-glade",
+      "canonical_name": "Van Hook Glade Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/northcarolina/alerts",
+      "forest_park_project": "National Forests in North Carolina",
+      "latitude": 35.07781941962203,
+      "longitude": -83.24275127287943,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "081111",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC113",
+        "cwa": "GSP",
+        "fire_weather_zone": "NCZ062",
+        "forecast_zone": "NCZ062",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "Nantahala Ranger District",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": null
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/northcarolina/alerts",
+      "aliases": [
+        "Hurricane Creek Horse & Primitive Camp",
+        "Hurricane Creek Horse & Primitive Camp"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "71807"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+      "canonical_key": "nc-hurricane-creek",
+      "canonical_name": "Hurricane Creek Horse & Primitive Camp",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/northcarolina/alerts",
+      "forest_park_project": "National Forests in North Carolina",
+      "latitude": 35.055139234541436,
+      "longitude": -83.51003863980785,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "081111",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/northcarolina/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC113",
+        "cwa": "GSP",
+        "fire_weather_zone": "NCZ062",
+        "forecast_zone": "NCZ062",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "Nantahala Ranger District",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": null
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/francismarionsumter/alerts",
+      "aliases": [
+        "Burrell's Ford Campground",
+        "Burrell's Ford"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "22577"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground",
+      "canonical_key": "sc-burrells-ford",
+      "canonical_name": "Burrell's Ford Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/francismarionsumter/alerts",
+      "forest_park_project": "Francis Marion and Sumter National Forests",
+      "latitude": 34.969011731480045,
+      "longitude": -83.11813693019847,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "081202",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/francismarionsumter/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "SCC073",
+        "cwa": "GSP",
+        "fire_weather_zone": "SCZ101",
+        "forecast_zone": "SCZ101",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "SC",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "47065"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/francismarionsumter/alerts",
+      "aliases": [
+        "Brick House Campground",
+        "Brick House"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "22527"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/francismarionsumter/recreation/brick-house-campground",
+      "canonical_key": "sc-brick-house",
+      "canonical_name": "Brick House Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/francismarionsumter/alerts",
+      "forest_park_project": "Francis Marion and Sumter National Forests",
+      "latitude": 34.4483552228186,
+      "longitude": -81.70729094668407,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "081201",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/francismarionsumter/recreation/brick-house-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/francismarionsumter/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "SCC071",
+        "cwa": "CAE",
+        "fire_weather_zone": "SCZ020",
+        "forecast_zone": "SCZ020",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "SC",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "47233"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/alabama/alerts",
+      "aliases": [
+        "Payne Lake Recreation Area",
+        "Payne Lake Recreation Area"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "15359"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/alabama/recreation/payne-lake-recreation-area",
+      "canonical_key": "al-payne-lake",
+      "canonical_name": "Payne Lake Recreation Area",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/alabama/alerts",
+      "forest_park_project": "National Forests in Alabama",
+      "latitude": 32.88127128524199,
+      "longitude": -87.44588002762968,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "080104",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/alabama/recreation/payne-lake-recreation-area"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/alabama/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "ALC065",
+        "cwa": "BMX",
+        "fire_weather_zone": "ALZ032",
+        "forecast_zone": "ALZ032",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "AL",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "30147"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/alabama/alerts",
+      "aliases": [
+        "Clear Creek Recreation Area",
+        "Clear Creek Recreation Area"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "40002"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/alabama/recreation/clear-creek-recreation-area",
+      "canonical_key": "al-clear-creek",
+      "canonical_name": "Clear Creek Recreation Area",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/alabama/alerts",
+      "forest_park_project": "National Forests in Alabama",
+      "latitude": 34.012149379185814,
+      "longitude": -87.26569143919073,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "080101",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/alabama/recreation/clear-creek-recreation-area"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/alabama/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "ALC133",
+        "cwa": "BMX",
+        "fire_weather_zone": "ALZ014",
+        "forecast_zone": "ALZ014",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "AL",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "30085"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/alabama/alerts",
+      "aliases": [
+        "Coleman Lake Recreation Area",
+        "Coleman Lake Recreation Area"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "40000"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/alabama/recreation/coleman-lake-recreation-area",
+      "canonical_key": "al-coleman-lake",
+      "canonical_name": "Coleman Lake Recreation Area",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/alabama/alerts",
+      "forest_park_project": "National Forests in Alabama",
+      "latitude": 33.78491626799285,
+      "longitude": -85.55892526139627,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "080105",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/alabama/recreation/coleman-lake-recreation-area"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/alabama/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "ALC029",
+        "cwa": "BMX",
+        "fire_weather_zone": "ALZ021",
+        "forecast_zone": "ALZ021",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "AL",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "30157"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/cherokee/alerts",
+      "aliases": [
+        "Indian Boundary Campground",
+        "Indian Boundary"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "50434"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/cherokee/recreation/indian-boundary-recreation-area",
+      "canonical_key": "tn-indian-boundary",
+      "canonical_name": "Indian Boundary Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/cherokee/alerts",
+      "forest_park_project": "Cherokee National Forest",
+      "latitude": 35.399906793049205,
+      "longitude": -84.10690421414178,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "080404",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/cherokee/recreation/indian-boundary-recreation-area"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/cherokee/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "TNC123",
+        "cwa": "MRX",
+        "fire_weather_zone": "TNZ087",
+        "forecast_zone": "TNZ087",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "TN",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "35150"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r08/cherokee/alerts",
+      "aliases": [
+        "Rock Creek Recreation Area",
+        "Rock Creek Recreation Area"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "50532"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r08/cherokee/recreation/rock-creek-recreation-area",
+      "canonical_key": "tn-rock-creek",
+      "canonical_name": "Rock Creek Recreation Area",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R8",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r08/cherokee/alerts",
+      "forest_park_project": "Cherokee National Forest",
+      "latitude": 36.1379070156318,
+      "longitude": -82.3506037419644,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "080405",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r08/cherokee/recreation/rock-creek-recreation-area"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r08/cherokee/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "TNC171",
+        "cwa": "MRX",
+        "fire_weather_zone": "TNZ045",
+        "forecast_zone": "TNZ045",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "TN",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "34978"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r09/monongahela/alerts",
+      "aliases": [
+        "Big Rock Campground",
+        "Big Rock"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "90200"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r09/monongahela/recreation/big-rock-campground",
+      "canonical_key": "wv-big-rock",
+      "canonical_name": "Big Rock Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R9",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r09/monongahela/alerts",
+      "forest_park_project": "Monongahela National Forest",
+      "latitude": 38.295872528260354,
+      "longitude": -80.52466232970298,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "092102",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r09/monongahela/recreation/big-rock-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r09/monongahela/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "WVC067",
+        "cwa": "RLX",
+        "fire_weather_zone": "WVZ520",
+        "forecast_zone": "WVZ520",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "WV",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "6984"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r09/monongahela/alerts",
+      "aliases": [
+        "Seneca Shadows Campground",
+        "Seneca Shadows"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "90533"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r09/monongahela/recreation/seneca-shadows-campground",
+      "canonical_key": "wv-seneca-shadows",
+      "canonical_name": "Seneca Shadows Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference",
+        "Known generic-parser edge case: page may yield UNKNOWN or limited operational evidence; no campground-specific parser authorized"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R9",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r09/monongahela/alerts",
+      "forest_park_project": "Monongahela National Forest",
+      "latitude": 38.82136767916264,
+      "longitude": -79.38632101654947,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "092105",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r09/monongahela/recreation/seneca-shadows-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r09/monongahela/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "WVC071",
+        "cwa": "LWX",
+        "fire_weather_zone": "WVZ505",
+        "forecast_zone": "WVZ505",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "LIMITED_GENERIC_SUPPORT",
+      "state": "WV",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "7004"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r09/monongahela/alerts",
+      "aliases": [
+        "Bear Heaven Campground",
+        "Bear Heaven"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "90107"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r09/monongahela/recreation/bear-heaven-campground",
+      "canonical_key": "wv-bear-heaven",
+      "canonical_name": "Bear Heaven Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R9",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r09/monongahela/alerts",
+      "forest_park_project": "Monongahela National Forest",
+      "latitude": 38.931559689167464,
+      "longitude": -79.68056611411481,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "092101",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r09/monongahela/recreation/bear-heaven-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r09/monongahela/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "WVC083",
+        "cwa": "RLX",
+        "fire_weather_zone": "WVZ526",
+        "forecast_zone": "WVZ526",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "WV",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": null
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r06/siuslaw/alerts",
+      "aliases": [
+        "Spinreel Campground",
+        "Spinreel"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "63029"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground",
+      "canonical_key": "or-spinreel",
+      "canonical_name": "Spinreel Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R6",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r06/siuslaw/alerts",
+      "forest_park_project": "Siuslaw National Forest",
+      "latitude": 43.56988519945235,
+      "longitude": -124.2060143315852,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "061208",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r06/siuslaw/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "ORC011",
+        "cwa": "MFR",
+        "fire_weather_zone": "ORZ615",
+        "forecast_zone": "ORZ021",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "Oregon Dunes National Recreation Area",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "OR",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ],
+      "usfs_recarea_id": null
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.fs.usda.gov/r06/deschutes/alerts",
+      "aliases": [
+        "Cold Springs Campground",
+        "Cold Springs"
+      ],
+      "authority_family": "USFS",
+      "authority_native_identifier": {
+        "namespace": "USFS_INFRA_SITE_ID",
+        "value": "12617"
+      },
+      "campground_status_page_url": "https://www.fs.usda.gov/r06/deschutes/recreation/cold-springs-campground",
+      "canonical_key": "or-cold-springs",
+      "canonical_name": "Cold Springs Campground",
+      "coordinate_provenance": "Official USFS EDW InfraRecreationSites geometry; exact site_id query",
+      "coverage_limitations": [
+        "Deterministic generic USFS semantics only; no safety or passability inference"
+      ],
+      "experimental_lane": "USFS_ADDITIONAL_R6",
+      "fire_restriction_source_path": "https://www.fs.usda.gov/r06/deschutes/alerts",
+      "forest_park_project": "Deschutes National Forest",
+      "latitude": 44.30904716503235,
+      "longitude": -121.63058907709843,
+      "managing_authority": "USDA Forest Service",
+      "managing_org": "060105",
+      "mapping_provenance": [
+        {
+          "claim": "Identity, managing_org and coordinate by exact USFS INFRA site_id",
+          "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query"
+        },
+        {
+          "claim": "Official campground page identity and shared operational structure",
+          "source": "https://www.fs.usda.gov/r06/deschutes/recreation/cold-springs-campground"
+        },
+        {
+          "claim": "Official forest alerts and fire-status source",
+          "source": "https://www.fs.usda.gov/r06/deschutes/alerts"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "ORC017",
+        "cwa": "PDT",
+        "fire_weather_zone": "ORZ704",
+        "forecast_zone": "ORZ509",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "FROZEN_USFS_GENERIC_PARSER",
+      "parser_version": "sha256:8cc4c01b040f51ab07e28eff511946c7abd3371af509018b065da0fd07cedb9c",
+      "ranger_district_recreation_region_park_code": "UNKNOWN",
+      "semantic_support_classification": "CONFIG_ONLY",
+      "state": "OR",
+      "unresolved_optional_fields": [
+        "access_roads",
+        "ranger_district"
+      ],
+      "usfs_recarea_id": "38592"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.ncparks.gov/blog-category/closures",
+      "aliases": [
+        "Carolina Beach State Park Campground",
+        "Carolina Beach",
+        "family campground"
+      ],
+      "authority_family": "NC_STATE_PARKS",
+      "authority_native_identifier": {
+        "namespace": "NC_PARK_OR_ACCESS_KEY",
+        "value": "carolina-beach-state-park"
+      },
+      "campground_status_page_url": "https://www.ncparks.gov/state-parks/carolina-beach-state-park/camping",
+      "canonical_key": "ncsp-carolina-beach",
+      "canonical_name": "Carolina Beach State Park Campground",
+      "coordinate_provenance": "Official park address GPS point",
+      "coverage_limitations": [
+        "Generic authority adapter is conservative; ambiguous or non-campground notices remain UNKNOWN/non-relevant/non-notifying"
+      ],
+      "experimental_lane": "NC_STATE_PARKS",
+      "fire_restriction_source_path": "https://www.ncparks.gov/blog-category/closures",
+      "forest_park_project": "Carolina Beach State Park",
+      "latitude": 34.0472,
+      "longitude": -77.9066,
+      "managing_authority": "North Carolina Division of Parks and Recreation",
+      "mapping_provenance": [
+        {
+          "claim": "Authority-native identity and Official park address GPS point",
+          "source": "https://www.ncparks.gov/state-parks/carolina-beach-state-park"
+        },
+        {
+          "claim": "Official campground page and configured aliases",
+          "source": "https://www.ncparks.gov/state-parks/carolina-beach-state-park/camping"
+        },
+        {
+          "claim": "Official alerts/conditions source",
+          "source": "https://www.ncparks.gov/blog-category/closures"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC129",
+        "cwa": "ILM",
+        "fire_weather_zone": "NCZ108",
+        "forecast_zone": "NCZ108",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "NCStateParksAdapter",
+      "parser_version": "shared-authority-adapter-v1.1",
+      "ranger_district_recreation_region_park_code": "carolina-beach-state-park",
+      "semantic_support_classification": "GENERIC_AUTHORITY_ADAPTER",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ]
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.ncparks.gov/blog-category/closures",
+      "aliases": [
+        "Stone Mountain Family Campground",
+        "family campground"
+      ],
+      "authority_family": "NC_STATE_PARKS",
+      "authority_native_identifier": {
+        "namespace": "NC_PARK_OR_ACCESS_KEY",
+        "value": "stone-mountain-state-park"
+      },
+      "campground_status_page_url": "https://www.ncparks.gov/state-parks/stone-mountain-state-park/camping",
+      "canonical_key": "ncsp-stone-mountain",
+      "canonical_name": "Stone Mountain Family Campground",
+      "coordinate_provenance": "Official park address GPS point; park-level representative coordinate",
+      "coverage_limitations": [
+        "Generic authority adapter is conservative; ambiguous or non-campground notices remain UNKNOWN/non-relevant/non-notifying",
+        "Coordinate is an official park-level representative point, not asserted as a campsite centroid"
+      ],
+      "experimental_lane": "NC_STATE_PARKS",
+      "fire_restriction_source_path": "https://www.ncparks.gov/blog-category/closures",
+      "forest_park_project": "Stone Mountain State Park",
+      "latitude": 36.3873,
+      "longitude": -81.0273,
+      "managing_authority": "North Carolina Division of Parks and Recreation",
+      "mapping_provenance": [
+        {
+          "claim": "Authority-native identity and Official park address GPS point; park-level representative coordinate",
+          "source": "https://www.ncparks.gov/state-parks/stone-mountain-state-park"
+        },
+        {
+          "claim": "Official campground page and configured aliases",
+          "source": "https://www.ncparks.gov/state-parks/stone-mountain-state-park/camping"
+        },
+        {
+          "claim": "Official alerts/conditions source",
+          "source": "https://www.ncparks.gov/blog-category/closures"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC005",
+        "cwa": "RNK",
+        "fire_weather_zone": "NCZ002",
+        "forecast_zone": "NCZ002",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "NCStateParksAdapter",
+      "parser_version": "shared-authority-adapter-v1.1",
+      "ranger_district_recreation_region_park_code": "stone-mountain-state-park",
+      "semantic_support_classification": "GENERIC_AUTHORITY_ADAPTER",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ]
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.ncparks.gov/blog-category/closures",
+      "aliases": [
+        "Hanging Rock Family Campground",
+        "family campground"
+      ],
+      "authority_family": "NC_STATE_PARKS",
+      "authority_native_identifier": {
+        "namespace": "NC_PARK_OR_ACCESS_KEY",
+        "value": "hanging-rock-state-park"
+      },
+      "campground_status_page_url": "https://www.ncparks.gov/state-parks/hanging-rock-state-park/camping-hanging-rock",
+      "canonical_key": "ncsp-hanging-rock",
+      "canonical_name": "Hanging Rock Family Campground",
+      "coordinate_provenance": "Official main entrance/visitor-center GPS point; park-level representative coordinate",
+      "coverage_limitations": [
+        "Generic authority adapter is conservative; ambiguous or non-campground notices remain UNKNOWN/non-relevant/non-notifying",
+        "Coordinate is an official park-level representative point, not asserted as a campsite centroid"
+      ],
+      "experimental_lane": "NC_STATE_PARKS",
+      "fire_restriction_source_path": "https://www.ncparks.gov/blog-category/closures",
+      "forest_park_project": "Hanging Rock State Park",
+      "latitude": 36.4119,
+      "longitude": -80.2541,
+      "managing_authority": "North Carolina Division of Parks and Recreation",
+      "mapping_provenance": [
+        {
+          "claim": "Authority-native identity and Official main entrance/visitor-center GPS point; park-level representative coordinate",
+          "source": "https://www.ncparks.gov/state-parks/hanging-rock-state-park"
+        },
+        {
+          "claim": "Official campground page and configured aliases",
+          "source": "https://www.ncparks.gov/state-parks/hanging-rock-state-park/camping-hanging-rock"
+        },
+        {
+          "claim": "Official alerts/conditions source",
+          "source": "https://www.ncparks.gov/blog-category/closures"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC169",
+        "cwa": "RNK",
+        "fire_weather_zone": "NCZ004",
+        "forecast_zone": "NCZ004",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "NCStateParksAdapter",
+      "parser_version": "shared-authority-adapter-v1.1",
+      "ranger_district_recreation_region_park_code": "hanging-rock-state-park",
+      "semantic_support_classification": "GENERIC_AUTHORITY_ADAPTER",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ]
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/news/campground-closures",
+      "aliases": [
+        "Falls Lake — Holly Point Campground",
+        "Holly Point Campground",
+        "Holly Point"
+      ],
+      "authority_family": "NC_STATE_PARKS",
+      "authority_native_identifier": {
+        "namespace": "NC_PARK_OR_ACCESS_KEY",
+        "value": "falls-lake-state-recreation-area:holly-point"
+      },
+      "campground_status_page_url": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/camping-falls-lake",
+      "canonical_key": "ncsp-falls-holly-point",
+      "canonical_name": "Falls Lake — Holly Point Campground",
+      "coordinate_provenance": "Official Holly Point Campground GPS point",
+      "coverage_limitations": [
+        "Generic authority adapter is conservative; ambiguous or non-campground notices remain UNKNOWN/non-relevant/non-notifying"
+      ],
+      "experimental_lane": "NC_STATE_PARKS",
+      "fire_restriction_source_path": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/news/campground-closures",
+      "forest_park_project": "Falls Lake State Recreation Area",
+      "latitude": 36.01,
+      "longitude": -78.6575,
+      "managing_authority": "North Carolina Division of Parks and Recreation",
+      "mapping_provenance": [
+        {
+          "claim": "Authority-native identity and Official Holly Point Campground GPS point",
+          "source": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area"
+        },
+        {
+          "claim": "Official campground page and configured aliases",
+          "source": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/camping-falls-lake"
+        },
+        {
+          "claim": "Official alerts/conditions source",
+          "source": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area/news/campground-closures"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC183",
+        "cwa": "RAH",
+        "fire_weather_zone": "NCZ041",
+        "forecast_zone": "NCZ041",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "NCStateParksAdapter",
+      "parser_version": "shared-authority-adapter-v1.1",
+      "ranger_district_recreation_region_park_code": "falls-lake-state-recreation-area",
+      "semantic_support_classification": "GENERIC_AUTHORITY_ADAPTER",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ]
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.ncparks.gov/blog-category/closures",
+      "aliases": [
+        "Kerr Lake — Hibernia Campground",
+        "Hibernia Campground",
+        "Hibernia recreation area",
+        "Hibernia"
+      ],
+      "authority_family": "NC_STATE_PARKS",
+      "authority_native_identifier": {
+        "namespace": "NC_PARK_OR_ACCESS_KEY",
+        "value": "kerr-lake-state-recreation-area:hibernia"
+      },
+      "campground_status_page_url": "https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area/camping-kerr-lake",
+      "canonical_key": "ncsp-kerr-hibernia",
+      "canonical_name": "Kerr Lake — Hibernia Campground",
+      "coordinate_provenance": "Official Hibernia Access GPS point",
+      "coverage_limitations": [
+        "Generic authority adapter is conservative; ambiguous or non-campground notices remain UNKNOWN/non-relevant/non-notifying"
+      ],
+      "experimental_lane": "NC_STATE_PARKS",
+      "fire_restriction_source_path": "https://www.ncparks.gov/blog-category/closures",
+      "forest_park_project": "Kerr Lake State Recreation Area",
+      "latitude": 36.5047,
+      "longitude": -78.3761,
+      "managing_authority": "North Carolina Division of Parks and Recreation",
+      "mapping_provenance": [
+        {
+          "claim": "Authority-native identity and Official Hibernia Access GPS point",
+          "source": "https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area"
+        },
+        {
+          "claim": "Official campground page and configured aliases",
+          "source": "https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area/camping-kerr-lake"
+        },
+        {
+          "claim": "Official alerts/conditions source",
+          "source": "https://www.ncparks.gov/blog-category/closures"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "NCC181",
+        "cwa": "RAH",
+        "fire_weather_zone": "NCZ009",
+        "forecast_zone": "NCZ009",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "NCStateParksAdapter",
+      "parser_version": "shared-authority-adapter-v1.1",
+      "ranger_district_recreation_region_park_code": "kerr-lake-state-recreation-area",
+      "semantic_support_classification": "GENERIC_AUTHORITY_ADAPTER",
+      "state": "NC",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ]
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.nps.gov/grsm/planyourvisit/conditions.htm",
+      "aliases": [
+        "Elkmont Campground",
+        "Elkmont"
+      ],
+      "authority_family": "NPS",
+      "authority_native_identifier": {
+        "namespace": "NPS_CAMPGROUND_UUID",
+        "value": "63D37502-C1A6-44B7-A2C3-C4F784C03318"
+      },
+      "campground_status_page_url": "https://www.nps.gov/grsm/planyourvisit/elkmont-campground.htm",
+      "canonical_key": "nps-elkmont",
+      "canonical_name": "Elkmont Campground",
+      "coordinate_provenance": "Official NPS Campgrounds API exact-name record",
+      "coverage_limitations": [
+        "Generic authority adapter is conservative; ambiguous or non-campground notices remain UNKNOWN/non-relevant/non-notifying"
+      ],
+      "experimental_lane": "NPS",
+      "fire_restriction_source_path": "https://www.nps.gov/grsm/planyourvisit/conditions.htm",
+      "forest_park_project": "Great Smoky Mountains National Park",
+      "latitude": 35.65875714573239,
+      "longitude": -83.58274047425141,
+      "managing_authority": "National Park Service",
+      "mapping_provenance": [
+        {
+          "claim": "Authority-native identity and Official NPS Campgrounds API exact-name record",
+          "source": "https://developer.nps.gov/api/v1/campgrounds?parkCode=grsm"
+        },
+        {
+          "claim": "Official campground page and configured aliases",
+          "source": "https://www.nps.gov/grsm/planyourvisit/elkmont-campground.htm"
+        },
+        {
+          "claim": "Official alerts/conditions source",
+          "source": "https://www.nps.gov/grsm/planyourvisit/conditions.htm"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "TNC155",
+        "cwa": "MRX",
+        "fire_weather_zone": "TNZ074",
+        "forecast_zone": "TNZ074",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "NPSAdapter",
+      "parser_version": "shared-authority-adapter-v1.1",
+      "ranger_district_recreation_region_park_code": "63D37502-C1A6-44B7-A2C3-C4F784C03318",
+      "semantic_support_classification": "GENERIC_AUTHORITY_ADAPTER",
+      "state": "TN",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ]
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://www.nps.gov/shen/planyourvisit/conditions.htm",
+      "aliases": [
+        "Big Meadows Campground",
+        "Big Meadows"
+      ],
+      "authority_family": "NPS",
+      "authority_native_identifier": {
+        "namespace": "NPS_CAMPGROUND_UUID",
+        "value": "75E4DC88-1332-456C-9F06-05E9F4E1CAB6"
+      },
+      "campground_status_page_url": "https://www.nps.gov/shen/planyourvisit/big-meadows-campground.htm",
+      "canonical_key": "nps-big-meadows",
+      "canonical_name": "Big Meadows Campground",
+      "coordinate_provenance": "Official NPS Campgrounds API exact-name record",
+      "coverage_limitations": [
+        "Generic authority adapter is conservative; ambiguous or non-campground notices remain UNKNOWN/non-relevant/non-notifying"
+      ],
+      "experimental_lane": "NPS",
+      "fire_restriction_source_path": "https://www.nps.gov/shen/planyourvisit/conditions.htm",
+      "forest_park_project": "Shenandoah National Park",
+      "latitude": 38.5279623,
+      "longitude": -78.4369404,
+      "managing_authority": "National Park Service",
+      "mapping_provenance": [
+        {
+          "claim": "Authority-native identity and Official NPS Campgrounds API exact-name record",
+          "source": "https://developer.nps.gov/api/v1/campgrounds?parkCode=shen"
+        },
+        {
+          "claim": "Official campground page and configured aliases",
+          "source": "https://www.nps.gov/shen/planyourvisit/big-meadows-campground.htm"
+        },
+        {
+          "claim": "Official alerts/conditions source",
+          "source": "https://www.nps.gov/shen/planyourvisit/conditions.htm"
+        }
+      ],
+      "nws": {
+        "active_alerts_endpoint": "https://api.weather.gov/alerts/active?point={latitude},{longitude}",
+        "active_alerts_request_succeeded": true,
+        "county_zone": "VAC113",
+        "cwa": "LWX",
+        "fire_weather_zone": "VAZ507",
+        "forecast_zone": "VAZ507",
+        "mapping_validated_live": true,
+        "points_endpoint": "https://api.weather.gov/points/{latitude},{longitude}",
+        "provenance": "NWS API /points and /alerts/active?point live Phase 4A-3 verification"
+      },
+      "parser_adapter_family": "NPSAdapter",
+      "parser_version": "shared-authority-adapter-v1.1",
+      "ranger_district_recreation_region_park_code": "75E4DC88-1332-456C-9F06-05E9F4E1CAB6",
+      "semantic_support_classification": "GENERIC_AUTHORITY_ADAPTER",
+      "state": "VA",
+      "unresolved_optional_fields": [
+        "access_roads"
+      ]
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://corpslakes.erdc.dren.mil/visitors/status.cfm?state=SC",
+      "aliases": [
+        "Modoc Campground",
+        "Modoc"
+      ],
+      "authority_family": "USACE",
+      "authority_native_identifier": null,
+      "campground_status_page_url": null,
+      "canonical_key": "usace-modoc",
+      "canonical_name": "Modoc Campground",
+      "coordinate_provenance": "UNKNOWN",
+      "coverage_limitations": [
+        "Transport/readiness identity observed, but no authorized semantic adapter exists",
+        "Excluded from supported-core retrieval reliability denominator"
+      ],
+      "experimental_lane": "USACE_TRANSPORT_CHALLENGE",
+      "fire_restriction_source_path": null,
+      "forest_park_project": "J. Strom Thurmond Lake",
+      "latitude": null,
+      "longitude": null,
+      "managing_authority": "U.S. Army Corps of Engineers",
+      "mapping_provenance": [
+        {
+          "claim": "Phase 4A-3 single bounded local probe returned HTTP 200 and contained the expected campground identity and operational-status structure",
+          "source": "https://corpslakes.erdc.dren.mil/visitors/status.cfm?state=SC"
+        }
+      ],
+      "nws": null,
+      "parser_adapter_family": null,
+      "parser_version": null,
+      "ranger_district_recreation_region_park_code": "Savannah District",
+      "semantic_support_classification": "TRANSPORT_CHALLENGE",
+      "state": "SC",
+      "unresolved_optional_fields": [
+        "authority_native_identifier",
+        "coordinates",
+        "campground_status_page_url",
+        "fire_restriction_source_path",
+        "access_roads",
+        "NWS mapping"
+      ],
+      "usace_transport_classification": "HOSTED_ACCESSIBLE_ADAPTER_NOT_IMPLEMENTED"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://corpslakes.erdc.dren.mil/visitors/status.cfm?state=AL",
+      "aliases": [
+        "Gunter Hill Campground",
+        "Gunter Hill"
+      ],
+      "authority_family": "USACE",
+      "authority_native_identifier": null,
+      "campground_status_page_url": null,
+      "canonical_key": "usace-gunter-hill",
+      "canonical_name": "Gunter Hill Campground",
+      "coordinate_provenance": "UNKNOWN",
+      "coverage_limitations": [
+        "Transport/readiness identity observed, but no authorized semantic adapter exists",
+        "Excluded from supported-core retrieval reliability denominator"
+      ],
+      "experimental_lane": "USACE_TRANSPORT_CHALLENGE",
+      "fire_restriction_source_path": null,
+      "forest_park_project": "Alabama River Lakes",
+      "latitude": null,
+      "longitude": null,
+      "managing_authority": "U.S. Army Corps of Engineers",
+      "mapping_provenance": [
+        {
+          "claim": "Phase 4A-3 single bounded local probe returned HTTP 200 and contained the expected campground identity and operational-status structure",
+          "source": "https://corpslakes.erdc.dren.mil/visitors/status.cfm?state=AL"
+        }
+      ],
+      "nws": null,
+      "parser_adapter_family": null,
+      "parser_version": null,
+      "ranger_district_recreation_region_park_code": "Mobile District",
+      "semantic_support_classification": "TRANSPORT_CHALLENGE",
+      "state": "AL",
+      "unresolved_optional_fields": [
+        "authority_native_identifier",
+        "coordinates",
+        "campground_status_page_url",
+        "fire_restriction_source_path",
+        "access_roads",
+        "NWS mapping"
+      ],
+      "usace_transport_classification": "HOSTED_ACCESSIBLE_ADAPTER_NOT_IMPLEMENTED"
+    },
+    {
+      "access_roads": [],
+      "alerts_conditions_page_url": "https://corpslakes.erdc.dren.mil/visitors/status.cfm?state=TN",
+      "aliases": [
+        "Seven Points Campground",
+        "Seven Points"
+      ],
+      "authority_family": "USACE",
+      "authority_native_identifier": null,
+      "campground_status_page_url": null,
+      "canonical_key": "usace-seven-points",
+      "canonical_name": "Seven Points Campground",
+      "coordinate_provenance": "UNKNOWN",
+      "coverage_limitations": [
+        "Transport/readiness identity observed, but no authorized semantic adapter exists",
+        "Excluded from supported-core retrieval reliability denominator"
+      ],
+      "experimental_lane": "USACE_TRANSPORT_CHALLENGE",
+      "fire_restriction_source_path": null,
+      "forest_park_project": "J. Percy Priest Lake",
+      "latitude": null,
+      "longitude": null,
+      "managing_authority": "U.S. Army Corps of Engineers",
+      "mapping_provenance": [
+        {
+          "claim": "Phase 4A-3 single bounded local probe returned HTTP 200 and contained the expected campground identity and operational-status structure",
+          "source": "https://corpslakes.erdc.dren.mil/visitors/status.cfm?state=TN"
+        }
+      ],
+      "nws": null,
+      "parser_adapter_family": null,
+      "parser_version": null,
+      "ranger_district_recreation_region_park_code": "Nashville District",
+      "semantic_support_classification": "TRANSPORT_CHALLENGE",
+      "state": "TN",
+      "unresolved_optional_fields": [
+        "authority_native_identifier",
+        "coordinates",
+        "campground_status_page_url",
+        "fire_restriction_source_path",
+        "access_roads",
+        "NWS mapping"
+      ],
+      "usace_transport_classification": "HOSTED_ACCESSIBLE_ADAPTER_NOT_IMPLEMENTED"
+    }
+  ],
+  "safety_policy": {
+    "disappearance_is_resolution": false,
+    "first_accepted_observation": "BASELINE_ZERO_NOTIFY",
+    "parser_failure_is_status_change": false,
+    "prospective_candidates": "REVIEW_ONLY",
+    "relevance": "DETERMINISTIC_ONLY",
+    "retrieval_failure_is_status_change": false,
+    "safety_or_passability_claims": false,
+    "scheduled_future_distinct_from_current": true,
+    "send_real_notifications": false,
+    "source_conflicts_preserved": true,
+    "unknown_notifying": false
+  },
+  "schema_version": "campready-phase4a3-canonical-cohort-v1",
+  "semantic_support_policy": "32-site supported core plus separately labelled 3-site USACE transport challenge lane"
+}
