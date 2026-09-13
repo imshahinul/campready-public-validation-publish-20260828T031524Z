@@ -14,7 +14,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
-PARSER_VERSION = "shared-authority-adapter-v1"
+PARSER_VERSION = "shared-authority-adapter-v1.1"
 USER_AGENT = "CampReady-Phase4A2/1.0 (read-only official-source validation)"
 SIGNALS = {"OPEN", "CLOSED", "SCHEDULED", "CURRENT_OR_UNBOUNDED", "EXPIRED", "UNKNOWN"}
 EVENT_CLASSES = {"CAMPGROUND_STATUS", "ACCESS_ALERT", "FIRE_RESTRICTION", "OTHER_OPERATIONAL_ALERT", "UNKNOWN"}
@@ -75,6 +75,9 @@ class ParseResult:
     identity_resolved: bool
     observations: tuple[Observation, ...]
     failure_detail: str | None = None
+    raw_candidate_count: int = 0
+    post_scope_filter_count: int = 0
+    pre_dedup_observation_count: int = 0
 
 
 class CommonPageParser(HTMLParser):
@@ -174,15 +177,42 @@ def _dates(text: str) -> tuple[str | None, str | None, str | None]:
 def _evidence_snippets(text: str) -> list[str]:
     """Bound evidence to local clauses so unrelated page text cannot imply status."""
     clean = normalize_text(text)
-    if len(clean) <= 800:
-        return [] if normalized_key(clean) in {"loading", "alerts", "alert"} else [clean]
     sentences = [normalize_text(value) for value in re.split(r"(?<=[.!?])\s+|\s+[|•]\s+", clean)]
     operational = re.compile(r"\b(open|closed|closure|reopen(?:ed|ing)?|restriction|alert|notice|no access|not accessible|prescribed burn)\b", re.I)
-    snippets = []
+    snippets: list[str] = []
     for sentence in sentences:
         if operational.search(sentence) and 15 <= len(sentence) <= 800:
             snippets.append(sentence)
     return snippets
+
+
+NON_CAMPGROUND_RESOURCES = (
+    r"boat ramps?", r"marinas?", r"beaches?", r"picnic areas?", r"visitor centers?",
+    r"trails?", r"roads?", r"restrooms?", r"bathrooms?", r"facilities?",
+)
+STATUS_WORDS = r"(?:is|are|was|were|will be|remain(?:s|ed)?|currently)?\s*(?:closed|open|closure|not accessible|no access)"
+
+
+def _explicit_campground_precedes_resource(text: str, site: dict[str, Any], resource: str) -> bool:
+    """Preserve a jointly scoped closure only when an explicit campground name leads it."""
+    value = normalized_key(text)
+    resource_match = re.search(rf"\b{resource}\b", value)
+    campground_positions = [
+        value.find(normalized_key(name)) for name in site["aliases"]
+        if re.search(r"\b(campground|camping|campsite)\b", normalized_key(name)) and normalized_key(name) in value
+    ]
+    return bool(resource_match and campground_positions and min(campground_positions) < resource_match.start())
+
+
+def _non_campground_resource_target(text: str) -> str | None:
+    """Identify an explicitly status-bearing V1-excluded facility/resource."""
+    value = normalized_key(text)
+    for resource in NON_CAMPGROUND_RESOURCES:
+        if re.search(rf"\b(?:most|all|some|the|our|a|an)?\s*{resource}\b(?:\s+[^.!?]{{0,45}})?\s+{STATUS_WORDS}\b", value):
+            return resource.replace("?", "")
+        if re.search(rf"\b{STATUS_WORDS}\b(?:\s+[^.!?]{{0,25}})?\s+{resource}\b", value):
+            return resource.replace("?", "")
+    return None
 
 
 def _semantics(text: str, observed_at: str) -> tuple[str, str, str, str | None, str | None, str | None, str | None]:
@@ -240,15 +270,19 @@ class SharedAuthorityAdapter:
         snippets = []
         for block in candidates:
             snippets.extend(_evidence_snippets(block["text"]))
-        observations = tuple(self._observation(site, retrieval, source_role, snippet) for snippet in snippets)
-        observations = self._deduplicate_and_precede(observations)
-        return ParseResult("PARSED" if observations else "NO_CURRENT_EVENT", True, observations)
+        before_dedup = tuple(self._observation(site, retrieval, source_role, snippet) for snippet in snippets)
+        observations = self._deduplicate_and_precede(before_dedup)
+        scoped_count = sum(item.relevant for item in observations)
+        return ParseResult("PARSED" if observations else "NO_CURRENT_EVENT", True, observations, raw_candidate_count=len(snippets), post_scope_filter_count=scoped_count, pre_dedup_observation_count=len(before_dedup))
 
     def identity_resolved(self, site: dict[str, Any], parser: CommonPageParser, final_url: str) -> bool:
         evidence = f"{parser.title} {final_url} " + " ".join(block["text"] for block in parser.blocks[-20:])
         return _contains(evidence, site["aliases"] + site["park_aliases"])
 
     def relevant(self, site: dict[str, Any], text: str, event_class: str) -> tuple[bool, str | None]:
+        resource = _non_campground_resource_target(text)
+        if resource and not _explicit_campground_precedes_resource(text, site, resource):
+            return False, f"Explicit {resource} status is outside campground operational scope"
         if _contains(text, site["aliases"]):
             return True, None
         return False, "Source does not deterministically identify this campground"
@@ -268,19 +302,39 @@ class SharedAuthorityAdapter:
 
     @staticmethod
     def _deduplicate_and_precede(items: tuple[Observation, ...]) -> tuple[Observation, ...]:
-        unique = {item.source_event_id: item for item in items}
-        values = list(unique.values())
+        values: list[Observation] = []
+        ordered = sorted(items, key=lambda item: (len(normalized_key(item.normalized_text)), normalized_key(item.normalized_text)))
+        for item in ordered:
+            if any(SharedAuthorityAdapter._same_semantic_event(item, prior) for prior in values):
+                continue
+            values.append(item)
         if any(item.relevant and item.operational_signal == "CLOSED" for item in values):
             values = [item for item in values if not (item.operational_signal == "OPEN" and item.event_class != "CAMPGROUND_STATUS")]
         return tuple(sorted(values, key=lambda item: item.source_event_id))
+
+    @staticmethod
+    def _same_semantic_event(left: Observation, right: Observation) -> bool:
+        if (left.operational_signal, left.lifecycle, left.relevant, left.effective_start, left.effective_end) != (right.operational_signal, right.lifecycle, right.relevant, right.effective_start, right.effective_end):
+            return False
+        left_key, right_key = normalized_key(left.normalized_text), normalized_key(right.normalized_text)
+        if left_key == right_key or f" {left_key} " in f" {right_key} " or f" {right_key} " in f" {left_key} ":
+            return True
+        stop = {"a", "an", "and", "are", "at", "be", "for", "is", "of", "on", "the", "to", "will"}
+        tokens = lambda value: {token.rstrip("s") for token in normalized_key(value).split() if token not in stop}
+        left_tokens, right_tokens = tokens(left.normalized_text), tokens(right.normalized_text)
+        overlap = len(left_tokens & right_tokens) / max(1, min(len(left_tokens), len(right_tokens)))
+        causes = {"construction", "flood", "flooding", "fire", "improvement", "repair", "season", "storm", "weather"}
+        same_cause = bool((left_tokens & causes) & (right_tokens & causes))
+        return overlap >= 0.75 and same_cause
 
 
 class NCStateParksAdapter(SharedAuthorityAdapter):
     authority_family = "NC_STATE_PARKS"
 
     def relevant(self, site: dict[str, Any], text: str, event_class: str) -> tuple[bool, str | None]:
-        if _contains(text, site["aliases"]):
-            return True, None
+        relevant, reason = super().relevant(site, text, event_class)
+        if relevant or (reason and reason.startswith("Explicit ")):
+            return relevant, reason
         if _contains(text, site["park_aliases"]) and event_class in {"ACCESS_ALERT", "FIRE_RESTRICTION"} and re.search(r"\b(entire park|park closed|all facilities|all access)\b", text, re.I):
             return True, None
         return False, "NC notice lacks deterministic campground or authorized whole-park scope"
@@ -290,8 +344,9 @@ class NPSAdapter(SharedAuthorityAdapter):
     authority_family = "NPS"
 
     def relevant(self, site: dict[str, Any], text: str, event_class: str) -> tuple[bool, str | None]:
-        if _contains(text, site["aliases"]):
-            return True, None
+        relevant, reason = super().relevant(site, text, event_class)
+        if relevant or (reason and reason.startswith("Explicit ")):
+            return relevant, reason
         whole_park = _contains(text, site["park_aliases"]) and bool(re.search(r"\b(park-wide|entire park|all park areas|all entrances)\b", text, re.I))
         if whole_park and event_class in {"ACCESS_ALERT", "FIRE_RESTRICTION"}:
             return True, None
