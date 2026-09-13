@@ -117,8 +117,9 @@ Disappearance-as-resolution: prohibited. Retrieval/parser failure-as-status: pro
 Correct Hurricane Creek identity remains site_id 71807 / 35.055139234541436,-83.51003863980785 / managing_org 081111 / CWA GSP; incorrect 33555 is absent from implementation.
 
 N. COMMIT / TREE
-FINAL COMMIT SHA: PENDING FINAL COMMIT (the commit cannot contain its own SHA without self-reference)
-FINAL TREE SHA: PENDING FINAL COMMIT
+FOUNDATION IMPLEMENTATION COMMIT SHA: b222ba1326ad6a0da32ee37f255678fcac7df6eb
+FOUNDATION IMPLEMENTATION TREE SHA: 23ef043639391baa8091bbaa749a1e4315bca094
+COMMIT NOTE: these exact values bind the adapter/test/evidence foundation commit; a following evidence-only attestation commit records them because a commit cannot contain its own content-derived SHA.
 
 O. EXACT FINAL DECISION
 PASS_SHARED_ADAPTER_FOUNDATION
