@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-15T17:40:16.708100+00:00",
-  "run_id": "20260915T174016Z",
+  "accepted_at_utc": "2026-09-15T18:40:17.197281+00:00",
+  "run_id": "20260915T184017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -437,23 +437,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6349463e3c2a59a4154d529243b424b703cfd8c6.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.587cde27c5779f5607ee71a488a630d92c513046.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6349463e3c2a59a4154d529243b424b703cfd8c6.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.587cde27c5779f5607ee71a488a630d92c513046.002.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-15T10:51:00-04:00",
-            "onset": "2026-09-15T10:51:00-04:00",
-            "expires": "2026-09-15T19:00:00-04:00",
+            "effective": "2026-09-15T14:11:00-04:00",
+            "onset": "2026-09-15T14:11:00-04:00",
+            "expires": "2026-09-15T20:00:00-04:00",
             "ends": "2026-09-15T20:00:00-04:00",
-            "headline": "Beach Hazards Statement issued September 15 at 10:51AM EDT until September 15 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Beach Hazards Statement issued September 15 at 2:11PM EDT until September 15 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "824e3459f32f748e3968acc19add5a89ebb99c320e69fcd76fc88ee35393c5f9"
+          "fingerprint": "8bf3fddd7bffeb254ba657e97d2e04825727f174349514596f07166cb56c3874"
         }
       }
     },
