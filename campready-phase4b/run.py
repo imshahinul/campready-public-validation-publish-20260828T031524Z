@@ -13,6 +13,11 @@ from capture import capture
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
 
+EXTERNAL_SCHEDULER_TRIGGER_SOURCE = "external_scheduler"
+MANUAL_TRIGGER_SOURCE = "manual"
+MIN_PLAUSIBLE_SCHEDULER_EPOCH = 946684800  # 2000-01-01T00:00:00Z
+MAX_PLAUSIBLE_SCHEDULER_EPOCH = 4102444799  # 2099-12-31T23:59:59Z
+
 
 def file_sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -55,6 +60,54 @@ def verify_hashes(config: dict) -> dict[str, bool]:
     return {path: (REPO / path).is_file() and file_sha(REPO / path) == expected for path, expected in manifest["sha256"].items()}
 
 
+def resolve_dispatch_provenance(
+    event_name: str | None,
+    trigger_source: str | None,
+    scheduler_epoch: str | None,
+) -> dict:
+    """Validate dispatch-only metadata and return provenance without semantics."""
+    event_name = (event_name or "").strip()
+    trigger_source = (trigger_source or "").strip()
+    scheduler_epoch = (scheduler_epoch or "").strip()
+
+    if event_name != "workflow_dispatch":
+        return {
+            "trigger": event_name or "manual-local",
+            "dispatch_provider": None,
+            "scheduler_epoch": None,
+            "github_event_name": event_name or None,
+        }
+
+    trigger_source = trigger_source or MANUAL_TRIGGER_SOURCE
+    if trigger_source == MANUAL_TRIGGER_SOURCE:
+        if scheduler_epoch:
+            raise ValueError("manual dispatch cannot supply scheduler_epoch")
+        return {
+            "trigger": "manual",
+            "dispatch_provider": None,
+            "scheduler_epoch": None,
+            "github_event_name": "workflow_dispatch",
+        }
+
+    if trigger_source != EXTERNAL_SCHEDULER_TRIGGER_SOURCE:
+        raise ValueError("unsupported workflow_dispatch trigger_source")
+
+    parsed_epoch = None
+    if scheduler_epoch:
+        if not scheduler_epoch.isascii() or not scheduler_epoch.isdigit():
+            raise ValueError("scheduler_epoch must be an integer Unix timestamp")
+        parsed_epoch = int(scheduler_epoch)
+        if not MIN_PLAUSIBLE_SCHEDULER_EPOCH <= parsed_epoch <= MAX_PLAUSIBLE_SCHEDULER_EPOCH:
+            raise ValueError("scheduler_epoch is outside the plausible range")
+
+    return {
+        "trigger": "external_schedule",
+        "dispatch_provider": "external",
+        "scheduler_epoch": parsed_epoch,
+        "github_event_name": "workflow_dispatch",
+    }
+
+
 def main(now: datetime | None = None) -> int:
     now = now or datetime.now(timezone.utc)
     config_path = ROOT / "config.json"; config = json.loads(config_path.read_text())
@@ -70,12 +123,44 @@ def main(now: datetime | None = None) -> int:
     prior_document = json.loads(state_path.read_text()) if state_path.exists() and state_path.stat().st_size else None
     prior_sha = file_sha(state_path) if prior_document else None
     try:
+        provenance = resolve_dispatch_provenance(
+            os.getenv("GITHUB_EVENT_NAME"),
+            os.getenv("CAMPREADY_TRIGGER_SOURCE"),
+            os.getenv("CAMPREADY_SCHEDULER_EPOCH"),
+        )
+    except ValueError as exc:
+        summary = {
+            "run_id": run_id,
+            "started_at_utc": now.isoformat(),
+            "finished_at_utc": datetime.now(timezone.utc).isoformat(),
+            "status": "HOLD_PROVENANCE_INPUT",
+            "failure": f"ValueError: {exc}",
+            "github_event_name": os.getenv("GITHUB_EVENT_NAME"),
+            "trigger": "invalid_dispatch_provenance",
+            "prior_state_sha256": prior_sha,
+            "current_state_sha256": prior_sha,
+            "accepted_state_sha256": prior_sha,
+            "state_advanced": False,
+            "unsafe_candidate_count": 0,
+            "real_notifications": 0,
+            "real_notifications_sent": 0,
+            "network_request_started": False,
+            "frozen_bindings": bindings,
+        }
+        atomic_json(run_dir / "run-report.json", summary)
+        history_path = REPO / config["paths"]["history"]
+        history_path.parent.mkdir(parents=True, exist_ok=True)
+        with history_path.open("a") as stream:
+            stream.write(json.dumps(summary, sort_keys=True) + "\n")
+        print(json.dumps(summary, indent=2))
+        return 2
+    try:
         observation = capture(config_path, now=now)
         comparison = compare(prior_document, observation)
         accepted = {"schema_version": "campready-phase4b-state-v1", "accepted_at_utc": now.isoformat(), "run_id": run_id, "sites": comparison.pop("accepted_state")}
         atomic_json(run_dir / "capture.json", observation); atomic_json(run_dir / "comparison.json", comparison)
         accepted_sha = hashlib.sha256((json.dumps(accepted, indent=2, ensure_ascii=False) + "\n").encode()).hexdigest()
-        summary = {"run_id": run_id, "started_at_utc": now.isoformat(), "finished_at_utc": datetime.now(timezone.utc).isoformat(), "trigger": os.getenv("GITHUB_EVENT_NAME", "manual-local"), "workflow_run_id": os.getenv("GITHUB_RUN_ID"), "validation_start_utc": activation["validation_start_utc"], "validation_end_utc": activation["validation_end_utc"], "status": "PASS", "cohort": observation["cohort"], "metrics": observation["metrics"], "telemetry": observation["telemetry"], "consumer_relevant_event_count": comparison["consumer_relevant_event_count"], "would_notify_candidate_count": len(comparison["would_notify_candidates"]), "review_candidate_count": len(comparison["review_candidates"]), "unsafe_candidate_count": 0, "relevance_ambiguity_count": comparison["relevance_ambiguity_count"], "real_notifications": 0, "prior_state_sha256": prior_sha, "accepted_state_sha256": accepted_sha, "state_advanced": True, "frozen_bindings": bindings}
+        summary = {"run_id": run_id, "started_at_utc": now.isoformat(), "finished_at_utc": datetime.now(timezone.utc).isoformat(), **provenance, "workflow_run_id": os.getenv("GITHUB_RUN_ID"), "validation_start_utc": activation["validation_start_utc"], "validation_end_utc": activation["validation_end_utc"], "status": "PASS", "cohort": observation["cohort"], "metrics": observation["metrics"], "telemetry": observation["telemetry"], "consumer_relevant_event_count": comparison["consumer_relevant_event_count"], "would_notify_candidate_count": len(comparison["would_notify_candidates"]), "review_candidate_count": len(comparison["review_candidates"]), "unsafe_candidate_count": 0, "relevance_ambiguity_count": comparison["relevance_ambiguity_count"], "real_notifications": 0, "prior_state_sha256": prior_sha, "accepted_state_sha256": accepted_sha, "state_advanced": True, "frozen_bindings": bindings}
         atomic_json(run_dir / "run-report.json", summary)
         history_path = REPO / config["paths"]["history"]; history_path.parent.mkdir(parents=True, exist_ok=True)
         old_history = history_path.read_bytes() if history_path.exists() else b""
@@ -92,7 +177,7 @@ def main(now: datetime | None = None) -> int:
             atomic_json(REPO / config["paths"]["review_queue"] / f"{run_id}.json", comparison["review_candidates"])
         print(json.dumps(summary, indent=2)); return 0
     except Exception as exc:
-        summary = {"run_id": run_id, "started_at_utc": now.isoformat(), "finished_at_utc": datetime.now(timezone.utc).isoformat(), "status": "HOLD_RUNTIME_FAILURE", "failure": f"{type(exc).__name__}: {exc}", "prior_state_sha256": prior_sha, "accepted_state_sha256": prior_sha, "state_advanced": False, "unsafe_candidate_count": 0, "real_notifications": 0, "frozen_bindings": bindings}
+        summary = {"run_id": run_id, "started_at_utc": now.isoformat(), "finished_at_utc": datetime.now(timezone.utc).isoformat(), **provenance, "status": "HOLD_RUNTIME_FAILURE", "failure": f"{type(exc).__name__}: {exc}", "prior_state_sha256": prior_sha, "accepted_state_sha256": prior_sha, "state_advanced": False, "unsafe_candidate_count": 0, "real_notifications": 0, "frozen_bindings": bindings}
         atomic_json(run_dir / "run-report.json", summary)
         history_path = REPO / config["paths"]["history"]; history_path.parent.mkdir(parents=True, exist_ok=True)
         with history_path.open("a") as stream: stream.write(json.dumps(summary, sort_keys=True) + "\n")

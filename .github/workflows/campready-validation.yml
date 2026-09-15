@@ -2,6 +2,16 @@ name: CampReady Phase 4B Heterogeneous Validation
 
 on:
   workflow_dispatch:
+    inputs:
+      trigger_source:
+        description: Provenance source for this dispatch
+        required: false
+        default: manual
+        type: string
+      scheduler_epoch:
+        description: Optional external scheduler Unix execution timestamp
+        required: false
+        type: string
   schedule:
     - cron: '40 * * * *'
 
@@ -28,6 +38,9 @@ jobs:
 
       - name: Run CampReady validation
         id: campready_validation
+        env:
+          CAMPREADY_TRIGGER_SOURCE: ${{ inputs.trigger_source }}
+          CAMPREADY_SCHEDULER_EPOCH: ${{ inputs.scheduler_epoch }}
         run: |
           set +e
 
@@ -266,11 +279,20 @@ jobs:
               == "HOLD_CONTROLLED_SECOND_OBSERVATION"
           )
 
+          provenance_hold_ok = (
+              status
+              == "HOLD_PROVENANCE_INPUT"
+              and record.get(
+                  "network_request_started"
+              ) is False
+          )
+
           if not (
               common_ok
               and (
                   capture_hold_ok
                   or comparison_hold_ok
+                  or provenance_hold_ok
               )
           ):
               print(
