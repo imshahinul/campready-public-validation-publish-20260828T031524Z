@@ -1,0 +1,766 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "or-spinreel",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tn-indian-boundary",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "or-spinreel",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tn-indian-boundary",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "or-spinreel",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tn-indian-boundary",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "or-spinreel",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tn-indian-boundary",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+      "before": null,
+      "after": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 25,
+  "relevance_ambiguity_count": 100
+}
