@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-frozen-hashes-v1",
   "sha256": {
-    ".github/workflows/campready-validation.yml": "2f8f135a8acb1bf404c9c22ff8ee76e75e6fe07e3c43b013d3ed044c0445cb2d",
+    ".github/workflows/campready-validation.yml": "16c99c2a73d7cbc8859461ac89d59a44fcb504bb5e3dfdd513c97603196c961e",
     "campready-authority-adapters/authority_adapters.py": "dccd6793c10bf2362d5ffc42bdef02a420877406cdf0ba6efa45abff191f0f45",
     "campready-authority-adapters/authority_sites.json": "a090c492e129c394cef8a2cc4a4ee6e53be6aa78b428f72ca040e62ad6d9e329",
     "campready-phase4a3/canonical_35site_mapping.json": "fe2bd73504896ffcf8030d84893c22e9d2926094f88a1859c71ab9d6b9280c0d",

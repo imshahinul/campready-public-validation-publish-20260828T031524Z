@@ -1,5 +1,5 @@
 from __future__ import annotations
-import importlib.util, json, sys, tempfile, unittest
+import importlib.util, json, re, subprocess, sys, tempfile, unittest
 from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import Mock, patch
@@ -23,7 +23,20 @@ class Phase4BTests(unittest.TestCase):
         rows=self.mapping["rows"]; self.assertEqual(len(rows),35); self.assertEqual(sum(r["authority_family"]!="USACE" for r in rows),32); self.assertEqual(sum(r["authority_family"]=="USACE" for r in rows),3); self.assertNotIn("33555",json.dumps(self.mapping)); self.assertIn("71807",json.dumps(self.mapping))
     def test_frozen_metrics(self): self.assertEqual(self.config["frozen_metrics"]["strict_useful_coverage"],"31 / 35 = 88.57%"); self.assertEqual(self.config["frozen_metrics"]["supported_core_dlr"],"32 / 5 = 6.40")
     def test_real_notifications_disabled(self): self.assertIs(self.config["policy"]["send_real_notifications"],False); self.assertNotIn("send_notification",(ROOT/"campready-phase4b/run.py").read_text())
-    def test_schedule_activated(self): self.assertIs(self.config["activation"]["schedule_enabled"],True); self.assertEqual(self.config["activation"]["hourly_cron"],"40 * * * *"); self.assertIn("schedule:",(ROOT/".github/workflows/campready-validation.yml").read_text())
+    def test_external_schedule_cutover_contract(self):
+        workflow=(ROOT/".github/workflows/campready-validation.yml").read_text()
+        self.assertEqual(len(re.findall(r"(?m)^\s+schedule:\s*$",workflow)),0)
+        self.assertIn("workflow_dispatch:",workflow)
+        self.assertIn("trigger_source:",workflow)
+        self.assertIn("scheduler_epoch:",workflow)
+        self.assertIs(self.config["activation"]["schedule_enabled"],True)
+        self.assertEqual(self.config["activation"]["hourly_cron"],"40 * * * *")
+        self.assertEqual(self.config["activation"]["validation_start_utc"],"2026-09-13T04:00:00+00:00")
+        self.assertEqual(self.config["activation"]["validation_end_utc"],"2026-10-13T04:00:00+00:00")
+        self.assertIs(self.config["policy"]["send_real_notifications"],False)
+        self.assertRegex(workflow,r"(?m)^concurrency:\s*$")
+        self.assertRegex(workflow,r"(?m)^\s+group: campready-prospective-validation\s*$")
+        self.assertRegex(workflow,r"(?m)^\s+cancel-in-progress: false\s*$")
     def test_manual_workflow_dispatch_provenance_remains_manual(self):
         value=run_mod.resolve_dispatch_provenance("workflow_dispatch","manual",""); self.assertEqual(value["trigger"],"manual"); self.assertIsNone(value["dispatch_provider"]); self.assertIsNone(value["scheduler_epoch"])
     def test_external_scheduler_maps_to_external_schedule_provenance(self):
@@ -43,11 +56,13 @@ class Phase4BTests(unittest.TestCase):
         event={"quality":"OK","source_family":"NPS","source_url":"u","fingerprint":"new"}; obs={"supported_campgrounds":[{"canonical_key":"x","authority_family":"NPS","semantic_events":[event],"unknown_results":[]}]}; prior={"sites":{"x":{"events":{"NPS:u":{"fingerprint":"old"}}}}}
         manual=run_mod.compare(prior,obs); external=run_mod.compare(prior,obs)
         self.assertEqual(manual,external); self.assertEqual(manual["semantic_deltas"],external["semantic_deltas"]); self.assertEqual(manual["would_notify_candidates"],external["would_notify_candidates"])
-    def test_external_dispatch_contract_preserves_native_schedule_and_window(self):
-        workflow=(ROOT/".github/workflows/campready-validation.yml").read_text(); self.assertIn("cron: '40 * * * *'",workflow); self.assertIn("trigger_source:",workflow); self.assertIn("scheduler_epoch:",workflow); self.assertEqual(self.config["activation"]["validation_start_utc"],"2026-09-13T04:00:00+00:00"); self.assertEqual(self.config["activation"]["validation_end_utc"],"2026-10-13T04:00:00+00:00")
-    def test_no_credential_literal_in_tracked_contract_files(self):
-        for relative in (".github/workflows/campready-validation.yml","campready-phase4b/run.py","campready-phase4b/config.json"):
-            text=(ROOT/relative).read_text(); self.assertNotIn("Authorization: Bearer github_",text); self.assertNotIn("ghp_",text); self.assertNotIn("github_pat_",text)
+    def test_root_readme_absent(self): self.assertFalse((ROOT/"README").exists()); self.assertFalse((ROOT/"README.md").exists())
+    def test_no_credential_literal_in_tracked_files(self):
+        tracked=subprocess.run(["git","ls-files","-z"],cwd=ROOT,check=True,capture_output=True).stdout.split(b"\0")
+        forbidden=(b"Authorization: Bearer "+b"github_",b"gh"+b"p_",b"github"+b"_pat_")
+        for name in filter(None,tracked):
+            data=(ROOT/name.decode()).read_bytes()
+            for literal in forbidden: self.assertNotIn(literal,data,name.decode())
     def test_http_and_parser_failures_not_semantic(self):
         prior={"sites":{"x":{"events":{"a":{"fingerprint":"old"}}}}}; obs={"supported_campgrounds":[{"canonical_key":"x","authority_family":"NPS","semantic_events":[],"unknown_results":[]}]}; result=run_mod.compare(prior,obs); self.assertEqual(result["semantic_deltas"],[]); self.assertEqual(result["would_notify_candidates"],[])
     def test_unknown_nonnotifying(self): self.assertTrue(self.config["policy"]["unknown_is_non_notifying"])

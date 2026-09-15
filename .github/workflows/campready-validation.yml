@@ -12,8 +12,6 @@ on:
         description: Optional external scheduler Unix execution timestamp
         required: false
         type: string
-  schedule:
-    - cron: '40 * * * *'
 
 permissions:
   contents: write
