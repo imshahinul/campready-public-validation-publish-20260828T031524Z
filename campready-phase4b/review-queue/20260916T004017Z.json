@@ -1,0 +1,210 @@
+[
+  {
+    "canonical_key": "al-clear-creek",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-payne-lake",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "andrews-cove",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-rabun",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-russell",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "low-gap",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-hurricane-creek",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-north-mills-river",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-van-hook-glade",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-carolina-beach",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2af804787df0975e295e65d85125f13c21c9289e.001.1",
+    "before": null,
+    "after": "b3ee86b0ae4a9f02d036769251d0f7ee7ab91c165621a14e2c95a0501f2c968a",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "or-cold-springs",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "or-spinreel",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-brick-house",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-burrells-ford",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tate-branch",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-indian-boundary",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-rock-creek",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "upper-chattahoochee",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-1",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-2",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-bear-heaven",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-big-rock",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-seneca-shadows",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+    "before": null,
+    "after": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
