@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "low-gap",
+    "event_key": "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+    "before": null,
+    "after": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
