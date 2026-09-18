@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-18T18:40:19.303170+00:00",
-  "run_id": "20260918T184019Z",
+  "accepted_at_utc": "2026-09-18T19:40:16.525597+00:00",
+  "run_id": "20260918T194016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -480,26 +480,7 @@
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b54831fcbba6b5011b9c4729409d45dc6c3a99a4.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.4119,-80.2541",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b54831fcbba6b5011b9c4729409d45dc6c3a99a4.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-18T14:11:00-04:00",
-            "onset": "2026-09-18T14:11:00-04:00",
-            "expires": "2026-09-18T14:45:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 18 at 2:11PM EDT by NWS Blacksburg VA"
-          },
-          "fingerprint": "cfa262a3a4049df02224935efee05b6b7b61d72d3c6c3b897903bd58bc99c6b9"
-        }
-      }
+      "events": {}
     },
     "ncsp-kerr-hibernia": {
       "authority_family": "NC_STATE_PARKS",
