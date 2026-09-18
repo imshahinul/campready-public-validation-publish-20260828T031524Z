@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-18T21:40:16.589570+00:00",
-  "run_id": "20260918T214016Z",
+  "accepted_at_utc": "2026-09-18T22:40:18.732335+00:00",
+  "run_id": "20260918T224018Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -476,26 +476,7 @@
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.031309873372e2835b0ac61a31be6089de2094e5.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.031309873372e2835b0ac61a31be6089de2094e5.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-18T17:31:00-04:00",
-            "onset": "2026-09-18T17:31:00-04:00",
-            "expires": "2026-09-18T18:15:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 18 at 5:31PM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "0949f98c83ae857453b43dc4db7ffd956cd781a8d1c6138025a9b770044e988b"
-        }
-      }
+      "events": {}
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
@@ -507,26 +488,7 @@
     },
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e53bb4dd31fb20853c9d979b20bd06251ea19624.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.3873,-81.0273",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e53bb4dd31fb20853c9d979b20bd06251ea19624.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-18T17:22:00-04:00",
-            "onset": "2026-09-18T17:22:00-04:00",
-            "expires": "2026-09-18T17:45:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 18 at 5:22PM EDT by NWS Blacksburg VA"
-          },
-          "fingerprint": "061a11164d3131141a727c0bf6ec969a63a1a137199a5c376653e1ff40380605"
-        }
-      }
+      "events": {}
     },
     "nps-big-meadows": {
       "authority_family": "NPS",
