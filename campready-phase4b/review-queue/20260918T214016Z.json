@@ -1,0 +1,18 @@
+[
+  {
+    "canonical_key": "ncsp-falls-holly-point",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.031309873372e2835b0ac61a31be6089de2094e5.001.1",
+    "before": null,
+    "after": "0949f98c83ae857453b43dc4db7ffd956cd781a8d1c6138025a9b770044e988b",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-stone-mountain",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e53bb4dd31fb20853c9d979b20bd06251ea19624.001.1",
+    "before": null,
+    "after": "061a11164d3131141a727c0bf6ec969a63a1a137199a5c376653e1ff40380605",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
