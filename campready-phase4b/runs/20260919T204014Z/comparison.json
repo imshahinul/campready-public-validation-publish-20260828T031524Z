@@ -1,0 +1,76 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f2540e77707a34bf776a14d3937e08176089c330.001.1",
+      "before": null,
+      "after": "148a00567afe3400c842cf19de53b05450bf050692e222af552b6a9b2644d614",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 2,
+  "relevance_ambiguity_count": 73
+}
