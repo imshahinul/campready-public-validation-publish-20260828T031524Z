@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4d334f3d37c108ad458182232931e708ee3b2bd5.001.1",
+    "before": null,
+    "after": "8613c67d963ed2ac1627302361bbbb5f66b936b795004f6d1f2e0018ed91f179",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
