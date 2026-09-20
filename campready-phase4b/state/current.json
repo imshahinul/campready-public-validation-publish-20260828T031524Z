@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-19T23:40:15.272803+00:00",
-  "run_id": "20260919T234015Z",
+  "accepted_at_utc": "2026-09-20T00:40:14.839950+00:00",
+  "run_id": "20260920T004014Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -488,7 +488,26 @@
     },
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.260ea1962a5a8ac916098e42f9723a19ea89a21f.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=36.3873,-81.0273",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.260ea1962a5a8ac916098e42f9723a19ea89a21f.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-09-19T20:31:00-04:00",
+            "onset": "2026-09-19T20:31:00-04:00",
+            "expires": "2026-09-19T20:45:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued September 19 at 8:31PM EDT by NWS Blacksburg VA"
+          },
+          "fingerprint": "d644da8eaa307f56f21870728d764a4a6d67b3103736268824034b29969a1b2b"
+        }
+      }
     },
     "nps-big-meadows": {
       "authority_family": "NPS",
