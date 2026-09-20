@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-20T17:40:15.320634+00:00",
-  "run_id": "20260920T174015Z",
+  "accepted_at_utc": "2026-09-20T18:40:15.106042+00:00",
+  "run_id": "20260920T184015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -1005,6 +1005,24 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d13c95ad8d32d18d365d69db1522758296004494.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d13c95ad8d32d18d365d69db1522758296004494.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-09-20T14:11:00-04:00",
+            "onset": "2026-09-20T20:00:00-04:00",
+            "expires": "2026-09-20T22:15:00-04:00",
+            "ends": "2026-09-21T12:00:00-04:00",
+            "headline": "Flood Watch issued September 20 at 2:11PM EDT until September 21 at 12:00PM EDT by NWS Charleston WV"
+          },
+          "fingerprint": "289190183e220d629ddae50c7d0f900edb4809d5265f222bb267122d78908789"
         }
       }
     },
@@ -1048,23 +1066,23 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f190056d8bfc04c77bcc9c8d2ffefc46275884b8.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d13c95ad8d32d18d365d69db1522758296004494.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f190056d8bfc04c77bcc9c8d2ffefc46275884b8.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d13c95ad8d32d18d365d69db1522758296004494.001.1",
           "quality": "OK",
           "semantic": {
-            "event": "Flood Warning",
+            "event": "Flood Watch",
             "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-09-20T09:23:00-04:00",
-            "onset": "2026-09-20T09:23:00-04:00",
-            "expires": "2026-09-20T14:30:00-04:00",
-            "ends": "2026-09-20T14:30:00-04:00",
-            "headline": "Flood Warning issued September 20 at 9:23AM EDT until September 20 at 2:30PM EDT by NWS Charleston WV"
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-09-20T14:11:00-04:00",
+            "onset": "2026-09-20T20:00:00-04:00",
+            "expires": "2026-09-20T22:15:00-04:00",
+            "ends": "2026-09-21T12:00:00-04:00",
+            "headline": "Flood Watch issued September 20 at 2:11PM EDT until September 21 at 12:00PM EDT by NWS Charleston WV"
           },
-          "fingerprint": "4349cd694e89d6a478a338278e4ba43a4d3f308f3d059a7d9c081ca81d3b8719"
+          "fingerprint": "289190183e220d629ddae50c7d0f900edb4809d5265f222bb267122d78908789"
         }
       }
     },
