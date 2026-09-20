@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-20T09:40:14.942099+00:00",
-  "run_id": "20260920T094014Z",
+  "accepted_at_utc": "2026-09-20T10:40:16.462779+00:00",
+  "run_id": "20260920T104016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -1047,6 +1047,24 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f35d47b963ee68eb4638b51b5284e559c5abaae8.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f35d47b963ee68eb4638b51b5284e559c5abaae8.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flash Flood Warning",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "effective": "2026-09-20T05:43:00-04:00",
+            "onset": "2026-09-20T05:43:00-04:00",
+            "expires": "2026-09-20T09:45:00-04:00",
+            "ends": "2026-09-20T09:45:00-04:00",
+            "headline": "Flash Flood Warning issued September 20 at 5:43AM EDT until September 20 at 9:45AM EDT by NWS Charleston WV"
+          },
+          "fingerprint": "1c6ecffce726151da2df35d3acc463918df8855ea87ffd2f2f4a078bafd09ee4"
         }
       }
     },
