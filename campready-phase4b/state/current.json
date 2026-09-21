@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-21T14:40:17.152272+00:00",
-  "run_id": "20260921T144017Z",
+  "accepted_at_utc": "2026-09-21T15:40:15.841814+00:00",
+  "run_id": "20260921T154015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -741,23 +741,23 @@
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.582f93a539e2ffbc5dffca089f788791d8f40072.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.582f93a539e2ffbc5dffca089f788791d8f40072.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-09-21T04:37:00-04:00",
-            "onset": "2026-09-21T04:37:00-04:00",
-            "expires": "2026-09-21T12:00:00-04:00",
-            "ends": "2026-09-21T12:00:00-04:00",
-            "headline": "Flood Watch issued September 21 at 4:37AM EDT until September 21 at 12:00PM EDT by NWS Charleston WV"
+            "effective": "2026-09-21T11:35:00-04:00",
+            "onset": "2026-09-21T11:35:00-04:00",
+            "expires": "2026-09-21T19:45:00-04:00",
+            "ends": "2026-09-23T08:00:00-04:00",
+            "headline": "Flood Watch issued September 21 at 11:35AM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "ca12853b333260b64d3e3b24f5e63a031faaa0e6fc3c7794f94f67bee83aaa51"
+          "fingerprint": "7a8db255e1b4cf7205edc30b5e9009031a6d16acccf88ba924d536758414e706"
         }
       }
     },
@@ -779,23 +779,23 @@
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.582f93a539e2ffbc5dffca089f788791d8f40072.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.582f93a539e2ffbc5dffca089f788791d8f40072.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-09-21T04:37:00-04:00",
-            "onset": "2026-09-21T04:37:00-04:00",
-            "expires": "2026-09-21T12:00:00-04:00",
-            "ends": "2026-09-21T12:00:00-04:00",
-            "headline": "Flood Watch issued September 21 at 4:37AM EDT until September 21 at 12:00PM EDT by NWS Charleston WV"
+            "effective": "2026-09-21T11:35:00-04:00",
+            "onset": "2026-09-21T11:35:00-04:00",
+            "expires": "2026-09-21T19:45:00-04:00",
+            "ends": "2026-09-23T08:00:00-04:00",
+            "headline": "Flood Watch issued September 21 at 11:35AM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "ca12853b333260b64d3e3b24f5e63a031faaa0e6fc3c7794f94f67bee83aaa51"
+          "fingerprint": "7a8db255e1b4cf7205edc30b5e9009031a6d16acccf88ba924d536758414e706"
         }
       }
     },

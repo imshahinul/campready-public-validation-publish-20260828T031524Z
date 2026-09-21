@@ -1,0 +1,18 @@
+[
+  {
+    "canonical_key": "wv-bear-heaven",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1",
+    "before": null,
+    "after": "7a8db255e1b4cf7205edc30b5e9009031a6d16acccf88ba924d536758414e706",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-big-rock",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1",
+    "before": null,
+    "after": "7a8db255e1b4cf7205edc30b5e9009031a6d16acccf88ba924d536758414e706",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
