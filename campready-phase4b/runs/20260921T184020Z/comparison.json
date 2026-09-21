@@ -1,0 +1,46 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "ncsp-stone-mountain",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.630788b2d1717be6f2f10490e18f252f46edb588.001.1",
+      "before": null,
+      "after": "1084fc7f4ac6414d79521fff19e9ec2a37df592eb0de9a1e6147a211e92801f9",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "ncsp-stone-mountain",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.630788b2d1717be6f2f10490e18f252f46edb588.001.1",
+      "before": null,
+      "after": "1084fc7f4ac6414d79521fff19e9ec2a37df592eb0de9a1e6147a211e92801f9",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "ncsp-stone-mountain",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.630788b2d1717be6f2f10490e18f252f46edb588.001.1",
+      "before": null,
+      "after": "1084fc7f4ac6414d79521fff19e9ec2a37df592eb0de9a1e6147a211e92801f9",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "ncsp-stone-mountain",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.630788b2d1717be6f2f10490e18f252f46edb588.001.1",
+      "before": null,
+      "after": "1084fc7f4ac6414d79521fff19e9ec2a37df592eb0de9a1e6147a211e92801f9",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 1,
+  "relevance_ambiguity_count": 53
+}
