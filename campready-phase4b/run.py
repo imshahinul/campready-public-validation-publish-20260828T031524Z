@@ -34,6 +34,50 @@ def semantic_state(observation: dict) -> dict:
     return {site["canonical_key"]: {"authority_family": site["authority_family"], "events": {f"{event.get('source_family')}:{event.get('event_id', event.get('source_url'))}": event for event in site["semantic_events"] if event.get("quality") == "OK"}} for site in observation["supported_campgrounds"]}
 
 
+def failed_source_scopes(observation: dict) -> tuple[set[str], set[str]]:
+    """Return explicitly failed USFS alert detail and index URLs."""
+    requests = observation.get("source_requests", [])
+    if not isinstance(requests, list):
+        return set(), set()
+    failed_details, failed_indexes = set(), set()
+    successful_details, successful_indexes = set(), set()
+    for request in requests:
+        if not isinstance(request, dict) or request.get("source_family") != "USFS_WEBSITE_ALERTS":
+            continue
+        url, role, succeeded = request.get("source_url"), request.get("source_role"), request.get("retrieval_succeeded")
+        if not isinstance(url, str) or not url or succeeded not in (True, False):
+            continue
+        if role == "ALERT_DETAIL":
+            (successful_details if succeeded else failed_details).add(url)
+        elif role == "ALERT_INDEX":
+            (successful_indexes if succeeded else failed_indexes).add(url)
+    return failed_details - successful_details, failed_indexes - successful_indexes
+
+
+def retain_failed_source_state(current: dict, prior: dict, observation: dict) -> dict:
+    """Carry attributable prior events into accepted state, never comparator input."""
+    failed_details, failed_indexes = failed_source_scopes(observation)
+    if not failed_details and not failed_indexes:
+        return current
+    prior_sites = prior.get("sites", {})
+    if not isinstance(prior_sites, dict):
+        return current
+    for site, value in current.items():
+        prior_site = prior_sites.get(site, {})
+        prior_events = prior_site.get("events", {}) if isinstance(prior_site, dict) else {}
+        if not isinstance(prior_events, dict):
+            continue
+        for key, event in prior_events.items():
+            if key in value["events"] or not isinstance(event, dict):
+                continue
+            source_url, source_scope_url = event.get("source_url"), event.get("source_scope_url")
+            detail_failed = isinstance(source_url, str) and source_url in failed_details
+            index_failed = isinstance(source_scope_url, str) and source_scope_url in failed_indexes
+            if detail_failed or index_failed:
+                value["events"][key] = event
+    return current
+
+
 def compare(prior: dict | None, observation: dict) -> dict:
     current = semantic_state(observation)
     if prior is None:
@@ -50,7 +94,8 @@ def compare(prior: dict | None, observation: dict) -> dict:
                 delta = {"canonical_key": site, "event_key": key, "before": None, "after": event.get("fingerprint"), "category": "APPEARANCE"}
                 deltas.append(delta); candidates.append({**delta, "review_only": True})
     ambiguity = sum(len(site["unknown_results"]) for site in observation["supported_campgrounds"])
-    return {"baseline": False, "source_deltas": deltas, "semantic_deltas": deltas, "relevance_deltas": [], "lifecycle_deltas": [], "review_candidates": candidates, "would_notify_candidates": candidates, "unsafe_candidates": [], "consumer_relevant_event_count": len(candidates), "relevance_ambiguity_count": ambiguity, "accepted_state": current}
+    accepted = retain_failed_source_state(current, prior, observation)
+    return {"baseline": False, "source_deltas": deltas, "semantic_deltas": deltas, "relevance_deltas": [], "lifecycle_deltas": [], "review_candidates": candidates, "would_notify_candidates": candidates, "unsafe_candidates": [], "consumer_relevant_event_count": len(candidates), "relevance_ambiguity_count": ambiguity, "accepted_state": accepted}
 
 
 def verify_hashes(config: dict) -> dict[str, bool]:

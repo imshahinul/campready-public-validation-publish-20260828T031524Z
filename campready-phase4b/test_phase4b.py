@@ -19,6 +19,14 @@ maintenance_mod=module(ROOT/"campready-phase4b/maintenance.py","maintenance_test
 
 class Phase4BTests(unittest.TestCase):
     def setUp(self): self.config=json.loads((ROOT/"campready-phase4b/config.json").read_text()); self.mapping=json.loads((ROOT/self.config["paths"]["mapping"]).read_text())
+    def alert_event(self, fingerprint="3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3", url="https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper", scope="https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts"):
+        return {"quality":"OK","source_family":"USFS_WEBSITE_ALERTS","source_url":url,"source_scope_url":scope,"fingerprint":fingerprint,"semantic":{"bounded_official_text":"frozen Low Gap text"}}
+    def observation(self, events=(), requests=(), key="low-gap"):
+        return {"source_requests":list(requests),"supported_campgrounds":[{"canonical_key":key,"authority_family":"USFS","semantic_events":list(events),"unknown_results":[]}]}
+    def request(self, url, role, succeeded):
+        return {"source_family":"USFS_WEBSITE_ALERTS","source_url":url,"source_role":role,"retrieval_succeeded":succeeded,"parser_result":"PARSED" if succeeded else "NOT_ATTEMPTED_RETRIEVAL_FAILURE"}
+    def state(self, event, key="low-gap"):
+        return {"sites":{key:{"authority_family":"USFS","events":{f"USFS_WEBSITE_ALERTS:{event['source_url']}":event}}}}
     def test_cohort_and_hurricane(self):
         rows=self.mapping["rows"]; self.assertEqual(len(rows),35); self.assertEqual(sum(r["authority_family"]!="USACE" for r in rows),32); self.assertEqual(sum(r["authority_family"]=="USACE" for r in rows),3); self.assertNotIn("33555",json.dumps(self.mapping)); self.assertIn("71807",json.dumps(self.mapping))
     def test_frozen_metrics(self): self.assertEqual(self.config["frozen_metrics"]["strict_useful_coverage"],"31 / 35 = 88.57%"); self.assertEqual(self.config["frozen_metrics"]["supported_core_dlr"],"32 / 5 = 6.40")
@@ -65,6 +73,37 @@ class Phase4BTests(unittest.TestCase):
             for literal in forbidden: self.assertNotIn(literal,data,name.decode())
     def test_http_and_parser_failures_not_semantic(self):
         prior={"sites":{"x":{"events":{"a":{"fingerprint":"old"}}}}}; obs={"supported_campgrounds":[{"canonical_key":"x","authority_family":"NPS","semantic_events":[],"unknown_results":[]}]}; result=run_mod.compare(prior,obs); self.assertEqual(result["semantic_deltas"],[]); self.assertEqual(result["would_notify_candidates"],[])
+    def test_fixture_a_detail_403_retains_event_and_unchanged_recovery_is_not_appearance(self):
+        event=self.alert_event(); prior=self.state(event); failed=self.request(event["source_url"],"ALERT_DETAIL",False)
+        failure=run_mod.compare(prior,self.observation(requests=[failed])); self.assertEqual(failure["semantic_deltas"],[]); self.assertEqual(failure["accepted_state"]["low-gap"]["events"],prior["sites"]["low-gap"]["events"]); self.assertEqual(failure["unsafe_candidates"],[])
+        recovery=run_mod.compare({"sites":failure["accepted_state"]},self.observation([event],[self.request(event["source_url"],"ALERT_DETAIL",True)])); self.assertEqual(recovery["semantic_deltas"],[]); self.assertEqual(sum(d["category"]=="APPEARANCE" for d in recovery["semantic_deltas"]),0)
+    def test_fixture_b_multiple_403s_retain_event_until_unchanged_recovery(self):
+        event=self.alert_event(); accepted=self.state(event); failed=self.request(event["source_url"],"ALERT_DETAIL",False)
+        for _ in range(2):
+            result=run_mod.compare(accepted,self.observation(requests=[failed])); self.assertEqual(result["semantic_deltas"],[]); accepted={"sites":result["accepted_state"]}
+        recovery=run_mod.compare(accepted,self.observation([event],[self.request(event["source_url"],"ALERT_DETAIL",True)])); self.assertEqual(recovery["semantic_deltas"],[])
+    def test_fixture_c_changed_recovery_is_one_material_update_against_retained_fingerprint(self):
+        event=self.alert_event(); failed=self.request(event["source_url"],"ALERT_DETAIL",False); retained=run_mod.compare(self.state(event),self.observation(requests=[failed]))
+        changed=self.alert_event("changed-fingerprint"); changed["semantic"]["bounded_official_text"]="deterministically changed bounded text"
+        recovery=run_mod.compare({"sites":retained["accepted_state"]},self.observation([changed],[self.request(event["source_url"],"ALERT_DETAIL",True)])); self.assertEqual(recovery["semantic_deltas"],[{"canonical_key":"low-gap","event_key":f"USFS_WEBSITE_ALERTS:{event['source_url']}","before":event["fingerprint"],"after":"changed-fingerprint","category":"MATERIAL_UPDATE"}]); self.assertFalse(any(d["category"]=="APPEARANCE" for d in recovery["semantic_deltas"]))
+    def test_fixture_d_successful_absence_overrides_retention_without_manufactured_delta(self):
+        event=self.alert_event(); failed=self.request(event["source_url"],"ALERT_DETAIL",False); retained=run_mod.compare(self.state(event),self.observation(requests=[failed]))
+        success=self.request(event["source_scope_url"],"ALERT_INDEX",True); absent=run_mod.compare({"sites":retained["accepted_state"]},self.observation(requests=[success])); self.assertEqual(absent["semantic_deltas"],[]); self.assertEqual(absent["accepted_state"]["low-gap"]["events"],{})
+    def test_fixture_e_first_observation_failure_invents_no_state_or_candidate(self):
+        event=self.alert_event(); result=run_mod.compare({"sites":{"low-gap":{"authority_family":"USFS","events":{}}}},self.observation(requests=[self.request(event["source_url"],"ALERT_DETAIL",False)])); self.assertEqual(result["accepted_state"]["low-gap"]["events"],{}); self.assertEqual(result["review_candidates"],[])
+    def test_alert_index_failure_retains_all_explicitly_scoped_events_and_recovery_is_quiet(self):
+        scope="https://example.test/alerts"; a=self.alert_event(url="https://example.test/a",scope=scope); b=self.alert_event(url="https://example.test/b",scope=scope); prior={"sites":{"low-gap":{"authority_family":"USFS","events":{"USFS_WEBSITE_ALERTS:https://example.test/a":a,"USFS_WEBSITE_ALERTS:https://example.test/b":b}}}}
+        failure=run_mod.compare(prior,self.observation(requests=[self.request(scope,"ALERT_INDEX",False)])); self.assertEqual(len(failure["accepted_state"]["low-gap"]["events"]),2); self.assertEqual(failure["semantic_deltas"],[])
+        recovery=run_mod.compare({"sites":failure["accepted_state"]},self.observation([a,b],[self.request(scope,"ALERT_INDEX",True)])); self.assertEqual(recovery["semantic_deltas"],[])
+    def test_mixed_run_retains_only_failed_scope_while_successful_source_updates(self):
+        a=self.alert_event(url="https://x.test/a",scope="https://x.test/alerts"); old_b=self.alert_event("old-b",url="https://y.test/b",scope="https://y.test/alerts"); new_b=self.alert_event("new-b",url="https://y.test/b",scope="https://y.test/alerts"); prior={"sites":{"low-gap":{"authority_family":"USFS","events":{"USFS_WEBSITE_ALERTS:https://x.test/a":a,"USFS_WEBSITE_ALERTS:https://y.test/b":old_b}}}}
+        obs=self.observation([new_b],[self.request(a["source_scope_url"],"ALERT_INDEX",False),self.request(new_b["source_scope_url"],"ALERT_INDEX",True)]); result=run_mod.compare(prior,obs); self.assertEqual([d["category"] for d in result["semantic_deltas"]],["MATERIAL_UPDATE"]); self.assertEqual(set(result["accepted_state"]["low-gap"]["events"]),set(prior["sites"]["low-gap"]["events"])); self.assertEqual(result["unsafe_candidates"],[])
+    def test_success_record_overrides_duplicate_failure_and_malformed_provenance_fails_closed(self):
+        event=self.alert_event(); requests=[self.request(event["source_url"],"ALERT_DETAIL",False),self.request(event["source_url"],"ALERT_DETAIL",True)]; result=run_mod.compare(self.state(event),self.observation(requests=requests)); self.assertEqual(result["accepted_state"]["low-gap"]["events"],{})
+        malformed=dict(event,source_scope_url={"not":"a URL"}); result=run_mod.compare(self.state(malformed),self.observation(requests=[self.request(event["source_scope_url"],"ALERT_INDEX",False)])); self.assertEqual(result["accepted_state"]["low-gap"]["events"],{})
+    def test_real_403_record_remains_data_quality_failure_and_reliability_failure(self):
+        capture=json.loads((ROOT/"campready-phase4b/runs/20260915T094016Z/capture.json").read_text()); url=self.alert_event()["source_url"]; request=next(r for r in capture["source_requests"] if r["source_url"]==url)
+        self.assertIs(request["retrieval_succeeded"],False); self.assertEqual(request["parser_result"],"NOT_ATTEMPTED_RETRIEVAL_FAILURE"); self.assertEqual(capture["metrics"]["supported_core_retrieval"]["attempted"]-capture["metrics"]["supported_core_retrieval"]["successful"],sum(not r["retrieval_succeeded"] for r in capture["source_requests"] if r["reliability_denominator"]=="SUPPORTED_CORE"))
     def test_unknown_nonnotifying(self): self.assertTrue(self.config["policy"]["unknown_is_non_notifying"])
     def test_first_observation_zero_notify(self):
         obs={"supported_campgrounds":[{"canonical_key":"x","authority_family":"NPS","semantic_events":[{"quality":"OK","source_family":"NPS","source_url":"u","fingerprint":"f"}],"unknown_results":[]}]}; result=run_mod.compare(None,obs); self.assertTrue(result["baseline"]); self.assertEqual(result["would_notify_candidates"],[])

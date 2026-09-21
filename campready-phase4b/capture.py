@@ -121,7 +121,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
             captured = {"source_url": event_url, "title": parsed["title"], "start_date": parser_ns["extract_date_field"](text, "Alert Start Date"), "end_date": parser_ns["extract_date_field"](text, "Alert End Date"), "rec_sites_affected": parser_ns["extract_line_field"](text, "Rec Sites Affected"), "text_excerpt": text}
             relations = classifier_ns["classify_event"](captured, usfs_by_key, now.date())
             semantic = {"canonical_url": event_url, "title": parsed["title"], "bounded_official_text": text}
-            event = {"source_family": "USFS_WEBSITE_ALERTS", "source_url": event_url, "quality": "OK", "semantic": semantic, "fingerprint": canonical_hash(semantic)}
+            event = {"source_family": "USFS_WEBSITE_ALERTS", "source_url": event_url, "source_scope_url": alert_url, "quality": "OK", "semantic": semantic, "fingerprint": canonical_hash(semantic)}
             for key, relation in relations.items():
                 if key in sites:
                     sites[key]["source_observations"].append(event)
