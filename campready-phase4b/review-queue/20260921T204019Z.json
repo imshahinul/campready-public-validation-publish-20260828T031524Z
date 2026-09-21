@@ -1,0 +1,66 @@
+[
+  {
+    "canonical_key": "lake-rabun",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b8018fdf02569d827c9eca6906db1c275fe60376.001.1",
+    "before": null,
+    "after": "feb94d3e357be7967f976463c2359953154048944ca34b3e99d230edc8755ae8",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-rabun",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff164dca44732e1b0353b33d91a86fafa2147b8f.001.1",
+    "before": null,
+    "after": "e395cfa6deb56add0226024b969e59e193113a709e406bfad0e694110cee6de2",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-hanging-rock",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dbd3804b9786d47bd69995592ccc0f76f49f7aa6.001.1",
+    "before": null,
+    "after": "d7654ac501947b99cbf04d573b7f90439c4240d003209b873df4197fa2c868e2",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-stone-mountain",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5972608840d0a2f53cdcdb8c74b8098fca65e87b.001.1",
+    "before": null,
+    "after": "34241fe9dea9541d5971da5e22571688787fc9ad049c1a0ef3820cab4b1fe39e",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-1",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b8018fdf02569d827c9eca6906db1c275fe60376.001.1",
+    "before": null,
+    "after": "feb94d3e357be7967f976463c2359953154048944ca34b3e99d230edc8755ae8",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-1",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff164dca44732e1b0353b33d91a86fafa2147b8f.001.1",
+    "before": null,
+    "after": "e395cfa6deb56add0226024b969e59e193113a709e406bfad0e694110cee6de2",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-2",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b8018fdf02569d827c9eca6906db1c275fe60376.001.1",
+    "before": null,
+    "after": "feb94d3e357be7967f976463c2359953154048944ca34b3e99d230edc8755ae8",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-2",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff164dca44732e1b0353b33d91a86fafa2147b8f.001.1",
+    "before": null,
+    "after": "e395cfa6deb56add0226024b969e59e193113a709e406bfad0e694110cee6de2",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
