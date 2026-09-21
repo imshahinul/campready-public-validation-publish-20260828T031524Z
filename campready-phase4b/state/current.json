@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-21T10:40:17.737530+00:00",
-  "run_id": "20260921T104017Z",
+  "accepted_at_utc": "2026-09-21T11:40:15.498892+00:00",
+  "run_id": "20260921T114015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -333,7 +333,26 @@
     },
     "nps-big-meadows": {
       "authority_family": "NPS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-09-21T07:03:00-04:00",
+            "onset": "2026-09-21T07:03:00-04:00",
+            "expires": "2026-09-21T10:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued September 21 at 7:03AM EDT by NWS Baltimore MD/Washington DC"
+          },
+          "fingerprint": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f"
+        }
+      }
     },
     "nps-elkmont": {
       "authority_family": "NPS",
@@ -816,6 +835,24 @@
             }
           },
           "fingerprint": "2c843c286b48ca3d35bd862c60b51eae5e4a9e38929ad8fb7001607295d8d8a7"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.82136767916264,-79.38632101654947",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-09-21T07:03:00-04:00",
+            "onset": "2026-09-21T07:03:00-04:00",
+            "expires": "2026-09-21T10:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued September 21 at 7:03AM EDT by NWS Baltimore MD/Washington DC"
+          },
+          "fingerprint": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f"
         }
       }
     }

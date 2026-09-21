@@ -1,0 +1,76 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "nps-big-meadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.002.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.001.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "nps-big-meadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.002.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.001.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "nps-big-meadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.002.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.001.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "nps-big-meadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.002.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.808a76f0267361c8b729571d3b9a79f329b13e42.001.1",
+      "before": null,
+      "after": "9c5e5d19fd5d2d45302d0a9c2e35c2944c52a0fab7f483e4e760f00bbb41754f",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 2,
+  "relevance_ambiguity_count": 53
+}
