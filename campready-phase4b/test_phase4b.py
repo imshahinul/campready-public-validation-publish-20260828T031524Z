@@ -27,10 +27,80 @@ class Phase4BTests(unittest.TestCase):
         return {"source_family":"USFS_WEBSITE_ALERTS","source_url":url,"source_role":role,"retrieval_succeeded":succeeded,"parser_result":"PARSED" if succeeded else "NOT_ATTEMPTED_RETRIEVAL_FAILURE"}
     def state(self, event, key="low-gap"):
         return {"sites":{key:{"authority_family":"USFS","events":{f"USFS_WEBSITE_ALERTS:{event['source_url']}":event}}}}
+    def usfs_scopes(self):
+        rows=[row for row in self.mapping["rows"] if row["authority_family"]=="USFS"]
+        return {url:capture_mod.scoped_usfs_by_alert_url(rows,url) for url in sorted({row["alerts_conditions_page_url"] for row in rows})}
+    def frozen_classifier(self):
+        legacy=capture_mod.load_module(ROOT/self.config["paths"]["legacy_capture"],"repair_b_legacy")
+        return legacy.load_prior_script(ROOT/self.config["paths"]["usfs_classifier"])["classify_event"]
+    def historical_alert(self, url, fingerprint):
+        captures=sorted((ROOT/"campready-phase4b/runs").glob("*/capture.json"))
+        for path in captures:
+            value=json.loads(path.read_text())
+            for site in value["supported_campgrounds"]:
+                for event in site["semantic_events"]:
+                    if event.get("source_url")==url and event.get("fingerprint")==fingerprint:
+                        semantic=event["semantic"]
+                        return {"source_url":url,"title":semantic["title"],"start_date":None,"end_date":None,"rec_sites_affected":None,"text_excerpt":semantic["bounded_official_text"]}
+        self.fail(f"frozen alert fixture not found: {url}")
     def test_cohort_and_hurricane(self):
         rows=self.mapping["rows"]; self.assertEqual(len(rows),35); self.assertEqual(sum(r["authority_family"]!="USACE" for r in rows),32); self.assertEqual(sum(r["authority_family"]=="USACE" for r in rows),3); self.assertNotIn("33555",json.dumps(self.mapping)); self.assertIn("71807",json.dumps(self.mapping))
     def test_frozen_metrics(self): self.assertEqual(self.config["frozen_metrics"]["strict_useful_coverage"],"31 / 35 = 88.57%"); self.assertEqual(self.config["frozen_metrics"]["supported_core_dlr"],"32 / 5 = 6.40")
     def test_real_notifications_disabled(self): self.assertIs(self.config["policy"]["send_real_notifications"],False); self.assertNotIn("send_notification",(ROOT/"campready-phase4b/run.py").read_text())
+    def test_usfs_alert_source_scope_inventory_is_complete_exact_and_unique(self):
+        expected={
+            "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts":{"andrews-cove","low-gap","upper-chattahoochee","sarahs-creek","tate-branch","lake-russell","lake-rabun","willis-knob","wildcat-1","wildcat-2"},
+            "https://www.fs.usda.gov/r08/northcarolina/alerts":{"nc-north-mills-river","nc-van-hook-glade","nc-hurricane-creek"},
+            "https://www.fs.usda.gov/r08/francismarionsumter/alerts":{"sc-burrells-ford","sc-brick-house"},
+            "https://www.fs.usda.gov/r08/alabama/alerts":{"al-payne-lake","al-clear-creek","al-coleman-lake"},
+            "https://www.fs.usda.gov/r08/cherokee/alerts":{"tn-indian-boundary","tn-rock-creek"},
+            "https://www.fs.usda.gov/r09/monongahela/alerts":{"wv-big-rock","wv-seneca-shadows","wv-bear-heaven"},
+            "https://www.fs.usda.gov/r06/siuslaw/alerts":{"or-spinreel"},
+            "https://www.fs.usda.gov/r06/deschutes/alerts":{"or-cold-springs"},
+        }
+        scopes=self.usfs_scopes(); self.assertEqual({url:set(rows) for url,rows in scopes.items()},expected)
+        keys=[key for rows in scopes.values() for key in rows]; self.assertEqual(len(keys),25); self.assertEqual(len(keys),len(set(keys)))
+        with self.assertRaisesRegex(RuntimeError,"mapping incomplete"):
+            capture_mod.scoped_usfs_by_alert_url([{"canonical_key":"missing","alerts_conditions_page_url":""}],"https://example.test/alerts")
+    def test_forest_wide_restriction_and_lift_are_exactly_chattahoochee_oconee_scoped(self):
+        scope="https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts"; sites=self.usfs_scopes()[scope]; classify=self.frozen_classifier()
+        fixtures=(
+            ("https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions","f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"),
+            ("https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest","2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"),
+        )
+        expected=set(sites)
+        for url,fingerprint in fixtures:
+            relations=classify(self.historical_alert(url,fingerprint),sites,datetime(2026,9,21,tzinfo=timezone.utc).date())
+            self.assertEqual({key for key,value in relations.items() if value["relevance"]=="INCLUDE"},expected)
+            self.assertEqual(len(relations),10); self.assertFalse(any(value["relevance"]=="UNKNOWN" for value in relations.values()))
+            self.assertNotIn("or-spinreel",relations); self.assertNotIn("wv-big-rock",relations)
+    def test_low_gap_control_remains_site_specific_within_ten_site_scope(self):
+        url="https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper"
+        scope=self.usfs_scopes()["https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts"]
+        captures=sorted((ROOT/"campready-phase4b/runs").glob("*/capture.json")); fixture=None
+        for path in captures:
+            value=json.loads(path.read_text())
+            for site in value["supported_campgrounds"]:
+                for event in site["semantic_events"]:
+                    if event.get("source_url")==url: fixture=self.historical_alert(url,event["fingerprint"]); break
+                if fixture: break
+            if fixture: break
+        self.assertIsNotNone(fixture); relations=self.frozen_classifier()(fixture,scope,datetime(2026,9,21,tzinfo=timezone.utc).date())
+        self.assertEqual({key for key,value in relations.items() if value["relevance"]=="INCLUDE"},{"low-gap"})
+    def test_broad_events_cannot_cross_exact_alert_source_scopes(self):
+        scopes=self.usfs_scopes(); classify=self.frozen_classifier(); date=datetime(2026,9,21,tzinfo=timezone.utc).date()
+        ga=scopes["https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts"]
+        broad=self.historical_alert("https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions","f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5")
+        ga_relations=classify(broad,ga,date); self.assertNotIn("or-spinreel",ga_relations); self.assertNotIn("wv-big-rock",ga_relations)
+        al=scopes["https://www.fs.usda.gov/r08/alabama/alerts"]
+        synthetic={"source_url":"https://www.fs.usda.gov/r08/alabama/alerts/bounded-test","title":"Forest-wide fire restrictions","start_date":None,"end_date":None,"rec_sites_affected":"All National Forests in Alabama","text_excerpt":"Forest-wide fire restrictions apply throughout the National Forests in Alabama."}
+        al_relations=classify(synthetic,al,date); self.assertEqual(set(al_relations),set(al)); self.assertNotIn("andrews-cove",al_relations)
+    def test_failed_index_retention_uses_same_scope_identity_while_other_scope_progresses(self):
+        ga_scope="https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts"; al_scope="https://www.fs.usda.gov/r08/alabama/alerts"
+        ga=self.alert_event(url="https://example.test/ga",scope=ga_scope); old_al=self.alert_event("old-al",url="https://example.test/al",scope=al_scope); new_al=self.alert_event("new-al",url="https://example.test/al",scope=al_scope)
+        prior={"sites":{"low-gap":{"authority_family":"USFS","events":{"USFS_WEBSITE_ALERTS:https://example.test/ga":ga}},"al-payne-lake":{"authority_family":"USFS","events":{"USFS_WEBSITE_ALERTS:https://example.test/al":old_al}}}}
+        obs={"source_requests":[self.request(ga_scope,"ALERT_INDEX",False),self.request(al_scope,"ALERT_INDEX",True)],"supported_campgrounds":[{"canonical_key":"low-gap","authority_family":"USFS","semantic_events":[],"unknown_results":[]},{"canonical_key":"al-payne-lake","authority_family":"USFS","semantic_events":[new_al],"unknown_results":[]}]}
+        result=run_mod.compare(prior,obs); self.assertIn("USFS_WEBSITE_ALERTS:https://example.test/ga",result["accepted_state"]["low-gap"]["events"]); self.assertEqual(result["accepted_state"]["al-payne-lake"]["events"]["USFS_WEBSITE_ALERTS:https://example.test/al"]["fingerprint"],"new-al"); self.assertEqual([d["category"] for d in result["semantic_deltas"]],["MATERIAL_UPDATE"])
     def test_external_schedule_cutover_contract(self):
         workflow=(ROOT/".github/workflows/campready-validation.yml").read_text()
         self.assertEqual(len(re.findall(r"(?m)^\s+schedule:\s*$",workflow)),0)

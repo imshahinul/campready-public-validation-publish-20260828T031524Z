@@ -74,6 +74,18 @@ def request_record(authority: str, family: str, url: str, role: str, result: dic
     }
 
 
+def scoped_usfs_by_alert_url(usfs_rows: list[dict[str, Any]], alert_url: str) -> dict[str, dict[str, Any]]:
+    """Return the exact configured USFS authority domain for one alert index."""
+    missing = [row["canonical_key"] for row in usfs_rows if not row.get("alerts_conditions_page_url")]
+    if missing:
+        raise RuntimeError(f"USFS alert-source mapping incomplete: {', '.join(sorted(missing))}")
+    return {
+        row["canonical_key"]: row
+        for row in usfs_rows
+        if row["alerts_conditions_page_url"] == alert_url
+    }
+
+
 def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_fetch, now: datetime | None = None) -> dict[str, Any]:
     now = now or datetime.now(timezone.utc)
     config = json.loads(config_path.read_text())
@@ -93,7 +105,6 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
     parser_ns = legacy.load_prior_script(root / config["paths"]["usfs_parser"])
     classifier_ns = legacy.load_prior_script(root / config["paths"]["usfs_classifier"])
     usfs_rows = [row for row in supported if row["authority_family"] == "USFS"]
-    usfs_by_key = {row["canonical_key"]: row for row in usfs_rows}
     for row in usfs_rows:
         url = row["campground_status_page_url"]
         result = cache.get(url)
@@ -106,6 +117,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
         if parser_result == "PARSED":
             sites[row["canonical_key"]]["semantic_events"].append(event)
     for alert_url in sorted({row["alerts_conditions_page_url"] for row in usfs_rows}):
+        scoped_usfs_by_key = scoped_usfs_by_alert_url(usfs_rows, alert_url)
         index = cache.get(alert_url)
         links = parser_ns["extract_alert_links"](index["body"])[:100] if index["ok"] else []
         parser_result = "PARSED" if index["ok"] else "NOT_ATTEMPTED_RETRIEVAL_FAILURE"
@@ -119,7 +131,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
                 continue
             text = parsed["text"]
             captured = {"source_url": event_url, "title": parsed["title"], "start_date": parser_ns["extract_date_field"](text, "Alert Start Date"), "end_date": parser_ns["extract_date_field"](text, "Alert End Date"), "rec_sites_affected": parser_ns["extract_line_field"](text, "Rec Sites Affected"), "text_excerpt": text}
-            relations = classifier_ns["classify_event"](captured, usfs_by_key, now.date())
+            relations = classifier_ns["classify_event"](captured, scoped_usfs_by_key, now.date())
             semantic = {"canonical_url": event_url, "title": parsed["title"], "bounded_official_text": text}
             event = {"source_family": "USFS_WEBSITE_ALERTS", "source_url": event_url, "source_scope_url": alert_url, "quality": "OK", "semantic": semantic, "fingerprint": canonical_hash(semantic)}
             for key, relation in relations.items():
