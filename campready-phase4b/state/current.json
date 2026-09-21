@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-21T21:40:15.052954+00:00",
-  "run_id": "20260921T214015Z",
+  "accepted_at_utc": "2026-09-21T22:40:17.226473+00:00",
+  "run_id": "20260921T224017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -329,26 +329,7 @@
     },
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.038c533086b8c3c0a5f256c3f1d9557af35bc43f.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.3873,-81.0273",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.038c533086b8c3c0a5f256c3f1d9557af35bc43f.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-09-21T17:37:00-04:00",
-            "onset": "2026-09-21T17:37:00-04:00",
-            "expires": "2026-09-21T17:47:00-04:00",
-            "ends": "2026-09-21T17:45:00-04:00",
-            "headline": "Flood Advisory issued September 21 at 5:37PM EDT until September 21 at 5:45PM EDT by NWS Blacksburg VA"
-          },
-          "fingerprint": "49cedb858b5202ed351703e14dc86da5f0058e0726a53c1460872669def10638"
-        }
-      }
+      "events": {}
     },
     "nps-big-meadows": {
       "authority_family": "NPS",
@@ -563,6 +544,24 @@
             }
           },
           "fingerprint": "8cba1518a15d52f2316be7bdfb51bac8268c7cec03b44ccbd6b07dc1325bd22b"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d27382778157bb0a3550a991dc3b1e82fd547b1.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=36.1379070156318,-82.3506037419644",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d27382778157bb0a3550a991dc3b1e82fd547b1.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-09-21T18:25:00-04:00",
+            "onset": "2026-09-21T18:25:00-04:00",
+            "expires": "2026-09-21T19:15:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued September 21 at 6:25PM EDT by NWS Morristown TN"
+          },
+          "fingerprint": "8157bfa3c0674ae732be815475bdc5a66c225ae1b12773ec59c889f025be6aa0"
         }
       }
     },
