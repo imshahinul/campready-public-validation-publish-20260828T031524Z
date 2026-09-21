@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-21T22:40:17.226473+00:00",
-  "run_id": "20260921T224017Z",
+  "accepted_at_utc": "2026-09-21T23:40:50.954547+00:00",
+  "run_id": "20260921T234050Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -544,24 +544,6 @@
             }
           },
           "fingerprint": "8cba1518a15d52f2316be7bdfb51bac8268c7cec03b44ccbd6b07dc1325bd22b"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d27382778157bb0a3550a991dc3b1e82fd547b1.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.1379070156318,-82.3506037419644",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d27382778157bb0a3550a991dc3b1e82fd547b1.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-21T18:25:00-04:00",
-            "onset": "2026-09-21T18:25:00-04:00",
-            "expires": "2026-09-21T19:15:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 21 at 6:25PM EDT by NWS Morristown TN"
-          },
-          "fingerprint": "8157bfa3c0674ae732be815475bdc5a66c225ae1b12773ec59c889f025be6aa0"
         }
       }
     },
@@ -759,23 +741,23 @@
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-09-21T11:35:00-04:00",
-            "onset": "2026-09-21T11:35:00-04:00",
-            "expires": "2026-09-21T19:45:00-04:00",
+            "effective": "2026-09-21T19:29:00-04:00",
+            "onset": "2026-09-21T19:29:00-04:00",
+            "expires": "2026-09-22T03:30:00-04:00",
             "ends": "2026-09-23T08:00:00-04:00",
-            "headline": "Flood Watch issued September 21 at 11:35AM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
+            "headline": "Flood Watch issued September 21 at 7:29PM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "7a8db255e1b4cf7205edc30b5e9009031a6d16acccf88ba924d536758414e706"
+          "fingerprint": "7091a209ee8fab2472eb538635b2338d86b659ef9464172cf5187f5f34afbbb6"
         }
       }
     },
@@ -797,23 +779,23 @@
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d0d0351ebd2dc2283622b336e1c3dc513ae961.003.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-09-21T11:35:00-04:00",
-            "onset": "2026-09-21T11:35:00-04:00",
-            "expires": "2026-09-21T19:45:00-04:00",
+            "effective": "2026-09-21T19:29:00-04:00",
+            "onset": "2026-09-21T19:29:00-04:00",
+            "expires": "2026-09-22T03:30:00-04:00",
             "ends": "2026-09-23T08:00:00-04:00",
-            "headline": "Flood Watch issued September 21 at 11:35AM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
+            "headline": "Flood Watch issued September 21 at 7:29PM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "7a8db255e1b4cf7205edc30b5e9009031a6d16acccf88ba924d536758414e706"
+          "fingerprint": "7091a209ee8fab2472eb538635b2338d86b659ef9464172cf5187f5f34afbbb6"
         }
       }
     },
