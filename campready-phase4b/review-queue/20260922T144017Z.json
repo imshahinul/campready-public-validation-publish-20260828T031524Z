@@ -1,0 +1,26 @@
+[
+  {
+    "canonical_key": "andrews-cove",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+    "before": null,
+    "after": "be99d0b32e16bec9456b54d2383b53c5a2d4e239ea5a831b1d3264683f0fff67",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+    "before": null,
+    "after": "383ccd1698e33b2325fa0e2203ed2693420e02b51994bc53f56be1dd5e48683b",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "upper-chattahoochee",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+    "before": null,
+    "after": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
