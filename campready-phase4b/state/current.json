@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-22T18:40:27.696023+00:00",
-  "run_id": "20260922T184027Z",
+  "accepted_at_utc": "2026-09-22T19:40:17.950345+00:00",
+  "run_id": "20260922T194017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -20,6 +20,24 @@
             }
           },
           "fingerprint": "971c8183e27aa3d36661395119cc8f9dc7394d9a073108b60ee5672ba55b8a18"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98b4fe16e175ab23469c4bc6de6d343f62938ca5.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98b4fe16e175ab23469c4bc6de6d343f62938ca5.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-09-22T14:12:00-05:00",
+            "onset": "2026-09-22T14:12:00-05:00",
+            "expires": "2026-09-22T15:00:00-05:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued September 22 at 2:12PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "f9829a372bd83be123772c8ca86b66112d4354cc2e4d9171ed6548a0c3d7e39a"
         }
       }
     },
