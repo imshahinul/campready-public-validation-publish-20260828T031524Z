@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-22T05:40:17.299002+00:00",
-  "run_id": "20260922T054017Z",
+  "accepted_at_utc": "2026-09-22T06:40:16.633451+00:00",
+  "run_id": "20260922T064016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -213,6 +213,18 @@
           },
           "fingerprint": "6a3bd7771b084e7845f231d7b131e83b20a6eafac4928c854616b95ea84b104c"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
+            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
+          },
+          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
+        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -236,18 +248,6 @@
             "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
-            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
-          },
-          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
         }
       }
     },
@@ -288,24 +288,6 @@
             }
           },
           "fingerprint": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e8ae22fe03ea32fd47ca70bb8597c4ea1715b97d.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e8ae22fe03ea32fd47ca70bb8597c4ea1715b97d.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-22T01:20:00-04:00",
-            "onset": "2026-09-22T01:20:00-04:00",
-            "expires": "2026-09-22T02:00:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 22 at 1:20AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "333e80cf3cfe37c2c97ccb3ac75e658638de6b6192f8b4fdc691344ef3f22d93"
         }
       }
     },
@@ -759,23 +741,23 @@
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6ad657436be45002805bc2aa644dac5dd86f2f1.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6ad657436be45002805bc2aa644dac5dd86f2f1.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-09-21T19:29:00-04:00",
-            "onset": "2026-09-21T19:29:00-04:00",
-            "expires": "2026-09-22T03:30:00-04:00",
+            "effective": "2026-09-22T02:11:00-04:00",
+            "onset": "2026-09-22T02:11:00-04:00",
+            "expires": "2026-09-22T14:00:00-04:00",
             "ends": "2026-09-23T08:00:00-04:00",
-            "headline": "Flood Watch issued September 21 at 7:29PM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
+            "headline": "Flood Watch issued September 22 at 2:11AM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "7091a209ee8fab2472eb538635b2338d86b659ef9464172cf5187f5f34afbbb6"
+          "fingerprint": "2cce407f890b7e0e7d79f1e1d731677632e2c54ded9860403d3d6f8c92d2f48f"
         }
       }
     },
@@ -797,23 +779,23 @@
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6ad657436be45002805bc2aa644dac5dd86f2f1.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eafa61e36dbf275849b3ddf2139d2c858b9a7588.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6ad657436be45002805bc2aa644dac5dd86f2f1.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-09-21T19:29:00-04:00",
-            "onset": "2026-09-21T19:29:00-04:00",
-            "expires": "2026-09-22T03:30:00-04:00",
+            "effective": "2026-09-22T02:11:00-04:00",
+            "onset": "2026-09-22T02:11:00-04:00",
+            "expires": "2026-09-22T14:00:00-04:00",
             "ends": "2026-09-23T08:00:00-04:00",
-            "headline": "Flood Watch issued September 21 at 7:29PM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
+            "headline": "Flood Watch issued September 22 at 2:11AM EDT until September 23 at 8:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "7091a209ee8fab2472eb538635b2338d86b659ef9464172cf5187f5f34afbbb6"
+          "fingerprint": "2cce407f890b7e0e7d79f1e1d731677632e2c54ded9860403d3d6f8c92d2f48f"
         }
       }
     },
