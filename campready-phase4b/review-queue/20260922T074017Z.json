@@ -1,0 +1,34 @@
+[
+  {
+    "canonical_key": "nc-van-hook-glade",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56c83ac586c6155ac858cff95d04bf6be13ae4aa.001.1",
+    "before": null,
+    "after": "d0ae353648b047c2127b038e2b91db654516fac404c4d032f8c9c0be7c5d3764",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56c83ac586c6155ac858cff95d04bf6be13ae4aa.001.1",
+    "before": null,
+    "after": "d0ae353648b047c2127b038e2b91db654516fac404c4d032f8c9c0be7c5d3764",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-burrells-ford",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56c83ac586c6155ac858cff95d04bf6be13ae4aa.001.1",
+    "before": null,
+    "after": "d0ae353648b047c2127b038e2b91db654516fac404c4d032f8c9c0be7c5d3764",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56c83ac586c6155ac858cff95d04bf6be13ae4aa.001.1",
+    "before": null,
+    "after": "d0ae353648b047c2127b038e2b91db654516fac404c4d032f8c9c0be7c5d3764",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
