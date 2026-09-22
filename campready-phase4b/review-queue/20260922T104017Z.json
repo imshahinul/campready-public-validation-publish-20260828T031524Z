@@ -1,0 +1,26 @@
+[
+  {
+    "canonical_key": "nc-hurricane-creek",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+    "before": null,
+    "after": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+    "before": null,
+    "after": "383ccd1698e33b2325fa0e2203ed2693420e02b51994bc53f56be1dd5e48683b",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp",
+    "before": null,
+    "after": "022e305596176eb0dc9b3f4c82653862173a455ae7559a1d922e3748d27c2da7",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]

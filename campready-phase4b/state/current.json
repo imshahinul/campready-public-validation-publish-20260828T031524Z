@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-22T09:40:19.830856+00:00",
-  "run_id": "20260922T094019Z",
+  "accepted_at_utc": "2026-09-22T10:40:17.916259+00:00",
+  "run_id": "20260922T104017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -253,7 +253,23 @@
     },
     "nc-hurricane-creek": {
       "authority_family": "USFS",
-      "events": {}
+      "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Nantahala Ranger District, Nantahala National Forest\nHurricane Creek Horse & Primitive Campground\nThis primitive camping area is located in the midst of a multitude of trails for hikers and horseback riders. A horse camp Is available with stalls. A vault toilet and fire rings are available. Access to horse trails is available directly from the horse camp. Big and small game hunting occurs in the surrounding area.\nGeneral Information\nSeasons of Use\nMarch 15 - January 1\nRestrictions\nHorses are permitted only in the horse camp area and on trails. Fire are permitted only in fire rings. No camping within 50 feet of water.\nFee Site and Info\nOvernight Use:\nSingle Site: $6 per night\n$6 per camping unit on a first come, first serve basis\nOffice Contact Information\nNantahala Ranger District\nAddress: 90 Sloan Road Franklin, NC 28734\nPhone: (828) 524-6441\nHours: (Mon - Fri) 8:00 AM - 4:30 PM (Closed on federal holidays)\nOffice Email: sm.fs.nantahalard@usda.gov\nGetting There\nLatitude / Longitude\nLatitude:  35.05513249\nLongitude:  -83.51003462\nDirections\nFrom Franklin, take US 64W for 9 miles, turn left on old US 64 and follow signs to Standing Indian Campground. Continue south on FS Rd 67 passed Standing Indian Campground for 2 miles. Gravel road\nFacility and Amenity Information\nRestrooms\nRestrooms are not available at this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nHiking\nDay Hikes\nBackpacking\nGeneral Hiking\nHorse Riding and Camping\nHorseback Riding\nHorse Camping\nFishing\nFishing - River/Stream\nOutdoor Science and Learning\nViewing Wildlife",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc"
+        }
+      }
     },
     "nc-north-mills-river": {
       "authority_family": "USFS",
@@ -366,6 +382,21 @@
     "sarahs-creek": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/sarahs-creek-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nSarah's Creek Campground\nCurrent Conditions\nQuiet hours are from 10 pm-6 am daily. During quiet hours generators, music, or other disturbing noises are not allowed. Starting January 1, 2025, All Camping will be by Reservation Only. There will no longer be any First Come/First Service.\nReservation Only\nExtending the same primitive feel as its neighboring Warwoman Wildlife Management Area and the Chattooga Wild & Scenic River, Sarah's Creek 22-site developed campground offers a tranquil escape, a place to relax, and perhaps even catch a few fish.\nReservations\nReserve on Recreation.Gov\nGeneral Information\nSeasons of Use\nOpen year-round\nOperational Hours\n24 hours a day, quiet hours are 10pm - 6am\nRestrictions\nThe maximum stay is 14 day.  Pick out your site and pay the fee within 30 minutes after arrival. Quiet hours from 10pm-6am. No generators to be operating during quiet hours. No UTV's, ATV's, or Golf Carts to be unloaded or used in or around the campground or on Sarah's Creek or any other Forest Service Road on the CONF. After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay.\nPasses and Permits\nGeorgia fishing license and trout stamp are required for fishing. Please contact the State of Georgia for any fishing information.\nThe Interagency Senior and Access Passes and the Golden Age and Golden Access Passports are accepted.  These passes entitle the pass holder to a 50% discount on camping fees.\nFee Site and Info\nAll camp sites are $10.00/night. Senior and Acess passes accepted for 50% discount. Please be sure to put your Senior or Access number on the fee envelope for verification. Payable at drop-box within campground by cash or check pay to the order of: USDA Forest Service\nGetting There\nDirections\nPhysical Address: 1946 Sarah's Creek Rd., Clayton GA\nFrom Clayton, go east on Warwoman Road for 11.6 miles. Turn left on Forest Service Road 156. Sarahs Creek camping area is about 2 miles on the left and right.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nFishing\nFishing - River/Stream",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "383ccd1698e33b2325fa0e2203ed2693420e02b51994bc53f56be1dd5e48683b"
+        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -651,6 +682,21 @@
     "willis-knob": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/willis-knob-horse-camp",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nWillis Knob Horse Camp\nCurrent Conditions\nOpen year-round, requires reservations to camp.\nLocated in the Northeast Georgia Mountains, and far from civilization, lies one of the Chattahoochee-Oconee National Forest’s most beloved horse-lover hideaways: Willis Knob Horse Camp.  The campground features camping for horseback riders, riding and hiking trails, and fishing in the nearby Chattooga River. Restrooms are accessible to people with disabilities. The Willis Knob Trail in Georgia combines with South Carolina's Whetstone Horse Trail to offer 27.5 miles of the most scenic horseback riding and hiking in the Southern Blue Ridge Mountains. Winding across deeply dissected ridges, the trails descend into the beautiful Chattooga Wild and Scenic River.\nReservations\nReserve on Recreation.Gov\nGeneral Information\nSeasons of Use\nOpen Year-Round\nOperational Hours\nOpen year-round. Quite hours are 10pm-6am\nRestrictions\nThe maximum stay is 14 days. After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay. No dumping of gray or black water, please take it to the nearest State park or other facilities for that purpose. Sorry there are none in the immediate area.\nPasses and Permits\nState of Georgia fishing license and trout stamp stamp required for fishing.\nThe Interagency Senior and Access Passes and the Golden Age and Access Passports are accepted. These passes grant the pass holder to a 50% discount on camping fees at a single site only. Sorry no discounts for group sites.\nFee Site and Info\nSingle Site Camping: $20/night w/ electric and water hook-ups\nDouble Site Camping: $30/night for 2 sites W/electic and water hook-ups\nGetting There\nDirections\nDirections: From Clayton, go east on Warwoman Road for 11.6 miles. Turn right on Forest Service Road 157, camping area is about 2 miles on the left.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nHorse Riding and Camping\nHorseback Riding\nHorse Camping\nHiking\nDay Hikes",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "022e305596176eb0dc9b3f4c82653862173a455ae7559a1d922e3748d27c2da7"
+        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
