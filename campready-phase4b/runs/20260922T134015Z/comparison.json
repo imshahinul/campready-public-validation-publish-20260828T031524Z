@@ -1,0 +1,106 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "before": null,
+      "after": "38c09333e02e9cc9468d7d8b8d239bb6117fb9eb0b17610b7d501d4bd347fa47",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground",
+      "before": null,
+      "after": "df678508e720c5722070ecc71361cc8bdedb52a02186413e5508c8d6ff1c2229",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "before": null,
+      "after": "57e212bf4f68a05659af21de447939d9c04304852ef82bf20895a58bffda0bcb",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "before": null,
+      "after": "38c09333e02e9cc9468d7d8b8d239bb6117fb9eb0b17610b7d501d4bd347fa47",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground",
+      "before": null,
+      "after": "df678508e720c5722070ecc71361cc8bdedb52a02186413e5508c8d6ff1c2229",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "before": null,
+      "after": "57e212bf4f68a05659af21de447939d9c04304852ef82bf20895a58bffda0bcb",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "before": null,
+      "after": "38c09333e02e9cc9468d7d8b8d239bb6117fb9eb0b17610b7d501d4bd347fa47",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground",
+      "before": null,
+      "after": "df678508e720c5722070ecc71361cc8bdedb52a02186413e5508c8d6ff1c2229",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "before": null,
+      "after": "57e212bf4f68a05659af21de447939d9c04304852ef82bf20895a58bffda0bcb",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+      "before": null,
+      "after": "38c09333e02e9cc9468d7d8b8d239bb6117fb9eb0b17610b7d501d4bd347fa47",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground",
+      "before": null,
+      "after": "df678508e720c5722070ecc71361cc8bdedb52a02186413e5508c8d6ff1c2229",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+      "before": null,
+      "after": "57e212bf4f68a05659af21de447939d9c04304852ef82bf20895a58bffda0bcb",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 3,
+  "relevance_ambiguity_count": 53
+}

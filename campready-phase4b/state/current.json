@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-22T12:40:18.966857+00:00",
-  "run_id": "20260922T124018Z",
+  "accepted_at_utc": "2026-09-22T13:40:15.783085+00:00",
+  "run_id": "20260922T134015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -95,6 +95,21 @@
     "lake-rabun": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/lake-rabun-beach-recreation-area",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nLake Rabun Beach Recreation Area\nCurrent Conditions\nBoat area is open year-round. The campground closes October 28, 2025, and reopens on April 1, 2026.\nCradled in the hills of the North Georgia Mountains overlooking beautiful Lake Rabun, this developed recreation area offers hiking, all sorts of water activities like swimming, boating, and fishing, and an opportunity to absorb the peaceful lake scenery. The 80-site campground located across the highway is closed in the winter months. This area is open year-round.\nReservations\nReserve on Recreation.Gov\nGeneral Information\nSeasons of Use\nOpen Year-round\nOperational Hours\nLake Rabun Beach Boat Launch and Beach areas are open sunrise to sundown.\nRestrictions\nNo overnight parking except those companies under a special use permit and it is stated in the permit.\nPasses and Permits\nGeorgia fishing license, valid boating registration.\nThe Interagency Senior and Access Passes and the Golden Age and Access Passports are accepted.\nFee Site and Info\nDay Use — Parking – $5 per person ages 16+\nDay Use – Busses & Vans – $5 per vehicles + $2 per person\nBoat & Trailer Launch – $5  Fee tubes are located at the Kiosk at the top of the boat launch and at the Kiosk near the sidewalk to the beach access point.\nOffice Contact Information\nChattooga River Ranger District\nAddress: 9975 Highway 441S Lakemont, GA 30552\nPhone: 706-754-6221\nHours: Office hours are Monday through Friday 8:00 to noon and 1:00 to 4:30. (Closed on federal holidays)\nOffice Email: SM.FS.CRRD@usda.gov\nGetting There\nDirections\nPhysical Address: 5315 Lake Rabun Rd, Lakemont, GA\nTake U.S. 441/23 south from Clayton for 5.4 miles; turn right on Wiley Connector for 0.1 mile; turn left (south) on Georgia 15(Historic 441) for 1.4 miles; turn right on Lake Rabun Road (County Road 10) for 5 miles. If pulling a trailer, the best route is to go west on Hwy 76 for 7 miles; turn left on Charlie Mtn. Road for 3.5 miles; turn right on Bridge Creek Road for 2 miles; turn left on Burton Dam Road for 5.4 miles. The campground will be on your left. View a map.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nWater Activities\nBoating - Motorized\nSwimming\nWaterskiing\nPicnicking\nPicnicking - Single\nHiking\nDay Hikes\nFishing\nFishing - Lake & Pond",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "38c09333e02e9cc9468d7d8b8d239bb6117fb9eb0b17610b7d501d4bd347fa47"
+        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -400,11 +415,42 @@
     },
     "sc-burrells-ford": {
       "authority_family": "USFS",
-      "events": {}
+      "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/francismarionsumter/recreation/burrells-ford-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Recreation Region: Andrew Pickens Ranger District\nBurrell's Ford Campground\nBurrell's Ford campground is open year round with no charge near where FS Road 646 crosses the Chattooga River. A vault toilet and picnic tables are available. Walk .25 miles from the parking lot to individual campsites on the Chattooga River.\nReservations\nGeneral Information\nOperational Hours\nOpen 24 hours/day\nRestrictions\nStay is limited to 14 days. Saddle, pack and draft animals are not permitted at any campsite.\nFee Site and Info\nNo fees are required for this site\nContact Information\nContact Name: Andrew Pickens Ranger District\nContact Phone: 864-638-9568\nGetting There\nLatitude / Longitude\nLatitude:  34.96900499\nLongitude:  -83.11813303\nFacility and Amenity Information\nRestrooms\nVault toilet(s)\nWater\nPotable water is not available at this site.\nPicnic Tables\nPicnic tables are available at this site.\nNearby Trails\nChattooga Trail\nRecreation Opportunities\nFishing\nFishing - River/Stream\nRecreation Groups\nCamping",
+            "signals": {
+              "site_open_present": false,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "df678508e720c5722070ecc71361cc8bdedb52a02186413e5508c8d6ff1c2229"
+        }
+      }
     },
     "tate-branch": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/tate-branch-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nTate Branch Campground\nCurrent Conditions\nAll camping is by reservation only. There is no longer a first come, first serve option.\nReservation Only\nThis much admired 17-site developed campground is located at the junction of Tallulah River and Tate Branch in the North Georgia mountains. Whether traveling to the forest to camp, fish, hike, or just breathe clean mountain air, this remote location offers visitors a chance to escape from the hustle and bustle of everyday living and unwind. In addition, the site has four walk-in tent sites which allow campers and hikers to take full advantage of the area's rustic character.\nReservations\nReserve on Recreation.Gov\nGeneral Information\nSeasons of Use\n03/15/2025 - 10/31/2025\nOperational Hours\nThe regular season opens from March 15th to October 31st  of each year.\nRestrictions\nThe maximum stay is 14 days.  After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay. NOTE: No UTVs, ATVs, or golf carts allowed in the campground or on surrounding Forest Service roads.\nPasses and Permits\nGeorgia fishing license and trout stamp is required for fishing.\nThe Interagency Senior and Access Passes, the Golden Age, and Access Passports are accepted.  These passes entitle the pass holder to a 50% discount on camping fees, there is no free camping. Please remember to write your pass number on the fee envelope to receive credit for the discount.\nFee Site and Info\nCamping: $15/site/night\nGetting There\nDirections\nPhysical Address: 4049 Tallulah River Rd., Clayton, GA\nTake U.S. 76 west from Clayton for 8 miles; turn right (north) on Persimmon Road for 4.2 miles; turn left (northwest) on Forest Service Road 70 for 4 miles.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nFishing\nFishing - River/Stream",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "57e212bf4f68a05659af21de447939d9c04304852ef82bf20895a58bffda0bcb"
+        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -474,21 +520,6 @@
     "upper-chattahoochee": {
       "authority_family": "USFS",
       "events": {
-        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground": {
-          "source_family": "USFS_WEBSITE_RECREATION",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
-          "quality": "OK",
-          "semantic": {
-            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nUpper Chattahoochee River Campground\nThe drive up through the winding misty roads of North Georgia leading to this 19-site, developed campground is almost as breath-taking as the site itself. Although the drive leaves one feeling as if civilization has been left far, far behind, the ever popular and beloved alpine village of Helen, Georgia is less than a half hour away. Camping here, visitors can enjoy the pleasure of Georgia’s number one vacation spot with shopping, dining, and entertainment in the city of Helen and recreational activities such as camping, hiking, biking, and fishing in the campground. Visitors should keep an eye out for the interpretive information available on the Chattahoochee River Watershed and how the river affects water usage for Georgia, Alabama, and Florida, posted upon entering the campground area.\nSITE TEMPORARILY CLOSED\nUpper Chattahoochee River Campground Temporarily Closed for Facility Improvements\nActive Alerts\nCampground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nReservations\nReserve on Recreation.Gov\nGeneral Information\nSeasons of Use\n03/15 - 10/31\nOperational Hours\nUpper Chattahoochee River Campground Temporarily Closed for Facility Improvements\nRestrictions\nThe maximum stay is 14 day.  Pick out your site and pay the fee within 30 minutes after arrival. Quiet hours from 10pm-6am. No generators to be operating during quiet hours. No UTV's, ATV's, or Golf Carts to be unloaded or used in or around the campground or the Upper Chattahoochee River Road aka Willis Road. After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay.\nPasses and Permits\nGeorgia fishing license and trout stamp required for fishing\nThe Interagency Senior and Access Passes and the Golden Age and Access Passports are only passes accepted. These passes entitle the pass holder to a 50% discount on camping fees. Please write your pass number on the fee envelope upon payment into the fee tube by the kiosk.\nFee Site and Info\nCamping: $12/site/night\nOffice Contact Information\nChattooga River Ranger District\nAddress: 9975 Highway 441S Lakemont, GA 30552\nPhone: 706-754-6221\nHours: Office hours are Monday through Friday 8:00 to noon and 1:00 to 4:30. (Closed on federal holidays)\nOffice Email: SM.FS.CRRD@usda.gov\nGetting There\nDirections\nPhysical Address: 48 Forest Service Rd. 44, Helen, GA\nTake Georgia 75 north from Helen for approx. 8 miles. Just beyond mile marker 15 turn left onto the graveled Chattahoochee River Road and follow for 5 miles.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nPicnicking\nPicnicking - Single\nHiking\nDay Hikes\nFishing\nFishing - River/Stream",
-            "signals": {
-              "site_open_present": true,
-              "site_closed_present": false,
-              "temporarily_closed_present": true,
-              "reopened_present": true
-            }
-          },
-          "fingerprint": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
