@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-23T06:40:27.038157+00:00",
-  "run_id": "20260923T064027Z",
+  "accepted_at_utc": "2026-09-23T07:40:16.325218+00:00",
+  "run_id": "20260923T074016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -314,23 +314,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc81015aca3a9e9ca0b097e32d8e6ee26c847755.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.048a75f478f3c819bebb7465ab521d7e579609ff.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc81015aca3a9e9ca0b097e32d8e6ee26c847755.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.048a75f478f3c819bebb7465ab521d7e579609ff.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-22T19:49:00-04:00",
+            "effective": "2026-09-23T02:59:00-04:00",
             "onset": "2026-09-23T06:00:00-04:00",
-            "expires": "2026-09-23T04:00:00-04:00",
+            "expires": "2026-09-23T20:00:00-04:00",
             "ends": "2026-09-23T20:00:00-04:00",
-            "headline": "Beach Hazards Statement issued September 22 at 7:49PM EDT until September 23 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Beach Hazards Statement issued September 23 at 2:59AM EDT until September 23 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "de42d93abc52006c950d0a7e843d5055de4f3c4088bbbbc22cfaf7e488d79cb6"
+          "fingerprint": "719ff99db93346b77e342da1d115034932ed030dddeb5e979d68b762da6c3f5a"
         }
       }
     },
@@ -759,24 +759,6 @@
             }
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-09-22T19:39:00-04:00",
-            "onset": "2026-09-22T19:39:00-04:00",
-            "expires": "2026-09-23T03:45:00-04:00",
-            "ends": "2026-09-23T20:00:00-04:00",
-            "headline": "Flood Watch issued September 22 at 7:39PM EDT until September 23 at 8:00PM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "a700cb382c2cde9ed7ab286edd9c72412172f3be0c6cbc7c72c2d0dda1d3138a"
         }
       }
     },
@@ -797,24 +779,6 @@
             }
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-09-22T19:39:00-04:00",
-            "onset": "2026-09-22T19:39:00-04:00",
-            "expires": "2026-09-23T03:45:00-04:00",
-            "ends": "2026-09-23T20:00:00-04:00",
-            "headline": "Flood Watch issued September 22 at 7:39PM EDT until September 23 at 8:00PM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "a700cb382c2cde9ed7ab286edd9c72412172f3be0c6cbc7c72c2d0dda1d3138a"
         }
       }
     },

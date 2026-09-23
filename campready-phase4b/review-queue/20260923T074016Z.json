@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "ncsp-carolina-beach",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.048a75f478f3c819bebb7465ab521d7e579609ff.001.1",
+    "before": null,
+    "after": "719ff99db93346b77e342da1d115034932ed030dddeb5e979d68b762da6c3f5a",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
