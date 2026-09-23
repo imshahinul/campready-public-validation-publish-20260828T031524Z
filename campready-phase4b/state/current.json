@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-23T21:40:18.618804+00:00",
-  "run_id": "20260923T214018Z",
+  "accepted_at_utc": "2026-09-23T22:40:15.086296+00:00",
+  "run_id": "20260923T224015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -524,24 +524,6 @@
             }
           },
           "fingerprint": "7a79b68b3ef3fd8d02a32ba09034f36fa5f404f269bf77639c68f2e860d146f3"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be672e957ce0d968f6e954d5d04c3e11488c31e9.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.399906793049205,-84.10690421414178",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be672e957ce0d968f6e954d5d04c3e11488c31e9.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-09-23T16:10:00-04:00",
-            "onset": "2026-09-23T16:10:00-04:00",
-            "expires": "2026-09-23T18:15:00-04:00",
-            "ends": "2026-09-23T18:15:00-04:00",
-            "headline": "Flood Advisory issued September 23 at 4:10PM EDT until September 23 at 6:15PM EDT by NWS Morristown TN"
-          },
-          "fingerprint": "b307f1741e95c7def4e58bf5cae47046f566a7d7f45c6ffc8e5789ab05873853"
         }
       }
     },
