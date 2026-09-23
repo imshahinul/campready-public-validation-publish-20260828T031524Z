@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-23T22:40:15.086296+00:00",
-  "run_id": "20260923T224015Z",
+  "accepted_at_utc": "2026-09-23T23:40:17.368227+00:00",
+  "run_id": "20260923T234017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -313,7 +313,26 @@
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.225a7b789b2158a1b7f8793aa52d9c65d9ffb226.003.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.225a7b789b2158a1b7f8793aa52d9c65d9ffb226.003.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-09-23T18:57:00-04:00",
+            "onset": "2026-09-24T06:00:00-04:00",
+            "expires": "2026-09-24T04:00:00-04:00",
+            "ends": "2026-09-24T20:00:00-04:00",
+            "headline": "Rip Current Statement issued September 23 at 6:57PM EDT until September 24 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "07c95a382987b04ee40d7ed861849a084c9c2154b511facb281d0a2e62b596df"
+        }
+      }
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
