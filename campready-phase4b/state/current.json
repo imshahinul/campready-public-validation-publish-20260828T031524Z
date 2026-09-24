@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-24T22:40:15.891132+00:00",
-  "run_id": "20260924T224015Z",
+  "accepted_at_utc": "2026-09-24T23:40:16.532600+00:00",
+  "run_id": "20260924T234016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -796,23 +796,23 @@
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3c3ff3cded057c56864f0771739ada589e4ffe20.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.52ac177406ed4d4870fe277102844d32bdd08a6c.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3c3ff3cded057c56864f0771739ada589e4ffe20.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.52ac177406ed4d4870fe277102844d32bdd08a6c.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Frost Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-24T12:04:00-04:00",
+            "effective": "2026-09-24T19:24:00-04:00",
             "onset": "2026-09-25T01:00:00-04:00",
-            "expires": "2026-09-24T20:15:00-04:00",
+            "expires": "2026-09-25T03:30:00-04:00",
             "ends": "2026-09-25T09:00:00-04:00",
-            "headline": "Frost Advisory issued September 24 at 12:04PM EDT until September 25 at 9:00AM EDT by NWS Charleston WV"
+            "headline": "Frost Advisory issued September 24 at 7:24PM EDT until September 25 at 9:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "1b4d709d900c808329541639363acc959a5703fd9b3a586295eddb2deb213de5"
+          "fingerprint": "638ad7229eb428e5e3c9c675f9f2dcb53ea75149e56b7b657d7c48b2d04a4cbe"
         }
       }
     },

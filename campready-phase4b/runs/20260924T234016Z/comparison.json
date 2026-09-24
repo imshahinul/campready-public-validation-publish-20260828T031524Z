@@ -1,0 +1,46 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.52ac177406ed4d4870fe277102844d32bdd08a6c.001.1",
+      "before": null,
+      "after": "638ad7229eb428e5e3c9c675f9f2dcb53ea75149e56b7b657d7c48b2d04a4cbe",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.52ac177406ed4d4870fe277102844d32bdd08a6c.001.1",
+      "before": null,
+      "after": "638ad7229eb428e5e3c9c675f9f2dcb53ea75149e56b7b657d7c48b2d04a4cbe",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.52ac177406ed4d4870fe277102844d32bdd08a6c.001.1",
+      "before": null,
+      "after": "638ad7229eb428e5e3c9c675f9f2dcb53ea75149e56b7b657d7c48b2d04a4cbe",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.52ac177406ed4d4870fe277102844d32bdd08a6c.001.1",
+      "before": null,
+      "after": "638ad7229eb428e5e3c9c675f9f2dcb53ea75149e56b7b657d7c48b2d04a4cbe",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 1,
+  "relevance_ambiguity_count": 53
+}
