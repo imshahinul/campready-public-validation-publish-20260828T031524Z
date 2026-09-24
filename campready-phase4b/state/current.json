@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-24T16:40:17.385834+00:00",
-  "run_id": "20260924T164017Z",
+  "accepted_at_utc": "2026-09-24T17:40:52.987271+00:00",
+  "run_id": "20260924T174052Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -854,23 +854,23 @@
           },
           "fingerprint": "2c843c286b48ca3d35bd862c60b51eae5e4a9e38929ad8fb7001607295d8d8a7"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6f446946935fb33a95a34a3af4347aff84bcf28.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81ca1f682e88c76a4ed91db3d97a5000fde57e1e.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.82136767916264,-79.38632101654947",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6f446946935fb33a95a34a3af4347aff84bcf28.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81ca1f682e88c76a4ed91db3d97a5000fde57e1e.002.1",
           "quality": "OK",
           "semantic": {
             "event": "Frost Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-24T11:53:00-04:00",
+            "effective": "2026-09-24T13:00:00-04:00",
             "onset": "2026-09-25T01:00:00-04:00",
-            "expires": "2026-09-24T20:00:00-04:00",
+            "expires": "2026-09-24T21:00:00-04:00",
             "ends": "2026-09-25T09:00:00-04:00",
-            "headline": "Frost Advisory issued September 24 at 11:53AM EDT until September 25 at 9:00AM EDT by NWS Baltimore MD/Washington DC"
+            "headline": "Frost Advisory issued September 24 at 1:00PM EDT until September 25 at 9:00AM EDT by NWS Baltimore MD/Washington DC"
           },
-          "fingerprint": "aa4eca198e732c6c0fdc165a69ca86fe86f4f1a0d9c8d6a49cbd18a40a0f68c6"
+          "fingerprint": "e7debc4a18471d7b54e8f3136a10db08ef0d9f3079bb0692fa4e38b79a672b93"
         }
       }
     }
