@@ -1,0 +1,136 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.2",
+      "before": null,
+      "after": "a8cbb43afc561bb8140090891bd3ca700a0573dded1ef347659ca5a579f1321a",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.1",
+      "before": null,
+      "after": "2c46fb06e343d713491f831b05f531b84258b22ad0311a346ab1f51449ec3c93",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.3",
+      "before": null,
+      "after": "442cfd52128dea966d52ce43e40b375ce8fc1b2fe4ab0f429a0c64aa6c743afe",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.74b330e86ce7713ceb8e3908f55054ee75210082.001.1",
+      "before": null,
+      "after": "039037772a7d3ec29df08b2fddf00386f3cccda9cb77beabced97e3e6057c4d8",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.2",
+      "before": null,
+      "after": "a8cbb43afc561bb8140090891bd3ca700a0573dded1ef347659ca5a579f1321a",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.1",
+      "before": null,
+      "after": "2c46fb06e343d713491f831b05f531b84258b22ad0311a346ab1f51449ec3c93",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.3",
+      "before": null,
+      "after": "442cfd52128dea966d52ce43e40b375ce8fc1b2fe4ab0f429a0c64aa6c743afe",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.74b330e86ce7713ceb8e3908f55054ee75210082.001.1",
+      "before": null,
+      "after": "039037772a7d3ec29df08b2fddf00386f3cccda9cb77beabced97e3e6057c4d8",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.2",
+      "before": null,
+      "after": "a8cbb43afc561bb8140090891bd3ca700a0573dded1ef347659ca5a579f1321a",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.1",
+      "before": null,
+      "after": "2c46fb06e343d713491f831b05f531b84258b22ad0311a346ab1f51449ec3c93",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.3",
+      "before": null,
+      "after": "442cfd52128dea966d52ce43e40b375ce8fc1b2fe4ab0f429a0c64aa6c743afe",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.74b330e86ce7713ceb8e3908f55054ee75210082.001.1",
+      "before": null,
+      "after": "039037772a7d3ec29df08b2fddf00386f3cccda9cb77beabced97e3e6057c4d8",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.2",
+      "before": null,
+      "after": "a8cbb43afc561bb8140090891bd3ca700a0573dded1ef347659ca5a579f1321a",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.1",
+      "before": null,
+      "after": "2c46fb06e343d713491f831b05f531b84258b22ad0311a346ab1f51449ec3c93",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.3",
+      "before": null,
+      "after": "442cfd52128dea966d52ce43e40b375ce8fc1b2fe4ab0f429a0c64aa6c743afe",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-seneca-shadows",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.74b330e86ce7713ceb8e3908f55054ee75210082.001.1",
+      "before": null,
+      "after": "039037772a7d3ec29df08b2fddf00386f3cccda9cb77beabced97e3e6057c4d8",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 4,
+  "relevance_ambiguity_count": 53
+}

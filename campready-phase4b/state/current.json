@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-24T23:40:16.532600+00:00",
-  "run_id": "20260924T234016Z",
+  "accepted_at_utc": "2026-09-25T00:40:16.512352+00:00",
+  "run_id": "20260925T004016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -314,59 +314,59 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ceee18f6353c0925a66ff26b13835e740723235.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ceee18f6353c0925a66ff26b13835e740723235.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.2",
           "quality": "OK",
           "semantic": {
             "event": "High Surf Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-24T17:52:00-04:00",
-            "onset": "2026-09-24T17:52:00-04:00",
-            "expires": "2026-09-25T02:00:00-04:00",
+            "effective": "2026-09-24T20:35:00-04:00",
+            "onset": "2026-09-24T20:35:00-04:00",
+            "expires": "2026-09-25T04:00:00-04:00",
             "ends": "2026-09-25T08:00:00-04:00",
-            "headline": "High Surf Advisory issued September 24 at 5:52PM EDT until September 25 at 8:00AM EDT by NWS Wilmington NC"
+            "headline": "High Surf Advisory issued September 24 at 8:35PM EDT until September 25 at 8:00AM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "d376a127cdbcdc8ac448b4ab90b964809faa16ec45dede93fe54f3bca9d4802f"
+          "fingerprint": "a8cbb43afc561bb8140090891bd3ca700a0573dded1ef347659ca5a579f1321a"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ceee18f6353c0925a66ff26b13835e740723235.001.3": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ceee18f6353c0925a66ff26b13835e740723235.001.3",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-09-24T17:52:00-04:00",
-            "onset": "2026-09-24T17:52:00-04:00",
-            "expires": "2026-09-25T02:00:00-04:00",
-            "ends": "2026-09-24T20:00:00-04:00",
-            "headline": "Rip Current Statement issued September 24 at 5:52PM EDT until September 24 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "e17c36cdfa1bb536d9ec1b3d92cf6ad4f9cc383aee18fec9ca49d37c578a301e"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ceee18f6353c0925a66ff26b13835e740723235.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ceee18f6353c0925a66ff26b13835e740723235.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Coastal Flood Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-24T17:52:00-04:00",
-            "onset": "2026-09-24T17:52:00-04:00",
-            "expires": "2026-09-25T02:00:00-04:00",
+            "effective": "2026-09-24T20:35:00-04:00",
+            "onset": "2026-09-24T20:35:00-04:00",
+            "expires": "2026-09-25T04:00:00-04:00",
             "ends": "2026-09-24T21:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued September 24 at 5:52PM EDT until September 24 at 9:00PM EDT by NWS Wilmington NC"
+            "headline": "Coastal Flood Advisory issued September 24 at 8:35PM EDT until September 24 at 9:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "53c9daa94ec5d5e0ccc846942f12522021484490572b643fbbf49c94b8536ff4"
+          "fingerprint": "2c46fb06e343d713491f831b05f531b84258b22ad0311a346ab1f51449ec3c93"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.3": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.65219e6528054b75fd1f323f54b38dc2e958c43c.001.3",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-09-24T20:35:00-04:00",
+            "onset": "2026-09-24T20:35:00-04:00",
+            "expires": "2026-09-25T04:00:00-04:00",
+            "ends": "2026-09-25T20:00:00-04:00",
+            "headline": "Rip Current Statement issued September 24 at 8:35PM EDT until September 25 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "442cfd52128dea966d52ce43e40b375ce8fc1b2fe4ab0f429a0c64aa6c743afe"
         }
       }
     },
@@ -854,23 +854,23 @@
           },
           "fingerprint": "2c843c286b48ca3d35bd862c60b51eae5e4a9e38929ad8fb7001607295d8d8a7"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81ca1f682e88c76a4ed91db3d97a5000fde57e1e.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.74b330e86ce7713ceb8e3908f55054ee75210082.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.82136767916264,-79.38632101654947",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81ca1f682e88c76a4ed91db3d97a5000fde57e1e.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.74b330e86ce7713ceb8e3908f55054ee75210082.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Frost Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-24T13:00:00-04:00",
+            "effective": "2026-09-24T20:31:00-04:00",
             "onset": "2026-09-25T01:00:00-04:00",
-            "expires": "2026-09-24T21:00:00-04:00",
+            "expires": "2026-09-25T04:45:00-04:00",
             "ends": "2026-09-25T09:00:00-04:00",
-            "headline": "Frost Advisory issued September 24 at 1:00PM EDT until September 25 at 9:00AM EDT by NWS Baltimore MD/Washington DC"
+            "headline": "Frost Advisory issued September 24 at 8:31PM EDT until September 25 at 9:00AM EDT by NWS Baltimore MD/Washington DC"
           },
-          "fingerprint": "e7debc4a18471d7b54e8f3136a10db08ef0d9f3079bb0692fa4e38b79a672b93"
+          "fingerprint": "039037772a7d3ec29df08b2fddf00386f3cccda9cb77beabced97e3e6057c4d8"
         }
       }
     }
