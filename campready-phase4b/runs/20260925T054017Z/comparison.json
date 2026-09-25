@@ -1,0 +1,106 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.3",
+      "before": null,
+      "after": "ea965d62951bde20e47a4a0b78ac1f3e3c2226596a64b692cff7f34e9c89e87a",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.2",
+      "before": null,
+      "after": "94a502a53b013daad36a55053fb2a73b0e4147b30a3f09a9281c1bd1a9d7a4dd",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c107507483bade8c6ec088133567f804de74bfee.001.1",
+      "before": null,
+      "after": "0de889054161d954fe01677facdbec64d1c8016b314ecb0e216da75b809fe5ff",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.3",
+      "before": null,
+      "after": "ea965d62951bde20e47a4a0b78ac1f3e3c2226596a64b692cff7f34e9c89e87a",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.2",
+      "before": null,
+      "after": "94a502a53b013daad36a55053fb2a73b0e4147b30a3f09a9281c1bd1a9d7a4dd",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c107507483bade8c6ec088133567f804de74bfee.001.1",
+      "before": null,
+      "after": "0de889054161d954fe01677facdbec64d1c8016b314ecb0e216da75b809fe5ff",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.3",
+      "before": null,
+      "after": "ea965d62951bde20e47a4a0b78ac1f3e3c2226596a64b692cff7f34e9c89e87a",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.2",
+      "before": null,
+      "after": "94a502a53b013daad36a55053fb2a73b0e4147b30a3f09a9281c1bd1a9d7a4dd",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c107507483bade8c6ec088133567f804de74bfee.001.1",
+      "before": null,
+      "after": "0de889054161d954fe01677facdbec64d1c8016b314ecb0e216da75b809fe5ff",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.3",
+      "before": null,
+      "after": "ea965d62951bde20e47a4a0b78ac1f3e3c2226596a64b692cff7f34e9c89e87a",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cab38023ab187300582f04d2af6c3af74b42dc6c.001.2",
+      "before": null,
+      "after": "94a502a53b013daad36a55053fb2a73b0e4147b30a3f09a9281c1bd1a9d7a4dd",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c107507483bade8c6ec088133567f804de74bfee.001.1",
+      "before": null,
+      "after": "0de889054161d954fe01677facdbec64d1c8016b314ecb0e216da75b809fe5ff",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 3,
+  "relevance_ambiguity_count": 43
+}
