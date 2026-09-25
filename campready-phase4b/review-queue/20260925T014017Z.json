@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "wv-bear-heaven",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.93941856e251a7ab45b47d99c4dfdd061edae361.002.1",
+    "before": null,
+    "after": "f027e3001cc4855ea4b631b94fc5e9bf198ecdf6453b0b47e9160b29779036e3",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
