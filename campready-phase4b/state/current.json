@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-26T14:40:16.097829+00:00",
-  "run_id": "20260926T144016Z",
+  "accepted_at_utc": "2026-09-26T15:40:16.477827+00:00",
+  "run_id": "20260926T154016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -314,23 +314,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91721cee9ab0670d83cdf3c1830529c31915ee60.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ab1dd83181c795671d5e41b461092ace9d012215.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91721cee9ab0670d83cdf3c1830529c31915ee60.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ab1dd83181c795671d5e41b461092ace9d012215.002.1",
           "quality": "OK",
           "semantic": {
             "event": "Rip Current Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-26T01:45:00-04:00",
-            "onset": "2026-09-26T01:45:00-04:00",
-            "expires": "2026-09-26T10:00:00-04:00",
+            "effective": "2026-09-26T10:46:00-04:00",
+            "onset": "2026-09-26T10:46:00-04:00",
+            "expires": "2026-09-26T12:00:00-04:00",
             "ends": "2026-09-26T20:00:00-04:00",
-            "headline": "Rip Current Statement issued September 26 at 1:45AM EDT until September 26 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Rip Current Statement issued September 26 at 10:46AM EDT until September 26 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "37c9d27089eaf87c23c77840320cdc2f788997b59cb6a9067873183be7b10026"
+          "fingerprint": "7b5d00e5caf05edb0d6633abbb4632164cf5df8ce76d9382724d7c2870aa7ff2"
         }
       }
     },
