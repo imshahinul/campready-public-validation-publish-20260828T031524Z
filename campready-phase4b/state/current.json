@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-26T12:40:14.217788+00:00",
-  "run_id": "20260926T124014Z",
+  "accepted_at_utc": "2026-09-26T13:40:16.065468+00:00",
+  "run_id": "20260926T134016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -797,24 +797,6 @@
             }
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eac2f5616060775ac7847633fdbce5d1f8d37170.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eac2f5616060775ac7847633fdbce5d1f8d37170.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-26T04:10:00-04:00",
-            "onset": "2026-09-26T04:10:00-04:00",
-            "expires": "2026-09-26T09:00:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 26 at 4:10AM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "0eb348f2f2e0e57f317bdf287d07a90ba071ddf42f7dcf82ee191bfd85d9d5c8"
         }
       }
     },
