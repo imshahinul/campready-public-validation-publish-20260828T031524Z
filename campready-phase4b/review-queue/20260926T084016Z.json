@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "wv-big-rock",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eac2f5616060775ac7847633fdbce5d1f8d37170.001.1",
+    "before": null,
+    "after": "0eb348f2f2e0e57f317bdf287d07a90ba071ddf42f7dcf82ee191bfd85d9d5c8",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
