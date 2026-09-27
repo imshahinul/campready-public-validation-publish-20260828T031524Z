@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-27T15:40:16.643388+00:00",
-  "run_id": "20260927T154016Z",
+  "accepted_at_utc": "2026-09-27T16:40:16.795610+00:00",
+  "run_id": "20260927T164016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
