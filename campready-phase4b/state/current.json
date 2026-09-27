@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-27T03:40:51.563282+00:00",
-  "run_id": "20260927T034051Z",
+  "accepted_at_utc": "2026-09-27T04:40:51.521932+00:00",
+  "run_id": "20260927T044051Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -313,7 +313,26 @@
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5099146844a92eb9609151f9ed250962bc6b6575.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5099146844a92eb9609151f9ed250962bc6b6575.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Coastal Flood Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-09-27T00:16:00-04:00",
+            "onset": "2026-09-27T06:00:00-04:00",
+            "expires": "2026-09-27T11:00:00-04:00",
+            "ends": "2026-09-27T11:00:00-04:00",
+            "headline": "Coastal Flood Advisory issued September 27 at 12:16AM EDT until September 27 at 11:00AM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "7f8c516c56163c98c4dc3a20ad65b3dc2fdd1cdf363df80f569b3169def0d036"
+        }
+      }
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
