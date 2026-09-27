@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-26T23:40:14.659808+00:00",
-  "run_id": "20260926T234014Z",
+  "accepted_at_utc": "2026-09-27T00:40:15.022251+00:00",
+  "run_id": "20260927T004015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -314,41 +314,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.29fe8a6d9b805a7961a127bd330650f3a574fbf2.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b80f5af8ae6637c442c2417eab5ba086fdd89bf8.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.29fe8a6d9b805a7961a127bd330650f3a574fbf2.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b80f5af8ae6637c442c2417eab5ba086fdd89bf8.001.2",
           "quality": "OK",
           "semantic": {
             "event": "Coastal Flood Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-09-26T13:27:00-04:00",
-            "onset": "2026-09-26T18:00:00-04:00",
-            "expires": "2026-09-26T20:00:00-04:00",
+            "effective": "2026-09-26T20:01:00-04:00",
+            "onset": "2026-09-26T20:01:00-04:00",
+            "expires": "2026-09-26T22:00:00-04:00",
             "ends": "2026-09-26T22:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued September 26 at 1:27PM EDT until September 26 at 10:00PM EDT by NWS Wilmington NC"
+            "headline": "Coastal Flood Advisory issued September 26 at 8:01PM EDT until September 26 at 10:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "f0afe8edab34e307555372e8e3b6f45bf011e99c38325eeca0fe75f120ee98fd"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.29fe8a6d9b805a7961a127bd330650f3a574fbf2.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.29fe8a6d9b805a7961a127bd330650f3a574fbf2.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-09-26T13:27:00-04:00",
-            "onset": "2026-09-26T13:27:00-04:00",
-            "expires": "2026-09-26T20:00:00-04:00",
-            "ends": "2026-09-26T20:00:00-04:00",
-            "headline": "Rip Current Statement issued September 26 at 1:27PM EDT until September 26 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "e71b3887f9e88c1b8b0d714af5891c5ac82d1d2ab8b7c9db27edcb4dd40bbc7a"
+          "fingerprint": "dc2e5485704b584ea934ffa564a1de8b2401407d70f45a2eaba36767fdb5a48f"
         }
       }
     },
