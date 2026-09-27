@@ -1,0 +1,76 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "wv-bear-heaven",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wv-big-rock",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
+      "before": null,
+      "after": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 2,
+  "relevance_ambiguity_count": 43
+}
