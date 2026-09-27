@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-09-27T13:40:15.660699+00:00",
-  "run_id": "20260927T134015Z",
+  "accepted_at_utc": "2026-09-27T14:40:52.215513+00:00",
+  "run_id": "20260927T144052Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -313,26 +313,7 @@
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5099146844a92eb9609151f9ed250962bc6b6575.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5099146844a92eb9609151f9ed250962bc6b6575.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Coastal Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-09-27T00:16:00-04:00",
-            "onset": "2026-09-27T06:00:00-04:00",
-            "expires": "2026-09-27T11:00:00-04:00",
-            "ends": "2026-09-27T11:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued September 27 at 12:16AM EDT until September 27 at 11:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "7f8c516c56163c98c4dc3a20ad65b3dc2fdd1cdf363df80f569b3169def0d036"
-        }
-      }
+      "events": {}
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
@@ -759,24 +740,6 @@
             }
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-27T04:49:00-04:00",
-            "onset": "2026-09-27T04:49:00-04:00",
-            "expires": "2026-09-27T10:00:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 27 at 4:49AM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060"
         }
       }
     },
@@ -797,24 +760,6 @@
             }
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f3175b03b0997f45c2633f985569b5dedeef028.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-09-27T04:49:00-04:00",
-            "onset": "2026-09-27T04:49:00-04:00",
-            "expires": "2026-09-27T10:00:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued September 27 at 4:49AM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "3439981b6e8b990974998b06efdbc1b09394b9d9b422cd9a2f05e006d7434060"
         }
       }
     },
