@@ -1,0 +1,63 @@
+{
+  "run_id": "20260930T084018Z",
+  "started_at_utc": "2026-09-30T08:40:18.428044+00:00",
+  "finished_at_utc": "2026-09-30T08:42:02.701670+00:00",
+  "trigger": "external_schedule",
+  "dispatch_provider": "external",
+  "scheduler_epoch": 1790757542,
+  "github_event_name": "workflow_dispatch",
+  "workflow_run_id": "36691133925",
+  "validation_start_utc": "2026-09-13T04:00:00+00:00",
+  "validation_end_utc": "2026-10-13T04:00:00+00:00",
+  "status": "PASS",
+  "cohort": {
+    "experimental": 35,
+    "supported_core": 32,
+    "strict_useful": 31,
+    "usace_transport_only": 3
+  },
+  "metrics": {
+    "supported_core_retrieval": {
+      "successful": 106,
+      "attempted": 106
+    },
+    "parser_failure": {
+      "failures": 0,
+      "successfully_retrieved_parseable": 106
+    },
+    "usace_transport_reliability": {
+      "successful": 3,
+      "attempted": 3
+    }
+  },
+  "telemetry": {
+    "raw_candidate_count": 352,
+    "parsed_observation_count": 352,
+    "deduplicated_observation_count": 352,
+    "relevant_operational_event_count": 50,
+    "unknown_nonrelevant_count": 53
+  },
+  "consumer_relevant_event_count": 0,
+  "would_notify_candidate_count": 0,
+  "review_candidate_count": 0,
+  "unsafe_candidate_count": 0,
+  "relevance_ambiguity_count": 53,
+  "real_notifications": 0,
+  "prior_state_sha256": "af6365f9049e29c9292a30683ca854d35dfea04cb10dc5b476e46004b94c91f6",
+  "accepted_state_sha256": "32d911653b0c76974cdeff348251508f652fb653191b1be66fcb016c437a4368",
+  "state_advanced": true,
+  "frozen_bindings": {
+    ".github/workflows/campready-validation.yml": true,
+    "campready-authority-adapters/authority_adapters.py": true,
+    "campready-authority-adapters/authority_sites.json": true,
+    "campready-phase4a3/canonical_35site_mapping.json": true,
+    "campready-phase4b/capture.py": true,
+    "campready-phase4b/config.json": true,
+    "campready-phase4b/run.py": true,
+    "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json": true,
+    "campready-prospective-validation/frozen/phase3a4_live_replay.py": true,
+    "campready-prospective-validation/frozen/phase3a4_r3_replay.py": true,
+    "campready-prospective-validation/frozen/phase3b3_live_baseline.py": true,
+    "campready-prospective-validation/frozen/phase3b4_compare.py": true
+  }
+}
