@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-02T06:40:17.581616+00:00",
-  "run_id": "20261002T064017Z",
+  "accepted_at_utc": "2026-10-02T07:40:16.001423+00:00",
+  "run_id": "20261002T074016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -336,7 +336,26 @@
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.744715f0a43dbc353f1b86c72e92dfd835d5d772.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.744715f0a43dbc353f1b86c72e92dfd835d5d772.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Dense Fog Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-02T03:40:00-04:00",
+            "onset": "2026-10-02T03:40:00-04:00",
+            "expires": "2026-10-02T10:00:00-04:00",
+            "ends": "2026-10-02T10:00:00-04:00",
+            "headline": "Dense Fog Advisory issued October 2 at 3:40AM EDT until October 2 at 10:00AM EDT by NWS Raleigh NC"
+          },
+          "fingerprint": "33ce553232e0620a7e3a3ef5dee3e44cbc264de941f1997102c15330b97fc5f6"
+        }
+      }
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
