@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-02T12:40:17.211201+00:00",
-  "run_id": "20261002T124017Z",
+  "accepted_at_utc": "2026-10-02T13:40:17.391487+00:00",
+  "run_id": "20261002T134017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -314,48 +314,29 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2aefca76cceaf9f367c4893c92b8c55484dafe34.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dfb7eda35630733a9ead83c0698aa4ab3f57e79d.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2aefca76cceaf9f367c4893c92b8c55484dafe34.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dfb7eda35630733a9ead83c0698aa4ab3f57e79d.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Dense Fog Advisory",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-02T01:45:00-04:00",
-            "onset": "2026-10-02T01:45:00-04:00",
-            "expires": "2026-10-02T10:00:00-04:00",
+            "effective": "2026-10-02T09:40:00-04:00",
+            "onset": "2026-10-02T09:40:00-04:00",
+            "expires": "2026-10-02T10:45:00-04:00",
             "ends": "2026-10-02T10:00:00-04:00",
-            "headline": "Dense Fog Advisory issued October 2 at 1:45AM EDT until October 2 at 10:00AM EDT by NWS Wilmington NC"
+            "headline": "Dense Fog Advisory issued October 2 at 9:40AM EDT until October 2 at 10:00AM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "cebc01f8b4ad92baef617e399b2f9ead29b17ad3e053ecdee3045e0b5c884d6c"
+          "fingerprint": "010264d244f63baee73ccb789d0c751513abc774b4997e4f541e1439cc673479"
         }
       }
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.744715f0a43dbc353f1b86c72e92dfd835d5d772.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.744715f0a43dbc353f1b86c72e92dfd835d5d772.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Dense Fog Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-02T03:40:00-04:00",
-            "onset": "2026-10-02T03:40:00-04:00",
-            "expires": "2026-10-02T10:00:00-04:00",
-            "ends": "2026-10-02T10:00:00-04:00",
-            "headline": "Dense Fog Advisory issued October 2 at 3:40AM EDT until October 2 at 10:00AM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "33ce553232e0620a7e3a3ef5dee3e44cbc264de941f1997102c15330b97fc5f6"
-        }
-      }
+      "events": {}
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
@@ -363,26 +344,7 @@
     },
     "ncsp-kerr-hibernia": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.937145ded4304b72c95926b8cb1a716c23c3abc4.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.5047,-78.3761",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.937145ded4304b72c95926b8cb1a716c23c3abc4.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-10-02T04:31:00-04:00",
-            "onset": "2026-10-02T04:31:00-04:00",
-            "expires": "2026-10-02T09:00:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued October 2 at 4:31AM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "519dbff0cb2737a1c4fcadca4dcce9cd86c779f7c1570fae92d28713205597aa"
-        }
-      }
+      "events": {}
     },
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
