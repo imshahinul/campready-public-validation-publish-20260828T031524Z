@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0264503db88a90f030a1d9ecdd3a1c2e0cca7fe2.001.1",
+    "before": null,
+    "after": "d71d454e8496051509e2a198d9e1595660d1518bda96a990f692f644798baaa9",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
