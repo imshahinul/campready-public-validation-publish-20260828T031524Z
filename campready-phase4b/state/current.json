@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-05T05:40:15.025771+00:00",
-  "run_id": "20261005T054015Z",
+  "accepted_at_utc": "2026-10-05T06:40:17.833521+00:00",
+  "run_id": "20261005T064017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -333,7 +333,26 @@
     },
     "nps-big-meadows": {
       "authority_family": "NPS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f459915714a160971defcac6352e7a3165e52af8.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f459915714a160971defcac6352e7a3165e52af8.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-10-05T02:17:00-04:00",
+            "onset": "2026-10-05T02:17:00-04:00",
+            "expires": "2026-10-05T07:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued October 5 at 2:17AM EDT by NWS Baltimore MD/Washington DC"
+          },
+          "fingerprint": "87bf993a3508f70ed82c229ec05d70a4367e46bdae6cc80c0269902dbd1b9037"
+        }
+      }
     },
     "nps-elkmont": {
       "authority_family": "NPS",
@@ -741,6 +760,24 @@
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5d833b866c079453f90191bcd10b50b34d27827.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5d833b866c079453f90191bcd10b50b34d27827.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-10-05T02:00:00-04:00",
+            "onset": "2026-10-05T02:00:00-04:00",
+            "expires": "2026-10-05T09:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued October 5 at 2:00AM EDT by NWS Charleston WV"
+          },
+          "fingerprint": "0ea7fc25a8d0262d19b55d80fed622e56be246d36811a1f09be38a47b9b3c112"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.52e7e74c441a9c0ea743b83765e7bfe902ab09c4.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
@@ -778,6 +815,24 @@
             }
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5d833b866c079453f90191bcd10b50b34d27827.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5d833b866c079453f90191bcd10b50b34d27827.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-10-05T02:00:00-04:00",
+            "onset": "2026-10-05T02:00:00-04:00",
+            "expires": "2026-10-05T09:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued October 5 at 2:00AM EDT by NWS Charleston WV"
+          },
+          "fingerprint": "0ea7fc25a8d0262d19b55d80fed622e56be246d36811a1f09be38a47b9b3c112"
         }
       }
     },

@@ -1,0 +1,26 @@
+[
+  {
+    "canonical_key": "nps-big-meadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f459915714a160971defcac6352e7a3165e52af8.001.1",
+    "before": null,
+    "after": "87bf993a3508f70ed82c229ec05d70a4367e46bdae6cc80c0269902dbd1b9037",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-bear-heaven",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5d833b866c079453f90191bcd10b50b34d27827.001.1",
+    "before": null,
+    "after": "0ea7fc25a8d0262d19b55d80fed622e56be246d36811a1f09be38a47b9b3c112",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-big-rock",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5d833b866c079453f90191bcd10b50b34d27827.001.1",
+    "before": null,
+    "after": "0ea7fc25a8d0262d19b55d80fed622e56be246d36811a1f09be38a47b9b3c112",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
