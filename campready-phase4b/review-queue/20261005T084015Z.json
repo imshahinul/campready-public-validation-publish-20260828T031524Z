@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "nps-big-meadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a41d8b756896391c7313a3c53a826900f91a5115.001.1",
+    "before": null,
+    "after": "d3515c4ee571b185c014d2586cb2c0c1f03fa3a4d54612ea47d5e4fb354ff975",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]

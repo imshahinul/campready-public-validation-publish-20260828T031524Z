@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-05T07:40:16.193484+00:00",
-  "run_id": "20261005T074016Z",
+  "accepted_at_utc": "2026-10-05T08:40:15.873176+00:00",
+  "run_id": "20261005T084015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -334,6 +334,24 @@
     "nps-big-meadows": {
       "authority_family": "NPS",
       "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a41d8b756896391c7313a3c53a826900f91a5115.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a41d8b756896391c7313a3c53a826900f91a5115.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-10-05T04:06:00-04:00",
+            "onset": "2026-10-05T04:06:00-04:00",
+            "expires": "2026-10-05T07:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued October 5 at 4:06AM EDT by NWS Baltimore MD/Washington DC"
+          },
+          "fingerprint": "d3515c4ee571b185c014d2586cb2c0c1f03fa3a4d54612ea47d5e4fb354ff975"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f459915714a160971defcac6352e7a3165e52af8.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
