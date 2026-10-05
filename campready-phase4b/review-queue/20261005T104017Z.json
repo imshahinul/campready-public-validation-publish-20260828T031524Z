@@ -1,0 +1,18 @@
+[
+  {
+    "canonical_key": "nps-big-meadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.46f7106a8138ddaa1513d40ff56c7ed0fe9c4fb0.001.1",
+    "before": null,
+    "after": "27499e283d12e92d513c76dc213f12bf51e1fae58ff50a0f668a93c4207c0c99",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-seneca-shadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.46f7106a8138ddaa1513d40ff56c7ed0fe9c4fb0.001.1",
+    "before": null,
+    "after": "27499e283d12e92d513c76dc213f12bf51e1fae58ff50a0f668a93c4207c0c99",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
