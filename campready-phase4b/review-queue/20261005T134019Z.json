@@ -1,0 +1,18 @@
+[
+  {
+    "canonical_key": "wv-bear-heaven",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.88460a4dfcd8739da51e9f102106871819f83730.001.1",
+    "before": null,
+    "after": "79cba89b555cc3829784e8ce25e0b7b4c637e069463709e95ac9b57f72715497",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-seneca-shadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0bb5614b977398828f7d78ff9701ce24c786caaf.001.1",
+    "before": null,
+    "after": "2593564a690abda2cf69e2206a88b462f5d2eb95e7fd533d6398fe00c7d7ee36",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
