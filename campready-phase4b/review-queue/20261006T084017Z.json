@@ -1,0 +1,50 @@
+[
+  {
+    "canonical_key": "andrews-cove",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98e2a9777270f8561bf2231e99a4b8a430bf68ee.001.1",
+    "before": null,
+    "after": "ce40c891a84e3b0c6e40c7abed2514cc14c0f8f3e42fb5fddbb624d9070f4b60",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "low-gap",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98e2a9777270f8561bf2231e99a4b8a430bf68ee.001.1",
+    "before": null,
+    "after": "ce40c891a84e3b0c6e40c7abed2514cc14c0f8f3e42fb5fddbb624d9070f4b60",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-carolina-beach",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a3d0dc785a9ac3628dd6ceab249684ea88dbcdf.001.1",
+    "before": null,
+    "after": "9f4766801a37fe83824e34ebfea19deeb8a9550a24f6f309b0acda448497c625",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-brick-house",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36dc43af0af895f4ff6b659fbd8507aa6570a7c4.001.1",
+    "before": null,
+    "after": "5dd3f95b895ec6035009e966bb9685d8f45b0c623417144a27dc76a4c2f79f8d",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tate-branch",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98e2a9777270f8561bf2231e99a4b8a430bf68ee.001.1",
+    "before": null,
+    "after": "ce40c891a84e3b0c6e40c7abed2514cc14c0f8f3e42fb5fddbb624d9070f4b60",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "upper-chattahoochee",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98e2a9777270f8561bf2231e99a4b8a430bf68ee.001.1",
+    "before": null,
+    "after": "ce40c891a84e3b0c6e40c7abed2514cc14c0f8f3e42fb5fddbb624d9070f4b60",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
