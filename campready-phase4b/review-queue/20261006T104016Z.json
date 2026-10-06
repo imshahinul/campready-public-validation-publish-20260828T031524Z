@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "wv-seneca-shadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6fb092e2748bc589974586dbeb44a12cce5b10f3.001.1",
+    "before": null,
+    "after": "0c677744ec76601c4c96d38a2b5f5bbcfb3a974bf8aea2838c21de39f9f4188c",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
