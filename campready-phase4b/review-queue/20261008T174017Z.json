@@ -1,0 +1,42 @@
+[
+  {
+    "canonical_key": "al-clear-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e69629066e24ed875625bda524f270d2382483ea.001.1",
+    "before": null,
+    "after": "fb1d16127b4b996e190bfe54f9265b8dd966356e9d5e99d3083a32b997d150fc",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e69629066e24ed875625bda524f270d2382483ea.001.1",
+    "before": null,
+    "after": "fb1d16127b4b996e190bfe54f9265b8dd966356e9d5e99d3083a32b997d150fc",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nps-elkmont",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1",
+    "before": null,
+    "after": "3aa2c1a2a03b7dc1f1d68a98498cb68a049e2ebfff846ba07c34ed37c2961633",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-indian-boundary",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1",
+    "before": null,
+    "after": "3aa2c1a2a03b7dc1f1d68a98498cb68a049e2ebfff846ba07c34ed37c2961633",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-rock-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1",
+    "before": null,
+    "after": "3aa2c1a2a03b7dc1f1d68a98498cb68a049e2ebfff846ba07c34ed37c2961633",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
