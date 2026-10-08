@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-08T15:40:16.737496+00:00",
-  "run_id": "20261008T154016Z",
+  "accepted_at_utc": "2026-10-08T16:40:17.163331+00:00",
+  "run_id": "20261008T164017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -20,6 +20,24 @@
             }
           },
           "fingerprint": "971c8183e27aa3d36661395119cc8f9dc7394d9a073108b60ee5672ba55b8a18"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T11:26:00-05:00",
+            "onset": "2026-10-09T19:00:00-05:00",
+            "expires": "2026-10-09T01:00:00-05:00",
+            "ends": "2026-10-11T07:00:00-05:00",
+            "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1": {
           "source_family": "NWS_API",
@@ -59,6 +77,24 @@
           },
           "fingerprint": "68ddbbbaebcee44302430ac76ac355466f2324e269508b6da089277bc3853dc1"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T11:26:00-05:00",
+            "onset": "2026-10-09T19:00:00-05:00",
+            "expires": "2026-10-09T01:00:00-05:00",
+            "ends": "2026-10-11T07:00:00-05:00",
+            "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
@@ -96,6 +132,24 @@
             }
           },
           "fingerprint": "066eeb52c5dad781dba207c41f2a51ad5b8e10372f362b24c49984eda20eb72d"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T11:26:00-05:00",
+            "onset": "2026-10-09T19:00:00-05:00",
+            "expires": "2026-10-09T01:00:00-05:00",
+            "ends": "2026-10-11T07:00:00-05:00",
+            "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1": {
           "source_family": "NWS_API",
@@ -164,6 +218,42 @@
             "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T11:58:00-04:00",
+            "onset": "2026-10-10T02:00:00-04:00",
+            "expires": "2026-10-11T08:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Flood Watch issued October 8 at 11:58AM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "07fa52a0d7ff5e73acdf68f9b731d467a8b9cf48381915cc4e9888ce5d28a677"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-08T11:42:00-04:00",
+            "onset": "2026-10-08T11:42:00-04:00",
+            "expires": "2026-10-08T20:00:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:42AM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "3be2f195ffc5fc6a795d0a5352f31df3973f2543767f231f0161b4e13ae8710f"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ec4ba8b79aaeca6ab885a5afe36e695cb8a63e28.001.1": {
           "source_family": "NWS_API",
@@ -315,17 +405,41 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1",
           "quality": "OK",
           "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
-            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T11:58:00-04:00",
+            "onset": "2026-10-10T02:00:00-04:00",
+            "expires": "2026-10-11T08:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Flood Watch issued October 8 at 11:58AM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
           },
-          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
+          "fingerprint": "07fa52a0d7ff5e73acdf68f9b731d467a8b9cf48381915cc4e9888ce5d28a677"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-08T11:42:00-04:00",
+            "onset": "2026-10-08T11:42:00-04:00",
+            "expires": "2026-10-08T20:00:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:42AM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "3be2f195ffc5fc6a795d0a5352f31df3973f2543767f231f0161b4e13ae8710f"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ec4ba8b79aaeca6ab885a5afe36e695cb8a63e28.001.1": {
           "source_family": "NWS_API",
@@ -344,6 +458,18 @@
             "headline": "High Wind Watch issued October 8 at 11:20AM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "27adc97b587eae92e5308fcde2194ab801de1469fc8f8d39d0652f2917e431d9"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
+            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
+          },
+          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
         },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
@@ -601,6 +727,42 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T11:58:00-04:00",
+            "onset": "2026-10-10T02:00:00-04:00",
+            "expires": "2026-10-11T08:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Flood Watch issued October 8 at 11:58AM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "07fa52a0d7ff5e73acdf68f9b731d467a8b9cf48381915cc4e9888ce5d28a677"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-08T11:42:00-04:00",
+            "onset": "2026-10-08T11:42:00-04:00",
+            "expires": "2026-10-08T20:00:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:42AM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "3be2f195ffc5fc6a795d0a5352f31df3973f2543767f231f0161b4e13ae8710f"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ec4ba8b79aaeca6ab885a5afe36e695cb8a63e28.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
@@ -702,6 +864,42 @@
             "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4db54a4d55fae69644669a4f0f74cc3fda04ce72.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T11:58:00-04:00",
+            "onset": "2026-10-10T02:00:00-04:00",
+            "expires": "2026-10-11T08:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Flood Watch issued October 8 at 11:58AM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "07fa52a0d7ff5e73acdf68f9b731d467a8b9cf48381915cc4e9888ce5d28a677"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b22f780d2ef092ffd17c15b451691249991b11b.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-08T11:42:00-04:00",
+            "onset": "2026-10-08T11:42:00-04:00",
+            "expires": "2026-10-08T20:00:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:42AM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "3be2f195ffc5fc6a795d0a5352f31df3973f2543767f231f0161b4e13ae8710f"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ec4ba8b79aaeca6ab885a5afe36e695cb8a63e28.001.1": {
           "source_family": "NWS_API",
