@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-08T22:40:16.077638+00:00",
-  "run_id": "20261008T224016Z",
+  "accepted_at_utc": "2026-10-08T23:40:14.937276+00:00",
+  "run_id": "20261008T234014Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -92,24 +92,6 @@
             "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T10:19:00-05:00",
-            "onset": "2026-10-08T10:19:00-05:00",
-            "expires": "2026-10-08T18:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 10:19AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "d8a9596888f7bfdc122542840160dd25502a3acc7df7caa203ae9005483c613a"
         }
       }
     },
@@ -202,24 +184,6 @@
             "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T10:19:00-05:00",
-            "onset": "2026-10-08T10:19:00-05:00",
-            "expires": "2026-10-08T18:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 10:19AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "d8a9596888f7bfdc122542840160dd25502a3acc7df7caa203ae9005483c613a"
         }
       }
     },
@@ -312,24 +276,6 @@
             "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1c1465c124d0f8ea9f635adc9b2f9ab0f532954.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T10:19:00-05:00",
-            "onset": "2026-10-08T10:19:00-05:00",
-            "expires": "2026-10-08T18:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 10:19AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "d8a9596888f7bfdc122542840160dd25502a3acc7df7caa203ae9005483c613a"
         }
       }
     },
