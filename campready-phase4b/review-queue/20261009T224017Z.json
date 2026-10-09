@@ -1,0 +1,34 @@
+[
+  {
+    "canonical_key": "al-clear-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1",
+    "before": null,
+    "after": "b9ec11bd6a8d82d4af22e253ba616d202accee1d5d4a1540a104717c200f8253",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1",
+    "before": null,
+    "after": "b9ec11bd6a8d82d4af22e253ba616d202accee1d5d4a1540a104717c200f8253",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2c73474262eac9910d5f3be96f8352ad4a489c38.001.1",
+    "before": null,
+    "after": "227020a8f313292e4f7473ca40b54ddf36fa96b5ed9457cf7f143bbacd2cecb9",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-payne-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1",
+    "before": null,
+    "after": "b9ec11bd6a8d82d4af22e253ba616d202accee1d5d4a1540a104717c200f8253",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
