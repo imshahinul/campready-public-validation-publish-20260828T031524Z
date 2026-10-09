@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-09T11:40:18.055939+00:00",
-  "run_id": "20261009T114018Z",
+  "accepted_at_utc": "2026-10-09T12:40:18.524619+00:00",
+  "run_id": "20261009T124018Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -20,6 +20,24 @@
             }
           },
           "fingerprint": "971c8183e27aa3d36661395119cc8f9dc7394d9a073108b60ee5672ba55b8a18"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87ae971d43797d866bf405840bfccb882b60c5fc.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87ae971d43797d866bf405840bfccb882b60c5fc.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T07:04:00-05:00",
+            "onset": "2026-10-09T07:04:00-05:00",
+            "expires": "2026-10-09T15:15:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:04AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "713fc909e6d50b8f613436a54597eeeeb65c5254e185e79f930958626139701f"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b8ba15cbff21d6744128bf2da7b2038475d97f8.001.1": {
           "source_family": "NWS_API",
@@ -92,24 +110,6 @@
             "headline": "Flood Watch issued October 8 at 11:05PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "ee73e4c4205debef5123293ae19b0fb95a757d03b8b1b27978c6e7b32141e4ef"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T22:37:00-05:00",
-            "onset": "2026-10-08T22:37:00-05:00",
-            "expires": "2026-10-09T06:45:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 10:37PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "aadd251627e7ea2d99697c095e288a5c5851d650915e0d5fdb40ecee71da07ce"
         }
       }
     },
@@ -131,6 +131,24 @@
           },
           "fingerprint": "68ddbbbaebcee44302430ac76ac355466f2324e269508b6da089277bc3853dc1"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87ae971d43797d866bf405840bfccb882b60c5fc.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87ae971d43797d866bf405840bfccb882b60c5fc.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T07:04:00-05:00",
+            "onset": "2026-10-09T07:04:00-05:00",
+            "expires": "2026-10-09T15:15:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:04AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "713fc909e6d50b8f613436a54597eeeeb65c5254e185e79f930958626139701f"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b8ba15cbff21d6744128bf2da7b2038475d97f8.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
@@ -202,24 +220,6 @@
             "headline": "Flood Watch issued October 8 at 11:05PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "ee73e4c4205debef5123293ae19b0fb95a757d03b8b1b27978c6e7b32141e4ef"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T22:37:00-05:00",
-            "onset": "2026-10-08T22:37:00-05:00",
-            "expires": "2026-10-09T06:45:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 10:37PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "aadd251627e7ea2d99697c095e288a5c5851d650915e0d5fdb40ecee71da07ce"
         }
       }
     },
@@ -241,6 +241,42 @@
           },
           "fingerprint": "066eeb52c5dad781dba207c41f2a51ad5b8e10372f362b24c49984eda20eb72d"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87ae971d43797d866bf405840bfccb882b60c5fc.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87ae971d43797d866bf405840bfccb882b60c5fc.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T07:04:00-05:00",
+            "onset": "2026-10-09T07:04:00-05:00",
+            "expires": "2026-10-09T15:15:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:04AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "713fc909e6d50b8f613436a54597eeeeb65c5254e185e79f930958626139701f"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c615e5ab50c708f714d1c0e83d68b3821fd732e5.012.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c615e5ab50c708f714d1c0e83d68b3821fd732e5.012.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Storm Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-09T06:57:00-05:00",
+            "onset": "2026-10-09T06:57:00-05:00",
+            "expires": "2026-10-09T15:00:00-05:00",
+            "ends": null,
+            "headline": "Tropical Storm Watch issued October 9 at 6:57AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "c3db372f936413a48c5a37e12ffcbc413634d75d6cddee954020d8a82ce4626a"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b8ba15cbff21d6744128bf2da7b2038475d97f8.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
@@ -258,24 +294,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 4:16AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "d2c969c793bc78aa4cce70da0ff0b68ca4a8c9581bb463a0cce4c7daff0f2bee"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f7d230cb86da0999f93148325003fd882776fd2.012.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f7d230cb86da0999f93148325003fd882776fd2.012.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Storm Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-09T04:08:00-05:00",
-            "onset": "2026-10-09T04:08:00-05:00",
-            "expires": "2026-10-09T12:15:00-05:00",
-            "ends": null,
-            "headline": "Tropical Storm Watch issued October 9 at 4:08AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "f8ae9a87fb6784869b80156bc87435fadfa80bcdc7726ca793ed808c7611133f"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c84fad8a6da97c17493d866b75d9d514f44a4228.001.1": {
           "source_family": "NWS_API",
@@ -312,24 +330,6 @@
             "headline": "Flood Watch issued October 8 at 11:05PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "ee73e4c4205debef5123293ae19b0fb95a757d03b8b1b27978c6e7b32141e4ef"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T22:37:00-05:00",
-            "onset": "2026-10-08T22:37:00-05:00",
-            "expires": "2026-10-09T06:45:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 10:37PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "aadd251627e7ea2d99697c095e288a5c5851d650915e0d5fdb40ecee71da07ce"
         }
       }
     },
@@ -392,24 +392,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 4:58AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "7a7cb62fc501f01ab2fdbd392740f8e17cfa0e7912f149e76832edd95a6d42ea"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T23:34:00-04:00",
-            "onset": "2026-10-08T23:34:00-04:00",
-            "expires": "2026-10-09T07:45:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:34PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.483735bb463378564eafbff9ad7f895f4439441a.001.1": {
           "source_family": "NWS_API",
@@ -567,6 +549,18 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
+            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
+          },
+          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
+        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -596,24 +590,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 4:58AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "7a7cb62fc501f01ab2fdbd392740f8e17cfa0e7912f149e76832edd95a6d42ea"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T23:34:00-04:00",
-            "onset": "2026-10-08T23:34:00-04:00",
-            "expires": "2026-10-09T07:45:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:34PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.483735bb463378564eafbff9ad7f895f4439441a.001.1": {
           "source_family": "NWS_API",
@@ -650,18 +626,6 @@
             "headline": "Flood Watch issued October 8 at 5:31PM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "14e44abdab69cde954d19c76a8509260d1684166d5c350a54aaba4afad2951f5"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
-            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
-          },
-          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
         }
       }
     },
@@ -992,24 +956,6 @@
           },
           "fingerprint": "7a7cb62fc501f01ab2fdbd392740f8e17cfa0e7912f149e76832edd95a6d42ea"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T23:34:00-04:00",
-            "onset": "2026-10-08T23:34:00-04:00",
-            "expires": "2026-10-09T07:45:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:34PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763"
-        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.483735bb463378564eafbff9ad7f895f4439441a.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
@@ -1183,24 +1129,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 4:58AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "7a7cb62fc501f01ab2fdbd392740f8e17cfa0e7912f149e76832edd95a6d42ea"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-08T23:34:00-04:00",
-            "onset": "2026-10-08T23:34:00-04:00",
-            "expires": "2026-10-09T07:45:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 8 at 11:34PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.483735bb463378564eafbff9ad7f895f4439441a.001.1": {
           "source_family": "NWS_API",
