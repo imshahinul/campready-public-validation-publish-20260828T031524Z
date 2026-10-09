@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "or-spinreel",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground",
+    "before": "79d75499922338d998e43ff0b08931227b763897e4391f97c2e2e5efabcf89cf",
+    "after": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f",
+    "category": "MATERIAL_UPDATE",
+    "review_only": true
+  }
+]
