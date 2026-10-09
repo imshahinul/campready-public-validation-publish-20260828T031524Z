@@ -1,0 +1,946 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.002.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a058a6cf11538f6a916247f653aeac42f8d96e6d.002.2",
+      "before": null,
+      "after": "865860815c07abd8767d31394bc75afe9088b7b45e0fcd377e22aa407caf3359",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.017.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a6a3691829b80f5d03600dad16e751c4b06ee56.002.1",
+      "before": null,
+      "after": "a0a39a575137d56190ab81eb5ce2f12f7e8982364a003b981e496c5a44d2164e",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.002.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a058a6cf11538f6a916247f653aeac42f8d96e6d.002.2",
+      "before": null,
+      "after": "865860815c07abd8767d31394bc75afe9088b7b45e0fcd377e22aa407caf3359",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.017.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a6a3691829b80f5d03600dad16e751c4b06ee56.002.1",
+      "before": null,
+      "after": "a0a39a575137d56190ab81eb5ce2f12f7e8982364a003b981e496c5a44d2164e",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.002.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a058a6cf11538f6a916247f653aeac42f8d96e6d.002.2",
+      "before": null,
+      "after": "865860815c07abd8767d31394bc75afe9088b7b45e0fcd377e22aa407caf3359",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.017.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a6a3691829b80f5d03600dad16e751c4b06ee56.002.1",
+      "before": null,
+      "after": "a0a39a575137d56190ab81eb5ce2f12f7e8982364a003b981e496c5a44d2164e",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.002.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a058a6cf11538f6a916247f653aeac42f8d96e6d.002.2",
+      "before": null,
+      "after": "865860815c07abd8767d31394bc75afe9088b7b45e0fcd377e22aa407caf3359",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87d37ca2e2d536794caaf5c1b11c40fa208c3452.001.1",
+      "before": null,
+      "after": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.017.1",
+      "before": null,
+      "after": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "andrews-cove",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-rabun",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "lake-russell",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "low-gap",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
+      "before": null,
+      "after": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sarahs-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4a6a3691829b80f5d03600dad16e751c4b06ee56.002.1",
+      "before": null,
+      "after": "a0a39a575137d56190ab81eb5ce2f12f7e8982364a003b981e496c5a44d2164e",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-burrells-ford",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tate-branch",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1",
+      "before": null,
+      "after": "d5654d64c2af22aa562dd431ddf18fcce5e537a7c2dfc44869c72b0d11b6db15",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.60447ad781565d61b043e88839065b249b801e57.001.1",
+      "before": null,
+      "after": "4f84e9080426fe161d0590d19392f16488bf45b09c0d14401e16e4040b9919f0",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7a3ccd44c73ada6c1c9810aeeeea34250cdb5373.001.1",
+      "before": null,
+      "after": "010403b2934353ba81a32caa6acd446c181203b4f27df0f9828a9d1dd474f9d1",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-1",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "wildcat-2",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "willis-knob",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
+      "before": null,
+      "after": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 31,
+  "relevance_ambiguity_count": 34
+}
