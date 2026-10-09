@@ -1,0 +1,66 @@
+[
+  {
+    "canonical_key": "al-clear-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1",
+    "before": null,
+    "after": "aadd251627e7ea2d99697c095e288a5c5851d650915e0d5fdb40ecee71da07ce",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1",
+    "before": null,
+    "after": "aadd251627e7ea2d99697c095e288a5c5851d650915e0d5fdb40ecee71da07ce",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-payne-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1",
+    "before": null,
+    "after": "aadd251627e7ea2d99697c095e288a5c5851d650915e0d5fdb40ecee71da07ce",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-payne-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cd3b6e48e09e0459c57874859771c7cfc1835f4f.012.1",
+    "before": null,
+    "after": "6a0fe54909d8471d26c34a27b3bd8de1155bbd3c7db871aa8e619f2cf6dba136",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "andrews-cove",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
+    "before": null,
+    "after": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "low-gap",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
+    "before": null,
+    "after": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tate-branch",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
+    "before": null,
+    "after": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "upper-chattahoochee",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1",
+    "before": null,
+    "after": "95c64deb17ff64bee819d89910c870320b8f136367fc7279a220120a81735763",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
