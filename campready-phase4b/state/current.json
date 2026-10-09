@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-09T20:40:15.515971+00:00",
-  "run_id": "20261009T204015Z",
+  "accepted_at_utc": "2026-10-09T21:40:15.012888+00:00",
+  "run_id": "20261009T214015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -20,6 +20,42 @@
             }
           },
           "fingerprint": "971c8183e27aa3d36661395119cc8f9dc7394d9a073108b60ee5672ba55b8a18"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T16:26:00-05:00",
+            "onset": "2026-10-09T16:26:00-05:00",
+            "expires": "2026-10-10T00:30:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Storm Warning",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "effective": "2026-10-09T16:20:00-05:00",
+            "onset": "2026-10-09T16:20:00-05:00",
+            "expires": "2026-10-10T00:30:00-05:00",
+            "ends": null,
+            "headline": "Tropical Storm Warning issued October 9 at 4:20PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "e1d3ec3cc1c8073c3eb12e0abdd0e6bd105945bfe00e12c0eb94d4dd29d84242"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.69e6be5dc8068e02340664df6cdd6a30e133be6b.001.1": {
           "source_family": "NWS_API",
@@ -56,24 +92,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 10:23AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Storm Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "effective": "2026-10-09T10:17:00-05:00",
-            "onset": "2026-10-09T10:17:00-05:00",
-            "expires": "2026-10-09T18:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Storm Warning issued October 9 at 10:17AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e"
         }
       }
     },
@@ -94,6 +112,24 @@
             }
           },
           "fingerprint": "68ddbbbaebcee44302430ac76ac355466f2324e269508b6da089277bc3853dc1"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T16:26:00-05:00",
+            "onset": "2026-10-09T16:26:00-05:00",
+            "expires": "2026-10-10T00:30:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.69e6be5dc8068e02340664df6cdd6a30e133be6b.001.1": {
           "source_family": "NWS_API",
@@ -169,6 +205,42 @@
           },
           "fingerprint": "066eeb52c5dad781dba207c41f2a51ad5b8e10372f362b24c49984eda20eb72d"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T16:26:00-05:00",
+            "onset": "2026-10-09T16:26:00-05:00",
+            "expires": "2026-10-10T00:30:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.017.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.017.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Storm Warning",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "effective": "2026-10-09T16:20:00-05:00",
+            "onset": "2026-10-09T16:20:00-05:00",
+            "expires": "2026-10-10T00:30:00-05:00",
+            "ends": null,
+            "headline": "Tropical Storm Warning issued October 9 at 4:20PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "e1d3ec3cc1c8073c3eb12e0abdd0e6bd105945bfe00e12c0eb94d4dd29d84242"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.69e6be5dc8068e02340664df6cdd6a30e133be6b.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
@@ -204,24 +276,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 10:23AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "dc25d2f2ea78244ac1c909249736955514d2c4788c1fb3aa053720ddf9eaae0c"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.017.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4fbb19e17dc68a9c906c1a7e053306c153c2810f.017.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Storm Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "effective": "2026-10-09T10:17:00-05:00",
-            "onset": "2026-10-09T10:17:00-05:00",
-            "expires": "2026-10-09T18:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Storm Warning issued October 9 at 10:17AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "58917e198dbfc008cf408fc80469b3a0f1f113bacb231e9a89ab53a1de89d53e"
         }
       }
     },
@@ -266,6 +320,24 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:21:00-04:00",
+            "onset": "2026-10-09T17:21:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
@@ -365,6 +437,24 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.7575,-83.47666667",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.7575,-83.47666667",
@@ -382,24 +472,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.7575,-83.47666667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
@@ -445,6 +517,24 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.4925,-83.50083333",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.4925,-83.50083333",
@@ -462,24 +552,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.4925,-83.50083333",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
@@ -536,6 +608,24 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:21:00-04:00",
+            "onset": "2026-10-09T17:21:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
@@ -611,6 +701,42 @@
           },
           "fingerprint": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Wind Warning",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "High Wind Warning issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "ed08d94849bc72402ee99297a9e60356366c06b366adf4a26d4afbb8e80a995a"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.2",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
@@ -628,42 +754,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0"
         }
       }
     },
@@ -685,6 +775,24 @@
           },
           "fingerprint": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
@@ -702,24 +810,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
@@ -741,6 +831,42 @@
           },
           "fingerprint": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Wind Warning",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "High Wind Warning issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "ed08d94849bc72402ee99297a9e60356366c06b366adf4a26d4afbb8e80a995a"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.001.2",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
@@ -758,42 +884,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "cc39980b03858172ee34691894adf43af74e822a6f6dabcaad5469e7b56bf5e0"
         }
       }
     },
@@ -862,23 +952,23 @@
     "nps-elkmont": {
       "authority_family": "NPS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6fb453eeac89e2f6404eb5e3e473ad54dcd557ac.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a50d595e6bee41a805b10202f1eb3b772664f537.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.65875714573239,-83.58274047425141",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6fb453eeac89e2f6404eb5e3e473ad54dcd557ac.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a50d595e6bee41a805b10202f1eb3b772664f537.002.1",
           "quality": "OK",
           "semantic": {
             "event": "High Wind Warning",
             "severity": "Severe",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-09T12:02:00-04:00",
+            "effective": "2026-10-09T16:48:00-04:00",
             "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-10T07:00:00-04:00",
+            "expires": "2026-10-10T08:00:00-04:00",
             "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 9 at 12:02PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
+            "headline": "High Wind Warning issued October 9 at 4:48PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
           },
-          "fingerprint": "a7af23ed5f1e47f4c8106eb08da509493735abf0752ced95ee4fb1342975efe5"
+          "fingerprint": "48d7887290ad3e206f0d9895804ec50d8778d98cc7bffb39b381361490f13093"
         }
       }
     },
@@ -920,23 +1010,23 @@
           },
           "fingerprint": "79d75499922338d998e43ff0b08931227b763897e4391f97c2e2e5efabcf89cf"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7b2bfc1c22b1f403f7ad138a22976ebecbcd7e5e.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.986b326fc7aee4cd16feb575445b01d24bb44e28.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=43.56988519945235,-124.2060143315852",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7b2bfc1c22b1f403f7ad138a22976ebecbcd7e5e.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.986b326fc7aee4cd16feb575445b01d24bb44e28.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-08T23:55:00-07:00",
+            "effective": "2026-10-09T14:34:00-07:00",
             "onset": "2026-10-11T05:00:00-07:00",
-            "expires": "2026-10-09T17:00:00-07:00",
+            "expires": "2026-10-10T15:00:00-07:00",
             "ends": "2026-10-12T14:00:00-07:00",
-            "headline": "Beach Hazards Statement issued October 8 at 11:55PM PDT until October 12 at 2:00PM PDT by NWS Medford OR"
+            "headline": "Beach Hazards Statement issued October 9 at 2:34PM PDT until October 12 at 2:00PM PDT by NWS Medford OR"
           },
-          "fingerprint": "e58522d770a3a5f744b8740c61b27f7e9e48a27dd6faaa7800b036e7eea7a1af"
+          "fingerprint": "1c4d17581b76c29db8cd61821b82791081eb39f057033d6fef52953ee3479250"
         }
       }
     },
@@ -982,6 +1072,24 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.92833333,-83.26416667",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.92833333,-83.26416667",
@@ -999,24 +1107,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.92833333,-83.26416667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
@@ -1076,6 +1166,24 @@
           },
           "fingerprint": "df678508e720c5722070ecc71361cc8bdedb52a02186413e5508c8d6ff1c2229"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.969011731480045,-83.11813693019847",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.969011731480045,-83.11813693019847",
@@ -1093,24 +1201,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.969011731480045,-83.11813693019847",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
@@ -1155,6 +1245,24 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:21:00-04:00",
+            "onset": "2026-10-09T17:21:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
@@ -1230,23 +1338,23 @@
           },
           "fingerprint": "7a79b68b3ef3fd8d02a32ba09034f36fa5f404f269bf77639c68f2e860d146f3"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6fb453eeac89e2f6404eb5e3e473ad54dcd557ac.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a50d595e6bee41a805b10202f1eb3b772664f537.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.399906793049205,-84.10690421414178",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6fb453eeac89e2f6404eb5e3e473ad54dcd557ac.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a50d595e6bee41a805b10202f1eb3b772664f537.002.1",
           "quality": "OK",
           "semantic": {
             "event": "High Wind Warning",
             "severity": "Severe",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-09T12:02:00-04:00",
+            "effective": "2026-10-09T16:48:00-04:00",
             "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-10T07:00:00-04:00",
+            "expires": "2026-10-10T08:00:00-04:00",
             "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 9 at 12:02PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
+            "headline": "High Wind Warning issued October 9 at 4:48PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
           },
-          "fingerprint": "a7af23ed5f1e47f4c8106eb08da509493735abf0752ced95ee4fb1342975efe5"
+          "fingerprint": "48d7887290ad3e206f0d9895804ec50d8778d98cc7bffb39b381361490f13093"
         }
       }
     },
@@ -1268,23 +1376,23 @@
           },
           "fingerprint": "8cba1518a15d52f2316be7bdfb51bac8268c7cec03b44ccbd6b07dc1325bd22b"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6fb453eeac89e2f6404eb5e3e473ad54dcd557ac.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a50d595e6bee41a805b10202f1eb3b772664f537.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=36.1379070156318,-82.3506037419644",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6fb453eeac89e2f6404eb5e3e473ad54dcd557ac.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a50d595e6bee41a805b10202f1eb3b772664f537.002.1",
           "quality": "OK",
           "semantic": {
             "event": "High Wind Warning",
             "severity": "Severe",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-09T12:02:00-04:00",
+            "effective": "2026-10-09T16:48:00-04:00",
             "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-10T07:00:00-04:00",
+            "expires": "2026-10-10T08:00:00-04:00",
             "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 9 at 12:02PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
+            "headline": "High Wind Warning issued October 9 at 4:48PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
           },
-          "fingerprint": "a7af23ed5f1e47f4c8106eb08da509493735abf0752ced95ee4fb1342975efe5"
+          "fingerprint": "48d7887290ad3e206f0d9895804ec50d8778d98cc7bffb39b381361490f13093"
         }
       }
     },
@@ -1329,6 +1437,24 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:21:00-04:00",
+            "onset": "2026-10-09T17:21:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
+          },
+          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
@@ -1428,6 +1554,24 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.8275,-83.61888889",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.8275,-83.61888889",
@@ -1445,24 +1589,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.8275,-83.61888889",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
@@ -1508,6 +1634,24 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.83222222,-83.62611111",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.83222222,-83.62611111",
@@ -1525,24 +1669,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.83222222,-83.62611111",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
@@ -1588,6 +1714,24 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.90027778,-83.2225",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a785cbdf320bd743a6eb05c57bc4b7c22f45ffd0.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Wind Advisory",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T17:19:00-04:00",
+            "onset": "2026-10-10T00:00:00-04:00",
+            "expires": "2026-10-10T01:30:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Wind Advisory issued October 9 at 5:19PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "16039550416444d9f4f4430e1b018c51eff7cfb00d8d2f10a2ee5ca38cd958a2"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.90027778,-83.2225",
@@ -1605,24 +1749,6 @@
             "headline": "Flood Watch issued October 9 at 2:00PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.90027778,-83.2225",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.36ca7344dd9a24cb0baf4ff8adc9537a5d3b6a3e.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T11:23:00-04:00",
-            "onset": "2026-10-10T00:00:00-04:00",
-            "expires": "2026-10-09T17:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 9 at 11:23AM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "897666b8b5a489f9afc7e8d8ba83ba34ffd72fdca9f28f340eda86886af8a26d"
         }
       }
     },
