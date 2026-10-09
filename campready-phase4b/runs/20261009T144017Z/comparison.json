@@ -1,0 +1,46 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ecbdec6ce5ce409126f56bcbafda02a2e0739f3.001.1",
+      "before": null,
+      "after": "1bdb7df9e363f224e8205e681f0df08632a14d314e7090ce02519ca14f373646",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ecbdec6ce5ce409126f56bcbafda02a2e0739f3.001.1",
+      "before": null,
+      "after": "1bdb7df9e363f224e8205e681f0df08632a14d314e7090ce02519ca14f373646",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ecbdec6ce5ce409126f56bcbafda02a2e0739f3.001.1",
+      "before": null,
+      "after": "1bdb7df9e363f224e8205e681f0df08632a14d314e7090ce02519ca14f373646",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ecbdec6ce5ce409126f56bcbafda02a2e0739f3.001.1",
+      "before": null,
+      "after": "1bdb7df9e363f224e8205e681f0df08632a14d314e7090ce02519ca14f373646",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 1,
+  "relevance_ambiguity_count": 54
+}
