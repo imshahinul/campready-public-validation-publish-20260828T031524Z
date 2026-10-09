@@ -1,0 +1,114 @@
+[
+  {
+    "canonical_key": "al-clear-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.69e6be5dc8068e02340664df6cdd6a30e133be6b.001.1",
+    "before": null,
+    "after": "f142d12c770245fc0780118041249dc17f903e2729950829012b8d099ccbf69e",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.69e6be5dc8068e02340664df6cdd6a30e133be6b.001.1",
+    "before": null,
+    "after": "f142d12c770245fc0780118041249dc17f903e2729950829012b8d099ccbf69e",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-payne-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.69e6be5dc8068e02340664df6cdd6a30e133be6b.001.1",
+    "before": null,
+    "after": "f142d12c770245fc0780118041249dc17f903e2729950829012b8d099ccbf69e",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-rabun",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-russell",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-hurricane-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-north-mills-river",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-van-hook-glade",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-stone-mountain",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d504ab52c0b1edafaaf4e138132667a87f8fe78e.001.1",
+    "before": null,
+    "after": "921786a96765d05e56fe6dda872f028a82f338835643bc0a0bdade188d656821",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-burrells-ford",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-1",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-2",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d81d6c928b628d081ee84778f8c0f1e131f74724.001.1",
+    "before": null,
+    "after": "eaa91ad82fd6083c485759d5f2dcebe79e018fe13828b479776c97171ce3e3f4",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
