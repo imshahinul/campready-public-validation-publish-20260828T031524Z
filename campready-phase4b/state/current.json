@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-09T03:40:15.027073+00:00",
-  "run_id": "20261009T034015Z",
+  "accepted_at_utc": "2026-10-09T04:40:16.281256+00:00",
+  "run_id": "20261009T044016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -20,6 +20,42 @@
             }
           },
           "fingerprint": "971c8183e27aa3d36661395119cc8f9dc7394d9a073108b60ee5672ba55b8a18"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98529f175faaf5f49aa77be5b176db34863362f0.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98529f175faaf5f49aa77be5b176db34863362f0.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Wind Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T23:07:00-05:00",
+            "onset": "2026-10-10T01:00:00-05:00",
+            "expires": "2026-10-09T14:00:00-05:00",
+            "ends": "2026-10-11T01:00:00-05:00",
+            "headline": "High Wind Watch issued October 8 at 11:07PM CDT until October 11 at 1:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "99e53b4500660e143db8ba1ea7ac4412b8b111590f4b70289eef4c4164d7be6c"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a17cd5810dabe2c7f7f5bdde866c316dcba22bb3.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a17cd5810dabe2c7f7f5bdde866c316dcba22bb3.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T23:05:00-05:00",
+            "onset": "2026-10-09T19:00:00-05:00",
+            "expires": "2026-10-09T14:00:00-05:00",
+            "ends": "2026-10-11T07:00:00-05:00",
+            "headline": "Flood Watch issued October 8 at 11:05PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "ee73e4c4205debef5123293ae19b0fb95a757d03b8b1b27978c6e7b32141e4ef"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1": {
           "source_family": "NWS_API",
@@ -74,42 +110,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 8 at 4:15PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "a967c3a72ba671589b95dcfb66f37416373007115db04cb0550c115d77cd0620"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e69629066e24ed875625bda524f270d2382483ea.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e69629066e24ed875625bda524f270d2382483ea.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-08T12:11:00-05:00",
-            "onset": "2026-10-10T01:00:00-05:00",
-            "expires": "2026-10-09T01:00:00-05:00",
-            "ends": "2026-10-11T01:00:00-05:00",
-            "headline": "High Wind Watch issued October 8 at 12:11PM CDT until October 11 at 1:00AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "fb1d16127b4b996e190bfe54f9265b8dd966356e9d5e99d3083a32b997d150fc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-08T11:26:00-05:00",
-            "onset": "2026-10-09T19:00:00-05:00",
-            "expires": "2026-10-09T01:00:00-05:00",
-            "ends": "2026-10-11T07:00:00-05:00",
-            "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
         }
       }
     },
@@ -131,6 +131,42 @@
           },
           "fingerprint": "68ddbbbaebcee44302430ac76ac355466f2324e269508b6da089277bc3853dc1"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98529f175faaf5f49aa77be5b176db34863362f0.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.98529f175faaf5f49aa77be5b176db34863362f0.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Wind Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T23:07:00-05:00",
+            "onset": "2026-10-10T01:00:00-05:00",
+            "expires": "2026-10-09T14:00:00-05:00",
+            "ends": "2026-10-11T01:00:00-05:00",
+            "headline": "High Wind Watch issued October 8 at 11:07PM CDT until October 11 at 1:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "99e53b4500660e143db8ba1ea7ac4412b8b111590f4b70289eef4c4164d7be6c"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a17cd5810dabe2c7f7f5bdde866c316dcba22bb3.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a17cd5810dabe2c7f7f5bdde866c316dcba22bb3.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T23:05:00-05:00",
+            "onset": "2026-10-09T19:00:00-05:00",
+            "expires": "2026-10-09T14:00:00-05:00",
+            "ends": "2026-10-11T07:00:00-05:00",
+            "headline": "Flood Watch issued October 8 at 11:05PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "ee73e4c4205debef5123293ae19b0fb95a757d03b8b1b27978c6e7b32141e4ef"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
@@ -184,42 +220,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 8 at 4:15PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "a967c3a72ba671589b95dcfb66f37416373007115db04cb0550c115d77cd0620"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e69629066e24ed875625bda524f270d2382483ea.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e69629066e24ed875625bda524f270d2382483ea.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-08T12:11:00-05:00",
-            "onset": "2026-10-10T01:00:00-05:00",
-            "expires": "2026-10-09T01:00:00-05:00",
-            "ends": "2026-10-11T01:00:00-05:00",
-            "headline": "High Wind Watch issued October 8 at 12:11PM CDT until October 11 at 1:00AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "fb1d16127b4b996e190bfe54f9265b8dd966356e9d5e99d3083a32b997d150fc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-08T11:26:00-05:00",
-            "onset": "2026-10-09T19:00:00-05:00",
-            "expires": "2026-10-09T01:00:00-05:00",
-            "ends": "2026-10-11T07:00:00-05:00",
-            "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
         }
       }
     },
@@ -240,6 +240,24 @@
             }
           },
           "fingerprint": "066eeb52c5dad781dba207c41f2a51ad5b8e10372f362b24c49984eda20eb72d"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a17cd5810dabe2c7f7f5bdde866c316dcba22bb3.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a17cd5810dabe2c7f7f5bdde866c316dcba22bb3.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Watch",
+            "severity": "Severe",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-08T23:05:00-05:00",
+            "onset": "2026-10-09T19:00:00-05:00",
+            "expires": "2026-10-09T14:00:00-05:00",
+            "ends": "2026-10-11T07:00:00-05:00",
+            "headline": "Flood Watch issued October 8 at 11:05PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "ee73e4c4205debef5123293ae19b0fb95a757d03b8b1b27978c6e7b32141e4ef"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1": {
           "source_family": "NWS_API",
@@ -312,24 +330,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 8 at 4:15PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "a967c3a72ba671589b95dcfb66f37416373007115db04cb0550c115d77cd0620"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b93300d099052baf21ac72a38ba22bb99550e14.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-08T11:26:00-05:00",
-            "onset": "2026-10-09T19:00:00-05:00",
-            "expires": "2026-10-09T01:00:00-05:00",
-            "ends": "2026-10-11T07:00:00-05:00",
-            "headline": "Flood Watch issued October 8 at 11:26AM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "7b4469713dd9ab56a10ffea275a2d122256433194be01089ea89482b6227083d"
         }
       }
     },
@@ -752,23 +752,23 @@
     "nps-elkmont": {
       "authority_family": "NPS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f0cda0beba0b68fe82ed88e77b1f26307234d7.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.65875714573239,-83.58274047425141",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f0cda0beba0b68fe82ed88e77b1f26307234d7.001.1",
           "quality": "OK",
           "semantic": {
             "event": "High Wind Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-08T13:24:00-04:00",
-            "onset": "2026-10-10T08:00:00-04:00",
-            "expires": "2026-10-09T06:15:00-04:00",
+            "effective": "2026-10-09T00:08:00-04:00",
+            "onset": "2026-10-10T02:00:00-04:00",
+            "expires": "2026-10-09T15:00:00-04:00",
             "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Watch issued October 8 at 1:24PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
+            "headline": "High Wind Watch issued October 9 at 12:08AM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
           },
-          "fingerprint": "3aa2c1a2a03b7dc1f1d68a98498cb68a049e2ebfff846ba07c34ed37c2961633"
+          "fingerprint": "7f03aae967e2d7fa64cb5fc0d8e0b5af264000bc48fd444db535bc022f57f087"
         }
       }
     },
@@ -1047,24 +1047,6 @@
             }
           },
           "fingerprint": "7a79b68b3ef3fd8d02a32ba09034f36fa5f404f269bf77639c68f2e860d146f3"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.399906793049205,-84.10690421414178",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-08T13:24:00-04:00",
-            "onset": "2026-10-10T08:00:00-04:00",
-            "expires": "2026-10-09T06:15:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Watch issued October 8 at 1:24PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
-          },
-          "fingerprint": "3aa2c1a2a03b7dc1f1d68a98498cb68a049e2ebfff846ba07c34ed37c2961633"
         }
       }
     },
@@ -1086,23 +1068,23 @@
           },
           "fingerprint": "8cba1518a15d52f2316be7bdfb51bac8268c7cec03b44ccbd6b07dc1325bd22b"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f0cda0beba0b68fe82ed88e77b1f26307234d7.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=36.1379070156318,-82.3506037419644",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3738d8d40f8cb901b3420c27cb560afdbc2e6e88.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2f0cda0beba0b68fe82ed88e77b1f26307234d7.001.1",
           "quality": "OK",
           "semantic": {
             "event": "High Wind Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-08T13:24:00-04:00",
-            "onset": "2026-10-10T08:00:00-04:00",
-            "expires": "2026-10-09T06:15:00-04:00",
+            "effective": "2026-10-09T00:08:00-04:00",
+            "onset": "2026-10-10T02:00:00-04:00",
+            "expires": "2026-10-09T15:00:00-04:00",
             "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Watch issued October 8 at 1:24PM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
+            "headline": "High Wind Watch issued October 9 at 12:08AM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
           },
-          "fingerprint": "3aa2c1a2a03b7dc1f1d68a98498cb68a049e2ebfff846ba07c34ed37c2961633"
+          "fingerprint": "7f03aae967e2d7fa64cb5fc0d8e0b5af264000bc48fd444db535bc022f57f087"
         }
       }
     },
