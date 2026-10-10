@@ -1,0 +1,26 @@
+[
+  {
+    "canonical_key": "nps-elkmont",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1",
+    "before": null,
+    "after": "c05e7111ee1b93918b9332fd4b84567f9f2e7cdae6bd2e3420ba84fae4561a37",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-indian-boundary",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1",
+    "before": null,
+    "after": "c05e7111ee1b93918b9332fd4b84567f9f2e7cdae6bd2e3420ba84fae4561a37",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-rock-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1",
+    "before": null,
+    "after": "c05e7111ee1b93918b9332fd4b84567f9f2e7cdae6bd2e3420ba84fae4561a37",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
