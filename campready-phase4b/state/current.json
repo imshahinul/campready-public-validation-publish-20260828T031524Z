@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-10T04:40:15.395358+00:00",
-  "run_id": "20261010T044015Z",
+  "accepted_at_utc": "2026-10-10T05:40:15.081406+00:00",
+  "run_id": "20261010T054015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -92,24 +92,6 @@
             "headline": "Flood Watch issued October 9 at 5:18PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "b9ec11bd6a8d82d4af22e253ba616d202accee1d5d4a1540a104717c200f8253"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T16:26:00-05:00",
-            "onset": "2026-10-09T16:26:00-05:00",
-            "expires": "2026-10-10T00:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
         }
       }
     },
@@ -202,24 +184,6 @@
             "headline": "High Wind Warning issued October 9 at 5:17PM CDT until October 11 at 1:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "227020a8f313292e4f7473ca40b54ddf36fa96b5ed9457cf7f143bbacd2cecb9"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T16:26:00-05:00",
-            "onset": "2026-10-09T16:26:00-05:00",
-            "expires": "2026-10-10T00:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
         }
       }
     },
@@ -312,24 +276,6 @@
             "headline": "Flood Watch issued October 9 at 5:18PM CDT until October 11 at 7:00AM CDT by NWS Birmingham AL"
           },
           "fingerprint": "b9ec11bd6a8d82d4af22e253ba616d202accee1d5d4a1540a104717c200f8253"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c730ab07416db522a7a7e03211aa4715108e6614.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T16:26:00-05:00",
-            "onset": "2026-10-09T16:26:00-05:00",
-            "expires": "2026-10-10T00:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
         }
       }
     },
@@ -392,24 +338,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 11:29PM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "7428c62fb5af5a944138ef5a61a9a109d1a799c97a8da29f3061e438367127bc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T17:21:00-04:00",
-            "onset": "2026-10-09T17:21:00-04:00",
-            "expires": "2026-10-10T01:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
@@ -698,24 +626,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 11:29PM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "7428c62fb5af5a944138ef5a61a9a109d1a799c97a8da29f3061e438367127bc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T17:21:00-04:00",
-            "onset": "2026-10-09T17:21:00-04:00",
-            "expires": "2026-10-10T01:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
@@ -1069,23 +979,23 @@
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d504ab52c0b1edafaaf4e138132667a87f8fe78e.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06ed5c5df0f565e365f23998a032cb15f7dfbb61.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=36.3873,-81.0273",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d504ab52c0b1edafaaf4e138132667a87f8fe78e.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06ed5c5df0f565e365f23998a032cb15f7dfbb61.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-09T13:43:00-04:00",
+            "effective": "2026-10-10T01:24:00-04:00",
             "onset": "2026-10-10T11:00:00-04:00",
-            "expires": "2026-10-10T06:00:00-04:00",
+            "expires": "2026-10-10T15:00:00-04:00",
             "ends": "2026-10-11T20:00:00-04:00",
-            "headline": "Flood Watch issued October 9 at 1:43PM EDT until October 11 at 8:00PM EDT by NWS Blacksburg VA"
+            "headline": "Flood Watch issued October 10 at 1:24AM EDT until October 11 at 8:00PM EDT by NWS Blacksburg VA"
           },
-          "fingerprint": "921786a96765d05e56fe6dda872f028a82f338835643bc0a0bdade188d656821"
+          "fingerprint": "0210d72becfb004dee2a363e59214d49514c172991396c8f08e3a13d6830ad93"
         }
       }
     },
@@ -1408,24 +1318,6 @@
           },
           "fingerprint": "7428c62fb5af5a944138ef5a61a9a109d1a799c97a8da29f3061e438367127bc"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T17:21:00-04:00",
-            "onset": "2026-10-09T17:21:00-04:00",
-            "expires": "2026-10-10T01:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
-        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
@@ -1617,24 +1509,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 11:29PM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "7428c62fb5af5a944138ef5a61a9a109d1a799c97a8da29f3061e438367127bc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fb9e39517a5b3c805a79baaadd7867f0c2db7c1.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T17:21:00-04:00",
-            "onset": "2026-10-09T17:21:00-04:00",
-            "expires": "2026-10-10T01:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 5:21PM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "6a9b90f52999ba887c6decdf42584d929a50efc8f81a11d97bee3a09942699b8"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1": {
           "source_family": "NWS_API",
