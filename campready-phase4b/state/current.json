@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-09T23:40:18.375827+00:00",
-  "run_id": "20261009T234018Z",
+  "accepted_at_utc": "2026-10-10T00:40:15.418047+00:00",
+  "run_id": "20261010T004015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -20,6 +20,42 @@
             }
           },
           "fingerprint": "971c8183e27aa3d36661395119cc8f9dc7394d9a073108b60ee5672ba55b8a18"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T19:11:00-05:00",
+            "onset": "2026-10-09T19:11:00-05:00",
+            "expires": "2026-10-10T03:15:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:11PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Storm Warning",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "effective": "2026-10-09T18:57:00-05:00",
+            "onset": "2026-10-09T18:57:00-05:00",
+            "expires": "2026-10-10T03:00:00-05:00",
+            "ends": null,
+            "headline": "Tropical Storm Warning issued October 9 at 6:57PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1": {
           "source_family": "NWS_API",
@@ -56,24 +92,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Storm Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "effective": "2026-10-09T16:20:00-05:00",
-            "onset": "2026-10-09T16:20:00-05:00",
-            "expires": "2026-10-10T00:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Storm Warning issued October 9 at 4:20PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "e1d3ec3cc1c8073c3eb12e0abdd0e6bd105945bfe00e12c0eb94d4dd29d84242"
         }
       }
     },
@@ -94,6 +112,24 @@
             }
           },
           "fingerprint": "68ddbbbaebcee44302430ac76ac355466f2324e269508b6da089277bc3853dc1"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T19:11:00-05:00",
+            "onset": "2026-10-09T19:11:00-05:00",
+            "expires": "2026-10-10T03:15:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:11PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1": {
           "source_family": "NWS_API",
@@ -169,6 +205,42 @@
           },
           "fingerprint": "066eeb52c5dad781dba207c41f2a51ad5b8e10372f362b24c49984eda20eb72d"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Cyclone Local Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T19:11:00-05:00",
+            "onset": "2026-10-09T19:11:00-05:00",
+            "expires": "2026-10-10T03:15:00-05:00",
+            "ends": null,
+            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:11PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.017.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.017.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tropical Storm Warning",
+            "severity": "Severe",
+            "certainty": "Likely",
+            "urgency": "Immediate",
+            "effective": "2026-10-09T18:57:00-05:00",
+            "onset": "2026-10-09T18:57:00-05:00",
+            "expires": "2026-10-10T03:00:00-05:00",
+            "ends": null,
+            "headline": "Tropical Storm Warning issued October 9 at 6:57PM CDT by NWS Birmingham AL"
+          },
+          "fingerprint": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
@@ -204,24 +276,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 4:26PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "800990aef769a908be7dc3aedebba1bd25000674494ae1f5f0692b3d724af54e"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.017.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e176935e170d11eb27ee31f168e61d9b462b9fe.017.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Storm Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Immediate",
-            "effective": "2026-10-09T16:20:00-05:00",
-            "onset": "2026-10-09T16:20:00-05:00",
-            "expires": "2026-10-10T00:30:00-05:00",
-            "ends": null,
-            "headline": "Tropical Storm Warning issued October 9 at 4:20PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "e1d3ec3cc1c8073c3eb12e0abdd0e6bd105945bfe00e12c0eb94d4dd29d84242"
         }
       }
     },
@@ -836,6 +890,60 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.3": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.3",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T20:19:00-04:00",
+            "onset": "2026-10-10T06:00:00-04:00",
+            "expires": "2026-10-10T06:00:00-04:00",
+            "ends": "2026-10-10T20:00:00-04:00",
+            "headline": "Rip Current Statement issued October 9 at 8:19PM EDT until October 10 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "2b8fc9641ec9edb292ad9492c36466b43798d6b24a19e8175f97bbb57beb73a9"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Coastal Flood Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T20:19:00-04:00",
+            "onset": "2026-10-10T06:00:00-04:00",
+            "expires": "2026-10-10T06:00:00-04:00",
+            "ends": "2026-10-10T10:00:00-04:00",
+            "headline": "Coastal Flood Advisory issued October 9 at 8:19PM EDT until October 10 at 10:00AM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "eb49bf07a040b5d256d83a7a385fa10df0179e349c61bc50cb930c468174d973"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.2",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Surf Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-09T20:19:00-04:00",
+            "onset": "2026-10-10T14:00:00-04:00",
+            "expires": "2026-10-10T06:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "High Surf Advisory issued October 9 at 8:19PM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "cab254a43be4c6aecb6912a6a4f4d8a74d3695bd89450a39088c85b03dae17f9"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.88ef76a244442b448b1cac97438800fc39f73def.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",

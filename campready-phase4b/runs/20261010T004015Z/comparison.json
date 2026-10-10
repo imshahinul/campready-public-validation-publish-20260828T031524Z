@@ -1,0 +1,256 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.002.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.017.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.3",
+      "before": null,
+      "after": "2b8fc9641ec9edb292ad9492c36466b43798d6b24a19e8175f97bbb57beb73a9",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.1",
+      "before": null,
+      "after": "eb49bf07a040b5d256d83a7a385fa10df0179e349c61bc50cb930c468174d973",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.2",
+      "before": null,
+      "after": "cab254a43be4c6aecb6912a6a4f4d8a74d3695bd89450a39088c85b03dae17f9",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.002.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.017.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.3",
+      "before": null,
+      "after": "2b8fc9641ec9edb292ad9492c36466b43798d6b24a19e8175f97bbb57beb73a9",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.1",
+      "before": null,
+      "after": "eb49bf07a040b5d256d83a7a385fa10df0179e349c61bc50cb930c468174d973",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.2",
+      "before": null,
+      "after": "cab254a43be4c6aecb6912a6a4f4d8a74d3695bd89450a39088c85b03dae17f9",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.002.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.017.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.3",
+      "before": null,
+      "after": "2b8fc9641ec9edb292ad9492c36466b43798d6b24a19e8175f97bbb57beb73a9",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.1",
+      "before": null,
+      "after": "eb49bf07a040b5d256d83a7a385fa10df0179e349c61bc50cb930c468174d973",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.2",
+      "before": null,
+      "after": "cab254a43be4c6aecb6912a6a4f4d8a74d3695bd89450a39088c85b03dae17f9",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-clear-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.002.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-coleman-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
+      "before": null,
+      "after": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "al-payne-lake",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8041e4eb44f6190a1608a94396d4be30b0688657.017.1",
+      "before": null,
+      "after": "1d98771e904ff191c2c5db8acacf4baaea3886a0c9ec65b893d9dfcfcf957ce4",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.3",
+      "before": null,
+      "after": "2b8fc9641ec9edb292ad9492c36466b43798d6b24a19e8175f97bbb57beb73a9",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.1",
+      "before": null,
+      "after": "eb49bf07a040b5d256d83a7a385fa10df0179e349c61bc50cb930c468174d973",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77a14cb0c70674f983d5f8881196e82b49a5a2dc.001.2",
+      "before": null,
+      "after": "cab254a43be4c6aecb6912a6a4f4d8a74d3695bd89450a39088c85b03dae17f9",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 8,
+  "relevance_ambiguity_count": 55
+}
