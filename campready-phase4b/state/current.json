@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-10T06:40:18.712895+00:00",
-  "run_id": "20261010T064018Z",
+  "accepted_at_utc": "2026-10-10T07:40:15.825930+00:00",
+  "run_id": "20261010T074015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -890,77 +890,77 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de4fbac380f466597a8e453b57b28fa519306952.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Coastal Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T02:22:00-04:00",
-            "onset": "2026-10-10T06:00:00-04:00",
-            "expires": "2026-10-10T10:00:00-04:00",
-            "ends": "2026-10-10T10:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 10 at 2:22AM EDT until October 10 at 10:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "bf460a7166937d82097c757321680f67a927a87654ca309d2728ab9015362c2c"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Surf Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T02:22:00-04:00",
-            "onset": "2026-10-10T14:00:00-04:00",
-            "expires": "2026-10-10T10:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Surf Advisory issued October 10 at 2:22AM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "88c56749114fc85ea5b298d324a48a59375d9378ac2d11f804bbd67ffdd7b61a"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.3": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.3",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T02:22:00-04:00",
-            "onset": "2026-10-10T06:00:00-04:00",
-            "expires": "2026-10-10T10:00:00-04:00",
-            "ends": "2026-10-10T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 10 at 2:22AM EDT until October 10 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "870226b575a0537fd859033cd06112d29dde9d53df10d6717979dd6234038731"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.88ef76a244442b448b1cac97438800fc39f73def.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.88ef76a244442b448b1cac97438800fc39f73def.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de4fbac380f466597a8e453b57b28fa519306952.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-09T13:23:00-04:00",
+            "effective": "2026-10-10T02:52:00-04:00",
             "onset": "2026-10-10T11:00:00-04:00",
-            "expires": "2026-10-10T06:15:00-04:00",
+            "expires": "2026-10-10T16:00:00-04:00",
             "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Flood Watch issued October 9 at 1:23PM EDT until October 11 at 11:00AM EDT by NWS Wilmington NC"
+            "headline": "Flood Watch issued October 10 at 2:52AM EDT until October 11 at 11:00AM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "f6a6a0545740c50a6bd2eb9b1241c3c05c2c8f3e3219e1599cec097d8af7ab2b"
+          "fingerprint": "a6fb6eb4e6fe7d3a8af3fbd8fda1d3dded2e1c6b4e6b3f720f44c506c281ed48"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6acb7c67f855fcae94c578b12379f4f460c96f.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6acb7c67f855fcae94c578b12379f4f460c96f.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Coastal Flood Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T02:41:00-04:00",
+            "onset": "2026-10-10T06:00:00-04:00",
+            "expires": "2026-10-10T10:00:00-04:00",
+            "ends": "2026-10-10T10:00:00-04:00",
+            "headline": "Coastal Flood Advisory issued October 10 at 2:41AM EDT until October 10 at 10:00AM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "a57091a2dcd9025c360c86c0bc8f821ff28d4159ad9e504702460f74c002a6ca"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6acb7c67f855fcae94c578b12379f4f460c96f.002.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6acb7c67f855fcae94c578b12379f4f460c96f.002.2",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Surf Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T02:41:00-04:00",
+            "onset": "2026-10-10T14:00:00-04:00",
+            "expires": "2026-10-10T10:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "High Surf Advisory issued October 10 at 2:41AM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "035440ddfe77c3bae52a7d410b34c1888b4f32987258afbc13b9b12a9668bf5c"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6acb7c67f855fcae94c578b12379f4f460c96f.002.3": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6acb7c67f855fcae94c578b12379f4f460c96f.002.3",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T02:41:00-04:00",
+            "onset": "2026-10-10T06:00:00-04:00",
+            "expires": "2026-10-10T10:00:00-04:00",
+            "ends": "2026-10-10T20:00:00-04:00",
+            "headline": "Rip Current Statement issued October 10 at 2:41AM EDT until October 10 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "7a93064f1f7fa3342c1eb9726371f924c07c4205458925d513ffaff74a318348"
         }
       }
     },
