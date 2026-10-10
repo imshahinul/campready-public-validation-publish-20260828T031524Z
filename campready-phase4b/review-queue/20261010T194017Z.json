@@ -1,0 +1,42 @@
+[
+  {
+    "canonical_key": "ncsp-carolina-beach",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b5696e04a857360c6027e43ec39c55c8611f3e38.001.1",
+    "before": null,
+    "after": "a42a4c9a7306d2313de4ba615ef1431490ab633ec76521170483587dc74aa133",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nps-big-meadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.62f907aa72362170cf692afa99bc2bdc4e207822.002.1",
+    "before": null,
+    "after": "2a857c1c42bb513d239bf29f6b47815431888796eb03564abe2f87f9d67104a7",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nps-big-meadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bb779aa111a2e7e03e8c6ef042670c43efa660fc.001.1",
+    "before": null,
+    "after": "fe8a4e919e3b21554600605d05c574b5c8779f436216044e3afa1cf039c08652",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-brick-house",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.056d55da667d71fab4dfb16b6c220d8558c01672.002.1",
+    "before": null,
+    "after": "4a0b60a686881cb2bf0dc1c5b0cc06847ab4386179e4b09149a67300a5a2dae5",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-seneca-shadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.62f907aa72362170cf692afa99bc2bdc4e207822.001.1",
+    "before": null,
+    "after": "3dcd377b8a84bb66ef4a4582c78afee6d0ff1d9b09ea0474059c0a3a0d37225b",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
