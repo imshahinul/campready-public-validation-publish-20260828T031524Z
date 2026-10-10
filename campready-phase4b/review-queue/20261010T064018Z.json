@@ -1,0 +1,242 @@
+[
+  {
+    "canonical_key": "lake-rabun",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-rabun",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-russell",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-russell",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-hurricane-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.001.1",
+    "before": null,
+    "after": "ceaa850deab962a868cd42be79b77f40834757823d5cbf592732f937046fec45",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-hurricane-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.001.2",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-hurricane-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-north-mills-river",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-north-mills-river",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-van-hook-glade",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.001.1",
+    "before": null,
+    "after": "ceaa850deab962a868cd42be79b77f40834757823d5cbf592732f937046fec45",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-van-hook-glade",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.001.2",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-van-hook-glade",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-carolina-beach",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.1",
+    "before": null,
+    "after": "bf460a7166937d82097c757321680f67a927a87654ca309d2728ab9015362c2c",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-carolina-beach",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.2",
+    "before": null,
+    "after": "88c56749114fc85ea5b298d324a48a59375d9378ac2d11f804bbd67ffdd7b61a",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-carolina-beach",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0da90392d2924c1902cc24019ecaaa0dcf4b194b.001.3",
+    "before": null,
+    "after": "870226b575a0537fd859033cd06112d29dde9d53df10d6717979dd6234038731",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nps-big-meadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be2c6fd50e70373e251ed6c35d65dcee27fbb769.002.1",
+    "before": null,
+    "after": "3f2002104227d1c4167063e8be864e09fdf17d99df52d1a06e76ec820a170d29",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nps-elkmont",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f6c509b17b727181f7f887d314233323af47d70.001.1",
+    "before": null,
+    "after": "12816bb4ed0fbb708e89a98462d77c15f63d2547d12b8b48b4de6d21f398c6b4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-burrells-ford",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-burrells-ford",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-indian-boundary",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f6c509b17b727181f7f887d314233323af47d70.001.1",
+    "before": null,
+    "after": "12816bb4ed0fbb708e89a98462d77c15f63d2547d12b8b48b4de6d21f398c6b4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "tn-rock-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f6c509b17b727181f7f887d314233323af47d70.001.1",
+    "before": null,
+    "after": "12816bb4ed0fbb708e89a98462d77c15f63d2547d12b8b48b4de6d21f398c6b4",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-1",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-1",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-2",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wildcat-2",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dddeb5372aed21d78e9cf473fcfc5d2f9d391a1b.002.1",
+    "before": null,
+    "after": "cf240b7c8c9f5370ebe4d4be6405b3976dda751d0b5be4edb9671f9deb88a26f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9f6ccb90ee6ecc328a6aa595e81f8813a1447288.002.1",
+    "before": null,
+    "after": "025c9652be73a559736970a7cc87ddadd829af08dfaf895fd0b405ffc429a8ef",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-seneca-shadows",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be2c6fd50e70373e251ed6c35d65dcee27fbb769.001.1",
+    "before": null,
+    "after": "44735b4fd767685145a022cfd4ad9b5a53b98a52fda1d364c043501a71a61c0f",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
