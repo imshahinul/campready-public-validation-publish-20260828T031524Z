@@ -1,0 +1,34 @@
+[
+  {
+    "canonical_key": "al-clear-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6a31933ff58a39c4156565409c2549c0d20e150.003.1",
+    "before": null,
+    "after": "7f19031bc058230f4778eebf74c782b1990d889c0c74cd98cb3388780ef199ae",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "al-coleman-lake",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6a31933ff58a39c4156565409c2549c0d20e150.001.2",
+    "before": null,
+    "after": "7f19031bc058230f4778eebf74c782b1990d889c0c74cd98cb3388780ef199ae",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "ncsp-stone-mountain",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9ce0b0a84b83ea5683c302544ccef217c6ad95ab.001.1",
+    "before": null,
+    "after": "30cb9dd92728b1fd34f7b534fc54e5b877d75b1421657dce6b3cf11e0146b10f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-brick-house",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.adf7892a9c53db33e25ba4dd438ce3d21c52a29e.002.1",
+    "before": null,
+    "after": "b3dacee26a7bcf6b59b81531ef4d59fc42e2695abedaef588a7af6e7648c9b0c",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]

@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-10T16:40:16.275841+00:00",
-  "run_id": "20261010T164016Z",
+  "accepted_at_utc": "2026-10-10T17:40:16.178178+00:00",
+  "run_id": "20261010T174016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -21,41 +21,23 @@
           },
           "fingerprint": "971c8183e27aa3d36661395119cc8f9dc7394d9a073108b60ee5672ba55b8a18"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.562bc46fa0f6514b8fcc329ff4e371616b56527b.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6a31933ff58a39c4156565409c2549c0d20e150.003.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.562bc46fa0f6514b8fcc329ff4e371616b56527b.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6a31933ff58a39c4156565409c2549c0d20e150.003.1",
           "quality": "OK",
           "semantic": {
             "event": "Wind Advisory",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T04:12:00-05:00",
-            "onset": "2026-10-10T04:12:00-05:00",
+            "effective": "2026-10-10T11:43:00-05:00",
+            "onset": "2026-10-10T11:43:00-05:00",
             "expires": "2026-10-10T19:00:00-05:00",
             "ends": "2026-10-10T19:00:00-05:00",
-            "headline": "Wind Advisory issued October 10 at 4:12AM CDT until October 10 at 7:00PM CDT by NWS Birmingham AL"
+            "headline": "Wind Advisory issued October 10 at 11:43AM CDT until October 10 at 7:00PM CDT by NWS Birmingham AL"
           },
-          "fingerprint": "e28c95dc1e2f54be24ccafffb71a67f51445ab91741b77e296bd18015ff88dbf"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d53384accac93996087dd0a652d43d8116f7e618.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d53384accac93996087dd0a652d43d8116f7e618.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T04:03:00-05:00",
-            "onset": "2026-10-10T04:03:00-05:00",
-            "expires": "2026-10-10T12:15:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 10 at 4:03AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "8b36f57e90d656a7e450bb820d21e0b5487b9d8f5ce4362a8c43dc4743014807"
+          "fingerprint": "7f19031bc058230f4778eebf74c782b1990d889c0c74cd98cb3388780ef199ae"
         }
       }
     },
@@ -77,41 +59,23 @@
           },
           "fingerprint": "68ddbbbaebcee44302430ac76ac355466f2324e269508b6da089277bc3853dc1"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.562bc46fa0f6514b8fcc329ff4e371616b56527b.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6a31933ff58a39c4156565409c2549c0d20e150.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.562bc46fa0f6514b8fcc329ff4e371616b56527b.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6a31933ff58a39c4156565409c2549c0d20e150.001.2",
           "quality": "OK",
           "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T04:12:00-05:00",
-            "onset": "2026-10-10T04:12:00-05:00",
-            "expires": "2026-10-10T19:00:00-05:00",
-            "ends": "2026-10-10T19:00:00-05:00",
-            "headline": "High Wind Warning issued October 10 at 4:12AM CDT until October 10 at 7:00PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "b4d316350852b226e8acc9a99efc7a253a9fc3b58f2e834c51943b4da9a363e9"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d53384accac93996087dd0a652d43d8116f7e618.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d53384accac93996087dd0a652d43d8116f7e618.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
+            "event": "Wind Advisory",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T04:03:00-05:00",
-            "onset": "2026-10-10T04:03:00-05:00",
-            "expires": "2026-10-10T12:15:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 10 at 4:03AM CDT by NWS Birmingham AL"
+            "effective": "2026-10-10T11:43:00-05:00",
+            "onset": "2026-10-10T11:43:00-05:00",
+            "expires": "2026-10-10T19:00:00-05:00",
+            "ends": "2026-10-10T19:00:00-05:00",
+            "headline": "Wind Advisory issued October 10 at 11:43AM CDT until October 10 at 7:00PM CDT by NWS Birmingham AL"
           },
-          "fingerprint": "8b36f57e90d656a7e450bb820d21e0b5487b9d8f5ce4362a8c43dc4743014807"
+          "fingerprint": "7f19031bc058230f4778eebf74c782b1990d889c0c74cd98cb3388780ef199ae"
         }
       }
     },
@@ -132,42 +96,6 @@
             }
           },
           "fingerprint": "066eeb52c5dad781dba207c41f2a51ad5b8e10372f362b24c49984eda20eb72d"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.562bc46fa0f6514b8fcc329ff4e371616b56527b.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.562bc46fa0f6514b8fcc329ff4e371616b56527b.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T04:12:00-05:00",
-            "onset": "2026-10-10T04:12:00-05:00",
-            "expires": "2026-10-10T19:00:00-05:00",
-            "ends": "2026-10-10T19:00:00-05:00",
-            "headline": "Wind Advisory issued October 10 at 4:12AM CDT until October 10 at 7:00PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "e28c95dc1e2f54be24ccafffb71a67f51445ab91741b77e296bd18015ff88dbf"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d53384accac93996087dd0a652d43d8116f7e618.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d53384accac93996087dd0a652d43d8116f7e618.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T04:03:00-05:00",
-            "onset": "2026-10-10T04:03:00-05:00",
-            "expires": "2026-10-10T12:15:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 10 at 4:03AM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "8b36f57e90d656a7e450bb820d21e0b5487b9d8f5ce4362a8c43dc4743014807"
         }
       }
     },
@@ -188,18 +116,6 @@
             }
           },
           "fingerprint": "be99d0b32e16bec9456b54d2383b53c5a2d4e239ea5a831b1d3264683f0fff67"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
@@ -249,23 +165,17 @@
           },
           "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1",
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
           "quality": "OK",
           "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T05:23:00-04:00",
-            "onset": "2026-10-10T05:23:00-04:00",
-            "expires": "2026-10-10T13:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 10 at 5:23AM EDT by NWS Peachtree City GA"
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
-          "fingerprint": "84dc1b3c8c438c9820b38626e7a92de662b8b841f738c9060465d7fdb632fd0f"
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -287,18 +197,6 @@
           },
           "fingerprint": "38c09333e02e9cc9468d7d8b8d239bb6117fb9eb0b17610b7d501d4bd347fa47"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -346,6 +244,18 @@
             "headline": "Flood Watch issued October 10 at 10:00AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "1c147e08c11c6dd23ac8dfcdfd4e839a594a29778f369961e23c9e49642d1623"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
+          },
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -367,18 +277,6 @@
           },
           "fingerprint": "c1dab10cbc930b52502a96e5dab9b7175f470f8cebb8b42af2427a4d28cdc074"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -426,6 +324,18 @@
             "headline": "Flood Watch issued October 10 at 10:00AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "1c147e08c11c6dd23ac8dfcdfd4e839a594a29778f369961e23c9e49642d1623"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
+          },
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -446,18 +356,6 @@
             }
           },
           "fingerprint": "6a3bd7771b084e7845f231d7b131e83b20a6eafac4928c854616b95ea84b104c"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
           "source_family": "USFS_WEBSITE_ALERTS",
@@ -519,23 +417,17 @@
           },
           "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1",
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
           "quality": "OK",
           "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T05:23:00-04:00",
-            "onset": "2026-10-10T05:23:00-04:00",
-            "expires": "2026-10-10T13:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 10 at 5:23AM EDT by NWS Peachtree City GA"
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
-          "fingerprint": "84dc1b3c8c438c9820b38626e7a92de662b8b841f738c9060465d7fdb632fd0f"
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -746,24 +638,6 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a8dc47f54510bf40ff8221837784fe628c07e562.002.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a8dc47f54510bf40ff8221837784fe628c07e562.002.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T11:58:00-04:00",
-            "onset": "2026-10-10T11:58:00-04:00",
-            "expires": "2026-10-10T20:00:00-04:00",
-            "ends": "2026-10-10T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 10 at 11:58AM EDT until October 10 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "f55c3ed9f037f2b6efc5e3de16048129651290adb4645e74459ee97b08ae9674"
-        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a8dc47f54510bf40ff8221837784fe628c07e562.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
@@ -781,6 +655,24 @@
             "headline": "High Surf Advisory issued October 10 at 11:58AM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
           },
           "fingerprint": "089e63da9dcdfa6b7eaefc8feb060cf2cde409a7a3926a8db80856cb6c506649"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a8dc47f54510bf40ff8221837784fe628c07e562.002.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a8dc47f54510bf40ff8221837784fe628c07e562.002.2",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T11:58:00-04:00",
+            "onset": "2026-10-10T11:58:00-04:00",
+            "expires": "2026-10-10T20:00:00-04:00",
+            "ends": "2026-10-10T20:00:00-04:00",
+            "headline": "Rip Current Statement issued October 10 at 11:58AM EDT until October 10 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "f55c3ed9f037f2b6efc5e3de16048129651290adb4645e74459ee97b08ae9674"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de4fbac380f466597a8e453b57b28fa519306952.001.1": {
           "source_family": "NWS_API",
@@ -817,23 +709,23 @@
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06ed5c5df0f565e365f23998a032cb15f7dfbb61.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9ce0b0a84b83ea5683c302544ccef217c6ad95ab.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=36.3873,-81.0273",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.06ed5c5df0f565e365f23998a032cb15f7dfbb61.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9ce0b0a84b83ea5683c302544ccef217c6ad95ab.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-10T01:24:00-04:00",
-            "onset": "2026-10-10T11:00:00-04:00",
-            "expires": "2026-10-10T15:00:00-04:00",
+            "effective": "2026-10-10T13:30:00-04:00",
+            "onset": "2026-10-10T13:30:00-04:00",
+            "expires": "2026-10-11T01:00:00-04:00",
             "ends": "2026-10-11T20:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 1:24AM EDT until October 11 at 8:00PM EDT by NWS Blacksburg VA"
+            "headline": "Flood Watch issued October 10 at 1:30PM EDT until October 11 at 8:00PM EDT by NWS Blacksburg VA"
           },
-          "fingerprint": "0210d72becfb004dee2a363e59214d49514c172991396c8f08e3a13d6830ad93"
+          "fingerprint": "30cb9dd92728b1fd34f7b534fc54e5b877d75b1421657dce6b3cf11e0146b10f"
         }
       }
     },
@@ -959,18 +851,6 @@
           },
           "fingerprint": "383ccd1698e33b2325fa0e2203ed2693420e02b51994bc53f56be1dd5e48683b"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -1018,6 +898,18 @@
             "headline": "Flood Watch issued October 10 at 10:00AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "1c147e08c11c6dd23ac8dfcdfd4e839a594a29778f369961e23c9e49642d1623"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
+          },
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -1039,23 +931,23 @@
           },
           "fingerprint": "06cb8f1c9f12071bf7956c127769201c931f6aa2fb276c52e8dfe6b04a55834b"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.faf6efcb8b7f0f7dd88de859af4538c8b5ad32fe.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.adf7892a9c53db33e25ba4dd438ce3d21c52a29e.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.4483552228186,-81.70729094668407",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.faf6efcb8b7f0f7dd88de859af4538c8b5ad32fe.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.adf7892a9c53db33e25ba4dd438ce3d21c52a29e.002.1",
           "quality": "OK",
           "semantic": {
             "event": "Lake Wind Advisory",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T05:04:00-04:00",
-            "onset": "2026-10-10T05:04:00-04:00",
+            "effective": "2026-10-10T13:34:00-04:00",
+            "onset": "2026-10-10T13:34:00-04:00",
             "expires": "2026-10-10T23:00:00-04:00",
             "ends": "2026-10-10T23:00:00-04:00",
-            "headline": "Lake Wind Advisory issued October 10 at 5:04AM EDT until October 10 at 11:00PM EDT by NWS Columbia SC"
+            "headline": "Lake Wind Advisory issued October 10 at 1:34PM EDT until October 10 at 11:00PM EDT by NWS Columbia SC"
           },
-          "fingerprint": "e43b1d9debd7922b3179cb6343052a354768dec12242952b63f08bd95fb1fa7c"
+          "fingerprint": "b3dacee26a7bcf6b59b81531ef4d59fc42e2695abedaef588a7af6e7648c9b0c"
         }
       }
     },
@@ -1133,18 +1025,6 @@
           },
           "fingerprint": "57e212bf4f68a05659af21de447939d9c04304852ef82bf20895a58bffda0bcb"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -1193,23 +1073,17 @@
           },
           "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1",
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
           "quality": "OK",
           "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T05:23:00-04:00",
-            "onset": "2026-10-10T05:23:00-04:00",
-            "expires": "2026-10-10T13:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 10 at 5:23AM EDT by NWS Peachtree City GA"
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
-          "fingerprint": "84dc1b3c8c438c9820b38626e7a92de662b8b841f738c9060465d7fdb632fd0f"
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -1307,18 +1181,6 @@
           },
           "fingerprint": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -1367,23 +1229,17 @@
           },
           "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1",
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
           "quality": "OK",
           "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T05:23:00-04:00",
-            "onset": "2026-10-10T05:23:00-04:00",
-            "expires": "2026-10-10T13:30:00-04:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 10 at 5:23AM EDT by NWS Peachtree City GA"
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
-          "fingerprint": "84dc1b3c8c438c9820b38626e7a92de662b8b841f738c9060465d7fdb632fd0f"
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -1405,18 +1261,6 @@
           },
           "fingerprint": "d41fa38ca123166ecb2ee68cbcddfd682bb8b50bbc0f1bd29da7d1de9c8c3c16"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -1464,6 +1308,18 @@
             "headline": "Flood Watch issued October 10 at 10:00AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "1c147e08c11c6dd23ac8dfcdfd4e839a594a29778f369961e23c9e49642d1623"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
+          },
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -1485,18 +1341,6 @@
           },
           "fingerprint": "27b4df6ca4dd5efc5eb5bb91510bc738ba666d0067386ff1dd3ff0f6b90f2099"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -1544,6 +1388,18 @@
             "headline": "Flood Watch issued October 10 at 10:00AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "1c147e08c11c6dd23ac8dfcdfd4e839a594a29778f369961e23c9e49642d1623"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
+          },
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
@@ -1565,18 +1421,6 @@
           },
           "fingerprint": "022e305596176eb0dc9b3f4c82653862173a455ae7559a1d922e3748d27c2da7"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -1624,6 +1468,18 @@
             "headline": "Flood Watch issued October 10 at 10:00AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "1c147e08c11c6dd23ac8dfcdfd4e839a594a29778f369961e23c9e49642d1623"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
+            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
+            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
+          },
+          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         }
       }
     },
