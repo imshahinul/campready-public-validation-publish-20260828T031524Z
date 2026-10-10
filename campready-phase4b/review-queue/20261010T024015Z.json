@@ -1,0 +1,34 @@
+[
+  {
+    "canonical_key": "or-spinreel",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground",
+    "before": "79d75499922338d998e43ff0b08931227b763897e4391f97c2e2e5efabcf89cf",
+    "after": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f",
+    "category": "MATERIAL_UPDATE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sc-brick-house",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4747a61b81a6faa56250aec1059a5fd5fc88cf01.002.1",
+    "before": null,
+    "after": "66fc63ef042276a7531db4073f8ff4f016925beb6746087e84e62b876122fc6f",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-bear-heaven",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81a8f0e8682054712f8e20de1992962748b147c6.001.1",
+    "before": null,
+    "after": "c7d516d96c660c01712c59d439a49516aa29494c9437da2f63f6c5f6aefe4d98",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "wv-big-rock",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81a8f0e8682054712f8e20de1992962748b147c6.001.1",
+    "before": null,
+    "after": "c7d516d96c660c01712c59d439a49516aa29494c9437da2f63f6c5f6aefe4d98",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
