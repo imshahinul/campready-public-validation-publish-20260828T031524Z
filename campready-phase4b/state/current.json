@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-10T07:40:15.825930+00:00",
-  "run_id": "20261010T074015Z",
+  "accepted_at_utc": "2026-10-10T08:40:17.679677+00:00",
+  "run_id": "20261010T084017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -56,24 +56,6 @@
             "headline": "Tropical Storm Warning issued October 9 at 9:56PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "45ad4ae6d8b8e72237f96640772895281e3d98b0a726759fcd961dd2f269f6f7"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.012149379185814,-87.26569143919073",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T19:11:00-05:00",
-            "onset": "2026-10-09T19:11:00-05:00",
-            "expires": "2026-10-10T03:15:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:11PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1": {
           "source_family": "NWS_API",
@@ -130,24 +112,6 @@
             "headline": "Tropical Cyclone Local Statement issued October 9 at 10:09PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "8af48cd842b9d9ec6b00a1c3e7a4be45cca4a88e55b79cae6df22a6c6ad52577"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=33.78491626799285,-85.55892526139627",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T19:11:00-05:00",
-            "onset": "2026-10-09T19:11:00-05:00",
-            "expires": "2026-10-10T03:15:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:11PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1": {
           "source_family": "NWS_API",
@@ -240,24 +204,6 @@
             "headline": "Tropical Storm Warning issued October 9 at 9:56PM CDT by NWS Birmingham AL"
           },
           "fingerprint": "45ad4ae6d8b8e72237f96640772895281e3d98b0a726759fcd961dd2f269f6f7"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=32.88127128524199,-87.44588002762968",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68814a47d03ab566dcd3ef769346eaff115f9f27.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tropical Cyclone Local Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-09T19:11:00-05:00",
-            "onset": "2026-10-09T19:11:00-05:00",
-            "expires": "2026-10-10T03:15:00-05:00",
-            "ends": null,
-            "headline": "Tropical Cyclone Local Statement issued October 9 at 7:11PM CDT by NWS Birmingham AL"
-          },
-          "fingerprint": "16a7c465e59daa7946ec832d43c448b668b262a898c336b78636300e952f7a3d"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1d57648b8aee1203ee01d642413ffc3891425e0.001.1": {
           "source_family": "NWS_API",
