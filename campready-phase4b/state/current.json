@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T18:40:15.815268+00:00",
-  "run_id": "20261011T184015Z",
+  "accepted_at_utc": "2026-10-11T19:40:14.359194+00:00",
+  "run_id": "20261011T194014Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -336,26 +336,7 @@
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cd050bf6fa7ff0f9646ca9851a8502f4016e903d.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cd050bf6fa7ff0f9646ca9851a8502f4016e903d.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-11T13:09:00-04:00",
-            "onset": "2026-10-11T13:09:00-04:00",
-            "expires": "2026-10-11T15:15:00-04:00",
-            "ends": "2026-10-11T15:15:00-04:00",
-            "headline": "Flood Advisory issued October 11 at 1:09PM EDT until October 11 at 3:15PM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "c359c462ef7d61d6de1e4fd22c8dacea8480ce845871381323be77008bc5f131"
-        }
-      }
+      "events": {}
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
@@ -372,23 +353,23 @@
     "nps-big-meadows": {
       "authority_family": "NPS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5cf66f6492bacb3ca8333441d7e16c9bcdd81bbc.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4d8afc9350c18ae6f294d552491c0f2dca641435.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5cf66f6492bacb3ca8333441d7e16c9bcdd81bbc.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4d8afc9350c18ae6f294d552491c0f2dca641435.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-11T06:32:00-04:00",
-            "onset": "2026-10-11T06:32:00-04:00",
-            "expires": "2026-10-11T16:00:00-04:00",
+            "effective": "2026-10-11T15:01:00-04:00",
+            "onset": "2026-10-11T15:01:00-04:00",
+            "expires": "2026-10-11T23:15:00-04:00",
             "ends": "2026-10-12T02:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:32AM EDT until October 12 at 2:00AM EDT by NWS Baltimore MD/Washington DC"
+            "headline": "Flood Watch issued October 11 at 3:01PM EDT until October 12 at 2:00AM EDT by NWS Baltimore MD/Washington DC"
           },
-          "fingerprint": "5c57a0f7495d9488b0bc0c3b763e1ce949b5bd465a88879d57876b0e86ea4209"
+          "fingerprint": "9e095184cd51dc5a27113d27c54726a0426693cefa8d217ca98c1b8801258f75"
         }
       }
     },
@@ -434,23 +415,23 @@
           },
           "fingerprint": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1122605e6bae7df211468433b962e7d186db3cdd.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8664e47b8a4c096ba883ddca751ce1860419824d.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=43.56988519945235,-124.2060143315852",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1122605e6bae7df211468433b962e7d186db3cdd.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8664e47b8a4c096ba883ddca751ce1860419824d.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-11T01:39:00-07:00",
-            "onset": "2026-10-11T05:00:00-07:00",
-            "expires": "2026-10-11T17:00:00-07:00",
+            "effective": "2026-10-11T12:36:00-07:00",
+            "onset": "2026-10-11T12:36:00-07:00",
+            "expires": "2026-10-11T20:45:00-07:00",
             "ends": "2026-10-12T14:00:00-07:00",
-            "headline": "Beach Hazards Statement issued October 11 at 1:39AM PDT until October 12 at 2:00PM PDT by NWS Medford OR"
+            "headline": "Beach Hazards Statement issued October 11 at 12:36PM PDT until October 12 at 2:00PM PDT by NWS Medford OR"
           },
-          "fingerprint": "29e131aefb5f284cb18268294aad59cf05ad328c150190c10c15bca26f9b8db5"
+          "fingerprint": "7839d72b73e2dbbd4bb6bfd60fd0c2fcfdc803786cf33e6ec33b94e5ba4b6708"
         }
       }
     },
