@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T13:40:14.838730+00:00",
-  "run_id": "20261011T134014Z",
+  "accepted_at_utc": "2026-10-11T14:40:15.396429+00:00",
+  "run_id": "20261011T144015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -137,24 +137,6 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.7575,-83.47666667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -198,24 +180,6 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.4925,-83.50083333",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
         },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
@@ -304,24 +268,6 @@
             }
           },
           "fingerprint": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
         }
       }
     },
@@ -343,23 +289,23 @@
           },
           "fingerprint": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eb1083647d18a7abb186efc3e57ced5f78c72fa3.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eb1083647d18a7abb186efc3e57ced5f78c72fa3.002.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
+            "effective": "2026-10-11T09:50:00-04:00",
+            "onset": "2026-10-11T09:50:00-04:00",
             "expires": "2026-10-11T14:00:00-04:00",
             "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
+            "headline": "Flood Watch issued October 11 at 9:50AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
+          "fingerprint": "56c510fa8e3aaaa675a42d7eae59db5e2090494bf03582ddb8d843e5f97d0e09"
         }
       }
     },
@@ -380,89 +326,90 @@
             }
           },
           "fingerprint": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
         }
       }
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.49a15fc6c67e18fe8a7ce14a5241600063482bb2.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.139e71f39052f766ea1d36efa7287874a878c9b9.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.49a15fc6c67e18fe8a7ce14a5241600063482bb2.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.139e71f39052f766ea1d36efa7287874a878c9b9.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-11T08:22:00-04:00",
-            "onset": "2026-10-11T08:22:00-04:00",
-            "expires": "2026-10-11T11:00:00-04:00",
+            "effective": "2026-10-11T10:36:00-04:00",
+            "onset": "2026-10-11T10:36:00-04:00",
+            "expires": "2026-10-11T11:45:00-04:00",
             "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 8:22AM EDT until October 11 at 11:00AM EDT by NWS Wilmington NC"
+            "headline": "Flood Watch issued October 11 at 10:36AM EDT until October 11 at 11:00AM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "1e80f1107f35fa872681e50405afc1ddadaf8f89c12aff5e39525f7e01febb8d"
+          "fingerprint": "408011d41bff12f47a7ceed2608a2d7a7d2e514a086f1a93ee505762182d728e"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bab42423b5962cc0142393f614e0a3ce5e122ead.002.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22376f177c3646e80ee4babb11cf2eefd8379349.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bab42423b5962cc0142393f614e0a3ce5e122ead.002.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22376f177c3646e80ee4babb11cf2eefd8379349.001.1",
           "quality": "OK",
           "semantic": {
-            "event": "Coastal Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-11T08:07:00-04:00",
-            "onset": "2026-10-11T08:07:00-04:00",
-            "expires": "2026-10-11T18:00:00-04:00",
-            "ends": "2026-10-11T10:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 11 at 8:07AM EDT until October 11 at 10:00AM EDT by NWS Wilmington NC"
+            "event": "Tornado Watch",
+            "severity": "Extreme",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-11T09:58:00-04:00",
+            "onset": "2026-10-11T09:58:00-04:00",
+            "expires": "2026-10-11T17:00:00-04:00",
+            "ends": "2026-10-11T17:00:00-04:00",
+            "headline": "Tornado Watch issued October 11 at 9:58AM EDT until October 11 at 5:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "a4c62d459cd5fefa41aa30df89299e1341978dd5eb352a03dd4c975c27cfbc9b"
+          "fingerprint": "b433ef3bbe14c50f64cda4b7bad16e37eb69737d8007c924bf588dea35d5e683"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bab42423b5962cc0142393f614e0a3ce5e122ead.002.3": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40c6e259e68016c318ff3cd9fd20b49825be2089.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bab42423b5962cc0142393f614e0a3ce5e122ead.002.3",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40c6e259e68016c318ff3cd9fd20b49825be2089.001.2",
           "quality": "OK",
           "semantic": {
             "event": "Rip Current Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-11T08:07:00-04:00",
-            "onset": "2026-10-11T08:07:00-04:00",
-            "expires": "2026-10-11T18:00:00-04:00",
+            "effective": "2026-10-11T09:57:00-04:00",
+            "onset": "2026-10-11T09:57:00-04:00",
+            "expires": "2026-10-11T13:00:00-04:00",
             "ends": "2026-10-11T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 11 at 8:07AM EDT until October 11 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Rip Current Statement issued October 11 at 9:57AM EDT until October 11 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "3fe99ead9e0a51f39c905e1a6fa90a62fc7a4e68d7bc1a4e3eebfdad738005f4"
+          "fingerprint": "0caf356e3db5b8e80f09d5bdf82479a78e6aa4ea7da77fa3555ad787bb0f8315"
         }
       }
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b484ebdbe0b1343bf3258f617e60f351b8f7dec.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b484ebdbe0b1343bf3258f617e60f351b8f7dec.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tornado Watch",
+            "severity": "Extreme",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-11T10:01:00-04:00",
+            "onset": "2026-10-11T10:01:00-04:00",
+            "expires": "2026-10-11T17:00:00-04:00",
+            "ends": "2026-10-11T17:00:00-04:00",
+            "headline": "Tornado Watch issued October 11 at 10:01AM EDT until October 11 at 5:00PM EDT by NWS Raleigh NC"
+          },
+          "fingerprint": "d86547abeeaed7c4e5f4cda1da80427ee92dfbf22ed3b05f4dde85310139850c"
+        }
+      }
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
@@ -489,7 +436,26 @@
     },
     "ncsp-kerr-hibernia": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b484ebdbe0b1343bf3258f617e60f351b8f7dec.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=36.5047,-78.3761",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b484ebdbe0b1343bf3258f617e60f351b8f7dec.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Tornado Watch",
+            "severity": "Extreme",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "effective": "2026-10-11T10:01:00-04:00",
+            "onset": "2026-10-11T10:01:00-04:00",
+            "expires": "2026-10-11T17:00:00-04:00",
+            "ends": "2026-10-11T17:00:00-04:00",
+            "headline": "Tornado Watch issued October 11 at 10:01AM EDT until October 11 at 5:00PM EDT by NWS Raleigh NC"
+          },
+          "fingerprint": "d86547abeeaed7c4e5f4cda1da80427ee92dfbf22ed3b05f4dde85310139850c"
+        }
+      }
     },
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
@@ -647,24 +613,6 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.92833333,-83.26416667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -716,24 +664,6 @@
             }
           },
           "fingerprint": "df678508e720c5722070ecc71361cc8bdedb52a02186413e5508c8d6ff1c2229"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.969011731480045,-83.11813693019847",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
         }
       }
     },
@@ -895,24 +825,6 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.8275,-83.61888889",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -956,24 +868,6 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.83222222,-83.62611111",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
         },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
@@ -1019,24 +913,6 @@
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.90027778,-83.2225",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T06:13:00-04:00",
-            "onset": "2026-10-11T06:13:00-04:00",
-            "expires": "2026-10-11T14:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 6:13AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "914ba83d185aea8eb918089fd07dab9348c45250f578138e7d4564addbd619d2"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -1069,23 +945,23 @@
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8effd9efdba8a9691ef6e95139aab35d66bda518.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8effd9efdba8a9691ef6e95139aab35d66bda518.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Wind Advisory",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-11T05:23:00-04:00",
-            "onset": "2026-10-11T05:23:00-04:00",
-            "expires": "2026-10-11T11:00:00-04:00",
+            "effective": "2026-10-11T10:30:00-04:00",
+            "onset": "2026-10-11T10:30:00-04:00",
+            "expires": "2026-10-11T11:30:00-04:00",
             "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 11 at 5:23AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
+            "headline": "Wind Advisory issued October 11 at 10:30AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "083edd36d35efef67fee239d42dc7fed5c41dcb1440fbb4a3a167ca3088d7d00"
+          "fingerprint": "6cf8639b6855684a7ea6efe794169cd83b3b1ec33812041c34a4088137ddd859"
         }
       }
     },
@@ -1107,23 +983,23 @@
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8effd9efdba8a9691ef6e95139aab35d66bda518.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8effd9efdba8a9691ef6e95139aab35d66bda518.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Wind Advisory",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-11T05:23:00-04:00",
-            "onset": "2026-10-11T05:23:00-04:00",
-            "expires": "2026-10-11T11:00:00-04:00",
+            "effective": "2026-10-11T10:30:00-04:00",
+            "onset": "2026-10-11T10:30:00-04:00",
+            "expires": "2026-10-11T11:30:00-04:00",
             "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 11 at 5:23AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
+            "headline": "Wind Advisory issued October 11 at 10:30AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "083edd36d35efef67fee239d42dc7fed5c41dcb1440fbb4a3a167ca3088d7d00"
+          "fingerprint": "6cf8639b6855684a7ea6efe794169cd83b3b1ec33812041c34a4088137ddd859"
         }
       }
     },
