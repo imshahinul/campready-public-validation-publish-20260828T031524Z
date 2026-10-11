@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-10T23:40:16.006003+00:00",
-  "run_id": "20261010T234016Z",
+  "accepted_at_utc": "2026-10-11T00:40:15.984171+00:00",
+  "run_id": "20261011T004015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -415,6 +415,24 @@
           },
           "fingerprint": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1"
         },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81618f319bdd5dba4bdfd9846fa8f164ad44e884.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81618f319bdd5dba4bdfd9846fa8f164ad44e884.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Flood Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T19:58:00-04:00",
+            "onset": "2026-10-10T19:58:00-04:00",
+            "expires": "2026-10-11T08:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "Flood Advisory issued October 10 at 7:58PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
+          },
+          "fingerprint": "0bbe85e43bbb242bee81df56e72d6524412a6f2dfca15598d359caadf31ad636"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
@@ -530,6 +548,60 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Surf Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T20:05:00-04:00",
+            "onset": "2026-10-10T20:05:00-04:00",
+            "expires": "2026-10-10T23:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "High Surf Advisory issued October 10 at 8:05PM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "e2e0ecb6250ea19d9d09491d46bd4f8a7301f6153cbc732f9483dc02b95da3bb"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3",
+          "quality": "OK",
+          "semantic": {
+            "event": "Coastal Flood Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T20:05:00-04:00",
+            "onset": "2026-10-10T20:05:00-04:00",
+            "expires": "2026-10-10T23:00:00-04:00",
+            "ends": "2026-10-10T23:00:00-04:00",
+            "headline": "Coastal Flood Advisory issued October 10 at 8:05PM EDT until October 10 at 11:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "685d92114ff913d1045edc90a92388242b1bc2b97500179cdc2967a6ead08eef"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-10T20:05:00-04:00",
+            "onset": "2026-10-11T06:00:00-04:00",
+            "expires": "2026-10-10T23:00:00-04:00",
+            "ends": "2026-10-11T20:00:00-04:00",
+            "headline": "Rip Current Statement issued October 10 at 8:05PM EDT until October 11 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "57e70373b3122b6f3e1e09f22110ac9898105cc3e7bfaf597aa546d439a8df68"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b5696e04a857360c6027e43ec39c55c8611f3e38.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
@@ -547,60 +619,6 @@
             "headline": "Flood Watch issued October 10 at 3:04PM EDT until October 11 at 11:00AM EDT by NWS Wilmington NC"
           },
           "fingerprint": "a42a4c9a7306d2313de4ba615ef1431490ab633ec76521170483587dc74aa133"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b3a67ec36a7c789013a38a2e30c0f61e9c241569.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b3a67ec36a7c789013a38a2e30c0f61e9c241569.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Coastal Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T14:35:00-04:00",
-            "onset": "2026-10-10T18:00:00-04:00",
-            "expires": "2026-10-10T22:45:00-04:00",
-            "ends": "2026-10-10T23:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 10 at 2:35PM EDT until October 10 at 11:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "bfbafc617962d572699be1ae4cddd61152e10a50fac2a0dd3b7f38100650589b"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b3a67ec36a7c789013a38a2e30c0f61e9c241569.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b3a67ec36a7c789013a38a2e30c0f61e9c241569.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Surf Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T14:35:00-04:00",
-            "onset": "2026-10-10T14:35:00-04:00",
-            "expires": "2026-10-10T22:45:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Surf Advisory issued October 10 at 2:35PM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "09324a14d181cd0fd511aebae85c0b923a3e89b34c9a603d1c3d065eee74f2fa"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b3a67ec36a7c789013a38a2e30c0f61e9c241569.001.3": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b3a67ec36a7c789013a38a2e30c0f61e9c241569.001.3",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T14:35:00-04:00",
-            "onset": "2026-10-10T14:35:00-04:00",
-            "expires": "2026-10-10T22:45:00-04:00",
-            "ends": "2026-10-10T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 10 at 2:35PM EDT until October 10 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "43af680dcc6ab0e7a819aab47ae126d57f5d7023425bc3100396751719cfb221"
         }
       }
     },
@@ -683,23 +701,23 @@
     "nps-elkmont": {
       "authority_family": "NPS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.65875714573239,-83.58274047425141",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
           "quality": "OK",
           "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
+            "event": "Wind Advisory",
+            "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T09:38:00-04:00",
-            "onset": "2026-10-10T09:38:00-04:00",
-            "expires": "2026-10-10T20:30:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 10 at 9:38AM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
+            "effective": "2026-10-10T20:19:00-04:00",
+            "onset": "2026-10-10T20:19:00-04:00",
+            "expires": "2026-10-11T04:00:00-04:00",
+            "ends": "2026-10-11T04:00:00-04:00",
+            "headline": "Wind Advisory issued October 10 at 8:19PM EDT until October 11 at 4:00AM EDT by NWS Morristown TN"
           },
-          "fingerprint": "c05e7111ee1b93918b9332fd4b84567f9f2e7cdae6bd2e3420ba84fae4561a37"
+          "fingerprint": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea"
         }
       }
     },
@@ -978,24 +996,6 @@
             }
           },
           "fingerprint": "7a79b68b3ef3fd8d02a32ba09034f36fa5f404f269bf77639c68f2e860d146f3"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.399906793049205,-84.10690421414178",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T09:38:00-04:00",
-            "onset": "2026-10-10T09:38:00-04:00",
-            "expires": "2026-10-10T20:30:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 10 at 9:38AM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
-          },
-          "fingerprint": "c05e7111ee1b93918b9332fd4b84567f9f2e7cdae6bd2e3420ba84fae4561a37"
         }
       }
     },
@@ -1017,23 +1017,23 @@
           },
           "fingerprint": "8cba1518a15d52f2316be7bdfb51bac8268c7cec03b44ccbd6b07dc1325bd22b"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=36.1379070156318,-82.3506037419644",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f55387271553fbb2dc6126ca5543cc4b2ca769cc.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
           "quality": "OK",
           "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
+            "event": "Wind Advisory",
+            "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T09:38:00-04:00",
-            "onset": "2026-10-10T09:38:00-04:00",
-            "expires": "2026-10-10T20:30:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 10 at 9:38AM EDT until October 11 at 8:00AM EDT by NWS Morristown TN"
+            "effective": "2026-10-10T20:19:00-04:00",
+            "onset": "2026-10-10T20:19:00-04:00",
+            "expires": "2026-10-11T04:00:00-04:00",
+            "ends": "2026-10-11T04:00:00-04:00",
+            "headline": "Wind Advisory issued October 10 at 8:19PM EDT until October 11 at 4:00AM EDT by NWS Morristown TN"
           },
-          "fingerprint": "c05e7111ee1b93918b9332fd4b84567f9f2e7cdae6bd2e3420ba84fae4561a37"
+          "fingerprint": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea"
         }
       }
     },

@@ -1,0 +1,196 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81618f319bdd5dba4bdfd9846fa8f164ad44e884.001.1",
+      "before": null,
+      "after": "0bbe85e43bbb242bee81df56e72d6524412a6f2dfca15598d359caadf31ad636",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4",
+      "before": null,
+      "after": "e2e0ecb6250ea19d9d09491d46bd4f8a7301f6153cbc732f9483dc02b95da3bb",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3",
+      "before": null,
+      "after": "685d92114ff913d1045edc90a92388242b1bc2b97500179cdc2967a6ead08eef",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2",
+      "before": null,
+      "after": "57e70373b3122b6f3e1e09f22110ac9898105cc3e7bfaf597aa546d439a8df68",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nps-elkmont",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81618f319bdd5dba4bdfd9846fa8f164ad44e884.001.1",
+      "before": null,
+      "after": "0bbe85e43bbb242bee81df56e72d6524412a6f2dfca15598d359caadf31ad636",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4",
+      "before": null,
+      "after": "e2e0ecb6250ea19d9d09491d46bd4f8a7301f6153cbc732f9483dc02b95da3bb",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3",
+      "before": null,
+      "after": "685d92114ff913d1045edc90a92388242b1bc2b97500179cdc2967a6ead08eef",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2",
+      "before": null,
+      "after": "57e70373b3122b6f3e1e09f22110ac9898105cc3e7bfaf597aa546d439a8df68",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "nps-elkmont",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81618f319bdd5dba4bdfd9846fa8f164ad44e884.001.1",
+      "before": null,
+      "after": "0bbe85e43bbb242bee81df56e72d6524412a6f2dfca15598d359caadf31ad636",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4",
+      "before": null,
+      "after": "e2e0ecb6250ea19d9d09491d46bd4f8a7301f6153cbc732f9483dc02b95da3bb",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3",
+      "before": null,
+      "after": "685d92114ff913d1045edc90a92388242b1bc2b97500179cdc2967a6ead08eef",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2",
+      "before": null,
+      "after": "57e70373b3122b6f3e1e09f22110ac9898105cc3e7bfaf597aa546d439a8df68",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nps-elkmont",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.81618f319bdd5dba4bdfd9846fa8f164ad44e884.001.1",
+      "before": null,
+      "after": "0bbe85e43bbb242bee81df56e72d6524412a6f2dfca15598d359caadf31ad636",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4",
+      "before": null,
+      "after": "e2e0ecb6250ea19d9d09491d46bd4f8a7301f6153cbc732f9483dc02b95da3bb",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3",
+      "before": null,
+      "after": "685d92114ff913d1045edc90a92388242b1bc2b97500179cdc2967a6ead08eef",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2",
+      "before": null,
+      "after": "57e70373b3122b6f3e1e09f22110ac9898105cc3e7bfaf597aa546d439a8df68",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nps-elkmont",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "tn-rock-creek",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
+      "before": null,
+      "after": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 6,
+  "relevance_ambiguity_count": 35
+}
