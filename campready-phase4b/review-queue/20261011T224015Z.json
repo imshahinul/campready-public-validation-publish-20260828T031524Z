@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "low-gap",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
+    "before": null,
+    "after": "6a3bd7771b084e7845f231d7b131e83b20a6eafac4928c854616b95ea84b104c",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
