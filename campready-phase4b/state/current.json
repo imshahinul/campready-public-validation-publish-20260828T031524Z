@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T03:40:13.609281+00:00",
-  "run_id": "20261011T034013Z",
+  "accepted_at_utc": "2026-10-11T04:40:17.024329+00:00",
+  "run_id": "20261011T044017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -261,18 +261,6 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
-            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
-          },
-          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -284,12 +272,39 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
+            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
+          },
+          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
         }
       }
     },
     "nc-hurricane-creek": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Nantahala Ranger District, Nantahala National Forest\nHurricane Creek Horse & Primitive Campground\nThis primitive camping area is located in the midst of a multitude of trails for hikers and horseback riders. A horse camp Is available with stalls. A vault toilet and fire rings are available. Access to horse trails is available directly from the horse camp. Big and small game hunting occurs in the surrounding area.\nGeneral Information\nSeasons of Use\nMarch 15 - January 1\nRestrictions\nHorses are permitted only in the horse camp area and on trails. Fire are permitted only in fire rings. No camping within 50 feet of water.\nFee Site and Info\nOvernight Use:\nSingle Site: $6 per night\n$6 per camping unit on a first come, first serve basis\nOffice Contact Information\nNantahala Ranger District\nAddress: 90 Sloan Road Franklin, NC 28734\nPhone: (828) 524-6441\nHours: (Mon - Fri) 8:00 AM - 4:30 PM (Closed on federal holidays)\nOffice Email: sm.fs.nantahalard@usda.gov\nGetting There\nLatitude / Longitude\nLatitude:  35.05513249\nLongitude:  -83.51003462\nDirections\nFrom Franklin, take US 64W for 9 miles, turn left on old US 64 and follow signs to Standing Indian Campground. Continue south on FS Rd 67 passed Standing Indian Campground for 2 miles. Gravel road\nFacility and Amenity Information\nRestrooms\nRestrooms are not available at this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nHiking\nDay Hikes\nBackpacking\nGeneral Hiking\nHorse Riding and Camping\nHorseback Riding\nHorse Camping\nFishing\nFishing - River/Stream\nOutdoor Science and Learning\nViewing Wildlife",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfa6603833a9fa76f98927cc883726d01948d2b6.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
@@ -313,6 +328,21 @@
     "nc-north-mills-river": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nNorth Mills River Campground\nLocated just outside of Asheville, NC in the Pisgah National Forest, North Mills River is a shady, secluded campground. Scenic North Mills River runs through the campground, offering fishing and water-play. The site is open year-round with limited services from November-March.\nThis facility offers a Day Use Fee or Seasons Passes to a beautiful picnic area and parking.\nReservations\nRecreation.gov Reservations\nGeneral Information\nSeasons of Use\nYear-round, Limited services, November-March\nFee Site and Info\nNorth Mills River Campground:\nStandard: $31\nElectric: $40\nFull Hook Up (FHU): $46\nGroup site: $50\nDay Use:\n$3 per person\nGroup rate: $2 per person (groups of 10 or more)\nSeason Pass: $30\nFirewood: $10 per bundle\nContact Information\nContact Name: Naventure\nContact Phone: 828-577-4167\nOffice Contact Information\nPisgah Ranger District\nAddress: 1600 Pisgah Highway Pisgah Forest , NC 28768\nPhone: (828) 866-3437\nHours: Peak Season Hours (April 1-Nov. 15) -- 9 AM-5 PM daily; Off-season Hours (Nov. 16-March 31) -- 9 am-5 pm M-F (Closed on federal holidays)\nOffice Email: sm.fs.pisgahrd@usda.gov\nGetting There\nLatitude / Longitude\nLatitude:  35.407631\nLongitude:  -82.644536\nDirections\n5119 N. Mills River Road, Mills River, NC 28742\nFacility and Amenity Information\nWater\nPotable water is available at this site.\nPicnic Tables\nPicnic tables are available at this site.\nOther Amenities\nSites have picnic tables, tent pads, and lantern hooks.\nFlush toilets and showers in bath house, and firewood available for purchase.\nRecreation Opportunities\nFishing\nFishing - River/Stream\nWater Activities\nSwimming",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.009c01effd1d786f098ecd059f49563a996da5c0.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
@@ -354,6 +384,21 @@
     "nc-van-hook-glade": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Nantahala Ranger District, Nantahala National Forest\nVan Hook Glade Campground\nVan Hook Glade Campground is located along scenic Cullasaja Gorge, close to Highlands, NC. Campers may use Cliffside Lake for swimming and fishing.\nGeneral Information\nNantahala Ranger District\n90 Sloan Road\nFranklin, NC 28734\n(828) 524-6441\nSeasons of Use\nApril 1 -  October 31\nFee Site and Info\nOvernight Use:\nSingle Site: $24 per night\nGroup Site: $30 per night (up to 30 people); $40 per night (up to 25 people)\nThis is a fee campground operated by FIND Outdoors. See FIND website.\nReservations are available through www.recreation.gov or call (877) 444-6777.\nVan Hook Glade Campsites:  Campsites: $24 Maximum Occupancy per site: 8 persons / 2 cars / 2 tents or 1 RV & 1 tent\nOffice Contact Information\nNantahala Ranger District\nAddress: 90 Sloan Road Franklin, NC 28734\nPhone: (828) 524-6441\nHours: (Mon - Fri) 8:00 AM - 4:30 PM (Closed on federal holidays)\nOffice Email: sm.fs.nantahalard@usda.gov\nGetting There\nLatitude / Longitude\nLatitude:  35.07781266\nLongitude:  -83.24274733\nDirections\n14014 Highlands Road, Highlands, NC 28741\nFacility and Amenity Information\nRestrooms\nRestrooms are not available at this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nHiking\nDay Hikes\nGeneral Hiking\nFishing\nFishing - Lake & Pond\nFishing - River/Stream\nWater Activities\nSwimming\nScenic Drives\nDriving Routes",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": false
+            }
+          },
+          "fingerprint": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfa6603833a9fa76f98927cc883726d01948d2b6.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
@@ -377,59 +422,59 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1e220027285d9034847f3005c52c87c414d4ab5.001.3": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a191680c6928ca42d25abb15a900737775e2e5.002.3": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1e220027285d9034847f3005c52c87c414d4ab5.001.3",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Surf Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T22:23:00-04:00",
-            "onset": "2026-10-10T22:23:00-04:00",
-            "expires": "2026-10-11T01:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Surf Advisory issued October 10 at 10:23PM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "92df1a903a97239500e19ce8218c31468e21e74bc0f969f6e3648734cc517108"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1e220027285d9034847f3005c52c87c414d4ab5.001.4": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1e220027285d9034847f3005c52c87c414d4ab5.001.4",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a191680c6928ca42d25abb15a900737775e2e5.002.3",
           "quality": "OK",
           "semantic": {
             "event": "Rip Current Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T22:23:00-04:00",
+            "effective": "2026-10-11T00:02:00-04:00",
             "onset": "2026-10-11T06:00:00-04:00",
-            "expires": "2026-10-11T01:00:00-04:00",
+            "expires": "2026-10-11T05:00:00-04:00",
             "ends": "2026-10-11T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 10 at 10:23PM EDT until October 11 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Rip Current Statement issued October 11 at 12:02AM EDT until October 11 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "8613f40543f5ec7875851b444dc92a6e4226e79b0d3faa039438a440bcbd2925"
+          "fingerprint": "ccbdf61cc562585d071a87598834d07225d777c4f228f03ae4aa314a550e8c1e"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1e220027285d9034847f3005c52c87c414d4ab5.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a191680c6928ca42d25abb15a900737775e2e5.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d1e220027285d9034847f3005c52c87c414d4ab5.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a191680c6928ca42d25abb15a900737775e2e5.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "High Surf Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-11T00:02:00-04:00",
+            "onset": "2026-10-11T00:02:00-04:00",
+            "expires": "2026-10-11T05:00:00-04:00",
+            "ends": "2026-10-11T08:00:00-04:00",
+            "headline": "High Surf Advisory issued October 11 at 12:02AM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "9bc6dd6a3700138115ece4a1a2711c9483844c422322634f89939db375298714"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a191680c6928ca42d25abb15a900737775e2e5.002.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a191680c6928ca42d25abb15a900737775e2e5.002.2",
           "quality": "OK",
           "semantic": {
             "event": "Coastal Flood Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T22:23:00-04:00",
+            "effective": "2026-10-11T00:02:00-04:00",
             "onset": "2026-10-11T07:00:00-04:00",
-            "expires": "2026-10-11T01:00:00-04:00",
+            "expires": "2026-10-11T05:00:00-04:00",
             "ends": "2026-10-11T10:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 10 at 10:23PM EDT until October 11 at 10:00AM EDT by NWS Wilmington NC"
+            "headline": "Coastal Flood Advisory issued October 11 at 12:02AM EDT until October 11 at 10:00AM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "a76574ce33b8a154ae401efdf43c4e717f524b18b8472f237e16fc2c18bcef19"
+          "fingerprint": "c789cf6e15829b8b07ad29db102946e0f2fdefa662908fab7afdc2570e2ae5cb"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b5696e04a857360c6027e43ec39c55c8611f3e38.001.1": {
           "source_family": "NWS_API",
@@ -466,23 +511,23 @@
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9ce0b0a84b83ea5683c302544ccef217c6ad95ab.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6c7baa271ac26fa5c2294c1d7828fc511f8f897.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=36.3873,-81.0273",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9ce0b0a84b83ea5683c302544ccef217c6ad95ab.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c6c7baa271ac26fa5c2294c1d7828fc511f8f897.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Flood Watch",
             "severity": "Severe",
             "certainty": "Possible",
             "urgency": "Future",
-            "effective": "2026-10-10T13:30:00-04:00",
-            "onset": "2026-10-10T13:30:00-04:00",
-            "expires": "2026-10-11T01:00:00-04:00",
+            "effective": "2026-10-11T00:40:00-04:00",
+            "onset": "2026-10-11T00:40:00-04:00",
+            "expires": "2026-10-11T08:45:00-04:00",
             "ends": "2026-10-11T20:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 1:30PM EDT until October 11 at 8:00PM EDT by NWS Blacksburg VA"
+            "headline": "Flood Watch issued October 11 at 12:40AM EDT until October 11 at 8:00PM EDT by NWS Blacksburg VA"
           },
-          "fingerprint": "30cb9dd92728b1fd34f7b534fc54e5b877d75b1421657dce6b3cf11e0146b10f"
+          "fingerprint": "fe7f208a3fc1f327b67525030a566de354f9d495b2551ff7887b4b41683ca790"
         }
       }
     },
@@ -588,23 +633,23 @@
           },
           "fingerprint": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0240162723a1819027e88650c65588ff371d1e09.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a67604f641ccad85a1f931f8b03870908e4c6e03.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=43.56988519945235,-124.2060143315852",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0240162723a1819027e88650c65588ff371d1e09.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a67604f641ccad85a1f931f8b03870908e4c6e03.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T13:43:00-07:00",
+            "effective": "2026-10-10T21:09:00-07:00",
             "onset": "2026-10-11T05:00:00-07:00",
-            "expires": "2026-10-10T21:45:00-07:00",
+            "expires": "2026-10-11T05:00:00-07:00",
             "ends": "2026-10-12T14:00:00-07:00",
-            "headline": "Beach Hazards Statement issued October 10 at 1:43PM PDT until October 12 at 2:00PM PDT by NWS Medford OR"
+            "headline": "Beach Hazards Statement issued October 10 at 9:09PM PDT until October 12 at 2:00PM PDT by NWS Medford OR"
           },
-          "fingerprint": "336c27d72e06ff7e5fbe520bfa568785873f7460e8f564562c3ec89959409818"
+          "fingerprint": "dad730372651d6cfd214ec366e92ff8fda6da5eea6e74df7037aeb3da81cb3d4"
         }
       }
     },
