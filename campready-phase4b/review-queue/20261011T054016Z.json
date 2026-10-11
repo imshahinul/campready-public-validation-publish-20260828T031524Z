@@ -1,0 +1,34 @@
+[
+  {
+    "canonical_key": "lake-rabun",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.645242c38fd698cfc7d247cc700536529ae507cf.001.1",
+    "before": null,
+    "after": "7f5256bb76a57b12a316150a9befee5a9c1769743b4079d428b0eef2c1af52cd",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "lake-russell",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.645242c38fd698cfc7d247cc700536529ae507cf.001.1",
+    "before": null,
+    "after": "7f5256bb76a57b12a316150a9befee5a9c1769743b4079d428b0eef2c1af52cd",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "sarahs-creek",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.645242c38fd698cfc7d247cc700536529ae507cf.001.1",
+    "before": null,
+    "after": "7f5256bb76a57b12a316150a9befee5a9c1769743b4079d428b0eef2c1af52cd",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "willis-knob",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.645242c38fd698cfc7d247cc700536529ae507cf.001.1",
+    "before": null,
+    "after": "7f5256bb76a57b12a316150a9befee5a9c1769743b4079d428b0eef2c1af52cd",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
