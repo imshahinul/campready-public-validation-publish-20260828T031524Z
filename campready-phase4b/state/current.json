@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T01:40:16.842489+00:00",
-  "run_id": "20261011T014016Z",
+  "accepted_at_utc": "2026-10-11T02:40:14.266674+00:00",
+  "run_id": "20261011T024014Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -93,6 +93,18 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+            "title": "Spring 2026 Forest-wide Fire Restrictions",
+            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
+          },
+          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8197f6c5ada41c01e83640115f24020f7a36e407.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.77777778,-83.73666667",
@@ -110,18 +122,6 @@
             "headline": "Flood Watch issued October 10 at 12:27PM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -155,6 +155,18 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+            "title": "Spring 2026 Forest-wide Fire Restrictions",
+            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
+          },
+          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.7575,-83.47666667",
@@ -172,18 +184,6 @@
             "headline": "Flood Watch issued October 10 at 4:02PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "f22d5f720feae034fce0b6217c56ba8fcefea2e9ad811b67f88d61a87d65e61e"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -217,6 +217,18 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+            "title": "Spring 2026 Forest-wide Fire Restrictions",
+            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
+          },
+          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.4925,-83.50083333",
@@ -234,18 +246,6 @@
             "headline": "Flood Watch issued October 10 at 4:02PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "f22d5f720feae034fce0b6217c56ba8fcefea2e9ad811b67f88d61a87d65e61e"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -279,36 +279,6 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
-            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
-            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
-          },
-          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8197f6c5ada41c01e83640115f24020f7a36e407.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.75111111,-83.78333333",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8197f6c5ada41c01e83640115f24020f7a36e407.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-10T12:27:00-04:00",
-            "onset": "2026-10-10T12:27:00-04:00",
-            "expires": "2026-10-11T08:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 12:27PM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
-          },
-          "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -320,6 +290,18 @@
             "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
           },
           "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
+            "title": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove",
+            "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
+          },
+          "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
         }
       }
     },
@@ -457,80 +439,7 @@
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.4",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Surf Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T20:05:00-04:00",
-            "onset": "2026-10-10T20:05:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Surf Advisory issued October 10 at 8:05PM EDT until October 11 at 8:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "e2e0ecb6250ea19d9d09491d46bd4f8a7301f6153cbc732f9483dc02b95da3bb"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.3",
-          "quality": "OK",
-          "semantic": {
-            "event": "Coastal Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T20:05:00-04:00",
-            "onset": "2026-10-10T20:05:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-10T23:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 10 at 8:05PM EDT until October 10 at 11:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "685d92114ff913d1045edc90a92388242b1bc2b97500179cdc2967a6ead08eef"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4faa36bcaf6cbf9d2832c5fe8b37ad3aaad32662.002.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T20:05:00-04:00",
-            "onset": "2026-10-11T06:00:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-11T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 10 at 8:05PM EDT until October 11 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "57e70373b3122b6f3e1e09f22110ac9898105cc3e7bfaf597aa546d439a8df68"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b5696e04a857360c6027e43ec39c55c8611f3e38.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b5696e04a857360c6027e43ec39c55c8611f3e38.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-10T15:04:00-04:00",
-            "onset": "2026-10-10T15:04:00-04:00",
-            "expires": "2026-10-11T04:00:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 3:04PM EDT until October 11 at 11:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "a42a4c9a7306d2313de4ba615ef1431490ab633ec76521170483587dc74aa133"
-        }
-      }
+      "events": {}
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
@@ -569,67 +478,11 @@
     },
     "nps-big-meadows": {
       "authority_family": "NPS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.62f907aa72362170cf692afa99bc2bdc4e207822.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.62f907aa72362170cf692afa99bc2bdc4e207822.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T15:02:00-04:00",
-            "onset": "2026-10-11T02:00:00-04:00",
-            "expires": "2026-10-10T23:15:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 3:02PM EDT until October 11 at 11:00AM EDT by NWS Baltimore MD/Washington DC"
-          },
-          "fingerprint": "2a857c1c42bb513d239bf29f6b47815431888796eb03564abe2f87f9d67104a7"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bb779aa111a2e7e03e8c6ef042670c43efa660fc.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bb779aa111a2e7e03e8c6ef042670c43efa660fc.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-10T15:00:00-04:00",
-            "onset": "2026-10-11T05:00:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-12T02:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 3:00PM EDT until October 12 at 2:00AM EDT by NWS Baltimore MD/Washington DC"
-          },
-          "fingerprint": "fe8a4e919e3b21554600605d05c574b5c8779f436216044e3afa1cf039c08652"
-        }
-      }
+      "events": {}
     },
     "nps-elkmont": {
       "authority_family": "NPS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.65875714573239,-83.58274047425141",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T20:19:00-04:00",
-            "onset": "2026-10-10T20:19:00-04:00",
-            "expires": "2026-10-11T04:00:00-04:00",
-            "ends": "2026-10-11T04:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 8:19PM EDT until October 11 at 4:00AM EDT by NWS Morristown TN"
-          },
-          "fingerprint": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea"
-        }
-      }
+      "events": {}
     },
     "or-cold-springs": {
       "authority_family": "USFS",
@@ -719,24 +572,6 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.92833333,-83.26416667",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-10T16:02:00-04:00",
-            "onset": "2026-10-10T16:02:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 4:02PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "f22d5f720feae034fce0b6217c56ba8fcefea2e9ad811b67f88d61a87d65e61e"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -768,24 +603,6 @@
             }
           },
           "fingerprint": "06cb8f1c9f12071bf7956c127769201c931f6aa2fb276c52e8dfe6b04a55834b"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.056d55da667d71fab4dfb16b6c220d8558c01672.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.4483552228186,-81.70729094668407",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.056d55da667d71fab4dfb16b6c220d8558c01672.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Lake Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T15:40:00-04:00",
-            "onset": "2026-10-10T15:40:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-10T23:00:00-04:00",
-            "headline": "Lake Wind Advisory issued October 10 at 3:40PM EDT until October 10 at 11:00PM EDT by NWS Columbia SC"
-          },
-          "fingerprint": "4a0b60a686881cb2bf0dc1c5b0cc06847ab4386179e4b09149a67300a5a2dae5"
         }
       }
     },
@@ -857,6 +674,18 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+            "title": "Spring 2026 Forest-wide Fire Restrictions",
+            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
+          },
+          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8197f6c5ada41c01e83640115f24020f7a36e407.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.95444444,-83.5525",
@@ -874,18 +703,6 @@
             "headline": "Flood Watch issued October 10 at 12:27PM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -926,24 +743,6 @@
             }
           },
           "fingerprint": "8cba1518a15d52f2316be7bdfb51bac8268c7cec03b44ccbd6b07dc1325bd22b"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.1379070156318,-82.3506037419644",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.af030ac868d2fb23fc7f05dc527571ce05ecf901.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T20:19:00-04:00",
-            "onset": "2026-10-10T20:19:00-04:00",
-            "expires": "2026-10-11T04:00:00-04:00",
-            "ends": "2026-10-11T04:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 8:19PM EDT until October 11 at 4:00AM EDT by NWS Morristown TN"
-          },
-          "fingerprint": "f48989fd92bcecdfdae3827d6214d3c7f0868c5126bf5e9f57a8a19d2fccc7ea"
         }
       }
     },
@@ -977,6 +776,18 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+            "title": "Spring 2026 Forest-wide Fire Restrictions",
+            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
+          },
+          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8197f6c5ada41c01e83640115f24020f7a36e407.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.78694,-83.78287",
@@ -994,18 +805,6 @@
             "headline": "Flood Watch issued October 10 at 12:27PM EDT until October 11 at 8:00AM EDT by NWS Peachtree City GA"
           },
           "fingerprint": "017f05d19dbffc86400f9193fb16300fb2e61bc92617a4887d156efdabbd0781"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -1039,6 +838,18 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
+        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
+          "source_family": "USFS_WEBSITE_ALERTS",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
+          "quality": "OK",
+          "semantic": {
+            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
+            "title": "Spring 2026 Forest-wide Fire Restrictions",
+            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
+          },
+          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.8275,-83.61888889",
@@ -1056,18 +867,6 @@
             "headline": "Flood Watch issued October 10 at 4:02PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
           },
           "fingerprint": "f22d5f720feae034fce0b6217c56ba8fcefea2e9ad811b67f88d61a87d65e61e"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -1100,24 +899,6 @@
             "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.83222222,-83.62611111",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-10T16:02:00-04:00",
-            "onset": "2026-10-10T16:02:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 4:02PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "f22d5f720feae034fce0b6217c56ba8fcefea2e9ad811b67f88d61a87d65e61e"
         },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
@@ -1163,24 +944,6 @@
           },
           "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.90027778,-83.2225",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-10T16:02:00-04:00",
-            "onset": "2026-10-10T16:02:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 10 at 4:02PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "f22d5f720feae034fce0b6217c56ba8fcefea2e9ad811b67f88d61a87d65e61e"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
@@ -1213,23 +976,23 @@
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b670aa2beb0afba362a3a427387308388ee5373.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f96c63bc53775b1cae4ba507ccf0b1168f945e9.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b670aa2beb0afba362a3a427387308388ee5373.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f96c63bc53775b1cae4ba507ccf0b1168f945e9.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Wind Advisory",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-10T11:49:00-04:00",
-            "onset": "2026-10-10T17:00:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
+            "effective": "2026-10-10T21:48:00-04:00",
+            "onset": "2026-10-10T21:48:00-04:00",
+            "expires": "2026-10-11T06:00:00-04:00",
             "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 11:49AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
+            "headline": "Wind Advisory issued October 10 at 9:48PM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
           },
-          "fingerprint": "a4f0e9a020151d4278c84b03b05d4671105af9bcae0f33b7357f2294d9bcc337"
+          "fingerprint": "38e308e9b0a5e7b1d4d9236aea32f74ad42d11a395375d76cc9432ecd40675a0"
         }
       }
     },
@@ -1250,24 +1013,6 @@
             }
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b670aa2beb0afba362a3a427387308388ee5373.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b670aa2beb0afba362a3a427387308388ee5373.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T11:49:00-04:00",
-            "onset": "2026-10-10T17:00:00-04:00",
-            "expires": "2026-10-10T23:00:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 11:49AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "a4f0e9a020151d4278c84b03b05d4671105af9bcae0f33b7357f2294d9bcc337"
         }
       }
     },
@@ -1288,24 +1033,6 @@
             }
           },
           "fingerprint": "2c843c286b48ca3d35bd862c60b51eae5e4a9e38929ad8fb7001607295d8d8a7"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.62f907aa72362170cf692afa99bc2bdc4e207822.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.82136767916264,-79.38632101654947",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.62f907aa72362170cf692afa99bc2bdc4e207822.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T15:02:00-04:00",
-            "onset": "2026-10-10T20:00:00-04:00",
-            "expires": "2026-10-10T23:15:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 3:02PM EDT until October 11 at 11:00AM EDT by NWS Baltimore MD/Washington DC"
-          },
-          "fingerprint": "3dcd377b8a84bb66ef4a4582c78afee6d0ff1d9b09ea0474059c0a3a0d37225b"
         }
       }
     }
