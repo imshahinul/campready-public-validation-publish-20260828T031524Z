@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T00:40:15.984171+00:00",
-  "run_id": "20261011T004015Z",
+  "accepted_at_utc": "2026-10-11T01:40:16.842489+00:00",
+  "run_id": "20261011T014016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -341,42 +341,6 @@
           },
           "fingerprint": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T17:24:00-04:00",
-            "onset": "2026-10-10T17:24:00-04:00",
-            "expires": "2026-10-11T03:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 10 at 5:24PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "14c8ed9b293a8f4a7dd8661ce3190b96d40fea75b76e3b210fb56139a0f547a2"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T17:24:00-04:00",
-            "onset": "2026-10-10T17:24:00-04:00",
-            "expires": "2026-10-11T03:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 5:24PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "ffd6f6a4b538e79ab3af05573d2516cbede6da25b03abee8756c5932b821d7b9"
-        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.055139234541436,-83.51003863980785",
@@ -433,24 +397,6 @@
           },
           "fingerprint": "0bbe85e43bbb242bee81df56e72d6524412a6f2dfca15598d359caadf31ad636"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T17:24:00-04:00",
-            "onset": "2026-10-10T17:24:00-04:00",
-            "expires": "2026-10-11T03:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 5:24PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "ffd6f6a4b538e79ab3af05573d2516cbede6da25b03abee8756c5932b821d7b9"
-        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
@@ -488,42 +434,6 @@
             }
           },
           "fingerprint": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "High Wind Warning",
-            "severity": "Severe",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T17:24:00-04:00",
-            "onset": "2026-10-10T17:24:00-04:00",
-            "expires": "2026-10-11T03:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "High Wind Warning issued October 10 at 5:24PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "14c8ed9b293a8f4a7dd8661ce3190b96d40fea75b76e3b210fb56139a0f547a2"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.2": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.07781941962203,-83.24275127287943",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bfd82ab591cb5754ff14344d7e00928d6150bac8.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-10T17:24:00-04:00",
-            "onset": "2026-10-10T17:24:00-04:00",
-            "expires": "2026-10-11T03:00:00-04:00",
-            "ends": "2026-10-11T08:00:00-04:00",
-            "headline": "Wind Advisory issued October 10 at 5:24PM EDT until October 11 at 8:00AM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "ffd6f6a4b538e79ab3af05573d2516cbede6da25b03abee8756c5932b821d7b9"
         },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.75bba8fa7c78d4ffc1d3f1e3a29a79f44a8661bb.001.1": {
           "source_family": "NWS_API",
