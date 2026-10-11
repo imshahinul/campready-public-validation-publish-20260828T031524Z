@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T14:40:15.396429+00:00",
-  "run_id": "20261011T144015Z",
+  "accepted_at_utc": "2026-10-11T15:40:17.165551+00:00",
+  "run_id": "20261011T154017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -332,24 +332,6 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.139e71f39052f766ea1d36efa7287874a878c9b9.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.139e71f39052f766ea1d36efa7287874a878c9b9.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T10:36:00-04:00",
-            "onset": "2026-10-11T10:36:00-04:00",
-            "expires": "2026-10-11T11:45:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 10:36AM EDT until October 11 at 11:00AM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "408011d41bff12f47a7ceed2608a2d7a7d2e514a086f1a93ee505762182d728e"
-        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22376f177c3646e80ee4babb11cf2eefd8379349.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
@@ -413,26 +395,7 @@
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6778442bd822078f3137f69e8b13bb8566b719.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.4119,-80.2541",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b6778442bd822078f3137f69e8b13bb8566b719.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-11T08:50:00-04:00",
-            "onset": "2026-10-11T08:50:00-04:00",
-            "expires": "2026-10-11T11:00:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Flood Advisory issued October 11 at 8:50AM EDT until October 11 at 11:00AM EDT by NWS Blacksburg VA"
-          },
-          "fingerprint": "f06aa5874fcf2572e4dacac82fb571af554511fbfdf4455039178ed2854f08f4"
-        }
-      }
+      "events": {}
     },
     "ncsp-kerr-hibernia": {
       "authority_family": "NC_STATE_PARKS",
@@ -500,24 +463,6 @@
             "headline": "Flood Watch issued October 11 at 6:32AM EDT until October 12 at 2:00AM EDT by NWS Baltimore MD/Washington DC"
           },
           "fingerprint": "5c57a0f7495d9488b0bc0c3b763e1ce949b5bd465a88879d57876b0e86ea4209"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.511be5307e4282fe9314a825858acde3dbb9dd5d.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.511be5307e4282fe9314a825858acde3dbb9dd5d.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-11T02:50:00-04:00",
-            "onset": "2026-10-11T02:50:00-04:00",
-            "expires": "2026-10-11T11:00:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 11 at 2:50AM EDT until October 11 at 11:00AM EDT by NWS Baltimore MD/Washington DC"
-          },
-          "fingerprint": "0b0fc8f166b6e57f140d7ad7639ae616f8402acef07dfd1cc49e71669f34e2ed"
         }
       }
     },
@@ -944,24 +889,6 @@
             }
           },
           "fingerprint": "b093bf5841e52ba18b5809dcce0ede8e797c46aada47d1dfc523a686202fca71"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.931559689167464,-79.68056611411481",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-11T10:30:00-04:00",
-            "onset": "2026-10-11T10:30:00-04:00",
-            "expires": "2026-10-11T11:30:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 11 at 10:30AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "6cf8639b6855684a7ea6efe794169cd83b3b1ec33812041c34a4088137ddd859"
         }
       }
     },
@@ -982,24 +909,6 @@
             }
           },
           "fingerprint": "dde44e2d85ce97ef272f153fb1503620bde8bf8d592470d1bea9997159c80761"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.295872528260354,-80.52466232970298",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.405e8ceff0b228696783deb792260c567a842097.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-11T10:30:00-04:00",
-            "onset": "2026-10-11T10:30:00-04:00",
-            "expires": "2026-10-11T11:30:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 11 at 10:30AM EDT until October 11 at 11:00AM EDT by NWS Charleston WV"
-          },
-          "fingerprint": "6cf8639b6855684a7ea6efe794169cd83b3b1ec33812041c34a4088137ddd859"
         }
       }
     },
@@ -1020,24 +929,6 @@
             }
           },
           "fingerprint": "2c843c286b48ca3d35bd862c60b51eae5e4a9e38929ad8fb7001607295d8d8a7"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.511be5307e4282fe9314a825858acde3dbb9dd5d.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.82136767916264,-79.38632101654947",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.511be5307e4282fe9314a825858acde3dbb9dd5d.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Wind Advisory",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-11T02:50:00-04:00",
-            "onset": "2026-10-11T02:50:00-04:00",
-            "expires": "2026-10-11T11:00:00-04:00",
-            "ends": "2026-10-11T11:00:00-04:00",
-            "headline": "Wind Advisory issued October 11 at 2:50AM EDT until October 11 at 11:00AM EDT by NWS Baltimore MD/Washington DC"
-          },
-          "fingerprint": "0b0fc8f166b6e57f140d7ad7639ae616f8402acef07dfd1cc49e71669f34e2ed"
         }
       }
     }
