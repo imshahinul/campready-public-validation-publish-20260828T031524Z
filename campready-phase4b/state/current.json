@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T17:40:16.863247+00:00",
-  "run_id": "20261011T174016Z",
+  "accepted_at_utc": "2026-10-11T18:40:15.815268+00:00",
+  "run_id": "20261011T184015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -288,24 +288,6 @@
             }
           },
           "fingerprint": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e54c9e89cd8721e960b0b9135a8a89dd3e6cecb.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=35.40763785194335,-82.64453978597471",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e54c9e89cd8721e960b0b9135a8a89dd3e6cecb.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T13:39:00-04:00",
-            "onset": "2026-10-11T13:39:00-04:00",
-            "expires": "2026-10-11T14:45:00-04:00",
-            "ends": "2026-10-11T14:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 1:39PM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC"
-          },
-          "fingerprint": "58c3288013b950ac746a04b7ada1baef05294dcce905ba862186db46ef01606a"
         }
       }
     },
@@ -349,48 +331,12 @@
             "headline": "Rip Current Statement issued October 11 at 1:11PM EDT until October 11 at 8:00PM EDT by NWS Wilmington NC"
           },
           "fingerprint": "bd758638ea2e9ffd878c8c2926d07d462cc32c3d98843f400b12bc44c7bd4c88"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f10e93b856468ac4e15097f1a7ccf708978549f9.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f10e93b856468ac4e15097f1a7ccf708978549f9.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tornado Watch",
-            "severity": "Extreme",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T11:53:00-04:00",
-            "onset": "2026-10-11T11:53:00-04:00",
-            "expires": "2026-10-11T17:00:00-04:00",
-            "ends": "2026-10-11T17:00:00-04:00",
-            "headline": "Tornado Watch issued October 11 at 11:53AM EDT until October 11 at 5:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "7d42f28dd278e2da86eabbe54fb59063ed94980b42a897a0d73879861071e2d6"
         }
       }
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2b1fa22e6e48b6564339e06261b77f411a9fe2d.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2b1fa22e6e48b6564339e06261b77f411a9fe2d.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Severe Thunderstorm Warning",
-            "severity": "Severe",
-            "certainty": "Observed",
-            "urgency": "Immediate",
-            "effective": "2026-10-11T13:40:00-04:00",
-            "onset": "2026-10-11T13:40:00-04:00",
-            "expires": "2026-10-11T13:48:00-04:00",
-            "ends": "2026-10-11T13:45:00-04:00",
-            "headline": "Severe Thunderstorm Warning issued October 11 at 1:40PM EDT until October 11 at 1:45PM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "34468ec768518dbb412280c776d2690e04c653872054b374f87d88a9f1a38c78"
-        },
         "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cd050bf6fa7ff0f9646ca9851a8502f4016e903d.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
@@ -408,24 +354,6 @@
             "headline": "Flood Advisory issued October 11 at 1:09PM EDT until October 11 at 3:15PM EDT by NWS Raleigh NC"
           },
           "fingerprint": "c359c462ef7d61d6de1e4fd22c8dacea8480ce845871381323be77008bc5f131"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0724277d5e4015a11f49b5bed54d12f3d1dcce11.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0724277d5e4015a11f49b5bed54d12f3d1dcce11.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tornado Watch",
-            "severity": "Extreme",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T11:59:00-04:00",
-            "onset": "2026-10-11T11:59:00-04:00",
-            "expires": "2026-10-11T17:00:00-04:00",
-            "ends": "2026-10-11T17:00:00-04:00",
-            "headline": "Tornado Watch issued October 11 at 11:59AM EDT until October 11 at 5:00PM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "0e35666237ad4c859381cbe4250a6e17e3d31759623acc1b0cdb0757ddff1f28"
         }
       }
     },
@@ -435,44 +363,7 @@
     },
     "ncsp-kerr-hibernia": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2b1fa22e6e48b6564339e06261b77f411a9fe2d.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.5047,-78.3761",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e2b1fa22e6e48b6564339e06261b77f411a9fe2d.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Severe Thunderstorm Warning",
-            "severity": "Severe",
-            "certainty": "Observed",
-            "urgency": "Immediate",
-            "effective": "2026-10-11T13:40:00-04:00",
-            "onset": "2026-10-11T13:40:00-04:00",
-            "expires": "2026-10-11T13:48:00-04:00",
-            "ends": "2026-10-11T13:45:00-04:00",
-            "headline": "Severe Thunderstorm Warning issued October 11 at 1:40PM EDT until October 11 at 1:45PM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "34468ec768518dbb412280c776d2690e04c653872054b374f87d88a9f1a38c78"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0724277d5e4015a11f49b5bed54d12f3d1dcce11.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.5047,-78.3761",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0724277d5e4015a11f49b5bed54d12f3d1dcce11.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Tornado Watch",
-            "severity": "Extreme",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T11:59:00-04:00",
-            "onset": "2026-10-11T11:59:00-04:00",
-            "expires": "2026-10-11T17:00:00-04:00",
-            "ends": "2026-10-11T17:00:00-04:00",
-            "headline": "Tornado Watch issued October 11 at 11:59AM EDT until October 11 at 5:00PM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "0e35666237ad4c859381cbe4250a6e17e3d31759623acc1b0cdb0757ddff1f28"
-        }
-      }
+      "events": {}
     },
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
