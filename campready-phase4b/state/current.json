@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-11T20:40:16.033248+00:00",
-  "run_id": "20261011T204016Z",
+  "accepted_at_utc": "2026-10-11T21:40:15.298452+00:00",
+  "run_id": "20261011T214015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -66,21 +66,6 @@
     "andrews-cove": {
       "authority_family": "USFS",
       "events": {
-        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground": {
-          "source_family": "USFS_WEBSITE_RECREATION",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
-          "quality": "OK",
-          "semantic": {
-            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nAndrews Cove Campground\nCurrent Conditions\nDrinking water is no longer available at Andrews Cove Campground. The campground well system is being decommissioned due to the high cost of maintaining and operating the aging infrastructure.\nVisitors should plan to bring their own potable water for drinking, cooking and other needs when visiting the campground. The Forest Service appreciates the public’s understanding as we continue to provide safe and sustainable recreation opportunities across the forest.\nAndrews Cove Recreation Area in White County offers a cool mountain stream and a peaceful atmosphere, and is only 15 minutes from the popular alpine village of Helen, Georgia.\nActive Alerts\nCampground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nReservations\nReserve on Recreation.Gov\nGeneral Information\nNo Drinking Water Available at Andrews Cove Campground\nDrinking water is no longer available at Andrews Cove Campground. The campground well system is being decommissioned due to the high cost of maintaining and operating the aging infrastructure.\nVisitors should plan to bring their own potable water for drinking, cooking and other needs when visiting the campground. The Forest Service appreciates the public’s understanding as we continue to provide safe and sustainable recreation opportunities across the forest.\nSeasons of Use\n03/15 - 12/15\nOperational Hours\nAndrew's Cove CG is closed for the winter season and will reopen on March 15.\nRestrictions\nThe maximum length of stay is 14 days. After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay. No UTV's, ATV's or Golf carts allowed in the campground or on Forest Service Roads.\nPasses and Permits\nGeorgia fishing license and trout stamp required.  Please check and review Georgia's rules and regulations on fishing at www.gofishgeorgia.com\nThe America the Beautiful Interagency Senior and Access Passes also the Golden Age and Golden Access Passports are accepted.  These passes entitle the pass holder to a 50% discount on camping fees. Please write your pass number on the fee envelope to get credit for this discount.\nFee Site and Info\nCamping: $12/site/night, Site 9 is the double site at $18 a night\nOffice Contact Information\nChattooga River Ranger District\nAddress: 9975 Highway 441S Lakemont, GA 30552\nPhone: 706-754-6221\nHours: Office hours are Monday through Friday 8:00 to noon and 1:00 to 4:30. (Closed on federal holidays)\nOffice Email: SM.FS.CRRD@usda.gov\nGetting There\nElevation\n1,820'\nDirections\nPhysical Address: 15000 Hwy 75 North, Helen, Georgia\nIt is conveniently located off of Hwy 75, approximately 15 minutes north of Helen, Georgia.\nFrom Helen, GA, take State Rt. 17/75 north for 5.5 miles to\ncampground sign.  Turn right into campground.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nFishing\nFishing - River/Stream\nHiking\nDay Hikes",
-            "signals": {
-              "site_open_present": true,
-              "site_closed_present": false,
-              "temporarily_closed_present": false,
-              "reopened_present": true
-            }
-          },
-          "fingerprint": "be99d0b32e16bec9456b54d2383b53c5a2d4e239ea5a831b1d3264683f0fff67"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
@@ -198,21 +183,6 @@
     "low-gap": {
       "authority_family": "USFS",
       "events": {
-        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground": {
-          "source_family": "USFS_WEBSITE_RECREATION",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
-          "quality": "OK",
-          "semantic": {
-            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nLow Gap Campground\nCurrent Conditions\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nCamping is by Reservation Only. There is no First Come/First Service. Reservations are done by contacting: www.recreation.gov or by calling (877) 444-6777.\nLocated within the Chattahoochee Wildlife Management Area and veiled by the Mark Trail Wilderness. This 13-site developed campground is as close as it gets to a dispersed camping experience with amenities. This clandestine campground is best known for its plethora of opportunities in camping, fishing, hiking, hunting, and simply basking in the light of the natural world. Low Gap is another one of our campgrounds located only a few miles from Georgia's much loved vacation destination, the alpine village of Helen, Georgia.\nThe area is host to some of the most scenic views. If hiking is in your plans the National Scenic Appalachian Trail has two main entry points near the area. Other favorite nearby hiking areas are Ravens Cliff Falls, Dukes Creek Falls, and Anna Ruby Falls. All are only a short drive from this campground. If you like wetting fishing lines there is fishing is available in the campground, and along the nearby Chattahoochee River.\nVisitors should be aware that drinking water is no longer available at Low Gap Campground. Visitors planning to camp at Low Gap should plan to bring their own drinking water.\nThe Forest Service remains committed to maintaining recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s understanding as we manage facilities responsibly.\nActive Alerts\nCampground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nReservations\nCamping is by Reservation Only. There is no First Come/First Service. VisitRecreation.govor call (877) 444-6777for reservation information.\nRecreation.gov Reservations\nGeneral Information\nLow Gap Campground closes during the winter season and, during normal operations, reopens mid-March.\nSeasons of Use\n03/15 - 12/15\nOperational Hours\nLow Gap Campground on the Chattooga River Ranger District is temporarily closed while restroom facilities are replaced\nRestrictions\nThe maximum stay is 14 days.\nDue to narrow, curving, and steep roads to and from this area, the recommended size of a RV is 28 ft.\nNo UTV's, ATV's or Golf Carts allowed in the campgrounds or surrounding Forest Service Roads they are not county roads.\nAfter the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay.\nFollow all state fishing guidelines\nPasses and Permits\nGeorgia fishing license and trout stamp required for fishing.\nThe Interagency Senior and Access Passes and the Golden Age and Access Passports are accepted. These passes entitle the pass holder to a 50% discount on camping fees. Please be sure to write you pass number on the fee envelope to receive credit for the discount.\nFee Site and Info\nCamping: $12 per site per night\nOffice Contact Information\nChattooga River Ranger District\nAddress: 9975 Highway 441S Lakemont, GA 30552\nPhone: 706-754-6221\nHours: Office hours are Monday through Friday 8:00 to noon and 1:00 to 4:30. (Closed on federal holidays)\nOffice Email: SM.FS.CRRD@usda.gov\nGetting There\nElevation\n1840 feet\nDirections\nPhysical Address: 190 Low Gap Rd., Helen, GA\nFrom Helen, GA, head north on GA-17 N/GA-75 N/N Main St/Unicoi for 1.3 mi. Turn left onto GA-75 Alt N and go 0.1 mi. Take the 1st right onto Chattahoochee River Rd. and go 4.4 miles to the Low Gap Campground on the left.\nFacility and Amenity Information\nWater\nPotable water is not available at this site.\nVisitors planning to camp at Low Gap should plan to bring their own potable water for drinking, cooking and other needs.\nPicnic Tables\nPicnic tables are available at this site.\nEach site has a picnic table and a fire ring.\nOther Amenities\nVault Toilet (1)\nNearby Trails\nAppalachian Trail in Georgia\nRecreation Opportunities\nFishing\nFishing - River/Stream",
-            "signals": {
-              "site_open_present": true,
-              "site_closed_present": false,
-              "temporarily_closed_present": true,
-              "reopened_present": true
-            }
-          },
-          "fingerprint": "6a3bd7771b084e7845f231d7b131e83b20a6eafac4928c854616b95ea84b104c"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
