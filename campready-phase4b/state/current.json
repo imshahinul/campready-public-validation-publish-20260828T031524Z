@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-12T04:40:13.740579+00:00",
-  "run_id": "20261012T044013Z",
+  "accepted_at_utc": "2026-10-12T05:40:14.908416+00:00",
+  "run_id": "20261012T054014Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -66,6 +66,21 @@
     "andrews-cove": {
       "authority_family": "USFS",
       "events": {
+        "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground": {
+          "source_family": "USFS_WEBSITE_RECREATION",
+          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+          "quality": "OK",
+          "semantic": {
+            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nAndrews Cove Campground\nCurrent Conditions\nDrinking water is no longer available at Andrews Cove Campground. The campground well system is being decommissioned due to the high cost of maintaining and operating the aging infrastructure.\nVisitors should plan to bring their own potable water for drinking, cooking and other needs when visiting the campground. The Forest Service appreciates the public’s understanding as we continue to provide safe and sustainable recreation opportunities across the forest.\nAndrews Cove Recreation Area in White County offers a cool mountain stream and a peaceful atmosphere, and is only 15 minutes from the popular alpine village of Helen, Georgia.\nActive Alerts\nCampground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nReservations\nReserve on Recreation.Gov\nGeneral Information\nNo Drinking Water Available at Andrews Cove Campground\nDrinking water is no longer available at Andrews Cove Campground. The campground well system is being decommissioned due to the high cost of maintaining and operating the aging infrastructure.\nVisitors should plan to bring their own potable water for drinking, cooking and other needs when visiting the campground. The Forest Service appreciates the public’s understanding as we continue to provide safe and sustainable recreation opportunities across the forest.\nSeasons of Use\n03/15 - 12/15\nOperational Hours\nAndrew's Cove CG is closed for the winter season and will reopen on March 15.\nRestrictions\nThe maximum length of stay is 14 days. After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay. No UTV's, ATV's or Golf carts allowed in the campground or on Forest Service Roads.\nPasses and Permits\nGeorgia fishing license and trout stamp required.  Please check and review Georgia's rules and regulations on fishing at www.gofishgeorgia.com\nThe America the Beautiful Interagency Senior and Access Passes also the Golden Age and Golden Access Passports are accepted.  These passes entitle the pass holder to a 50% discount on camping fees. Please write your pass number on the fee envelope to get credit for this discount.\nFee Site and Info\nCamping: $12/site/night, Site 9 is the double site at $18 a night\nOffice Contact Information\nChattooga River Ranger District\nAddress: 9975 Highway 441S Lakemont, GA 30552\nPhone: 706-754-6221\nHours: Office hours are Monday through Friday 8:00 to noon and 1:00 to 4:30. (Closed on federal holidays)\nOffice Email: SM.FS.CRRD@usda.gov\nGetting There\nElevation\n1,820'\nDirections\nPhysical Address: 15000 Hwy 75 North, Helen, Georgia\nIt is conveniently located off of Hwy 75, approximately 15 minutes north of Helen, Georgia.\nFrom Helen, GA, take State Rt. 17/75 north for 5.5 miles to\ncampground sign.  Turn right into campground.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nFishing\nFishing - River/Stream\nHiking\nDay Hikes",
+            "signals": {
+              "site_open_present": true,
+              "site_closed_present": false,
+              "temporarily_closed_present": false,
+              "reopened_present": true
+            }
+          },
+          "fingerprint": "be99d0b32e16bec9456b54d2383b53c5a2d4e239ea5a831b1d3264683f0fff67"
+        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
