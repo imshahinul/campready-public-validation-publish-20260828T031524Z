@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-12T01:40:19.129572+00:00",
-  "run_id": "20261012T014019Z",
+  "accepted_at_utc": "2026-10-12T02:40:16.729643+00:00",
+  "run_id": "20261012T024016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -333,26 +333,7 @@
     },
     "nps-big-meadows": {
       "authority_family": "NPS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4d8afc9350c18ae6f294d552491c0f2dca641435.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=38.5279623,-78.4369404",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4d8afc9350c18ae6f294d552491c0f2dca641435.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Flood Watch",
-            "severity": "Severe",
-            "certainty": "Possible",
-            "urgency": "Future",
-            "effective": "2026-10-11T15:01:00-04:00",
-            "onset": "2026-10-11T15:01:00-04:00",
-            "expires": "2026-10-11T23:15:00-04:00",
-            "ends": "2026-10-12T02:00:00-04:00",
-            "headline": "Flood Watch issued October 11 at 3:01PM EDT until October 12 at 2:00AM EDT by NWS Baltimore MD/Washington DC"
-          },
-          "fingerprint": "9e095184cd51dc5a27113d27c54726a0426693cefa8d217ca98c1b8801258f75"
-        }
-      }
+      "events": {}
     },
     "nps-elkmont": {
       "authority_family": "NPS",
