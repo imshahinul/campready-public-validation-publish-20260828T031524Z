@@ -1,0 +1,34 @@
+[
+  {
+    "canonical_key": "andrews-cove",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+    "before": null,
+    "after": "be99d0b32e16bec9456b54d2383b53c5a2d4e239ea5a831b1d3264683f0fff67",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "low-gap",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground",
+    "before": null,
+    "after": "6a3bd7771b084e7845f231d7b131e83b20a6eafac4928c854616b95ea84b104c",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-north-mills-river",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground",
+    "before": null,
+    "after": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "nc-van-hook-glade",
+    "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+    "before": null,
+    "after": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
