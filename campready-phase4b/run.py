@@ -35,29 +35,29 @@ def semantic_state(observation: dict) -> dict:
 
 
 def failed_source_scopes(observation: dict) -> tuple[set[str], set[str]]:
-    """Return explicitly failed USFS alert detail and index URLs."""
+    """Return failed exact USFS event-source URLs and alert-index scopes."""
     requests = observation.get("source_requests", [])
     if not isinstance(requests, list):
         return set(), set()
-    failed_details, failed_indexes = set(), set()
-    successful_details, successful_indexes = set(), set()
+    failed_sources, failed_scopes = set(), set()
+    successful_sources, successful_scopes = set(), set()
     for request in requests:
-        if not isinstance(request, dict) or request.get("source_family") != "USFS_WEBSITE_ALERTS":
+        if not isinstance(request, dict) or request.get("source_family") not in ("USFS_WEBSITE_RECREATION", "USFS_WEBSITE_ALERTS"):
             continue
         url, role, succeeded = request.get("source_url"), request.get("source_role"), request.get("retrieval_succeeded")
         if not isinstance(url, str) or not url or succeeded not in (True, False):
             continue
-        if role == "ALERT_DETAIL":
-            (successful_details if succeeded else failed_details).add(url)
+        if role in ("CAMPGROUND_PAGE", "ALERT_DETAIL"):
+            (successful_sources if succeeded else failed_sources).add(url)
         elif role == "ALERT_INDEX":
-            (successful_indexes if succeeded else failed_indexes).add(url)
-    return failed_details - successful_details, failed_indexes - successful_indexes
+            (successful_scopes if succeeded else failed_scopes).add(url)
+    return failed_sources - successful_sources, failed_scopes - successful_scopes
 
 
 def retain_failed_source_state(current: dict, prior: dict, observation: dict) -> dict:
     """Carry attributable prior events into accepted state, never comparator input."""
-    failed_details, failed_indexes = failed_source_scopes(observation)
-    if not failed_details and not failed_indexes:
+    failed_sources, failed_scopes = failed_source_scopes(observation)
+    if not failed_sources and not failed_scopes:
         return current
     prior_sites = prior.get("sites", {})
     if not isinstance(prior_sites, dict):
@@ -71,9 +71,9 @@ def retain_failed_source_state(current: dict, prior: dict, observation: dict) ->
             if key in value["events"] or not isinstance(event, dict):
                 continue
             source_url, source_scope_url = event.get("source_url"), event.get("source_scope_url")
-            detail_failed = isinstance(source_url, str) and source_url in failed_details
-            index_failed = isinstance(source_scope_url, str) and source_scope_url in failed_indexes
-            if detail_failed or index_failed:
+            source_failed = isinstance(source_url, str) and source_url in failed_sources
+            scope_failed = isinstance(source_scope_url, str) and source_scope_url in failed_scopes
+            if source_failed or scope_failed:
                 value["events"][key] = event
     return current
 

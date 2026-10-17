@@ -21,12 +21,15 @@ class Phase4BTests(unittest.TestCase):
     def setUp(self): self.config=json.loads((ROOT/"campready-phase4b/config.json").read_text()); self.mapping=json.loads((ROOT/self.config["paths"]["mapping"]).read_text())
     def alert_event(self, fingerprint="3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3", url="https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper", scope="https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts"):
         return {"quality":"OK","source_family":"USFS_WEBSITE_ALERTS","source_url":url,"source_scope_url":scope,"fingerprint":fingerprint,"semantic":{"bounded_official_text":"frozen Low Gap text"}}
+    def campground_event(self, fingerprint="campground-fingerprint", url="https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/low-gap-campground"):
+        return {"quality":"OK","source_family":"USFS_WEBSITE_RECREATION","source_url":url,"fingerprint":fingerprint,"semantic":{"bounded_article_text":"frozen campground text","signals":{}}}
     def observation(self, events=(), requests=(), key="low-gap"):
         return {"source_requests":list(requests),"supported_campgrounds":[{"canonical_key":key,"authority_family":"USFS","semantic_events":list(events),"unknown_results":[]}]}
     def request(self, url, role, succeeded):
-        return {"source_family":"USFS_WEBSITE_ALERTS","source_url":url,"source_role":role,"retrieval_succeeded":succeeded,"parser_result":"PARSED" if succeeded else "NOT_ATTEMPTED_RETRIEVAL_FAILURE"}
+        family="USFS_WEBSITE_RECREATION" if role=="CAMPGROUND_PAGE" else "USFS_WEBSITE_ALERTS"
+        return {"source_family":family,"source_url":url,"source_role":role,"retrieval_succeeded":succeeded,"parser_result":"PARSED" if succeeded else "NOT_ATTEMPTED_RETRIEVAL_FAILURE"}
     def state(self, event, key="low-gap"):
-        return {"sites":{key:{"authority_family":"USFS","events":{f"USFS_WEBSITE_ALERTS:{event['source_url']}":event}}}}
+        return {"sites":{key:{"authority_family":"USFS","events":{f"{event['source_family']}:{event['source_url']}":event}}}}
     def usfs_scopes(self):
         rows=[row for row in self.mapping["rows"] if row["authority_family"]=="USFS"]
         return {url:capture_mod.scoped_usfs_by_alert_url(rows,url) for url in sorted({row["alerts_conditions_page_url"] for row in rows})}
@@ -174,6 +177,57 @@ class Phase4BTests(unittest.TestCase):
     def test_real_403_record_remains_data_quality_failure_and_reliability_failure(self):
         capture=json.loads((ROOT/"campready-phase4b/runs/20260915T094016Z/capture.json").read_text()); url=self.alert_event()["source_url"]; request=next(r for r in capture["source_requests"] if r["source_url"]==url)
         self.assertIs(request["retrieval_succeeded"],False); self.assertEqual(request["parser_result"],"NOT_ATTEMPTED_RETRIEVAL_FAILURE"); self.assertEqual(capture["metrics"]["supported_core_retrieval"]["attempted"]-capture["metrics"]["supported_core_retrieval"]["successful"],sum(not r["retrieval_succeeded"] for r in capture["source_requests"] if r["reliability_denominator"]=="SUPPORTED_CORE"))
+    def test_campground_page_failure_retains_only_exact_source_and_unchanged_recovery_is_quiet(self):
+        event=self.campground_event(); unrelated=self.campground_event("other-old","https://example.test/other"); changed=self.campground_event("other-new","https://example.test/other")
+        prior={"sites":{"low-gap":{"authority_family":"USFS","events":{"USFS_WEBSITE_RECREATION:"+event["source_url"]:event,"USFS_WEBSITE_RECREATION:"+unrelated["source_url"]:unrelated}}}}
+        failure=run_mod.compare(prior,self.observation([changed],[self.request(event["source_url"],"CAMPGROUND_PAGE",False)]))
+        self.assertEqual([d["category"] for d in failure["semantic_deltas"]],["MATERIAL_UPDATE"]); self.assertEqual(set(failure["accepted_state"]["low-gap"]["events"]),set(prior["sites"]["low-gap"]["events"])); self.assertEqual(failure["unsafe_candidates"],[])
+        recovery=run_mod.compare({"sites":failure["accepted_state"]},self.observation([event,changed],[self.request(event["source_url"],"CAMPGROUND_PAGE",True)])); self.assertEqual(recovery["semantic_deltas"],[])
+    def test_campground_page_multi_failure_changed_disappearance_and_first_failure_contracts(self):
+        event=self.campground_event(); accepted=self.state(event); failed=self.request(event["source_url"],"CAMPGROUND_PAGE",False)
+        for _ in range(2):
+            result=run_mod.compare(accepted,self.observation(requests=[failed])); self.assertEqual(result["semantic_deltas"],[]); accepted={"sites":result["accepted_state"]}
+        changed=self.campground_event("changed-campground")
+        recovery=run_mod.compare(accepted,self.observation([changed],[self.request(event["source_url"],"CAMPGROUND_PAGE",True)])); self.assertEqual([d["category"] for d in recovery["semantic_deltas"]],["MATERIAL_UPDATE"])
+        retained=run_mod.compare(self.state(event),self.observation(requests=[failed])); absent=run_mod.compare({"sites":retained["accepted_state"]},self.observation(requests=[self.request(event["source_url"],"CAMPGROUND_PAGE",True)])); self.assertEqual(absent["accepted_state"]["low-gap"]["events"],{}); self.assertEqual(absent["semantic_deltas"],[])
+        first=run_mod.compare({"sites":{"low-gap":{"authority_family":"USFS","events":{}}}},self.observation(requests=[failed])); self.assertEqual(first["accepted_state"]["low-gap"]["events"],{}); self.assertEqual(first["review_candidates"],[])
+    def test_complete_post_repair_campground_failure_episode_replay(self):
+        sequences={}
+        totals={"attempted":0,"successful":0,"failed":0}
+        for path in sorted((ROOT/"campready-phase4b/runs").glob("*/capture.json")):
+            if path.parent.name < "20260921T054015Z": continue
+            capture=json.loads(path.read_text()); by_url={}
+            for site in capture["supported_campgrounds"]:
+                for event in site["semantic_events"]:
+                    if event.get("source_family")=="USFS_WEBSITE_RECREATION": by_url[event["source_url"]]=(site["canonical_key"],event)
+            for request in capture["source_requests"]:
+                if request.get("authority_family")=="USFS" and request.get("source_role")=="CAMPGROUND_PAGE":
+                    totals["attempted"]+=1; totals["successful"]+=int(request["retrieval_succeeded"]); totals["failed"]+=int(not request["retrieval_succeeded"]); sequences.setdefault(request["source_url"],[]).append((request,by_url.get(request["source_url"])))
+        episodes=retained=before_false_appearance=after_false_appearance=recoveries=material_updates=disappearances=unresolved=0
+        for url,sequence in sequences.items():
+            prior=None; index=0
+            while index < len(sequence):
+                request,observed=sequence[index]
+                if request["retrieval_succeeded"]:
+                    prior=observed; index+=1; continue
+                episodes+=1; accepted=self.state(prior[1],prior[0]) if prior else {"sites":{}}
+                while index < len(sequence) and not sequence[index][0]["retrieval_succeeded"]:
+                    failed_request=sequence[index][0]
+                    key=prior[0] if prior else "low-gap"; result=run_mod.compare(accepted,self.observation(requests=[failed_request],key=key))
+                    self.assertEqual(result["semantic_deltas"],[]); self.assertEqual(result["unsafe_candidates"],[])
+                    if prior:
+                        retained+=1; event_key=f"USFS_WEBSITE_RECREATION:{url}"; self.assertEqual(result["accepted_state"][key]["events"][event_key],prior[1])
+                    accepted={"sites":result["accepted_state"]}; index+=1
+                if index==len(sequence): unresolved+=1; break
+                recoveries+=1; recovery_request,recovered=sequence[index]
+                if prior and recovered:
+                    recovery=run_mod.compare(accepted,self.observation([recovered[1]],[recovery_request],recovered[0])); categories=[d["category"] for d in recovery["semantic_deltas"]]
+                    if prior[1]["fingerprint"]==recovered[1]["fingerprint"]: before_false_appearance+=1; after_false_appearance+=categories.count("APPEARANCE")
+                    else: material_updates+=categories.count("MATERIAL_UPDATE")
+                elif prior and not recovered: disappearances+=1
+                else: unresolved+=1
+                prior=recovered; index+=1
+        self.assertEqual(totals,{"attempted":13125,"successful":13022,"failed":103}); self.assertEqual((episodes,retained,recoveries),(100,103,100)); self.assertEqual((before_false_appearance,after_false_appearance),(100,0)); self.assertEqual((material_updates,disappearances,unresolved),(0,0,0))
     def test_unknown_nonnotifying(self): self.assertTrue(self.config["policy"]["unknown_is_non_notifying"])
     def test_first_observation_zero_notify(self):
         obs={"supported_campgrounds":[{"canonical_key":"x","authority_family":"NPS","semantic_events":[{"quality":"OK","source_family":"NPS","source_url":"u","fingerprint":"f"}],"unknown_results":[]}]}; result=run_mod.compare(None,obs); self.assertTrue(result["baseline"]); self.assertEqual(result["would_notify_candidates"],[])
