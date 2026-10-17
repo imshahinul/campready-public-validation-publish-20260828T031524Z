@@ -45,7 +45,10 @@ class Phase4CBRetryTests(unittest.TestCase):
     def test_k_eventual_reliability_counts_rescue_while_first_attempt_does_not(self):
         cache,_,_=self.cache([result(False,403,"HTTPError: forbidden"),result(True,200)]); value=self.get(cache)
         self.assertEqual(sum([value["first_attempt"]["succeeded"]]),0); self.assertEqual(sum([value["ok"]]),1)
-    def test_policy_is_frozen_safe_and_inactive_before_activation(self):
-        committed=json.loads((ROOT/"campready-phase4c/phase4c_b_transport_experiment.json").read_text()); self.assertFalse(committed["enabled"]); self.assertFalse(committed["send_real_notifications"]); self.assertTrue(committed["review_only"]); self.assertEqual(committed["usfs_max_physical_attempts_per_logical_request"],2)
+    def test_policy_is_frozen_safe_and_future_activated(self):
+        committed=json.loads((ROOT/"campready-phase4c/phase4c_b_transport_experiment.json").read_text()); self.assertTrue(committed["enabled"]); self.assertFalse(committed["send_real_notifications"]); self.assertTrue(committed["review_only"]); self.assertEqual(committed["usfs_max_physical_attempts_per_logical_request"],2)
+        from datetime import datetime
+        start=datetime.fromisoformat(committed["start_utc"]); end=datetime.fromisoformat(committed["end_utc"]); synchronized=datetime.fromisoformat(committed["behavior_synchronized_at_utc"].replace("Z","+00:00"))
+        self.assertGreaterEqual((start-synchronized).total_seconds(),86400); self.assertEqual((end-start).total_seconds(),7*86400); self.assertEqual(committed["nominal_slots"],168); self.assertEqual(start.minute,40)
 
 if __name__=="__main__": unittest.main()

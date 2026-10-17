@@ -161,7 +161,8 @@ def main(now: datetime | None = None) -> int:
     experiment = json.loads(PHASE4C_CONFIG.read_text()) if PHASE4C_CONFIG.is_file() else {"enabled": False}
     if experiment.get("send_real_notifications") is not False or experiment.get("review_only") is not True:
         print("FAIL_PHASE4C_B_SAFETY"); return 20
-    if experiment.get("enabled") is True:
+    phase4b_end = datetime.fromisoformat(config["activation"]["validation_end_utc"])
+    if experiment.get("enabled") is True and now >= phase4b_end:
         start = datetime.fromisoformat(experiment["start_utc"]); end = datetime.fromisoformat(experiment["end_utc"])
         if not start <= now < end:
             status = "PHASE4C_B_NOT_STARTED" if now < start else "PHASE4C_B_WINDOW_COMPLETE"
