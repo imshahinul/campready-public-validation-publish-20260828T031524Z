@@ -17,6 +17,7 @@ from typing import Any, Callable
 
 USER_AGENT = "CampReady-Phase4B/1.0 (30-day prospective research validation)"
 SUPPORTED = {"USFS", "NC_STATE_PARKS", "NPS"}
+PHASE4C_CONFIG = Path(__file__).resolve().parent.parent / "campready-phase4c" / "phase4c_b_transport_experiment.json"
 
 
 def canonical_hash(value: Any) -> str:
@@ -52,15 +53,74 @@ def default_fetch(url: str, accept: str = "text/html,*/*;q=0.8", timeout: int = 
         return {"ok": False, "http_status": None, "final_url": None, "content_type": None, "body": b"", "failure": f"{type(exc).__name__}: {exc}", "elapsed_ms": round((time.monotonic() - started) * 1000, 1)}
 
 
-class FetchOnce:
-    def __init__(self, fetcher: Callable[..., dict[str, Any]] = default_fetch):
-        self.fetcher, self.cache, self.calls = fetcher, {}, []
+def deterministic_retry_jitter(request_identity: str) -> float:
+    """First SHA-256 byte divided by 255.0; stable and bounded in [0, 1]."""
+    return hashlib.sha256(request_identity.encode("utf-8")).digest()[0] / 255.0
 
-    def get(self, url: str, accept: str = "text/html,*/*;q=0.8") -> dict[str, Any]:
+
+def failure_class(result: dict[str, Any]) -> str | None:
+    if result.get("ok"):
+        return None
+    if result.get("http_status") is not None:
+        return f"HTTP_{result['http_status']}"
+    failure = result.get("failure")
+    return failure.split(":", 1)[0] if isinstance(failure, str) and failure else "UNKNOWN_RETRIEVAL_FAILURE"
+
+
+def attempt_record(result: dict[str, Any], attempted_at_utc: str) -> dict[str, Any]:
+    return {
+        "attempted_at_utc": attempted_at_utc,
+        "succeeded": bool(result.get("ok")),
+        "http_status": result.get("http_status"),
+        "final_url": result.get("final_url"),
+        "failure": result.get("failure"),
+        "failure_type": failure_class(result),
+        "elapsed_ms": result.get("elapsed_ms"),
+    }
+
+
+class FetchOnce:
+    def __init__(self, fetcher: Callable[..., dict[str, Any]] = default_fetch, experiment: dict[str, Any] | None = None, sleep: Callable[[float], None] = time.sleep):
+        self.fetcher, self.cache, self.calls = fetcher, {}, []
+        self.experiment, self.sleep = experiment or {}, sleep
+
+    def get(self, url: str, accept: str = "text/html,*/*;q=0.8", *, authority: str = "", family: str = "", role: str = "") -> dict[str, Any]:
         key = (url, accept)
         if key not in self.cache:
-            self.cache[key] = self.fetcher(url, accept=accept)
+            identity = "\n".join((authority, family, role, url, accept))
+            attempted_at = datetime.now(timezone.utc).isoformat()
+            first = self.fetcher(url, accept=accept)
             self.calls.append(url)
+            attempts = [attempt_record(first, attempted_at)]
+            result = first
+            retry_attempted = False
+            delay = None
+            if authority == "USFS" and not first.get("ok") and self.experiment.get("enabled") is True:
+                if self.experiment.get("usfs_max_physical_attempts_per_logical_request") != 2:
+                    raise RuntimeError("Phase 4C-B maximum physical attempts contract violated")
+                jitter = deterministic_retry_jitter(identity)
+                delay = float(self.experiment["retry_delay_seconds"]) + jitter
+                self.sleep(delay)
+                retry_attempted = True
+                retried_at = datetime.now(timezone.utc).isoformat()
+                result = self.fetcher(url, accept=accept)
+                self.calls.append(url)
+                attempts.append(attempt_record(result, retried_at))
+            result = dict(result)
+            result["logical_request_identity"] = identity
+            result["first_attempt"] = attempts[0]
+            result["retry"] = {
+                "attempted": retry_attempted,
+                "deterministic_delay_seconds": delay,
+                "succeeded": attempts[1]["succeeded"] if retry_attempted else None,
+                "http_status": attempts[1]["http_status"] if retry_attempted else None,
+                "failure": attempts[1]["failure"] if retry_attempted else None,
+                "failure_type": attempts[1]["failure_type"] if retry_attempted else None,
+                "attempted_at_utc": attempts[1]["attempted_at_utc"] if retry_attempted else None,
+            }
+            result["physical_attempts"] = attempts
+            result["physical_attempt_count"] = len(attempts)
+            self.cache[key] = result
         return self.cache[key]
 
 
@@ -71,6 +131,10 @@ def request_record(authority: str, family: str, url: str, role: str, result: dic
         "body_size": len(result["body"]), "body_sha256": hashlib.sha256(result["body"]).hexdigest() if result["body"] else None,
         "retrieval_succeeded": result["ok"], "failure": result["failure"], "parser_result": parser_result,
         "elapsed_ms": result["elapsed_ms"], "reliability_denominator": denominator,
+        "request_identity": result["logical_request_identity"], "first_attempt": result["first_attempt"],
+        "retry": result["retry"], "physical_attempts": result["physical_attempts"],
+        "physical_attempt_count": result["physical_attempt_count"],
+        "final_failure_type": failure_class(result),
     }
 
 
@@ -86,9 +150,12 @@ def scoped_usfs_by_alert_url(usfs_rows: list[dict[str, Any]], alert_url: str) ->
     }
 
 
-def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_fetch, now: datetime | None = None) -> dict[str, Any]:
+def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_fetch, now: datetime | None = None, experiment: dict[str, Any] | None = None, sleep: Callable[[float], None] = time.sleep) -> dict[str, Any]:
+    run_started = time.monotonic()
     now = now or datetime.now(timezone.utc)
     config = json.loads(config_path.read_text())
+    if experiment is None:
+        experiment = json.loads(PHASE4C_CONFIG.read_text()) if PHASE4C_CONFIG.is_file() else {"enabled": False}
     root = config_path.parent.parent
     mapping = json.loads((root / config["paths"]["mapping"]).read_text())
     rows = mapping["rows"]
@@ -96,7 +163,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
     transport = [row for row in rows if row["authority_family"] == "USACE"]
     if len(rows) != 35 or len(supported) != 32 or len(transport) != 3:
         raise RuntimeError("frozen cohort cardinality gate failed")
-    cache = FetchOnce(fetcher)
+    cache = FetchOnce(fetcher, experiment, sleep)
     requests: list[dict[str, Any]] = []
     sites: dict[str, dict[str, Any]] = {row["canonical_key"]: {"canonical_key": row["canonical_key"], "authority_family": row["authority_family"], "source_observations": [], "semantic_events": [], "relevance_results": [], "unknown_results": [], "nws_status": None} for row in supported}
 
@@ -107,7 +174,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
     usfs_rows = [row for row in supported if row["authority_family"] == "USFS"]
     for row in usfs_rows:
         url = row["campground_status_page_url"]
-        result = cache.get(url)
+        result = cache.get(url, authority="USFS", family="USFS_WEBSITE_RECREATION", role="CAMPGROUND_PAGE")
         parsed = legacy.parse_recreation_article(result["body"]) if result["ok"] else {"article_found": False, "article_text": "", "signals": {}}
         parser_result = "PARSED" if parsed.get("article_found") and parsed.get("article_text") else ("NOT_ATTEMPTED_RETRIEVAL_FAILURE" if not result["ok"] else "PARSER_FAILURE")
         requests.append(request_record("USFS", "USFS_WEBSITE_RECREATION", url, "CAMPGROUND_PAGE", result, parser_result, "SUPPORTED_CORE"))
@@ -118,12 +185,12 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
             sites[row["canonical_key"]]["semantic_events"].append(event)
     for alert_url in sorted({row["alerts_conditions_page_url"] for row in usfs_rows}):
         scoped_usfs_by_key = scoped_usfs_by_alert_url(usfs_rows, alert_url)
-        index = cache.get(alert_url)
+        index = cache.get(alert_url, authority="USFS", family="USFS_WEBSITE_ALERTS", role="ALERT_INDEX")
         links = parser_ns["extract_alert_links"](index["body"])[:100] if index["ok"] else []
         parser_result = "PARSED" if index["ok"] else "NOT_ATTEMPTED_RETRIEVAL_FAILURE"
         requests.append(request_record("USFS", "USFS_WEBSITE_ALERTS", alert_url, "ALERT_INDEX", index, parser_result, "SUPPORTED_CORE"))
         for event_url in sorted(set(links)):
-            result = cache.get(event_url)
+            result = cache.get(event_url, authority="USFS", family="USFS_WEBSITE_ALERTS", role="ALERT_DETAIL")
             parsed = parser_ns["parse_content"](result["body"]) if result["ok"] else {"content_block_found": False, "title": "", "text": ""}
             parse_status = "PARSED" if parsed.get("content_block_found") else ("NOT_ATTEMPTED_RETRIEVAL_FAILURE" if not result["ok"] else "PARSER_FAILURE")
             requests.append(request_record("USFS", "USFS_WEBSITE_ALERTS", event_url, "ALERT_DETAIL", result, parse_status, "SUPPORTED_CORE"))
@@ -148,7 +215,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
         relevant_rows = [row for row in supported if row["authority_family"] == authority]
         for role, field in (("CAMPGROUND_PAGE", "campground_url"), ("CONDITIONS_PAGE", "conditions_url")):
             for url in sorted({authority_sites[row["canonical_key"]][field] for row in relevant_rows}):
-                result = cache.get(url)
+                result = cache.get(url, authority=authority, family=authority, role=role)
                 for row in [r for r in relevant_rows if authority_sites[r["canonical_key"]][field] == url]:
                     retrieval = adapters.Retrieval(url, result["ok"], result["http_status"], result["final_url"], result["body"], now.isoformat(), "HTTP_ACCESS_FAILURE" if not result["ok"] else None, result["failure"])
                     parsed = adapters.adapter_for(authority).parse(authority_sites[row["canonical_key"]], retrieval, role)
@@ -166,7 +233,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
     # NWS point-specific active alerts for all and only the 32 supported-core sites.
     for row in supported:
         url = row["nws"]["active_alerts_endpoint"].format(latitude=row["latitude"], longitude=row["longitude"])
-        result = cache.get(url, "application/geo+json")
+        result = cache.get(url, "application/geo+json", authority="NWS", family="NWS_API", role="POINT_ACTIVE_ALERTS")
         features = None
         if result["ok"]:
             try:
@@ -188,7 +255,7 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
     transport_results = []
     for row in transport:
         url = row["alerts_conditions_page_url"]
-        result = cache.get(url)
+        result = cache.get(url, authority="USACE", family="USACE_TRANSPORT_STATUS", role="TRANSPORT_ONLY")
         text = result["body"].decode("utf-8", errors="replace").casefold()
         identity = any(alias.casefold() in text for alias in row["aliases"])
         structure = "operational" in text and "status" in text
@@ -200,8 +267,18 @@ def capture(config_path: Path, fetcher: Callable[..., dict[str, Any]] = default_
     parseable = [item for item in supported_requests if item["retrieval_succeeded"]]
     parser_failures = [item for item in parseable if item["parser_result"] == "PARSER_FAILURE"]
     usace_requests = [item for item in requests if item["reliability_denominator"] == "USACE_TRANSPORT"]
-    telemetry = {"raw_candidate_count": sum(len(site["source_observations"]) for site in sites.values()), "parsed_observation_count": sum(len(site["source_observations"]) for site in sites.values()), "deduplicated_observation_count": sum(len({canonical_hash(v) for v in site["source_observations"]}) for site in sites.values()), "relevant_operational_event_count": sum(len(site["semantic_events"]) for site in sites.values()), "unknown_nonrelevant_count": sum(len(site["unknown_results"]) for site in sites.values())}
-    return {"schema_version": "campready-phase4b-capture-v1", "captured_at_utc": now.isoformat(), "cohort": {"experimental": len(rows), "supported_core": len(supported), "strict_useful": 31, "usace_transport_only": len(transport)}, "source_requests": requests, "supported_campgrounds": [sites[key] for key in sorted(sites)], "usace_transport": transport_results, "telemetry": telemetry, "metrics": {"supported_core_retrieval": {"successful": sum(r["retrieval_succeeded"] for r in supported_requests), "attempted": len(supported_requests)}, "parser_failure": {"failures": len(parser_failures), "successfully_retrieved_parseable": len(parseable)}, "usace_transport_reliability": {"successful": sum(r["retrieval_succeeded"] for r in usace_requests), "attempted": len(usace_requests)}}, "network_fetch_count": len(cache.calls), "unique_network_urls": len(set(cache.calls)), "real_notifications": 0}
+    usfs_requests = [item for item in supported_requests if item["authority_family"] == "USFS"]
+    failed_first_usfs = [item for item in usfs_requests if not item["first_attempt"]["succeeded"]]
+    rescued = [item for item in failed_first_usfs if item["retrieval_succeeded"]]
+    physical_attempts = sum(item["physical_attempt_count"] for item in requests)
+    retry_delay = sum(item["retry"]["deterministic_delay_seconds"] or 0 for item in requests)
+    rescue_by_class: dict[str, dict[str, int]] = {}
+    for item in failed_first_usfs:
+        bucket = rescue_by_class.setdefault(item["first_attempt"]["failure_type"], {"failed_first_attempts": 0, "rescued": 0})
+        bucket["failed_first_attempts"] += 1; bucket["rescued"] += int(item["retrieval_succeeded"])
+    telemetry = {"raw_candidate_count": sum(len(site["source_observations"]) for site in sites.values()), "parsed_observation_count": sum(len(site["source_observations"]) for site in sites.values()), "deduplicated_observation_count": sum(len({canonical_hash(v) for v in site["source_observations"]}) for site in sites.values()), "relevant_operational_event_count": sum(len(site["semantic_events"]) for site in sites.values()), "unknown_nonrelevant_count": sum(len(site["unknown_results"]) for site in sites.values()), "run_duration_seconds": round(time.monotonic() - run_started, 6), "logical_usfs_requests": len(usfs_requests), "failed_usfs_first_attempts": len(failed_first_usfs), "usfs_retries_attempted": sum(r["retry"]["attempted"] for r in usfs_requests), "usfs_retries_rescued": len(rescued), "retry_delay_contribution_seconds": retry_delay, "maximum_physical_attempts_per_logical_request": max((r["physical_attempt_count"] for r in requests), default=0), "rescue_by_first_attempt_failure_class": rescue_by_class}
+    metrics = {"first_attempt_supported_reliability": {"successful": sum(r["first_attempt"]["succeeded"] for r in supported_requests), "attempted": len(supported_requests)}, "eventual_supported_logical_reliability": {"successful": sum(r["retrieval_succeeded"] for r in supported_requests), "attempted": len(supported_requests)}, "usfs_first_attempt_reliability": {"successful": sum(r["first_attempt"]["succeeded"] for r in usfs_requests), "attempted": len(usfs_requests)}, "usfs_eventual_reliability": {"successful": sum(r["retrieval_succeeded"] for r in usfs_requests), "attempted": len(usfs_requests)}, "usfs_retry_rescue_rate": {"rescued": len(rescued), "failed_first_attempts": len(failed_first_usfs)}, "physical_request_overhead": {"additional_attempts": physical_attempts - len(requests), "physical_attempts": physical_attempts, "logical_attempts": len(requests), "ratio": physical_attempts / len(requests) if requests else None}, "supported_core_retrieval": {"successful": sum(r["retrieval_succeeded"] for r in supported_requests), "attempted": len(supported_requests)}, "parser_failure": {"failures": len(parser_failures), "successfully_retrieved_parseable": len(parseable)}, "usace_transport_reliability": {"successful": sum(r["retrieval_succeeded"] for r in usace_requests), "attempted": len(usace_requests)}}
+    return {"schema_version": "campready-phase4c-b-capture-v1", "captured_at_utc": now.isoformat(), "cohort": {"experimental": len(rows), "supported_core": len(supported), "strict_useful": 31, "usace_transport_only": len(transport)}, "source_requests": requests, "supported_campgrounds": [sites[key] for key in sorted(sites)], "usace_transport": transport_results, "telemetry": telemetry, "metrics": metrics, "network_fetch_count": len(cache.calls), "logical_request_count": len(requests), "unique_network_urls": len(set(cache.calls)), "real_notifications": 0}
 
 
 if __name__ == "__main__":

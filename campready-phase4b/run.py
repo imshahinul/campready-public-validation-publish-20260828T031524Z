@@ -12,6 +12,7 @@ from capture import capture
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
+PHASE4C_CONFIG = REPO / "campready-phase4c" / "phase4c_b_transport_experiment.json"
 
 EXTERNAL_SCHEDULER_TRIGGER_SOURCE = "external_scheduler"
 MANUAL_TRIGGER_SOURCE = "manual"
@@ -157,8 +158,16 @@ def main(now: datetime | None = None) -> int:
     now = now or datetime.now(timezone.utc)
     config_path = ROOT / "config.json"; config = json.loads(config_path.read_text())
     if config["policy"]["send_real_notifications"] is not False: print("HOLD_REAL_NOTIFICATIONS_NOT_DISABLED"); return 20
+    experiment = json.loads(PHASE4C_CONFIG.read_text()) if PHASE4C_CONFIG.is_file() else {"enabled": False}
+    if experiment.get("send_real_notifications") is not False or experiment.get("review_only") is not True:
+        print("FAIL_PHASE4C_B_SAFETY"); return 20
+    if experiment.get("enabled") is True:
+        start = datetime.fromisoformat(experiment["start_utc"]); end = datetime.fromisoformat(experiment["end_utc"])
+        if not start <= now < end:
+            status = "PHASE4C_B_NOT_STARTED" if now < start else "PHASE4C_B_WINDOW_COMPLETE"
+            print(json.dumps({"status": status, "network_request_started": False, "source_fetch_count": 0, "retry_count": 0, "state_advanced": False, "real_notifications": 0})); return 0
     activation = config["activation"]
-    if activation["validation_end_utc"] and now >= datetime.fromisoformat(activation["validation_end_utc"]):
+    if experiment.get("enabled") is not True and activation["validation_end_utc"] and now >= datetime.fromisoformat(activation["validation_end_utc"]):
         print(json.dumps({"status": "VALIDATION_WINDOW_COMPLETE", "network_request_started": False, "state_advanced": False, "real_notifications": 0})); return 0
     bindings = verify_hashes(config)
     if not bindings or not all(bindings.values()): print(json.dumps({"status": "HOLD_SOFTWARE_CONFIG_DRIFT", "frozen_bindings": bindings, "state_advanced": False, "real_notifications": 0})); return 2
@@ -200,7 +209,7 @@ def main(now: datetime | None = None) -> int:
         print(json.dumps(summary, indent=2))
         return 2
     try:
-        observation = capture(config_path, now=now)
+        observation = capture(config_path, now=now, experiment=experiment)
         comparison = compare(prior_document, observation)
         accepted = {"schema_version": "campready-phase4b-state-v1", "accepted_at_utc": now.isoformat(), "run_id": run_id, "sites": comparison.pop("accepted_state")}
         atomic_json(run_dir / "capture.json", observation); atomic_json(run_dir / "comparison.json", comparison)
