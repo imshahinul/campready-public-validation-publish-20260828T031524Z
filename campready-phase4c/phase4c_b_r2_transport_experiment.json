@@ -1,0 +1,33 @@
+{
+  "schema_version": "campready-phase4c-b-experiment-v1",
+  "experiment_id": "phase4c_b_usfs_single_retry_r2",
+  "enabled": true,
+  "start_utc": "2026-10-28T03:40:00+00:00",
+  "end_utc": "2026-11-04T03:40:00+00:00",
+  "nominal_slots": 168,
+  "hourly_minute": 40,
+  "usfs_max_physical_attempts_per_logical_request": 2,
+  "retry_delay_seconds": 5,
+  "retry_jitter_min_seconds": 0,
+  "retry_jitter_max_seconds": 1,
+  "retry_jitter_mode": "deterministic",
+  "retry_jitter_formula": "SHA-256 UTF-8 canonical request identity first byte / 255.0",
+  "canonical_request_identity": "authority + LF + source_family + LF + role + LF + URL + LF + Accept",
+  "send_real_notifications": false,
+  "review_only": true,
+  "behavior_commit_sha": "9da256cdb51be66e58918aca0ac3ac88c435d269",
+  "behavior_tree_sha": "6d102385e45009718e719b9eeb576449483481c7",
+  "telemetry_schema_version": "campready-phase4c-b-capture-v1",
+  "acceptance_gates": {
+    "eventual_supported_logical_retrieval_minimum": 0.95,
+    "parser_failure_rate_maximum_exclusive": 0.05,
+    "retrieval_recovery_churn": 0,
+    "cross_scope_fanout": 0,
+    "unsafe": 0,
+    "real_notifications": 0,
+    "state_history_persistence_integrity": 1.0
+  },
+  "first_attempt_reliability": "diagnostic_and_visible",
+  "natural_run_denominator": "supported logical requests from qualifying natural external-scheduler slots where start_utc <= nominal_slot < end_utc; no replacement or extension",
+  "human_maintenance_minutes": null
+}

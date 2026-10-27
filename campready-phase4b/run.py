@@ -12,7 +12,7 @@ from capture import capture
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
-PHASE4C_CONFIG = REPO / "campready-phase4c" / "phase4c_b_transport_experiment.json"
+PHASE4C_CONFIG = REPO / "campready-phase4c" / "phase4c_b_r2_transport_experiment.json"
 
 EXTERNAL_SCHEDULER_TRIGGER_SOURCE = "external_scheduler"
 MANUAL_TRIGGER_SOURCE = "manual"
