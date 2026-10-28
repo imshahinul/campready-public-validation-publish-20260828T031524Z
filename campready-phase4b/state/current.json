@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-28T12:40:18.365882+00:00",
-  "run_id": "20261028T124018Z",
+  "accepted_at_utc": "2026-10-28T13:40:16.695705+00:00",
+  "run_id": "20261028T134016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -276,24 +276,6 @@
             "headline": "Special Weather Statement issued October 28 at 7:10AM EDT by NWS Raleigh NC"
           },
           "fingerprint": "cd9f37b1020378ba60ca008158b9982a04f3220b8844177a2818ff465c300327"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de697cf81456524e31dff21458e4bbfa0a9c0e36.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de697cf81456524e31dff21458e4bbfa0a9c0e36.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-10-28T06:05:00-04:00",
-            "onset": "2026-10-28T06:05:00-04:00",
-            "expires": "2026-10-28T09:00:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued October 28 at 6:05AM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "7582b072fccbbb40b08669aa22c167657b643a0a2eaf50a0e345ce4bd4035ff6"
         }
       }
     },
@@ -321,24 +303,6 @@
             "headline": "Special Weather Statement issued October 28 at 7:10AM EDT by NWS Raleigh NC"
           },
           "fingerprint": "cd9f37b1020378ba60ca008158b9982a04f3220b8844177a2818ff465c300327"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de697cf81456524e31dff21458e4bbfa0a9c0e36.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=36.5047,-78.3761",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de697cf81456524e31dff21458e4bbfa0a9c0e36.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-10-28T06:05:00-04:00",
-            "onset": "2026-10-28T06:05:00-04:00",
-            "expires": "2026-10-28T09:00:00-04:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued October 28 at 6:05AM EDT by NWS Raleigh NC"
-          },
-          "fingerprint": "7582b072fccbbb40b08669aa22c167657b643a0a2eaf50a0e345ce4bd4035ff6"
         }
       }
     },
