@@ -1,0 +1,166 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.2",
+      "before": null,
+      "after": "74f536c3bc3fe5c34e301290fd9d5e2557fda2448f64b4b90d3c30884d5e5389",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.1",
+      "before": null,
+      "after": "ea53191459d42c4d019d696ff6ca248652186c241025579123924f15cf2fefba",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r06/deschutes/recreation/cold-springs-campground",
+      "before": "67cc6823a9140aeacee79ff60f34a721775e6030f7983cc4df4289132313dc61",
+      "after": "eb65409e9eb5fed3b04b556bc6ebff8b45c9840119d8a2f42f01e3a7c33fe701",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/brick-house-campground",
+      "before": "06cb8f1c9f12071bf7956c127769201c931f6aa2fb276c52e8dfe6b04a55834b",
+      "after": "38edb1b7d8a7f1172fb3e4230de48fc6402bb560663bd08694302be25cd7e40a",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "before": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6",
+      "after": "1f5b35124bb776a4bfa5abdc379e450c1a60d863397485a6f7437f43732c9de0",
+      "category": "MATERIAL_UPDATE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.2",
+      "before": null,
+      "after": "74f536c3bc3fe5c34e301290fd9d5e2557fda2448f64b4b90d3c30884d5e5389",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.1",
+      "before": null,
+      "after": "ea53191459d42c4d019d696ff6ca248652186c241025579123924f15cf2fefba",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r06/deschutes/recreation/cold-springs-campground",
+      "before": "67cc6823a9140aeacee79ff60f34a721775e6030f7983cc4df4289132313dc61",
+      "after": "eb65409e9eb5fed3b04b556bc6ebff8b45c9840119d8a2f42f01e3a7c33fe701",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/brick-house-campground",
+      "before": "06cb8f1c9f12071bf7956c127769201c931f6aa2fb276c52e8dfe6b04a55834b",
+      "after": "38edb1b7d8a7f1172fb3e4230de48fc6402bb560663bd08694302be25cd7e40a",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "before": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6",
+      "after": "1f5b35124bb776a4bfa5abdc379e450c1a60d863397485a6f7437f43732c9de0",
+      "category": "MATERIAL_UPDATE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.2",
+      "before": null,
+      "after": "74f536c3bc3fe5c34e301290fd9d5e2557fda2448f64b4b90d3c30884d5e5389",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.1",
+      "before": null,
+      "after": "ea53191459d42c4d019d696ff6ca248652186c241025579123924f15cf2fefba",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r06/deschutes/recreation/cold-springs-campground",
+      "before": "67cc6823a9140aeacee79ff60f34a721775e6030f7983cc4df4289132313dc61",
+      "after": "eb65409e9eb5fed3b04b556bc6ebff8b45c9840119d8a2f42f01e3a7c33fe701",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/brick-house-campground",
+      "before": "06cb8f1c9f12071bf7956c127769201c931f6aa2fb276c52e8dfe6b04a55834b",
+      "after": "38edb1b7d8a7f1172fb3e4230de48fc6402bb560663bd08694302be25cd7e40a",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "before": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6",
+      "after": "1f5b35124bb776a4bfa5abdc379e450c1a60d863397485a6f7437f43732c9de0",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.2",
+      "before": null,
+      "after": "74f536c3bc3fe5c34e301290fd9d5e2557fda2448f64b4b90d3c30884d5e5389",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.1",
+      "before": null,
+      "after": "ea53191459d42c4d019d696ff6ca248652186c241025579123924f15cf2fefba",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "or-cold-springs",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r06/deschutes/recreation/cold-springs-campground",
+      "before": "67cc6823a9140aeacee79ff60f34a721775e6030f7983cc4df4289132313dc61",
+      "after": "eb65409e9eb5fed3b04b556bc6ebff8b45c9840119d8a2f42f01e3a7c33fe701",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "sc-brick-house",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/francismarionsumter/recreation/brick-house-campground",
+      "before": "06cb8f1c9f12071bf7956c127769201c931f6aa2fb276c52e8dfe6b04a55834b",
+      "after": "38edb1b7d8a7f1172fb3e4230de48fc6402bb560663bd08694302be25cd7e40a",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "upper-chattahoochee",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
+      "before": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6",
+      "after": "1f5b35124bb776a4bfa5abdc379e450c1a60d863397485a6f7437f43732c9de0",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 5,
+  "relevance_ambiguity_count": 43
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-13T03:40:16.409690+00:00",
-  "run_id": "20261013T034016Z",
+  "accepted_at_utc": "2026-10-28T06:40:16.997702+00:00",
+  "run_id": "20261028T064016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -80,30 +80,6 @@
             }
           },
           "fingerprint": "be99d0b32e16bec9456b54d2383b53c5a2d4e239ea5a831b1d3264683f0fff67"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -124,30 +100,6 @@
             }
           },
           "fingerprint": "38c09333e02e9cc9468d7d8b8d239bb6117fb9eb0b17610b7d501d4bd347fa47"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -168,30 +120,6 @@
             }
           },
           "fingerprint": "c1dab10cbc930b52502a96e5dab9b7175f470f8cebb8b42af2427a4d28cdc074"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -213,18 +141,6 @@
           },
           "fingerprint": "6a3bd7771b084e7845f231d7b131e83b20a6eafac4928c854616b95ea84b104c"
         },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
         "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper": {
           "source_family": "USFS_WEBSITE_ALERTS",
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campground-updates-low-gap-now-open-and-water-system-changes-upper",
@@ -236,18 +152,6 @@
             "bounded_official_text": "Campground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nVisitors to the Chattooga River Ranger District should be aware of several campground updates as the Forest Service completes facility improvements and transitions aging infrastructure.\nLow Gap Campground has reopened, following replacement of the restroom facilities.\nDrinking water is unavailable as system replacement work continues on the Upper Chattahoochee River Campground and Andrews Cove Campground. The well systems that previously served these sites are being decommissioned due to the high cost of maintaining and operating aging infrastructure.\nVisitors planning to camp at these locations should bring their own potable water for drinking, cooking, and other needs.\nThe Forest Service remains committed to providing safe, accessible recreation opportunities across the Chattahoochee-Oconee National Forest and appreciates the public’s patience as we complete these improvements and manage facilities responsibly.\nFor additional information, please contact the Chattooga River Ranger District.\nAlert Start Date: June 11, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nChattooga River Ranger District\nContact Number:\n706-754-6221\nRec Sites Affected\nLow Gap Campground\nUpper Chattahoochee River Campground\nAndrews Cove Campground"
           },
           "fingerprint": "3f8dbe4a7ba2209d1367652d11b88aa46cfe721fed66ad9c72b6f77f45f008a3"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -313,7 +217,44 @@
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.2": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.2",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-27T22:31:00-04:00",
+            "onset": "2026-10-28T08:00:00-04:00",
+            "expires": "2026-10-28T12:15:00-04:00",
+            "ends": "2026-10-28T20:00:00-04:00",
+            "headline": "Rip Current Statement issued October 27 at 10:31PM EDT until October 28 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "74f536c3bc3fe5c34e301290fd9d5e2557fda2448f64b4b90d3c30884d5e5389"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c482fa6420fd8f4da5c4b03e6f2e684ebda607d.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Coastal Flood Advisory",
+            "severity": "Minor",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-27T22:31:00-04:00",
+            "onset": "2026-10-28T08:00:00-04:00",
+            "expires": "2026-10-28T12:15:00-04:00",
+            "ends": "2026-10-28T12:00:00-04:00",
+            "headline": "Coastal Flood Advisory issued October 27 at 10:31PM EDT until October 28 at 12:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "ea53191459d42c4d019d696ff6ca248652186c241025579123924f15cf2fefba"
+        }
+      }
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
@@ -347,15 +288,15 @@
           "source_url": "https://www.fs.usda.gov/r06/deschutes/recreation/cold-springs-campground",
           "quality": "OK",
           "semantic": {
-            "bounded_article_text": "Site Open\nRecreation Region: Deschutes NF - Sisters-Metolius Area\nCold Springs Campground\nCold Springs Campground is located southwest of Sisters, Oregon.\nFind a map of this campground here.\nWater System The water system will be turned on in the month of May depending on weather conditions and will be turned off no later than September 30, or upon the campground closing, whichever is earlier, to prevent potential damage from cold temperatures.\nReservations\nMake Reservations Here\nGeneral Information\nSeasons of Use\nTentative Opening Date: May 1, 2026 - October 18, 2026\nOperational Hours\nVisit Recreation.gov for current operating dates. This campground will be closing at noon on October 18, 2026, and the last night to reserve a campsite is October 17, 2026.\nRestrictions\nMaximum site spur length is 156 feet.\nThe water system will be turned on in the month of May depending on weather conditions and will be turned off no later than September 30, or upon the campground closing, whichever, is earlier to prevent potential damage from cold temperatures.\nFee Site and Info\nSingle Campsite Rate: $25/night\nOne vehicle included with reservation – Each Additional Vehicle: $10.00\nNOTE: Holders of a Golden Age and Golden Access Passports and Senior and Access Passes are entitled to the following discounts on expanded amenity recreation fees: -  A 50 percent discount on the fee for a single camping unit. This discount does not apply to use of a cabin, lookout, double camping unit, triple camping unit, group camping unit, extra vehicle fees, or any additional camping units and separately charged utility, water, hook-up or day use fees.\nOffice Contact Information\nSisters Ranger District\nAddress: 201 N. Pine Street Sisters, OR 97759\nPhone: (541) 549-7700\nHours: Monday-Friday, 9:00 a.m. - 4 p.m., closed 1:00 - 2:00 p.m. for lunch (Closed on federal holidays)\nGetting There\nLatitude / Longitude\nLatitude:  44.30904167\nLongitude:  -121.630575\nDirections\nFrom Sisters, OR: Travel 4.2 miles west on Highway 242 (McKenzie Pass Highway).\nFacility and Amenity Information\nRestrooms\nVault toilet(s)\nWater\nPotable water is available at this site.\nRecreation Opportunities\nOutdoor Science and Learning\nViewing Wildlife",
+            "bounded_article_text": "Site Closed\nRecreation Region: Deschutes NF - Sisters-Metolius Area\nCold Springs Campground\nCold Springs Campground is located southwest of Sisters, Oregon.\nFind a map of this campground here.\nWater System The water system will be turned on in the month of May depending on weather conditions and will be turned off no later than September 30, or upon the campground closing, whichever is earlier, to prevent potential damage from cold temperatures.\nReservations\nMake Reservations Here\nGeneral Information\nSeasons of Use\nTentative Opening Date: May 1, 2026 - October 18, 2026\nOperational Hours\nVisit Recreation.gov for current operating dates. This campground will be closing at noon on October 18, 2026, and the last night to reserve a campsite is October 17, 2026.\nRestrictions\nMaximum site spur length is 156 feet.\nThe water system will be turned on in the month of May depending on weather conditions and will be turned off no later than September 30, or upon the campground closing, whichever, is earlier to prevent potential damage from cold temperatures.\nFee Site and Info\nSingle Campsite Rate: $25/night\nOne vehicle included with reservation – Each Additional Vehicle: $10.00\nNOTE: Holders of a Golden Age and Golden Access Passports and Senior and Access Passes are entitled to the following discounts on expanded amenity recreation fees: -  A 50 percent discount on the fee for a single camping unit. This discount does not apply to use of a cabin, lookout, double camping unit, triple camping unit, group camping unit, extra vehicle fees, or any additional camping units and separately charged utility, water, hook-up or day use fees.\nOffice Contact Information\nSisters Ranger District\nAddress: 201 N. Pine Street Sisters, OR 97759\nPhone: (541) 549-7700\nHours: Monday-Friday, 9:00 a.m. - 4 p.m., closed 1:00 - 2:00 p.m. for lunch (Closed on federal holidays)\nGetting There\nLatitude / Longitude\nLatitude:  44.30904167\nLongitude:  -121.630575\nDirections\nFrom Sisters, OR: Travel 4.2 miles west on Highway 242 (McKenzie Pass Highway).\nFacility and Amenity Information\nRestrooms\nVault toilet(s)\nWater\nPotable water is available at this site.\nRecreation Opportunities\nOutdoor Science and Learning\nViewing Wildlife",
             "signals": {
-              "site_open_present": true,
-              "site_closed_present": false,
+              "site_open_present": false,
+              "site_closed_present": true,
               "temporarily_closed_present": false,
               "reopened_present": false
             }
           },
-          "fingerprint": "67cc6823a9140aeacee79ff60f34a721775e6030f7983cc4df4289132313dc61"
+          "fingerprint": "eb65409e9eb5fed3b04b556bc6ebff8b45c9840119d8a2f42f01e3a7c33fe701"
         }
       }
     },
@@ -396,30 +337,6 @@
             }
           },
           "fingerprint": "383ccd1698e33b2325fa0e2203ed2693420e02b51994bc53f56be1dd5e48683b"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -431,7 +348,7 @@
           "source_url": "https://www.fs.usda.gov/r08/francismarionsumter/recreation/brick-house-campground",
           "quality": "OK",
           "semantic": {
-            "bounded_article_text": "Site Open\nRecreation Region: Enoree Ranger District\nBrick House Campground\nThis campground between Joanna and Whitmire is open year-round and provides opportunities for wildlife and plant observation, horse riding, mountain biking, hiking and photography. Abundant wildlife provide some of the most desirable hunting in the upstate. Reserve campsites through recreation.gov.\nReservations\nMake Reservations Here\nReservations and payment must be made through recreation.gov\nGeneral Information\nHorses are allowed in designated area highlined behind white-banded trees around perimeter of campground.\nSeasons of Use\nAll year\nOperational Hours\nCheck in: 2:00 p.m.; Check-out: 12:00 p.m.; Quiet hours are 10:00 p.m. until 6:00 a.m.\nRestrictions\nStay is limited to 14 days.\nEnsure you have a reservation before arrival.\nHighline horses behind white banded trees.\nQuiet hours are 10pm-6am\nNo fireworks.\nCampfires are allowed only in designated fire rings.\nOnly dead and down wood may be collected.\nAll tents and vehicles must be located on the hardened areas of the campsites.\nCare should be taken in the woods during big-game season. Wear blaze orange.\nPasses and Permits\nSouth Carolina fishing and hunting license and regulations apply on all national forest land. The U.S. Forest Service does not issue any licenses or permits for hunting or fishing. Please visit the South Carolina Department of Natural Resources Web site for license and regulations information.\nFee Site and Info\nOvernight Use:\nSingle Site: $5 per night\nCamping is $5 per day.\nPet Information\nLeashed pets are welcome.\nContact Information\nContact Name: Enoree Ranger District Office\nContact Phone: 803 276-4810\nGetting There\nLatitude / Longitude\nLatitude:  34.44834854\nLongitude:  -81.70728749\nDirections\nFrom 1-26 take the Joanna/Whitmire exit (66).  Go towards Whitmire about 3.5 miles.  Turn right onto Brick House Road (FS Rd 358).  Drive 0.3 miles to the campground.  You will pass the Buncombe Trailhead on the left before you get to the campground.\nFacility and Amenity Information\nRestrooms\nVault toilet(s)\nWater\nPotable water is not available at this site.\nHorse/Pack Animal Information\nHorse/Pack animals are allowed at this site.\nNearby Trails\nBuncombe Horse Trail\nEnoree Passage of the Palmetto Trail\nRecreation Opportunities\nHorse Riding and Camping\nHorseback Riding\nBiking\nBiking - Mountain\nHiking\nDay Hikes\nBackpacking\nGeneral Hiking\nOutdoor Science and Learning\nViewing Wildlife\nViewing Plants\nRecreation Groups\nCamping",
+            "bounded_article_text": "Site Open\nRecreation Region: Enoree Ranger District\nBrick House Campground\nBrick House Campground is located on SC Route 66, 3.5 miles east of I-26, situated in the heart of the Enoree Ranger District in Newberry County. The campground is surrounded by a mixed pine-hardwood forest with an elevation of approximately 550 feet. Long hot summers and mild winters are the norm for the Enoree Ranger District. Winter temperatures range from low 40's to upper 60's degrees and summer temperatures range from high 80's to high 90's. Wild azaleas are clumped by the old homesites and wildflowers and dogwoods dot the landscape. This site offers a great opportunity for all season camping. Ample hunting opportunities for wild turkey and whitetail deer are available in the surrounding general forest. The campground is located 51 miles north of Columbia and is 41 miles south of Spartanburg.\nBrick House offers year-round access to 21 campsites campground. All sites have some shade throughout the day. The campground has a gravel road and parking spurs that all vehicles need to be parked on. Campsite parking spurs are level and vary in size and grade. Not all sites can accommodate all vehicles.\nReservations\nMake Reservations Here\nCampsites are for reservation only year round through recreation.gov and have a 14 day stay limit within 30 rolling days. Reservations can be made online at Recreation.gov or by calling 1-877-444-6777.\nRecreation.gov Reservations\nGeneral Information\nNearby recreation:\nThe 30 mile Buncombe Horse Trail offers a variety a loops which riders can choose between a short or all day ride. The trail is open to horses, hikers and mountain bikers.\nThe 24 mile Enoree OHV Trail is a short 10 minute drive north of Brick House. The motorized trail is open to atvs, utvs, and dirt bikes that are 50 inches and less in width. Bring your own equipment. The trail has a user fee and is closed when trail conditions are too wet for riding.\nThe surrounding national forest lands are a great place for big game deer and turkey hunting along with other small game hunting.\nSeasons of Use\nYear round\nOperational Hours\nCheck in: 2:00 p.m.; Check-out: 12:00 p.m.; Quiet hours are 10:00 p.m. until 6:00 a.m.\nRestrictions\nStay is limited to 14 days.\nEnsure you have a reservation before arrival.\nHighline horses behind white banded trees.\nQuiet hours are 10pm-6am\nNo fireworks.\nCampfires are allowed only in designated fire rings.\nOnly dead and down wood may be collected.\nAll tents and vehicles must be located on the hardened areas of the campsites.\nCare should be taken in the woods during big-game season. Wear blaze orange.\nPasses and Permits\nSouth Carolina fishing and hunting license and regulations apply on all national forest land. The U.S. Forest Service does not issue any licenses or permits for hunting or fishing. Please visit the South Carolina Department of Natural Resources Web site for license and regulations information.\nFee Site and Info\nOvernight Use:\nSingle Site: $5 per night\nPet Information\nLeashed pets are welcome.\nOffice Contact Information\nEnoree Ranger District\nAddress: 20 Work Center Road Whitmire, SC 29178\nPhone: (803) 276-4810\nHours: Monday-Friday, 8:30am-4:30pm; Sat and Sun Closed (Closed on federal holidays)\nOffice Email: sm.fs.enrd@usda.gov\nGetting There\nLatitude / Longitude\nLatitude:  34.44834854\nLongitude:  -81.70728749\nDirections\nFrom 1-26 take the Joanna/Whitmire exit (66).  Go towards Whitmire about 3.5 miles.  Turn right onto Brick House Road (FS Rd 358).  Drive 0.3 miles to the campground.  You will pass the Buncombe Trailhead on the left before you get to the campground.\nFacility and Amenity Information\nRestrooms\nVault toilet(s)\nWater\nPotable water is not available at this site.\nPicnic Tables\nPicnic tables are available at this site.\nAll sites have a picnic table, fire ring, and a lantern post.\nHorse/Pack Animal Information\nHorse/Pack animals are allowed at this site.\nHorses are allowed in designated area highlined behind white-banded trees around perimeter of campground.\nNearby Trails\nBuncombe Horse Trail\nEnoree Passage of the Palmetto Trail\nEnoree OHV Trail\nRecreation Opportunities\nHorse Riding and Camping\nHorseback Riding\nBiking\nBiking - Mountain\nHiking\nDay Hikes\nBackpacking\nGeneral Hiking\nOutdoor Science and Learning\nViewing Wildlife\nViewing Plants\nRecreation Groups\nCamping",
             "signals": {
               "site_open_present": true,
               "site_closed_present": false,
@@ -439,7 +356,7 @@
               "reopened_present": false
             }
           },
-          "fingerprint": "06cb8f1c9f12071bf7956c127769201c931f6aa2fb276c52e8dfe6b04a55834b"
+          "fingerprint": "38edb1b7d8a7f1172fb3e4230de48fc6402bb560663bd08694302be25cd7e40a"
         }
       }
     },
@@ -480,30 +397,6 @@
             }
           },
           "fingerprint": "57e212bf4f68a05659af21de447939d9c04304852ef82bf20895a58bffda0bcb"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -555,7 +448,7 @@
           "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/upper-chattahoochee-river-campground",
           "quality": "OK",
           "semantic": {
-            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nUpper Chattahoochee River Campground\nThe drive up through the winding misty roads of North Georgia leading to this 19-site, developed campground is almost as breath-taking as the site itself. Although the drive leaves one feeling as if civilization has been left far, far behind, the ever popular and beloved alpine village of Helen, Georgia is less than a half hour away. Camping here, visitors can enjoy the pleasure of Georgia’s number one vacation spot with shopping, dining, and entertainment in the city of Helen and recreational activities such as camping, hiking, biking, and fishing in the campground. Visitors should keep an eye out for the interpretive information available on the Chattahoochee River Watershed and how the river affects water usage for Georgia, Alabama, and Florida, posted upon entering the campground area.\nSITE TEMPORARILY CLOSED\nUpper Chattahoochee River Campground Temporarily Closed for Facility Improvements\nActive Alerts\nCampground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nReservations\nReserve on Recreation.Gov\nGeneral Information\nSeasons of Use\n03/15 - 10/31\nOperational Hours\nUpper Chattahoochee River Campground Temporarily Closed for Facility Improvements\nRestrictions\nThe maximum stay is 14 day.  Pick out your site and pay the fee within 30 minutes after arrival. Quiet hours from 10pm-6am. No generators to be operating during quiet hours. No UTV's, ATV's, or Golf Carts to be unloaded or used in or around the campground or the Upper Chattahoochee River Road aka Willis Road. After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay.\nPasses and Permits\nGeorgia fishing license and trout stamp required for fishing\nThe Interagency Senior and Access Passes and the Golden Age and Access Passports are only passes accepted. These passes entitle the pass holder to a 50% discount on camping fees. Please write your pass number on the fee envelope upon payment into the fee tube by the kiosk.\nFee Site and Info\nCamping: $12/site/night\nOffice Contact Information\nChattooga River Ranger District\nAddress: 9975 Highway 441S Lakemont, GA 30552\nPhone: 706-754-6221\nHours: Office hours are Monday through Friday 8:00 to noon and 1:00 to 4:30. (Closed on federal holidays)\nOffice Email: SM.FS.CRRD@usda.gov\nGetting There\nDirections\nPhysical Address: 48 Forest Service Rd. 44, Helen, GA\nTake Georgia 75 north from Helen for approx. 8 miles. Just beyond mile marker 15 turn left onto the graveled Chattahoochee River Road and follow for 5 miles.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nPicnicking\nPicnicking - Single\nHiking\nDay Hikes\nFishing\nFishing - River/Stream",
+            "bounded_article_text": "Site Open\nRecreation Region: Chattooga River District\nUpper Chattahoochee River Campground\nThe drive up through the winding misty roads of North Georgia leading to this 19-site, developed campground is almost as breath-taking as the site itself. Although the drive leaves one feeling as if civilization has been left far, far behind, the ever popular and beloved alpine village of Helen, Georgia is less than a half hour away. Camping here, visitors can enjoy the pleasure of Georgia’s number one vacation spot with shopping, dining, and entertainment in the city of Helen and recreational activities such as camping, hiking, biking, and fishing in the campground. Visitors should keep an eye out for the interpretive information available on the Chattahoochee River Watershed and how the river affects water usage for Georgia, Alabama, and Florida, posted upon entering the campground area.\nActive Alerts\nCampground Updates: Low Gap now OPEN and Water System Changes at Upper Chattahoochee & Andrews Cove\nReservations\nReserve on Recreation.Gov\nGeneral Information\nSeasons of Use\n03/15 - 10/31\nOperational Hours\nUpper Chattahoochee River Campground Temporarily Closed for Facility Improvements\nRestrictions\nThe maximum stay is 14 day.  Pick out your site and pay the fee within 30 minutes after arrival. Quiet hours from 10pm-6am. No generators to be operating during quiet hours. No UTV's, ATV's, or Golf Carts to be unloaded or used in or around the campground or the Upper Chattahoochee River Road aka Willis Road. After the camper(s) has accumulated 14 days within any 30-day time period, the camper(s) must leave that area/campground and move from Chattahoochee-Oconee National Forest land for 30 days before returning for another stay.\nPasses and Permits\nGeorgia fishing license and trout stamp required for fishing\nThe Interagency Senior and Access Passes and the Golden Age and Access Passports are only passes accepted. These passes entitle the pass holder to a 50% discount on camping fees. Please write your pass number on the fee envelope upon payment into the fee tube by the kiosk.\nFee Site and Info\nCamping: $12/site/night\nOffice Contact Information\nChattooga River Ranger District\nAddress: 9975 Highway 441S Lakemont, GA 30552\nPhone: 706-754-6221\nHours: Office hours are Monday through Friday 8:00 to noon and 1:00 to 4:30. (Closed on federal holidays)\nOffice Email: SM.FS.CRRD@usda.gov\nGetting There\nDirections\nPhysical Address: 48 Forest Service Rd. 44, Helen, GA\nTake Georgia 75 north from Helen for approx. 8 miles. Just beyond mile marker 15 turn left onto the graveled Chattahoochee River Road and follow for 5 miles.\nFacility and Amenity Information\nRestrooms\nRestroom information is not available for this site.\nWater\nPotable water is not available at this site.\nRecreation Opportunities\nPicnicking\nPicnicking - Single\nHiking\nDay Hikes\nFishing\nFishing - River/Stream",
             "signals": {
               "site_open_present": true,
               "site_closed_present": false,
@@ -563,31 +456,7 @@
               "reopened_present": true
             }
           },
-          "fingerprint": "8bf7d492e814a9ae4597454e3f5db96a5ce784151cc156a7efc3b0bcd3e927d6"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
+          "fingerprint": "1f5b35124bb776a4bfa5abdc379e450c1a60d863397485a6f7437f43732c9de0"
         }
       }
     },
@@ -608,30 +477,6 @@
             }
           },
           "fingerprint": "d41fa38ca123166ecb2ee68cbcddfd682bb8b50bbc0f1bd29da7d1de9c8c3c16"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -652,30 +497,6 @@
             }
           },
           "fingerprint": "27b4df6ca4dd5efc5eb5bb91510bc738ba666d0067386ff1dd3ff0f6b90f2099"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
@@ -696,30 +517,6 @@
             }
           },
           "fingerprint": "022e305596176eb0dc9b3f4c82653862173a455ae7559a1d922e3748d27c2da7"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/campfire-restriction-lifted-chattahoochee-oconee-national-forest",
-            "title": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest",
-            "bounded_official_text": "Campfire restriction lifted on the Chattahoochee-Oconee National Forest\nCampfire restrictions on the Chattahoochee-Oconee National Forest have been lifted effective May 4, 2026.\nRecent weather conditions have improved enough to reduce wildfire risk across the Forest. Visitors may resume campfires in designated areas and should always use established fire rings where provided. Conditions can vary across the Forest and dry fuels may still be present in some locations.\nVisitors are asked to use caution when building campfires. Never leave a fire unattended and ensure it is fully extinguished before leaving. Drown the fire with water, stir the ashes, and feel for heat until it is cold to the touch.\nFire managers will continue to monitor conditions and may implement restrictions again if necessary.\nAlert Start Date: May 4, 2026\nAlert End Date:\nN/A\nContact Information\nContact Name:\nSupervisor's Office\nContact Number:\n770-297-3000\nAssociated Documents\nTermination of an Order"
-          },
-          "fingerprint": "2be7638453f70fe0ced52ac7562386e5681d2b324396acdcc4d5484b9fc922f9"
-        },
-        "USFS_WEBSITE_ALERTS:https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions": {
-          "source_family": "USFS_WEBSITE_ALERTS",
-          "source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-          "source_scope_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts",
-          "quality": "OK",
-          "semantic": {
-            "canonical_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/spring-2026-forest-wide-fire-restrictions",
-            "title": "Spring 2026 Forest-wide Fire Restrictions",
-            "bounded_official_text": "Spring 2026 Forest-wide Fire Restrictions\nThe purpose and need of this Fire Restriction Closure Order is to prohibit activities relating to building, maintaining, or attending a fire (including charcoal fires) within unauthorized areas on the Chattahoochee-Oconee National Forests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District. This also includes any use of explosives, fireworks, or other pyrotechnics devices.\nDue to exceptional drought conditions and persistently low relative humidity, there is a need to ensure that no unauthorized fire-related activities occur across National Forest System Lands to prevent the endangerment of persons and property. There is also a need to help ensure the health and safety of the public as well as employees engaged in limiting the use of fire-related activities and/or fire suppression.\nAlert Start Date: April 23, 2026\nAlert End Date:\nMay 4, 2026\nOrder Number: 08-03-00-26-04\nContact Information\nContact Name:\nPublic Affairs\nContact Number:\n770-297-3000\nContact Email:sm.fs.chattoconeenf@usda.gov\nAssociated Documents\nORDER NUMBER 08-03-00-26-04\nForest Order\nPROHIBITIONS\nPursuant to 36 CFR 261.50 (a) and (b), for the protection of the public and natural resources, the\nfollowing acts or omissions are prohibited on all NFS lands of the Chattahoochee-Oconee National\nForests comprising the Blue Ridge Ranger District, Chattooga River Ranger District, Conasauga Ranger District, and Oconee Ranger District (see map; Exhibit A). The provisions shall remain in effect from April 23, 2026, through June 01, 2026, or until terminated by an authorized Forest Service official, whichever occurs first.\nBuilding, maintaining, attending, or using a fire or campfire, including charcoal-based fire whether contained in a grill or not. 36 CFR 261.52(a).\nPossessing, discharging, or using any kind of firework or other pyrotechnic device. 36 CFR\n261.52(b).\nNote: Commercially available gas stoves (camp stoves) are permitted and such devices are excluded from this restriction.\nEXEMPTIONS\nPursuant to 36 CFR 261.50(e), the following persons are exempt from this Order:\n1. Persons with a permit specifically authorizing the otherwise prohibited act or omission.\n2. Any Federal, State or Local Law Enforcement Officer or member of an organized rescue or fire fighting force in the performance of an official duty.\nThese prohibitions are in addition to the general prohibitions in 36 CFR Part 261, Subpart A.\nExecuted in Gainesville, Georgia, this 23rd day of April 2026.\nJUDY TOPPINS\nForest Supervisor\nChattahoochee-Oconee National Forest\nENFORCEMENT\nViolation of these prohibitions is punishable by a fine of not more than $5,000 for an individual or $10,000 for an organization, imprisonment for not more than 6 months, or both. (16 U.S.C. 551 and 18 U.S.C. 3559 and 3571).\nMaps\nImages below will open full size in a new window.\nMap for Forest Order 08-03-00-26-04\nAll campfires prohibited, including charcoal grills.  Gas camp stoves permitted."
-          },
-          "fingerprint": "f854bb50ca280052464c0a5d1999b3a38e3ef81f81b22bfdaffa1cd39dfe44a5"
         }
       }
     },
