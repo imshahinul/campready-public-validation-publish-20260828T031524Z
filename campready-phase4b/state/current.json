@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-29T18:40:19.164458+00:00",
-  "run_id": "20261029T184019Z",
+  "accepted_at_utc": "2026-10-29T19:40:22.625551+00:00",
+  "run_id": "20261029T194022Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -218,23 +218,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a8e845c8e7ec5dca2e335533e4d2278e29f6fc7.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f5b9b8fd30b1d34605a778aa523376138e3c002c.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a8e845c8e7ec5dca2e335533e4d2278e29f6fc7.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f5b9b8fd30b1d34605a778aa523376138e3c002c.002.1",
           "quality": "OK",
           "semantic": {
             "event": "Rip Current Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-29T11:52:00-04:00",
-            "onset": "2026-10-29T11:52:00-04:00",
-            "expires": "2026-10-29T15:00:00-04:00",
+            "effective": "2026-10-29T14:59:00-04:00",
+            "onset": "2026-10-29T14:59:00-04:00",
+            "expires": "2026-10-29T20:00:00-04:00",
             "ends": "2026-10-29T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 29 at 11:52AM EDT until October 29 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Rip Current Statement issued October 29 at 2:59PM EDT until October 29 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "bf717e0d0185bb26915305b2aa7c3a26b595631fbb9aad4f6e6c922bb562bfe0"
+          "fingerprint": "40ee1be3bf07622169a54d25c00d590faa995496af1f2114f33ff465636db795"
         }
       }
     },
