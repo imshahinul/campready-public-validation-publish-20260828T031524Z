@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-29T07:40:18.008381+00:00",
-  "run_id": "20261029T074018Z",
+  "accepted_at_utc": "2026-10-29T08:40:17.181389+00:00",
+  "run_id": "20261029T084017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -218,41 +218,41 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.10a4c6263fff446bff85104af04d9a5d2d8cff49.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.10a4c6263fff446bff85104af04d9a5d2d8cff49.001.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-28T22:14:00-04:00",
-            "onset": "2026-10-29T08:00:00-04:00",
-            "expires": "2026-10-29T12:00:00-04:00",
-            "ends": "2026-10-29T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 28 at 10:14PM EDT until October 29 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "d3c81af43ec4ea1c683589fef38672d7803b08bc6e0aa9127a22d1aae276132b"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.10a4c6263fff446bff85104af04d9a5d2d8cff49.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.10a4c6263fff446bff85104af04d9a5d2d8cff49.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2",
           "quality": "OK",
           "semantic": {
             "event": "Coastal Flood Advisory",
             "severity": "Minor",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-28T22:14:00-04:00",
+            "effective": "2026-10-29T03:54:00-04:00",
             "onset": "2026-10-29T09:00:00-04:00",
             "expires": "2026-10-29T12:00:00-04:00",
             "ends": "2026-10-29T12:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 28 at 10:14PM EDT until October 29 at 12:00PM EDT by NWS Wilmington NC"
+            "headline": "Coastal Flood Advisory issued October 29 at 3:54AM EDT until October 29 at 12:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "b108755b5d4327a85fda74dd2b46bd7050c916cab008a34a3f73fde1caa23df0"
+          "fingerprint": "f93c302f3f503006acea390023fefee79188bf0b21c1eb0f598ce3d328c88bc6"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Rip Current Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-29T03:54:00-04:00",
+            "onset": "2026-10-29T06:00:00-04:00",
+            "expires": "2026-10-29T12:00:00-04:00",
+            "ends": "2026-10-29T20:00:00-04:00",
+            "headline": "Rip Current Statement issued October 29 at 3:54AM EDT until October 29 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "da603b7e1030678746ff06dfec5ea6411f9b3d5d214828587f78d1ce061aec7e"
         }
       }
     },

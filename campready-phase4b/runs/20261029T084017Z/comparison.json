@@ -1,0 +1,76 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2",
+      "before": null,
+      "after": "f93c302f3f503006acea390023fefee79188bf0b21c1eb0f598ce3d328c88bc6",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1",
+      "before": null,
+      "after": "da603b7e1030678746ff06dfec5ea6411f9b3d5d214828587f78d1ce061aec7e",
+      "category": "APPEARANCE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2",
+      "before": null,
+      "after": "f93c302f3f503006acea390023fefee79188bf0b21c1eb0f598ce3d328c88bc6",
+      "category": "APPEARANCE"
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1",
+      "before": null,
+      "after": "da603b7e1030678746ff06dfec5ea6411f9b3d5d214828587f78d1ce061aec7e",
+      "category": "APPEARANCE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2",
+      "before": null,
+      "after": "f93c302f3f503006acea390023fefee79188bf0b21c1eb0f598ce3d328c88bc6",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1",
+      "before": null,
+      "after": "da603b7e1030678746ff06dfec5ea6411f9b3d5d214828587f78d1ce061aec7e",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2",
+      "before": null,
+      "after": "f93c302f3f503006acea390023fefee79188bf0b21c1eb0f598ce3d328c88bc6",
+      "category": "APPEARANCE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "ncsp-carolina-beach",
+      "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1",
+      "before": null,
+      "after": "da603b7e1030678746ff06dfec5ea6411f9b3d5d214828587f78d1ce061aec7e",
+      "category": "APPEARANCE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 2,
+  "relevance_ambiguity_count": 43
+}
