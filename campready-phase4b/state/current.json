@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-28T23:40:16.682425+00:00",
-  "run_id": "20261028T234016Z",
+  "accepted_at_utc": "2026-10-29T00:40:16.067986+00:00",
+  "run_id": "20261029T004016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -218,23 +218,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24ff8e1ceb1dde631d74a7d0c1d72b66fb120531.002.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a4ed7fc6f3d5113c66ecd3acb8de862d8c236d7b.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24ff8e1ceb1dde631d74a7d0c1d72b66fb120531.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a4ed7fc6f3d5113c66ecd3acb8de862d8c236d7b.001.2",
           "quality": "OK",
           "semantic": {
             "event": "Rip Current Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-28T13:15:00-04:00",
-            "onset": "2026-10-28T13:15:00-04:00",
-            "expires": "2026-10-28T20:00:00-04:00",
-            "ends": "2026-10-28T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 28 at 1:15PM EDT until October 28 at 8:00PM EDT by NWS Wilmington NC"
+            "effective": "2026-10-28T20:15:00-04:00",
+            "onset": "2026-10-29T08:00:00-04:00",
+            "expires": "2026-10-29T04:15:00-04:00",
+            "ends": "2026-10-29T20:00:00-04:00",
+            "headline": "Rip Current Statement issued October 28 at 8:15PM EDT until October 29 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "e9beda273b2b817226975a201023b00cabe5715fa76be9dcf4b703ba6dc7aef7"
+          "fingerprint": "daca52a816ce11e307f9b8bf7154448d6695ae78d86ddb790ce787b90d3e64a5"
         }
       }
     },
