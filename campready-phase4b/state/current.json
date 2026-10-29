@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-29T15:40:18.413784+00:00",
-  "run_id": "20261029T154018Z",
+  "accepted_at_utc": "2026-10-29T16:40:19.490373+00:00",
+  "run_id": "20261029T164019Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -218,41 +218,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a8e845c8e7ec5dca2e335533e4d2278e29f6fc7.001.2": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.2",
-          "quality": "OK",
-          "semantic": {
-            "event": "Coastal Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-29T03:54:00-04:00",
-            "onset": "2026-10-29T09:00:00-04:00",
-            "expires": "2026-10-29T12:00:00-04:00",
-            "ends": "2026-10-29T12:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 29 at 3:54AM EDT until October 29 at 12:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "f93c302f3f503006acea390023fefee79188bf0b21c1eb0f598ce3d328c88bc6"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d63df25c5bb573d27282a9e1ad16915759db40d.002.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a8e845c8e7ec5dca2e335533e4d2278e29f6fc7.001.2",
           "quality": "OK",
           "semantic": {
             "event": "Rip Current Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-29T03:54:00-04:00",
-            "onset": "2026-10-29T06:00:00-04:00",
-            "expires": "2026-10-29T12:00:00-04:00",
+            "effective": "2026-10-29T11:52:00-04:00",
+            "onset": "2026-10-29T11:52:00-04:00",
+            "expires": "2026-10-29T15:00:00-04:00",
             "ends": "2026-10-29T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 29 at 3:54AM EDT until October 29 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Rip Current Statement issued October 29 at 11:52AM EDT until October 29 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "da603b7e1030678746ff06dfec5ea6411f9b3d5d214828587f78d1ce061aec7e"
+          "fingerprint": "bf717e0d0185bb26915305b2aa7c3a26b595631fbb9aad4f6e6c922bb562bfe0"
         }
       }
     },
