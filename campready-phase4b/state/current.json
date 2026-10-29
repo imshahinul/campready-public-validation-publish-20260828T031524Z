@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-29T08:40:17.181389+00:00",
-  "run_id": "20261029T084017Z",
+  "accepted_at_utc": "2026-10-29T09:40:17.288769+00:00",
+  "run_id": "20261029T094017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -258,7 +258,26 @@
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1408d597b0fdf0f9c4701173a17d6048b9f2641b.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=36.01,-78.6575",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1408d597b0fdf0f9c4701173a17d6048b9f2641b.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-10-29T05:06:00-04:00",
+            "onset": "2026-10-29T05:06:00-04:00",
+            "expires": "2026-10-29T09:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued October 29 at 5:06AM EDT by NWS Raleigh NC"
+          },
+          "fingerprint": "8fee1ac02775499fd4d10720457486533b82174fd86095ef8ee59cb4b51e8db4"
+        }
+      }
     },
     "ncsp-hanging-rock": {
       "authority_family": "NC_STATE_PARKS",
@@ -266,7 +285,26 @@
     },
     "ncsp-kerr-hibernia": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1408d597b0fdf0f9c4701173a17d6048b9f2641b.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=36.5047,-78.3761",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1408d597b0fdf0f9c4701173a17d6048b9f2641b.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-10-29T05:06:00-04:00",
+            "onset": "2026-10-29T05:06:00-04:00",
+            "expires": "2026-10-29T09:00:00-04:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued October 29 at 5:06AM EDT by NWS Raleigh NC"
+          },
+          "fingerprint": "8fee1ac02775499fd4d10720457486533b82174fd86095ef8ee59cb4b51e8db4"
+        }
+      }
     },
     "ncsp-stone-mountain": {
       "authority_family": "NC_STATE_PARKS",
