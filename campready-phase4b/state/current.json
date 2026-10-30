@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-30T17:40:17.218878+00:00",
-  "run_id": "20261030T174017Z",
+  "accepted_at_utc": "2026-10-30T18:40:18.173262+00:00",
+  "run_id": "20261030T184018Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -235,24 +235,6 @@
             "headline": "Rip Current Statement issued October 30 at 1:35PM EDT until October 30 at 8:00PM EDT by NWS Wilmington NC"
           },
           "fingerprint": "b2e68ebdf7fc641730c59b16e665ca2fc0d7f3c05e7d166869a3c12b3fab920a"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.902cf12ce7ce9d05655d9bb90f8173300fdc9d9c.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.902cf12ce7ce9d05655d9bb90f8173300fdc9d9c.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Coastal Flood Advisory",
-            "severity": "Minor",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-30T13:35:00-04:00",
-            "onset": "2026-10-30T13:35:00-04:00",
-            "expires": "2026-10-30T16:00:00-04:00",
-            "ends": "2026-10-30T14:00:00-04:00",
-            "headline": "Coastal Flood Advisory issued October 30 at 1:35PM EDT until October 30 at 2:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "5c9775bfeb9a40be3c357c0c883976a4b611c73d2e0af75a72fa4a6b8bb03f64"
         }
       }
     },
