@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-30T18:40:18.173262+00:00",
-  "run_id": "20261030T184018Z",
+  "accepted_at_utc": "2026-10-30T19:40:16.549185+00:00",
+  "run_id": "20261030T194016Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -218,23 +218,23 @@
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
       "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.902cf12ce7ce9d05655d9bb90f8173300fdc9d9c.001.2": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91fddd0a3336725d25d1d52a5b6049eaa6dfbf21.002.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.902cf12ce7ce9d05655d9bb90f8173300fdc9d9c.001.2",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91fddd0a3336725d25d1d52a5b6049eaa6dfbf21.002.1",
           "quality": "OK",
           "semantic": {
             "event": "Rip Current Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-30T13:35:00-04:00",
-            "onset": "2026-10-30T13:35:00-04:00",
-            "expires": "2026-10-30T16:00:00-04:00",
+            "effective": "2026-10-30T15:30:00-04:00",
+            "onset": "2026-10-30T15:30:00-04:00",
+            "expires": "2026-10-30T20:00:00-04:00",
             "ends": "2026-10-30T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 30 at 1:35PM EDT until October 30 at 8:00PM EDT by NWS Wilmington NC"
+            "headline": "Rip Current Statement issued October 30 at 3:30PM EDT until October 30 at 8:00PM EDT by NWS Wilmington NC"
           },
-          "fingerprint": "b2e68ebdf7fc641730c59b16e665ca2fc0d7f3c05e7d166869a3c12b3fab920a"
+          "fingerprint": "eceb7b06da2779499dd129a8ef4a15d1eef7b2eeb0a7b08c942725ec390d60ae"
         }
       }
     },
@@ -299,6 +299,24 @@
             }
           },
           "fingerprint": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e02018349f33d9535e68fa171117b1d3b83ed8a9.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=43.56988519945235,-124.2060143315852",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e02018349f33d9535e68fa171117b1d3b83ed8a9.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Beach Hazards Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-30T12:03:00-07:00",
+            "onset": "2026-11-01T20:00:00-07:00",
+            "expires": "2026-10-30T20:15:00-07:00",
+            "ends": "2026-11-02T17:00:00-07:00",
+            "headline": "Beach Hazards Statement issued October 30 at 12:03PM PDT until November 2 at 4:00PM PST by NWS Medford OR"
+          },
+          "fingerprint": "390be2df65ee56741c5d5c2fb9dd01dba9a9263bb41cf9a85a595f1f44f130b0"
         }
       }
     },
