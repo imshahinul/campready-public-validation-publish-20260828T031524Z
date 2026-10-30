@@ -1,0 +1,104 @@
+{
+  "run_id": "20261030T154018Z",
+  "started_at_utc": "2026-10-30T15:40:18.083502+00:00",
+  "finished_at_utc": "2026-10-30T15:41:50.628187+00:00",
+  "trigger": "external_schedule",
+  "dispatch_provider": "external",
+  "scheduler_epoch": 1793374742,
+  "github_event_name": "workflow_dispatch",
+  "workflow_run_id": "41082821353",
+  "validation_start_utc": "2026-09-13T04:00:00+00:00",
+  "validation_end_utc": "2026-10-13T04:00:00+00:00",
+  "status": "PASS",
+  "cohort": {
+    "experimental": 35,
+    "supported_core": 32,
+    "strict_useful": 31,
+    "usace_transport_only": 3
+  },
+  "metrics": {
+    "first_attempt_supported_reliability": {
+      "successful": 91,
+      "attempted": 96
+    },
+    "eventual_supported_logical_reliability": {
+      "successful": 93,
+      "attempted": 96
+    },
+    "usfs_first_attempt_reliability": {
+      "successful": 48,
+      "attempted": 53
+    },
+    "usfs_eventual_reliability": {
+      "successful": 50,
+      "attempted": 53
+    },
+    "usfs_retry_rescue_rate": {
+      "rescued": 2,
+      "failed_first_attempts": 5
+    },
+    "physical_request_overhead": {
+      "additional_attempts": 5,
+      "physical_attempts": 104,
+      "logical_attempts": 99,
+      "ratio": 1.0505050505050506
+    },
+    "supported_core_retrieval": {
+      "successful": 93,
+      "attempted": 96
+    },
+    "parser_failure": {
+      "failures": 0,
+      "successfully_retrieved_parseable": 93
+    },
+    "usace_transport_reliability": {
+      "successful": 3,
+      "attempted": 3
+    }
+  },
+  "telemetry": {
+    "raw_candidate_count": 224,
+    "parsed_observation_count": 224,
+    "deduplicated_observation_count": 224,
+    "relevant_operational_event_count": 31,
+    "unknown_nonrelevant_count": 43,
+    "run_duration_seconds": 92.535791,
+    "logical_usfs_requests": 53,
+    "failed_usfs_first_attempts": 5,
+    "usfs_retries_attempted": 5,
+    "usfs_retries_rescued": 2,
+    "retry_delay_contribution_seconds": 28.278431372549022,
+    "maximum_physical_attempts_per_logical_request": 2,
+    "rescue_by_first_attempt_failure_class": {
+      "HTTP_403": {
+        "failed_first_attempts": 5,
+        "rescued": 2
+      }
+    }
+  },
+  "consumer_relevant_event_count": 0,
+  "would_notify_candidate_count": 0,
+  "review_candidate_count": 0,
+  "unsafe_candidate_count": 0,
+  "relevance_ambiguity_count": 43,
+  "real_notifications": 0,
+  "prior_state_sha256": "d80911816af69256c578200098ef832412ccbcba3aa43ca5f59b33f26940b5e6",
+  "accepted_state_sha256": "b0f4178548f1269963ac14d4dcd638859e89c3f03fdee39b2d7974eead4ea8bc",
+  "state_advanced": true,
+  "frozen_bindings": {
+    ".github/workflows/campready-validation.yml": true,
+    "campready-authority-adapters/authority_adapters.py": true,
+    "campready-authority-adapters/authority_sites.json": true,
+    "campready-phase4a3/canonical_35site_mapping.json": true,
+    "campready-phase4b/capture.py": true,
+    "campready-phase4b/config.json": true,
+    "campready-phase4b/run.py": true,
+    "campready-phase4c/phase4c_b_r2_transport_experiment.json": true,
+    "campready-phase4c/phase4c_b_transport_experiment.json": true,
+    "campready-prospective-validation/frozen/campready-canonical-relevance-mapping.json": true,
+    "campready-prospective-validation/frozen/phase3a4_live_replay.py": true,
+    "campready-prospective-validation/frozen/phase3a4_r3_replay.py": true,
+    "campready-prospective-validation/frozen/phase3b3_live_baseline.py": true,
+    "campready-prospective-validation/frozen/phase3b4_compare.py": true
+  }
+}
