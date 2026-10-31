@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-31T01:40:17.280491+00:00",
-  "run_id": "20261031T014017Z",
+  "accepted_at_utc": "2026-10-31T02:40:19.594001+00:00",
+  "run_id": "20261031T024019Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -281,23 +281,23 @@
           },
           "fingerprint": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e02018349f33d9535e68fa171117b1d3b83ed8a9.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7830cc67b15e5140f8063975a0d2d31b86d87800.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=43.56988519945235,-124.2060143315852",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e02018349f33d9535e68fa171117b1d3b83ed8a9.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7830cc67b15e5140f8063975a0d2d31b86d87800.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-30T12:03:00-07:00",
-            "onset": "2026-11-01T20:00:00-07:00",
-            "expires": "2026-10-30T20:15:00-07:00",
-            "ends": "2026-11-02T17:00:00-07:00",
-            "headline": "Beach Hazards Statement issued October 30 at 12:03PM PDT until November 2 at 4:00PM PST by NWS Medford OR"
+            "effective": "2026-10-30T18:19:00-08:00",
+            "onset": "2026-11-01T19:00:00-08:00",
+            "expires": "2026-11-01T04:00:00-08:00",
+            "ends": "2026-11-02T16:00:00-08:00",
+            "headline": "Beach Hazards Statement issued October 30 at 7:19PM PDT until November 2 at 4:00PM PST by NWS Medford OR"
           },
-          "fingerprint": "390be2df65ee56741c5d5c2fb9dd01dba9a9263bb41cf9a85a595f1f44f130b0"
+          "fingerprint": "b11e254fc8753c3f4e4514b979dc25f4d19a0a4a3e0983315c889b62e172dead"
         }
       }
     },

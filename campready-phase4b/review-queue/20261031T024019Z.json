@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "or-spinreel",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7830cc67b15e5140f8063975a0d2d31b86d87800.001.1",
+    "before": null,
+    "after": "b11e254fc8753c3f4e4514b979dc25f4d19a0a4a3e0983315c889b62e172dead",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
