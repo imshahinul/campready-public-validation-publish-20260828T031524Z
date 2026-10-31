@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-30T23:40:16.579541+00:00",
-  "run_id": "20261030T234016Z",
+  "accepted_at_utc": "2026-10-31T00:40:17.850628+00:00",
+  "run_id": "20261031T004017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -217,26 +217,7 @@
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91fddd0a3336725d25d1d52a5b6049eaa6dfbf21.002.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91fddd0a3336725d25d1d52a5b6049eaa6dfbf21.002.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Rip Current Statement",
-            "severity": "Moderate",
-            "certainty": "Likely",
-            "urgency": "Expected",
-            "effective": "2026-10-30T15:30:00-04:00",
-            "onset": "2026-10-30T15:30:00-04:00",
-            "expires": "2026-10-30T20:00:00-04:00",
-            "ends": "2026-10-30T20:00:00-04:00",
-            "headline": "Rip Current Statement issued October 30 at 3:30PM EDT until October 30 at 8:00PM EDT by NWS Wilmington NC"
-          },
-          "fingerprint": "eceb7b06da2779499dd129a8ef4a15d1eef7b2eeb0a7b08c942725ec390d60ae"
-        }
-      }
+      "events": {}
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
