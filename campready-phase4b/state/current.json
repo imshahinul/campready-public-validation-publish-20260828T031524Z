@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-10-31T07:40:18.220667+00:00",
-  "run_id": "20261031T074018Z",
+  "accepted_at_utc": "2026-10-31T08:40:17.664246+00:00",
+  "run_id": "20261031T084017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -217,7 +217,26 @@
     },
     "ncsp-carolina-beach": {
       "authority_family": "NC_STATE_PARKS",
-      "events": {}
+      "events": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b598dfa4d0503ac732fd586620cab2dffb19bc3.002.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=34.0472,-77.9066",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b598dfa4d0503ac732fd586620cab2dffb19bc3.002.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Beach Hazards Statement",
+            "severity": "Moderate",
+            "certainty": "Likely",
+            "urgency": "Expected",
+            "effective": "2026-10-31T03:52:00-04:00",
+            "onset": "2026-10-31T06:00:00-04:00",
+            "expires": "2026-10-31T16:00:00-04:00",
+            "ends": "2026-10-31T20:00:00-04:00",
+            "headline": "Beach Hazards Statement issued October 31 at 3:52AM EDT until October 31 at 8:00PM EDT by NWS Wilmington NC"
+          },
+          "fingerprint": "ebaa0bc3d202faec8a57ee29f2a2a576ade92b77ee02c7216bd6d55849ae6312"
+        }
+      }
     },
     "ncsp-falls-holly-point": {
       "authority_family": "NC_STATE_PARKS",
