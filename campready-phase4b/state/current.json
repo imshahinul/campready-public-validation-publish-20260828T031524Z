@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-11-01T18:40:15.799698+00:00",
-  "run_id": "20261101T184015Z",
+  "accepted_at_utc": "2026-11-01T19:40:15.926366+00:00",
+  "run_id": "20261101T194015Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -260,42 +260,6 @@
             }
           },
           "fingerprint": "eb65409e9eb5fed3b04b556bc6ebff8b45c9840119d8a2f42f01e3a7c33fe701"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.445b50f6adcd36f1dce81661b6e97a450e16b669.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=44.30904716503235,-121.63058907709843",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.445b50f6adcd36f1dce81661b6e97a450e16b669.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-11-01T08:27:00-08:00",
-            "onset": "2026-11-01T08:27:00-08:00",
-            "expires": "2026-11-01T11:00:00-08:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued November 1 at 8:27AM PST by NWS Pendleton OR"
-          },
-          "fingerprint": "1d57ab5fb2364cf76688a7ead3c1435e7999da61b67173fc481eb4d96daa57e6"
-        },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cd8f8c963902fa9e02e49d994ed16a60dbb70cd5.001.1": {
-          "source_family": "NWS_API",
-          "source_url": "https://api.weather.gov/alerts/active?point=44.30904716503235,-121.63058907709843",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cd8f8c963902fa9e02e49d994ed16a60dbb70cd5.001.1",
-          "quality": "OK",
-          "semantic": {
-            "event": "Special Weather Statement",
-            "severity": "Moderate",
-            "certainty": "Observed",
-            "urgency": "Expected",
-            "effective": "2026-11-01T08:16:00-08:00",
-            "onset": "2026-11-01T08:16:00-08:00",
-            "expires": "2026-11-01T11:00:00-08:00",
-            "ends": null,
-            "headline": "Special Weather Statement issued November 1 at 8:16AM PST by NWS Pendleton OR"
-          },
-          "fingerprint": "1e8b4daabf646a84a9c962f0db3a85478ef3568641b12890117221a010b9e8fe"
         }
       }
     },
