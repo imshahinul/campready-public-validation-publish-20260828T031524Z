@@ -1,0 +1,10 @@
+[
+  {
+    "canonical_key": "or-cold-springs",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.34bb90fc461d74de931a4ffd79da1725a6077b16.001.1",
+    "before": null,
+    "after": "ddd1a718b0644fd46e52db1d6acdd3e083e102ea3428a0ae2afebcda58a8429e",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]
