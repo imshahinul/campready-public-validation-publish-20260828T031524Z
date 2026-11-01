@@ -1,0 +1,18 @@
+[
+  {
+    "canonical_key": "or-cold-springs",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e0ac1887b0df8538fc1fe6606d43ec06b7025c85.001.1",
+    "before": null,
+    "after": "d71edcfcb9f8d29877eaca0494904cbea9eae6573956a08397dc0a6db050c2aa",
+    "category": "APPEARANCE",
+    "review_only": true
+  },
+  {
+    "canonical_key": "or-spinreel",
+    "event_key": "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f34448fe1d622ca50b1b2725b193310e78e83ab.001.1",
+    "before": null,
+    "after": "2bb334ea53d0fbcc3f2c28796efc5ff22fc30c0d10f7247695d042866aa83ad8",
+    "category": "APPEARANCE",
+    "review_only": true
+  }
+]

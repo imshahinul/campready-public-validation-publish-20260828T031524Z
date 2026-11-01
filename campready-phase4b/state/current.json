@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-11-01T08:40:18.129944+00:00",
-  "run_id": "20261101T084018Z",
+  "accepted_at_utc": "2026-11-01T09:40:20.587086+00:00",
+  "run_id": "20261101T094020Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -260,6 +260,24 @@
             }
           },
           "fingerprint": "eb65409e9eb5fed3b04b556bc6ebff8b45c9840119d8a2f42f01e3a7c33fe701"
+        },
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e0ac1887b0df8538fc1fe6606d43ec06b7025c85.001.1": {
+          "source_family": "NWS_API",
+          "source_url": "https://api.weather.gov/alerts/active?point=44.30904716503235,-121.63058907709843",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e0ac1887b0df8538fc1fe6606d43ec06b7025c85.001.1",
+          "quality": "OK",
+          "semantic": {
+            "event": "Special Weather Statement",
+            "severity": "Moderate",
+            "certainty": "Observed",
+            "urgency": "Expected",
+            "effective": "2026-11-01T00:55:00-08:00",
+            "onset": "2026-11-01T00:55:00-08:00",
+            "expires": "2026-11-01T08:00:00-08:00",
+            "ends": null,
+            "headline": "Special Weather Statement issued November 1 at 1:55AM PDT by NWS Pendleton OR"
+          },
+          "fingerprint": "d71edcfcb9f8d29877eaca0494904cbea9eae6573956a08397dc0a6db050c2aa"
         }
       }
     },
@@ -281,23 +299,23 @@
           },
           "fingerprint": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.92b7cdf0f867d340a3059c5973cd3ee1e9d46b8c.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f34448fe1d622ca50b1b2725b193310e78e83ab.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=43.56988519945235,-124.2060143315852",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.92b7cdf0f867d340a3059c5973cd3ee1e9d46b8c.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f34448fe1d622ca50b1b2725b193310e78e83ab.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-10-31T18:33:00-08:00",
+            "effective": "2026-11-01T00:48:00-08:00",
             "onset": "2026-11-01T19:00:00-08:00",
-            "expires": "2026-11-01T05:00:00-08:00",
+            "expires": "2026-11-01T16:00:00-08:00",
             "ends": "2026-11-02T19:00:00-08:00",
-            "headline": "Beach Hazards Statement issued October 31 at 7:33PM PDT until November 2 at 7:00PM PST by NWS Medford OR"
+            "headline": "Beach Hazards Statement issued November 1 at 1:48AM PDT until November 2 at 7:00PM PST by NWS Medford OR"
           },
-          "fingerprint": "0161c0f40e9980a424b63d1292141f8ef8afb349a9063a83bc300487e11bdc7e"
+          "fingerprint": "2bb334ea53d0fbcc3f2c28796efc5ff22fc30c0d10f7247695d042866aa83ad8"
         }
       }
     },
