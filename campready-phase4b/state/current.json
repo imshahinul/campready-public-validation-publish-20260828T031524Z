@@ -1,7 +1,7 @@
 {
   "schema_version": "campready-phase4b-state-v1",
-  "accepted_at_utc": "2026-11-01T21:40:16.329366+00:00",
-  "run_id": "20261101T214016Z",
+  "accepted_at_utc": "2026-11-01T22:40:17.979479+00:00",
+  "run_id": "20261101T224017Z",
   "sites": {
     "al-clear-creek": {
       "authority_family": "USFS",
@@ -281,23 +281,23 @@
           },
           "fingerprint": "bdba91d015945fd43fe2f1840eea6169b835430c64a32792b9f09f927c42727f"
         },
-        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f34448fe1d622ca50b1b2725b193310e78e83ab.001.1": {
+        "NWS_API:https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.607d4648406444293c3a129d7250311272c0e61b.001.1": {
           "source_family": "NWS_API",
           "source_url": "https://api.weather.gov/alerts/active?point=43.56988519945235,-124.2060143315852",
-          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f34448fe1d622ca50b1b2725b193310e78e83ab.001.1",
+          "event_id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.607d4648406444293c3a129d7250311272c0e61b.001.1",
           "quality": "OK",
           "semantic": {
             "event": "Beach Hazards Statement",
             "severity": "Moderate",
             "certainty": "Likely",
             "urgency": "Expected",
-            "effective": "2026-11-01T00:48:00-08:00",
+            "effective": "2026-11-01T14:01:00-08:00",
             "onset": "2026-11-01T19:00:00-08:00",
-            "expires": "2026-11-01T16:00:00-08:00",
+            "expires": "2026-11-02T05:00:00-08:00",
             "ends": "2026-11-02T19:00:00-08:00",
-            "headline": "Beach Hazards Statement issued November 1 at 1:48AM PDT until November 2 at 7:00PM PST by NWS Medford OR"
+            "headline": "Beach Hazards Statement issued November 1 at 2:01PM PST until November 2 at 7:00PM PST by NWS Medford OR"
           },
-          "fingerprint": "2bb334ea53d0fbcc3f2c28796efc5ff22fc30c0d10f7247695d042866aa83ad8"
+          "fingerprint": "24035d6c11e3f87cb0ed42a0a2db4da120b844a020588c34f6d19ea63c673f26"
         }
       }
     },
