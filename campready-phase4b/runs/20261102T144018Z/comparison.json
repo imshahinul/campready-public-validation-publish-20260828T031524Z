@@ -1,0 +1,106 @@
+{
+  "baseline": false,
+  "source_deltas": [
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+      "before": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc",
+      "after": "062dda5b3c9b88de5ac8d27cc924d77f5b47d972aa66c6deeb8e00d53ca5ca76",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground",
+      "before": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1",
+      "after": "4f976fc0a0c4d2b456042a2b21041be6bc11c5deb455ae1afb03c06de12efa44",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+      "before": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc",
+      "after": "84bde0a1918038f9d579a3ef33f6c271fca79911a37d0dae246edb05c828a8a1",
+      "category": "MATERIAL_UPDATE"
+    }
+  ],
+  "semantic_deltas": [
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+      "before": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc",
+      "after": "062dda5b3c9b88de5ac8d27cc924d77f5b47d972aa66c6deeb8e00d53ca5ca76",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground",
+      "before": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1",
+      "after": "4f976fc0a0c4d2b456042a2b21041be6bc11c5deb455ae1afb03c06de12efa44",
+      "category": "MATERIAL_UPDATE"
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+      "before": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc",
+      "after": "84bde0a1918038f9d579a3ef33f6c271fca79911a37d0dae246edb05c828a8a1",
+      "category": "MATERIAL_UPDATE"
+    }
+  ],
+  "relevance_deltas": [],
+  "lifecycle_deltas": [],
+  "review_candidates": [
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+      "before": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc",
+      "after": "062dda5b3c9b88de5ac8d27cc924d77f5b47d972aa66c6deeb8e00d53ca5ca76",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground",
+      "before": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1",
+      "after": "4f976fc0a0c4d2b456042a2b21041be6bc11c5deb455ae1afb03c06de12efa44",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+      "before": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc",
+      "after": "84bde0a1918038f9d579a3ef33f6c271fca79911a37d0dae246edb05c828a8a1",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    }
+  ],
+  "would_notify_candidates": [
+    {
+      "canonical_key": "nc-hurricane-creek",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/hurricane-creek-horse-primitive-campground",
+      "before": "e81446827a85eee87aed0698426faf0b2a9aba3e90f8c2f02c443f2366df93fc",
+      "after": "062dda5b3c9b88de5ac8d27cc924d77f5b47d972aa66c6deeb8e00d53ca5ca76",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-north-mills-river",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-campground",
+      "before": "348db7317eab50a3fc71b0c5d509e187cdf7f9b9fb1dccd74d21f577d38069e1",
+      "after": "4f976fc0a0c4d2b456042a2b21041be6bc11c5deb455ae1afb03c06de12efa44",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    },
+    {
+      "canonical_key": "nc-van-hook-glade",
+      "event_key": "USFS_WEBSITE_RECREATION:https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+      "before": "791713146b753cd508598de2ad905244824f1879be6593fd4b6dc319f25d95dc",
+      "after": "84bde0a1918038f9d579a3ef33f6c271fca79911a37d0dae246edb05c828a8a1",
+      "category": "MATERIAL_UPDATE",
+      "review_only": true
+    }
+  ],
+  "unsafe_candidates": [],
+  "consumer_relevant_event_count": 3,
+  "relevance_ambiguity_count": 43
+}
