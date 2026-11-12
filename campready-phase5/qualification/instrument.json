@@ -1,0 +1,81 @@
+{
+  "schema_version": "campready.phase5.qualification_instrument.v1",
+  "qualification_version": "phase5-4a-v1",
+  "purpose": "Internal review-contract qualification; not a consumer usability study and not a real-world trip-safety determination.",
+  "workflow_actions": ["REVIEWED_VALID", "REVIEWED_NOT_ACTIONABLE", "DATA_QUALITY_HOLD", "NEEDS_FOLLOWUP", "ACKNOWLEDGED"],
+  "case_order": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12"],
+  "cases": [
+    {
+      "case_id": "T1", "task_class": "NWS_SEMANTIC_APPEARANCE",
+      "evidence": {"campground": "Big Rock Campground", "authority": "National Weather Service", "source_role": "ACTIVE_ALERT", "official_source_url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1", "source_title": "Observed NWS alert", "source_evidence": "Persisted NWS alert affected the Big Rock relationship.", "provenance_run_id": "20260922T234016Z", "provenance_record_ref": "campready-phase4b/review-queue/20260922T234016Z.json#1"},
+      "source_fact": {"retrieval_status": "SUCCESS", "parser_status": "SUCCESS", "relevance_status": "RELEVANT", "prior_accepted_state_ref": null, "current_accepted_state_ref": "sha256:a700cb382c2cde9ed7ab286edd9c72412172f3be0c6cbc7c72c2d0dda1d3138a"},
+      "system_classification": {"item_kind": "semantic", "event_category": "WEATHER_ALERT", "lifecycle_classification": "APPEARANCE", "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T2", "task_class": "USFS_CAMPGROUND_PAGE_MATERIAL_UPDATE",
+      "evidence": {"campground": "Andrews Cove Campground", "authority": "USDA Forest Service", "source_role": "CAMPGROUND_PAGE", "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground", "source_title": "UNKNOWN (NOT_PERSISTED)", "source_evidence": "Drinking water is no longer available at Andrews Cove Campground.", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#semantic"},
+      "source_fact": {"retrieval_status": "SUCCESS", "parser_status": "SUCCESS", "relevance_status": "RELEVANT", "prior_accepted_state_ref": "sha256:6b66bffd19bea0f151e91dba6195a95e3ead6b99a643ad0e379f2173c4a9eb80", "current_accepted_state_ref": "sha256:2b8940ddd6a3db51850f26903898a3ff5bfdf352b763bf7e354787e8fbd75908"},
+      "system_classification": {"item_kind": "semantic", "event_category": "CAMPGROUND_CONDITION", "lifecycle_classification": "MATERIAL_UPDATE", "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T3", "task_class": "ALERT_DETAIL_FINAL_FAILURE_RETAINED_PRIOR",
+      "evidence": {"campground": "Andrews Cove Campground", "authority": "USDA Forest Service", "source_role": "ALERT_DETAIL", "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers", "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)", "source_evidence": "UNAVAILABLE (RETRIEVAL_FINAL_FAILED)", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34"},
+      "source_fact": {"retrieval_status": "FINAL_FAILED", "parser_status": "NOT_RUN", "retry_attempts": 2, "retry_rescued": false, "prior_accepted_state_ref": "sha256:6b66bffd19bea0f151e91dba6195a95e3ead6b99a643ad0e379f2173c4a9eb80", "current_accepted_state_ref": "sha256:6b66bffd19bea0f151e91dba6195a95e3ead6b99a643ad0e379f2173c4a9eb80"},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "lifecycle_classification": "NONE", "alert_detail_guard_required": true, "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T4", "task_class": "ALERT_DETAIL_FINAL_FAILURE_NO_PRIOR",
+      "evidence": {"campground": "Andrews Cove Campground", "authority": "USDA Forest Service", "source_role": "ALERT_DETAIL", "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers", "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)", "source_evidence": "UNAVAILABLE (RETRIEVAL_FINAL_FAILED)", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34"},
+      "source_fact": {"retrieval_status": "FINAL_FAILED", "parser_status": "NOT_RUN", "retry_attempts": 2, "retry_rescued": false, "prior_accepted_state_ref": null, "current_accepted_state_ref": null},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "lifecycle_classification": "NONE", "alert_detail_guard_required": true, "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T5", "task_class": "ALERT_DETAIL_RETRY_RESCUE",
+      "evidence": {"campground": "Andrews Cove Campground", "authority": "USDA Forest Service", "source_role": "ALERT_DETAIL", "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers", "source_title": "Caution: Waterfall Dangers", "source_evidence": "Persisted request eventually succeeded.", "provenance_run_id": "20260929T114016Z", "provenance_record_ref": "campready-phase4b/runs/20260929T114016Z/capture.json#request-34"},
+      "source_fact": {"retrieval_status": "FAILED_FIRST_ATTEMPT_RESCUED", "parser_status": "SUCCESS", "relevance_status": "UNKNOWN", "retry_attempts": 2, "retry_rescued": true},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "lifecycle_classification": "NONE", "alert_detail_guard_required": false, "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T6", "task_class": "PARSER_DATA_QUALITY_NO_SEMANTIC_CHANGE",
+      "evidence": {"campground": "Spinreel Campground", "authority": "USDA Forest Service", "source_role": "CAMPGROUND_PAGE", "official_source_url": "https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground", "source_title": "UNKNOWN (NOT_PERSISTED)", "source_evidence": "Persisted page was retrieved, but the bounded parser did not produce accepted semantic evidence.", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#spinreel"},
+      "source_fact": {"retrieval_status": "SUCCESS", "parser_status": "FAILED", "relevance_status": "NOT_EVALUATED"},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "lifecycle_classification": "NONE", "alert_detail_guard_required": false, "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T7", "task_class": "EXPLICIT_UNKNOWN_NON_SEMANTIC",
+      "evidence": {"campground": "Van Hook Glade Campground", "authority": "USDA Forest Service", "source_role": "CAMPGROUND_PAGE", "official_source_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground", "source_title": "Van Hook Glade Campground", "source_evidence": "Persisted bounded observation could not be semantically evaluated.", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#van-hook"},
+      "source_fact": {"retrieval_status": "SUCCESS", "parser_status": "SUCCESS", "relevance_status": "UNKNOWN"},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "lifecycle_classification": "NONE", "alert_detail_guard_required": false, "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T8", "task_class": "SOURCE_TITLE_EVIDENCE_UNAVAILABLE",
+      "evidence": {"campground": "Spinreel Campground", "authority": "USDA Forest Service", "source_role": "CAMPGROUND_PAGE", "official_source_url": "https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground", "source_title": "UNKNOWN (NOT_PERSISTED)", "source_evidence": "UNAVAILABLE (NOT_PERSISTED)", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#spinreel"},
+      "source_fact": {"retrieval_status": "SUCCESS", "parser_status": "FAILED", "relevance_status": "NOT_EVALUATED"},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "lifecycle_classification": "NONE", "alert_detail_guard_required": false, "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T9", "task_class": "SHARED_UPSTREAM_FANOUT",
+      "evidence": {"campground": "Big Rock Campground and Bear Heaven Campground", "authority": "National Weather Service", "source_role": "ACTIVE_ALERT", "official_source_url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1", "source_title": "Observed shared NWS alert", "source_evidence": "One persisted upstream event affected two separately identified campground relationships.", "provenance_run_id": "20260922T234016Z", "provenance_record_ref": "campready-phase4b/review-queue/20260922T234016Z.json#0-1"},
+      "source_fact": {"upstream_event_count": 1, "affected_relationship_ids": ["observed:wv-big-rock:nws-shared", "observed:wv-bear-heaven:nws-shared"], "retrieval_status": "SUCCESS", "parser_status": "SUCCESS"},
+      "system_classification": {"item_kind": "semantic", "event_category": "WEATHER_ALERT", "lifecycle_classification": "APPEARANCE", "relationship_semantics": "SHARED_EVENT_FANOUT", "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T10", "task_class": "NEEDS_FOLLOWUP_WORKFLOW",
+      "evidence": {"campground": "Andrews Cove Campground", "authority": "USDA Forest Service", "source_role": "ALERT_DETAIL", "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers", "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)", "source_evidence": "The final failure remains unresolved and a human must investigate persisted evidence.", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34"},
+      "source_fact": {"retrieval_status": "FINAL_FAILED", "parser_status": "NOT_RUN", "followup_open": true},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "alert_detail_guard_required": true, "reviewer_status": "NEW", "notification_eligible": false}
+    },
+    {
+      "case_id": "T11", "task_class": "VALID_REVIEW_ONLY_NOT_ACTIONABLE",
+      "evidence": {"campground": "Big Rock Campground", "authority": "National Weather Service", "source_role": "ACTIVE_ALERT", "official_source_url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1", "source_title": "Observed NWS alert", "source_evidence": "The official event and provenance are valid; this bounded exercise states that no additional review action is needed for this relationship.", "provenance_run_id": "20260922T234016Z", "provenance_record_ref": "campready-phase4b/review-queue/20260922T234016Z.json#1"},
+      "source_fact": {"retrieval_status": "SUCCESS", "parser_status": "SUCCESS", "relevance_status": "RELEVANT"},
+      "system_classification": {"item_kind": "semantic", "lifecycle_classification": "APPEARANCE", "reviewer_status": "NEW", "review_only": true, "notification_eligible": false}
+    },
+    {
+      "case_id": "T12", "task_class": "ACKNOWLEDGEMENT_PROVENANCE_RECONSTRUCTION",
+      "evidence": {"campground": "Andrews Cove Campground", "authority": "USDA Forest Service", "source_role": "ALERT_DETAIL", "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers", "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)", "source_evidence": "An immutable DATA_QUALITY_HOLD annotation exists and is ready for manual acknowledgement; original source and annotation records remain separate.", "provenance_run_id": "20260929T194019Z", "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34"},
+      "source_fact": {"retrieval_status": "FINAL_FAILED", "parser_status": "NOT_RUN", "annotation_history": ["NEW", "DATA_QUALITY_HOLD"], "original_submission_immutable": true},
+      "system_classification": {"item_kind": "quality", "data_quality_state": "DATA_QUALITY", "unknown_state": true, "alert_detail_guard_required": true, "reviewer_status": "DATA_QUALITY_HOLD", "acknowledgement_is_safety_approval": false, "notification_eligible": false}
+    }
+  ]
+}

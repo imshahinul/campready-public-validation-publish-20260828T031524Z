@@ -1,0 +1,624 @@
+CAMPREADY PHASE 5-4 QUALIFICATION — BLINDED REVIEWER PACKET
+
+This tests the CampReady review contract, not real-world trip safety.
+Complete independently as exactly one blinded reviewer (R-A or R-B). Do not use an LLM as a substitute.
+Do not view answer-key or scoring materials, the other reviewer's response, or adjudication before submission.
+Record UTC started_at and submitted_at separately. Set independence_attestation=true only if these controls held.
+SOURCE FACT is persisted evidence. SYSTEM CLASSIFICATION is system output. Your response is REVIEWER ANNOTATION.
+UNKNOWN or DATA_QUALITY is not semantic change. ACKNOWLEDGED is not safety or notification approval.
+Allowed actions: REVIEWED_VALID, REVIEWED_NOT_ACTIONABLE, DATA_QUALITY_HOLD, NEEDS_FOLLOWUP, ACKNOWLEDGED
+
+===== T1 — NWS_SEMANTIC_APPEARANCE =====
+CASE EVIDENCE
+{
+  "authority": "National Weather Service",
+  "campground": "Big Rock Campground",
+  "official_source_url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1",
+  "provenance_record_ref": "campready-phase4b/review-queue/20260922T234016Z.json#1",
+  "provenance_run_id": "20260922T234016Z",
+  "source_evidence": "Persisted NWS alert affected the Big Rock relationship.",
+  "source_role": "ACTIVE_ALERT",
+  "source_title": "Observed NWS alert"
+}
+SOURCE FACT
+{
+  "current_accepted_state_ref": "sha256:a700cb382c2cde9ed7ab286edd9c72412172f3be0c6cbc7c72c2d0dda1d3138a",
+  "parser_status": "SUCCESS",
+  "prior_accepted_state_ref": null,
+  "relevance_status": "RELEVANT",
+  "retrieval_status": "SUCCESS"
+}
+SYSTEM CLASSIFICATION
+{
+  "event_category": "WEATHER_ALERT",
+  "item_kind": "semantic",
+  "lifecycle_classification": "APPEARANCE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW"
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T1",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T2 — USFS_CAMPGROUND_PAGE_MATERIAL_UPDATE =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Andrews Cove Campground",
+  "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/andrews-cove-campground",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#semantic",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "Drinking water is no longer available at Andrews Cove Campground.",
+  "source_role": "CAMPGROUND_PAGE",
+  "source_title": "UNKNOWN (NOT_PERSISTED)"
+}
+SOURCE FACT
+{
+  "current_accepted_state_ref": "sha256:2b8940ddd6a3db51850f26903898a3ff5bfdf352b763bf7e354787e8fbd75908",
+  "parser_status": "SUCCESS",
+  "prior_accepted_state_ref": "sha256:6b66bffd19bea0f151e91dba6195a95e3ead6b99a643ad0e379f2173c4a9eb80",
+  "relevance_status": "RELEVANT",
+  "retrieval_status": "SUCCESS"
+}
+SYSTEM CLASSIFICATION
+{
+  "event_category": "CAMPGROUND_CONDITION",
+  "item_kind": "semantic",
+  "lifecycle_classification": "MATERIAL_UPDATE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW"
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T2",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T3 — ALERT_DETAIL_FINAL_FAILURE_RETAINED_PRIOR =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Andrews Cove Campground",
+  "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "UNAVAILABLE (RETRIEVAL_FINAL_FAILED)",
+  "source_role": "ALERT_DETAIL",
+  "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)"
+}
+SOURCE FACT
+{
+  "current_accepted_state_ref": "sha256:6b66bffd19bea0f151e91dba6195a95e3ead6b99a643ad0e379f2173c4a9eb80",
+  "parser_status": "NOT_RUN",
+  "prior_accepted_state_ref": "sha256:6b66bffd19bea0f151e91dba6195a95e3ead6b99a643ad0e379f2173c4a9eb80",
+  "retrieval_status": "FINAL_FAILED",
+  "retry_attempts": 2,
+  "retry_rescued": false
+}
+SYSTEM CLASSIFICATION
+{
+  "alert_detail_guard_required": true,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "lifecycle_classification": "NONE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T3",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T4 — ALERT_DETAIL_FINAL_FAILURE_NO_PRIOR =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Andrews Cove Campground",
+  "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "UNAVAILABLE (RETRIEVAL_FINAL_FAILED)",
+  "source_role": "ALERT_DETAIL",
+  "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)"
+}
+SOURCE FACT
+{
+  "current_accepted_state_ref": null,
+  "parser_status": "NOT_RUN",
+  "prior_accepted_state_ref": null,
+  "retrieval_status": "FINAL_FAILED",
+  "retry_attempts": 2,
+  "retry_rescued": false
+}
+SYSTEM CLASSIFICATION
+{
+  "alert_detail_guard_required": true,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "lifecycle_classification": "NONE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T4",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T5 — ALERT_DETAIL_RETRY_RESCUE =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Andrews Cove Campground",
+  "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T114016Z/capture.json#request-34",
+  "provenance_run_id": "20260929T114016Z",
+  "source_evidence": "Persisted request eventually succeeded.",
+  "source_role": "ALERT_DETAIL",
+  "source_title": "Caution: Waterfall Dangers"
+}
+SOURCE FACT
+{
+  "parser_status": "SUCCESS",
+  "relevance_status": "UNKNOWN",
+  "retrieval_status": "FAILED_FIRST_ATTEMPT_RESCUED",
+  "retry_attempts": 2,
+  "retry_rescued": true
+}
+SYSTEM CLASSIFICATION
+{
+  "alert_detail_guard_required": false,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "lifecycle_classification": "NONE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T5",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T6 — PARSER_DATA_QUALITY_NO_SEMANTIC_CHANGE =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Spinreel Campground",
+  "official_source_url": "https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#spinreel",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "Persisted page was retrieved, but the bounded parser did not produce accepted semantic evidence.",
+  "source_role": "CAMPGROUND_PAGE",
+  "source_title": "UNKNOWN (NOT_PERSISTED)"
+}
+SOURCE FACT
+{
+  "parser_status": "FAILED",
+  "relevance_status": "NOT_EVALUATED",
+  "retrieval_status": "SUCCESS"
+}
+SYSTEM CLASSIFICATION
+{
+  "alert_detail_guard_required": false,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "lifecycle_classification": "NONE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T6",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T7 — EXPLICIT_UNKNOWN_NON_SEMANTIC =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Van Hook Glade Campground",
+  "official_source_url": "https://www.fs.usda.gov/r08/northcarolina/recreation/van-hook-glade-campground",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#van-hook",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "Persisted bounded observation could not be semantically evaluated.",
+  "source_role": "CAMPGROUND_PAGE",
+  "source_title": "Van Hook Glade Campground"
+}
+SOURCE FACT
+{
+  "parser_status": "SUCCESS",
+  "relevance_status": "UNKNOWN",
+  "retrieval_status": "SUCCESS"
+}
+SYSTEM CLASSIFICATION
+{
+  "alert_detail_guard_required": false,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "lifecycle_classification": "NONE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T7",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T8 — SOURCE_TITLE_EVIDENCE_UNAVAILABLE =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Spinreel Campground",
+  "official_source_url": "https://www.fs.usda.gov/r06/siuslaw/recreation/spinreel-campground",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#spinreel",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "UNAVAILABLE (NOT_PERSISTED)",
+  "source_role": "CAMPGROUND_PAGE",
+  "source_title": "UNKNOWN (NOT_PERSISTED)"
+}
+SOURCE FACT
+{
+  "parser_status": "FAILED",
+  "relevance_status": "NOT_EVALUATED",
+  "retrieval_status": "SUCCESS"
+}
+SYSTEM CLASSIFICATION
+{
+  "alert_detail_guard_required": false,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "lifecycle_classification": "NONE",
+  "notification_eligible": false,
+  "reviewer_status": "NEW",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T8",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T9 — SHARED_UPSTREAM_FANOUT =====
+CASE EVIDENCE
+{
+  "authority": "National Weather Service",
+  "campground": "Big Rock Campground and Bear Heaven Campground",
+  "official_source_url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1",
+  "provenance_record_ref": "campready-phase4b/review-queue/20260922T234016Z.json#0-1",
+  "provenance_run_id": "20260922T234016Z",
+  "source_evidence": "One persisted upstream event affected two separately identified campground relationships.",
+  "source_role": "ACTIVE_ALERT",
+  "source_title": "Observed shared NWS alert"
+}
+SOURCE FACT
+{
+  "affected_relationship_ids": [
+    "observed:wv-big-rock:nws-shared",
+    "observed:wv-bear-heaven:nws-shared"
+  ],
+  "parser_status": "SUCCESS",
+  "retrieval_status": "SUCCESS",
+  "upstream_event_count": 1
+}
+SYSTEM CLASSIFICATION
+{
+  "event_category": "WEATHER_ALERT",
+  "item_kind": "semantic",
+  "lifecycle_classification": "APPEARANCE",
+  "notification_eligible": false,
+  "relationship_semantics": "SHARED_EVENT_FANOUT",
+  "reviewer_status": "NEW"
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T9",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T10 — NEEDS_FOLLOWUP_WORKFLOW =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Andrews Cove Campground",
+  "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "The final failure remains unresolved and a human must investigate persisted evidence.",
+  "source_role": "ALERT_DETAIL",
+  "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)"
+}
+SOURCE FACT
+{
+  "followup_open": true,
+  "parser_status": "NOT_RUN",
+  "retrieval_status": "FINAL_FAILED"
+}
+SYSTEM CLASSIFICATION
+{
+  "alert_detail_guard_required": true,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "notification_eligible": false,
+  "reviewer_status": "NEW",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T10",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T11 — VALID_REVIEW_ONLY_NOT_ACTIONABLE =====
+CASE EVIDENCE
+{
+  "authority": "National Weather Service",
+  "campground": "Big Rock Campground",
+  "official_source_url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f14eeb1c21c84b1f10ac3d97799fe40f882f36.001.1",
+  "provenance_record_ref": "campready-phase4b/review-queue/20260922T234016Z.json#1",
+  "provenance_run_id": "20260922T234016Z",
+  "source_evidence": "The official event and provenance are valid; this bounded exercise states that no additional review action is needed for this relationship.",
+  "source_role": "ACTIVE_ALERT",
+  "source_title": "Observed NWS alert"
+}
+SOURCE FACT
+{
+  "parser_status": "SUCCESS",
+  "relevance_status": "RELEVANT",
+  "retrieval_status": "SUCCESS"
+}
+SYSTEM CLASSIFICATION
+{
+  "item_kind": "semantic",
+  "lifecycle_classification": "APPEARANCE",
+  "notification_eligible": false,
+  "review_only": true,
+  "reviewer_status": "NEW"
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T11",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+===== T12 — ACKNOWLEDGEMENT_PROVENANCE_RECONSTRUCTION =====
+CASE EVIDENCE
+{
+  "authority": "USDA Forest Service",
+  "campground": "Andrews Cove Campground",
+  "official_source_url": "https://www.fs.usda.gov/r08/chattahoochee-oconee/alerts/caution-waterfall-dangers",
+  "provenance_record_ref": "campready-phase4b/runs/20260929T194019Z/capture.json#request-34",
+  "provenance_run_id": "20260929T194019Z",
+  "source_evidence": "An immutable DATA_QUALITY_HOLD annotation exists and is ready for manual acknowledgement; original source and annotation records remain separate.",
+  "source_role": "ALERT_DETAIL",
+  "source_title": "UNKNOWN (RETRIEVAL_FINAL_FAILED)"
+}
+SOURCE FACT
+{
+  "annotation_history": [
+    "NEW",
+    "DATA_QUALITY_HOLD"
+  ],
+  "original_submission_immutable": true,
+  "parser_status": "NOT_RUN",
+  "retrieval_status": "FINAL_FAILED"
+}
+SYSTEM CLASSIFICATION
+{
+  "acknowledgement_is_safety_approval": false,
+  "alert_detail_guard_required": true,
+  "data_quality_state": "DATA_QUALITY",
+  "item_kind": "quality",
+  "notification_eligible": false,
+  "reviewer_status": "DATA_QUALITY_HOLD",
+  "unknown_state": true
+}
+BLANK REVIEWER RESPONSE
+{
+  "acknowledgement_means_safe_or_notification_approved": null,
+  "acknowledgement_required": null,
+  "case_id": "T12",
+  "data_quality_or_semantic_change": null,
+  "guard_required": null,
+  "official_provenance_identified": null,
+  "reviewer_annotation_boundary_understood": null,
+  "reviewer_note": null,
+  "safe_to_infer_appearance": null,
+  "safe_to_infer_disappearance": null,
+  "safe_to_infer_resolution": null,
+  "safe_to_infer_road_passability": null,
+  "safe_to_infer_trip_safety": null,
+  "safe_to_treat_source_silence_as_safe": null,
+  "selected_reviewer_action": null,
+  "shared_event_proves_duplicate_relationships": null,
+  "source_fact_identified": null,
+  "system_classification_identified": null
+}
+
+Submit a completed JSON response conforming to response.schema.json.
+Reviewer IDs are local blinded identifiers; include no personal or consumer data.

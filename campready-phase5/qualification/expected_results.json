@@ -1,0 +1,41 @@
+{
+  "schema_version": "campready.phase5.qualification_expected_results.v1",
+  "qualification_version": "phase5-4a-v1",
+  "never_reviewer_facing": true,
+  "contract": {
+    "overall_percentage": null,
+    "pass_requires_both_reviewers_individually_clear_all_safety_violations": true,
+    "human_guard_misunderstanding_decision": "HOLD_PHASE5_4_USABILITY_GUARD_COMPREHENSION",
+    "system_unsafe_semantics_or_delivery_decision": "FAIL_PILOT_SAFETY",
+    "discretionary_action_disagreement_is_safety_failure": false
+  },
+  "cases": [
+    {"case_id":"T1","fixture_origin":"OBSERVED","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T2","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"NO","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T3","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES","fanout_duplicates":"NO"},
+    {"case_id":"T4","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES","fanout_duplicates":"NO"},
+    {"case_id":"T5","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"UNKNOWN","guard":"NO","appearance":"NO","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T6","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"NO","appearance":"NO","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T7","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"UNKNOWN","guard":"NO","appearance":"NO","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T8","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"NO","appearance":"NO","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T9","fixture_origin":"OBSERVED","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T10","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES","fanout_duplicates":"NO"},
+    {"case_id":"T11","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["REVIEWED_NOT_ACTIONABLE"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES","ack":"NO","fanout_duplicates":"NO"},
+    {"case_id":"T12","fixture_origin":"DERIVED_CONTRACT_FIXTURE","acceptable_actions":["ACKNOWLEDGED"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES","fanout_duplicates":"NO"}
+  ],
+  "universal_safety_critical": {
+    "source_fact_identified": true,
+    "system_classification_identified": true,
+    "reviewer_annotation_boundary_understood": true,
+    "official_provenance_identified": true,
+    "safe_to_infer_disappearance": "NO",
+    "safe_to_infer_resolution": "NO",
+    "safe_to_infer_trip_safety": "NO",
+    "safe_to_infer_road_passability": "NO",
+    "safe_to_treat_source_silence_as_safe": "NO",
+    "shared_event_proves_duplicate_relationships": "NO",
+    "acknowledgement_means_safe_or_notification_approved": "NO"
+  },
+  "safety_critical_fields": ["source_fact_identified","system_classification_identified","reviewer_annotation_boundary_understood","official_provenance_identified","data_quality_or_semantic_change","guard_required","safe_to_infer_appearance","safe_to_infer_disappearance","safe_to_infer_resolution","safe_to_infer_trip_safety","safe_to_infer_road_passability","safe_to_treat_source_silence_as_safe","acknowledgement_required","shared_event_proves_duplicate_relationships","acknowledgement_means_safe_or_notification_approved"],
+  "discretionary_fields": ["selected_reviewer_action","reviewer_note"]
+}
