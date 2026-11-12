@@ -1,0 +1,19 @@
+{
+  "schema_version": "campready.phase5.config.v1",
+  "review_item_schema": "campready.phase5.review_item.v1",
+  "review_only": true,
+  "notification_eligible": false,
+  "canonical_mapping": "campready-phase4a3/canonical_35site_mapping.json",
+  "cohort": [
+    {"site_id":"andrews-cove","campground_name":"Andrews Cove Campground","authority_family":"USFS","native_identifier":"USFS_RECAREA_ID:10487"},
+    {"site_id":"low-gap","campground_name":"Low Gap Campground","authority_family":"USFS","native_identifier":"USFS_RECAREA_ID:10491"},
+    {"site_id":"nc-van-hook-glade","campground_name":"Van Hook Glade Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:70521"},
+    {"site_id":"wv-big-rock","campground_name":"Big Rock Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:90200"},
+    {"site_id":"or-spinreel","campground_name":"Spinreel Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:63029"},
+    {"site_id":"or-cold-springs","campground_name":"Cold Springs Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:12617"},
+    {"site_id":"ncsp-carolina-beach","campground_name":"Carolina Beach State Park Campground","authority_family":"NC_STATE_PARKS","native_identifier":"carolina-beach-state-park"},
+    {"site_id":"ncsp-stone-mountain","campground_name":"Stone Mountain Family Campground","authority_family":"NC_STATE_PARKS","native_identifier":"stone-mountain-state-park"},
+    {"site_id":"nps-elkmont","campground_name":"Elkmont Campground","authority_family":"NPS","native_identifier":"63D37502-C1A6-44B7-A2C3-C4F784C03318"},
+    {"site_id":"nps-big-meadows","campground_name":"Big Meadows Campground","authority_family":"NPS","native_identifier":"75E4DC88-1332-456C-9F06-05E9F4E1CAB6"}
+  ]
+}
