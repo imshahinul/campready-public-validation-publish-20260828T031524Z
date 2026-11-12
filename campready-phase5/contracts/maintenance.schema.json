@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "campready.phase5.maintenance.v1",
+  "title": "CampReady Phase 5 maintenance record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","maintenance_id","timestamp","work_class","category","reason","human_minutes","intervention_required","source_authority","outcome","actor_id","evidence_ref"],
+  "properties": {
+    "schema_version":{"const":"campready.phase5.maintenance.v1"},
+    "maintenance_id":{"type":"string","pattern":"^cr5mnt1-[0-9a-f]{64}$"},
+    "timestamp":{"type":"string","format":"date-time","pattern":"(?:Z|[+]00:00)$"},
+    "work_class":{"enum":["OPERATIONAL_MAINTENANCE","DEVELOPMENT_WORK"]},
+    "category":{"enum":["SCHEDULER_INFRASTRUCTURE","AUTH_CREDENTIAL","SOURCE_TRANSPORT","PARSER","SEMANTIC_RULE","CONFIGURATION","REVIEW_OPERATIONS","OTHER"]},
+    "reason":{"type":"string","minLength":1,"maxLength":2000},
+    "human_minutes":{"type":"integer","minimum":0},
+    "intervention_required":{"type":"boolean"},
+    "source_authority":{"type":"string","minLength":1,"maxLength":128},
+    "outcome":{"enum":["RESOLVED","MITIGATED","DEFERRED","NO_ACTION","OTHER"]},
+    "actor_id":{"type":"string","minLength":1,"maxLength":64,"pattern":"^[A-Za-z0-9][A-Za-z0-9._-]*$"},
+    "evidence_ref":{"type":["string","null"],"maxLength":1000}
+  }
+}

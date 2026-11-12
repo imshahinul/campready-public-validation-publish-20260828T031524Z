@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "campready.phase5.cost.v1",
+  "title": "CampReady Phase 5 cost record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","cost_id","period_start","period_end","cost_category","provider","description","quantity","unit","unit_cost","amount","currency","evidence_type","evidence_ref","measurement_status","infrastructure_cost","projection_basis","monthly_projected_amount"],
+  "properties": {
+    "schema_version":{"const":"campready.phase5.cost.v1"},
+    "cost_id":{"type":"string","pattern":"^cr5cost1-[0-9a-f]{64}$"},
+    "period_start":{"type":"string","format":"date-time","pattern":"(?:Z|[+]00:00)$"},
+    "period_end":{"type":"string","format":"date-time","pattern":"(?:Z|[+]00:00)$"},
+    "cost_category":{"enum":["SCHEDULER_SERVICE","GITHUB_ACTIONS_CI_RUNTIME","HOSTING_STORAGE","EXTERNAL_SERVICE","REVIEWER_OPERATIONS","OTHER"]},
+    "provider":{"type":"string","minLength":1,"maxLength":128},
+    "description":{"type":"string","minLength":1,"maxLength":2000},
+    "quantity":{"type":["number","null"],"minimum":0},
+    "unit":{"type":["string","null"],"maxLength":64},
+    "unit_cost":{"type":["number","null"],"minimum":0},
+    "amount":{"type":["number","null"],"minimum":0},
+    "currency":{"type":["string","null"],"pattern":"^[A-Z]{3}$"},
+    "evidence_type":{"enum":["INVOICE","BILLING_EXPORT","PUBLISHED_RATE","INTERNAL_RATE","NOT_AVAILABLE"]},
+    "evidence_ref":{"type":["string","null"],"maxLength":1000},
+    "measurement_status":{"enum":["ACTUAL","ESTIMATED_FROM_DOCUMENTED_RATE","NOT_MEASURABLE"]},
+    "infrastructure_cost":{"type":"boolean"},
+    "projection_basis":{"type":["string","null"],"maxLength":1000},
+    "monthly_projected_amount":{"type":["number","null"],"minimum":0}
+  },
+  "allOf": [
+    {"if":{"properties":{"cost_category":{"const":"REVIEWER_OPERATIONS"}}},"then":{"properties":{"infrastructure_cost":{"const":false}}}},
+    {"if":{"properties":{"measurement_status":{"const":"NOT_MEASURABLE"}}},"then":{"properties":{"quantity":{"type":"null"},"unit_cost":{"type":"null"},"amount":{"type":"null"},"monthly_projected_amount":{"type":"null"}}}},
+    {"if":{"properties":{"monthly_projected_amount":{"type":"number"}}},"then":{"properties":{"currency":{"type":"string","pattern":"^[A-Z]{3}$"},"projection_basis":{"type":"string","minLength":1}}}}
+  ]
+}
