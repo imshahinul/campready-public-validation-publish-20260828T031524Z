@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "campready.phase5.reviewer_annotation.v1",
+  "title": "CampReady Phase 5 reviewer annotation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","annotation_id","review_item_id","annotation_version","supersedes_ref","reviewer_id","timestamp","from_status","to_status","disposition","reason_code","note","acknowledged","acknowledged_at","acknowledged_status","acknowledged_disposition","idempotency_key"],
+  "properties": {
+    "schema_version":{"const":"campready.phase5.reviewer_annotation.v1"},
+    "annotation_id":{"type":"string","pattern":"^cr5ann1-[0-9a-f]{64}$"},
+    "review_item_id":{"type":"string","pattern":"^cr5ri1-[0-9a-f]{64}$"},
+    "annotation_version":{"type":"integer","minimum":1},
+    "supersedes_ref":{"type":["string","null"],"pattern":"^cr5ann1-[0-9a-f]{64}$"},
+    "reviewer_id":{"type":"string","minLength":1,"maxLength":64,"pattern":"^[A-Za-z0-9][A-Za-z0-9._-]*$"},
+    "timestamp":{"$ref":"#/$defs/utcTimestamp"},
+    "from_status":{"$ref":"#/$defs/status"},
+    "to_status":{"$ref":"#/$defs/status"},
+    "disposition":{"type":["string","null"],"maxLength":128,"pattern":"^[A-Z0-9][A-Z0-9_-]*$"},
+    "reason_code":{"type":["string","null"],"maxLength":128,"pattern":"^[A-Z0-9][A-Z0-9_-]*$"},
+    "note":{"type":["string","null"],"maxLength":2000},
+    "acknowledged":{"type":"boolean"},
+    "acknowledged_at":{"anyOf":[{"$ref":"#/$defs/utcTimestamp"},{"type":"null"}]},
+    "acknowledged_status":{"anyOf":[{"$ref":"#/$defs/status"},{"type":"null"}]},
+    "acknowledged_disposition":{"type":["string","null"],"maxLength":128,"pattern":"^[A-Z0-9][A-Z0-9_-]*$"},
+    "idempotency_key":{"type":"string","pattern":"^cr5idem1-[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "utcTimestamp":{"type":"string","format":"date-time","pattern":"(?:Z|[+]00:00)$"},
+    "status":{"type":"string","enum":["NEW","REVIEWED_VALID","REVIEWED_NOT_ACTIONABLE","DATA_QUALITY_HOLD","NEEDS_FOLLOWUP","ACKNOWLEDGED"]}
+  },
+  "allOf":[
+    {"if":{"properties":{"annotation_version":{"const":1}}},"then":{"properties":{"supersedes_ref":{"type":"null"}}},"else":{"properties":{"supersedes_ref":{"type":"string","pattern":"^cr5ann1-[0-9a-f]{64}$"}}}},
+    {"if":{"properties":{"acknowledged":{"const":true}}},"then":{"required":["acknowledged_at","acknowledged_status"],"properties":{"acknowledged_at":{"$ref":"#/$defs/utcTimestamp"},"acknowledged_status":{"$ref":"#/$defs/status"}}}},
+    {"if":{"properties":{"acknowledged":{"const":false}}},"then":{"properties":{"acknowledged_at":{"type":"null"},"acknowledged_status":{"type":"null"},"acknowledged_disposition":{"type":"null"}}}}
+  ]
+}
