@@ -1,0 +1,21 @@
+{
+  "schema_version":"campready.phase5.qualification_expected_results.v2",
+  "qualification_version":"phase5-4-v2",
+  "never_reviewer_facing":true,
+  "contract":{"overall_percentage":null,"pass_requires_both_reviewers_individually_clear_all_mandatory_requirements":true,"historical_v1_decision":"HOLD_PHASE5_4_USABILITY_GUARD_COMPREHENSION","discretionary_action_disagreement_is_safety_failure":false},
+  "cases":[
+    {"case_id":"Q01","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES","ack":"NO"},
+    {"case_id":"Q02","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"NO","ack":"NO"},
+    {"case_id":"Q03","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES"},
+    {"case_id":"Q04","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES"},
+    {"case_id":"Q05","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"UNKNOWN","guard":"NO","appearance":"NO","ack":"NO"},
+    {"case_id":"Q06","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"NO","appearance":"NO","ack":"NO"},
+    {"case_id":"Q07","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"UNKNOWN","guard":"NO","appearance":"NO","ack":"NO"},
+    {"case_id":"Q08","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"NO","appearance":"NO","ack":"NO"},
+    {"case_id":"Q09","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES","ack":"NO"},
+    {"case_id":"Q10","acceptable_actions":["NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES"},
+    {"case_id":"Q11","acceptable_actions":["REVIEWED_NOT_ACTIONABLE"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES","ack":"NO"},
+    {"case_id":"Q12","acceptable_actions":["ACKNOWLEDGED"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO","ack":"YES"}
+  ],
+  "universal":{"source_fact_identified":true,"system_classification_identified":true,"reviewer_annotation_boundary_understood":true,"official_provenance_identified":true,"safe_to_infer_disappearance":"NO","safe_to_infer_resolution":"NO","safe_to_infer_trip_safety":"NO","safe_to_infer_road_passability":"NO","safe_to_treat_source_silence_as_safe":"NO","shared_event_proves_duplicate_relationships":"NO","acknowledgement_means_safe_or_notification_approved":"NO"}
+}

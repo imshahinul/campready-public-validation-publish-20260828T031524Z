@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CampReady Phase 5-4 V2 Qualification</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#18212b;background:#eef2f5}body{max-width:1080px;margin:auto;padding:24px}header,.glossary,.case,.controls{background:white;border:1px solid #b8c2cc;border-radius:10px;padding:20px;margin:16px 0}.notice{border-left:6px solid #9b2c2c;padding-left:12px}.glossary{border:3px solid #24557a}.term{margin:14px 0}.case{break-inside:avoid}.blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.block{background:#f7f9fb;border:1px solid #ccd5dd;border-radius:7px;padding:12px}.block h3{margin-top:0}.facts{white-space:pre-wrap;line-height:1.45}.questions{margin-top:16px}.q{border-top:1px solid #d8dee4;padding:10px 0}.q label{display:block;font-weight:650;margin-bottom:5px}select,textarea{width:100%;padding:8px;box-sizing:border-box}fieldset{border:0;padding:0}button{padding:12px 18px;margin-right:8px}.error{color:#9b2c2c;font-weight:bold}@media print{button,.error{display:none}body{background:white;padding:0}.case{page-break-inside:avoid}}
+</style></head><body>
+<header><h1>CampReady Phase 5-4 V2 Qualification</h1><p class="notice"><strong>Review-only:</strong> This is not a trip-safety determination, notification approval, or replacement for the historical V1 result.</p><p>Use this file directly with <strong>file://</strong>. It uses no network, server, storage, analytics, scoring, or answer key.</p></header>
+<section class="glossary" id="glossary"><h2>Required neutral glossary</h2>
+<p class="term"><strong>Boundaries:</strong> SOURCE FACT is persisted evidence. SYSTEM CLASSIFICATION is system output. YOUR REVIEW is a separate human annotation. Never infer trip safety, road passability, notification approval, disappearance, resolution, or safety from source silence.</p>
+<p class="term"><strong>Manual acknowledgement required:</strong> A human reviewer must ultimately record an explicit acknowledgement before the item's review workflow is complete. This does <em>not</em> mean ACKNOWLEDGED must be the immediate next state. DATA_QUALITY_HOLD or NEEDS_FOLLOWUP may come first and later acknowledgement may still be required. ACKNOWLEDGED never means safe or notification-approved.</p>
+<p class="term"><strong>Distinction question:</strong> Choose the basis controlling the observation, not merely a broad displayed system label. Quality and unknown indicators can coexist.</p>
+<p class="term"><strong>DATA_QUALITY:</strong> A retrieval, parser, provenance, or evidence-integrity failure means evidence could not be reliably obtained or interpreted.</p>
+<p class="term"><strong>UNKNOWN:</strong> Available system evidence does not support a determinate semantic conclusion, without claiming semantic change. UNKNOWN does not mean safe. A temporary first-attempt transport failure successfully rescued does not by itself make the final accepted observation DATA_QUALITY.</p>
+<p class="term"><strong>SEMANTIC_CHANGE:</strong> Reliable accepted evidence supports an appearance or material semantic update. <strong>NEITHER:</strong> none of these definitions applies.</p>
+<fieldset><legend>Start review</legend><label><input type="radio" name="reviewer" value="R-C"> R-C</label> <label><input type="radio" name="reviewer" value="R-D"> R-D</label><br><label><input id="independent" type="checkbox"> I will review independently without scoring materials or another response.</label><br><label><input id="glossaryRead" type="checkbox"> I read and understand the complete glossary above before reviewing cases.</label><br><button id="start" type="button">Start review</button><span id="started"></span></fieldset>
+</section>
+<main id="cases">
+<article class="case" data-id="Q01"><h2>Q01 — Ordinary semantic appearance</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Pine Ridge Campground · National Weather Service
+Official active-alert source; persisted official alert newly affects this relationship.
+Retrieval SUCCESS · Parser SUCCESS · Relevance RELEVANT
+Prior state: none · Current state: sha256:1010…</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: semantic · Lifecycle: APPEARANCE
+Reviewer status: NEW · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q02"><h2>Q02 — Material semantic update</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Cedar Loop Campground · USDA Forest Service
+Accepted evidence changed from water available to water unavailable.
+Retrieval SUCCESS · Parser SUCCESS · Relevance RELEVANT
+Distinct prior and current accepted-state references.</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: semantic · Lifecycle: MATERIAL_UPDATE
+Reviewer status: NEW · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q03"><h2>Q03 — Guarded final failure with retained prior state</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Hemlock Hollow Campground · official ALERT_DETAIL
+Evidence unavailable: RETRIEVAL_FINAL_FAILED
+Final failure after 3 attempts · Parser NOT_RUN · Retry rescued: false
+Prior accepted state retained as current. Provenance: derived/v2-run-a.json#q03</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · Data-quality indicator: DATA_QUALITY · Unknown: true
+Lifecycle: NONE · Alert-detail guard: required
+Reviewer status: NEW · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q04"><h2>Q04 — Guarded final failure without prior state</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Maple Flats Campground · official ALERT_DETAIL
+Evidence unavailable: RETRIEVAL_FINAL_FAILED
+Final failure after 3 attempts · Parser NOT_RUN · Retry rescued: false
+No prior or current accepted state. Provenance: derived/v2-run-a.json#q04</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · Data-quality indicator: DATA_QUALITY · Unknown: true
+Lifecycle: NONE · Alert-detail guard: required
+Reviewer status: NEW · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q05"><h2>Q05 — Rescued retry with unknown relevance</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">River Bend Campground · official ALERT_DETAIL
+First attempt failed; retry obtained persisted parseable evidence.
+Parser SUCCESS · Relevance UNKNOWN · Retry rescued: true
+Provenance: derived/v2-run-b.json#q05</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · Data-quality indicator: DATA_QUALITY · Unknown: true
+Lifecycle: NONE · Alert-detail guard: not required
+Reviewer status: NEW · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q06"><h2>Q06 — Parser evidence failure</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Granite Creek Campground · official campground page
+Page retrieved, but parser produced no reliable accepted evidence.
+Retrieval SUCCESS · Parser FAILED · Relevance NOT_EVALUATED
+Provenance: derived/v2-run-b.json#q06</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · Data-quality indicator: DATA_QUALITY · Unknown: true
+Lifecycle: NONE · Guard: not required · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q07"><h2>Q07 — Explicit unknown non-semantic observation</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Laurel Fork Campground · official campground page
+Retrieved and parsed evidence is available; bounded relevance is undetermined.
+Retrieval SUCCESS · Parser SUCCESS · Relevance UNKNOWN
+Provenance: derived/v2-run-b.json#q07</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · Data-quality indicator: DATA_QUALITY · Unknown: true
+Lifecycle: NONE · Guard: not required · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q08"><h2>Q08 — Unavailable evidence integrity</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Juniper Campground · official campground page
+Title UNKNOWN (NOT_PERSISTED) · Evidence UNAVAILABLE (NOT_PERSISTED)
+Retrieval SUCCESS · Parser FAILED · Relevance NOT_EVALUATED
+Provenance: derived/v2-run-b.json#q08</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · Data-quality indicator: DATA_QUALITY · Unknown: true
+Lifecycle: NONE · Guard: not required · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q09"><h2>Q09 — Shared upstream event fanout</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Oak Basin and Fern Meadow Campgrounds · National Weather Service
+One upstream event maps to two distinct relationship IDs.
+Retrieval SUCCESS · Parser SUCCESS · Relevance RELEVANT
+Provenance: derived/v2-run-c.json#q09</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: semantic · Lifecycle: APPEARANCE
+Relationship: SHARED_EVENT_FANOUT · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q10"><h2>Q10 — Guarded open follow-up</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Spruce Knob Campground · official ALERT_DETAIL
+Final retrieval failure remains unresolved; human investigation is open.
+Parser NOT_RUN · Retry rescued: false
+Provenance: derived/v2-run-c.json#q10</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · DATA_QUALITY · Unknown: true
+Alert-detail guard: required · Reviewer status: NEW
+Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q11"><h2>Q11 — Safe review-only not actionable</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Willow Lake Campground · National Weather Service
+Official event and provenance are valid; no further bounded review action is needed.
+Retrieval SUCCESS · Parser SUCCESS · Relevance RELEVANT
+Provenance: derived/v2-run-c.json#q11</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: semantic · Lifecycle: APPEARANCE · Review only: true
+Reviewer status: NEW · Notification eligible: false</div></section></div></article>
+<article class="case" data-id="Q12"><h2>Q12 — Acknowledgement and provenance reconstruction</h2><div class="blocks"><section class="block"><h3>SOURCE FACT</h3><div class="facts">Hemlock Hollow Campground · official ALERT_DETAIL
+Immutable annotation history: NEW → DATA_QUALITY_HOLD.
+Source, system, and reviewer records remain separately reconstructable.
+Provenance: derived/v2-run-c.json#q12</div></section><section class="block"><h3>SYSTEM CLASSIFICATION</h3><div class="facts">Item: quality · DATA_QUALITY · Unknown: true · Guard: required
+Reviewer status: DATA_QUALITY_HOLD
+Acknowledgement is safety approval: false · Notification eligible: false</div></section></div></article>
+</main>
+<section class="controls"><button id="save" type="button">Validate and save JSON response</button><p id="errors" class="error"></p></section>
+<script>
+'use strict';
+const VERSION='phase5-4-v2',DIGEST='sha256:ae3811612380e52687aa6a987968d877f59f52ac978b15f8ad7a5e3b4ac74332';
+const IDS=[...document.querySelectorAll('.case')].map(x=>x.dataset.id),ACTIONS=['REVIEWED_VALID','REVIEWED_NOT_ACTIONABLE','DATA_QUALITY_HOLD','NEEDS_FOLLOWUP','ACKNOWLEDGED'],DIST=['DATA_QUALITY','SEMANTIC_CHANGE','NEITHER','UNKNOWN'],YN=['YES','NO'];
+const BOOLS=['source_fact_identified','system_classification_identified','reviewer_annotation_boundary_understood','official_provenance_identified'];
+const YESNOS=['guard_required','safe_to_infer_appearance','safe_to_infer_disappearance','safe_to_infer_resolution','safe_to_infer_trip_safety','safe_to_infer_road_passability','safe_to_treat_source_silence_as_safe','acknowledgement_required','shared_event_proves_duplicate_relationships','acknowledgement_means_safe_or_notification_approved'];
+const LABELS={source_fact_identified:'Can you identify the SOURCE FACT?',system_classification_identified:'Can you identify the SYSTEM CLASSIFICATION?',reviewer_annotation_boundary_understood:'Is YOUR REVIEW separate from source and system records?',official_provenance_identified:'Is official provenance identified?',selected_reviewer_action:'What immediate reviewer workflow action should be recorded?',data_quality_or_semantic_change:'Under the glossary, which basis controls this observation?',guard_required:'Is the final-failure guard required?',safe_to_infer_appearance:'Is it safe to infer appearance?',safe_to_infer_disappearance:'Is it safe to infer disappearance?',safe_to_infer_resolution:'Is it safe to infer resolution?',safe_to_infer_trip_safety:'Is it safe to infer trip safety?',safe_to_infer_road_passability:'Is it safe to infer road passability?',safe_to_treat_source_silence_as_safe:'Is it safe to treat source silence as safe?',acknowledgement_required:'Must a human ultimately record explicit acknowledgement before this review workflow is complete (not necessarily as the immediate next state)?',shared_event_proves_duplicate_relationships:'Does a shared upstream event prove duplicate campground relationships?',acknowledgement_means_safe_or_notification_approved:'Does ACKNOWLEDGED mean safe or notification-approved?',reviewer_note:'Reviewer note (required for not-actionable, hold, or follow-up actions)'};
+let startedAt=null;
+function select(name,values){const s=document.createElement('select');s.name=name;s.innerHTML='<option value="">Select…</option>'+values.map(v=>`<option>${v}</option>`).join('');return s}
+document.querySelectorAll('.case').forEach(card=>{const q=document.createElement('section');q.className='questions';q.innerHTML='<h3>YOUR REVIEW</h3>';const fields=[...BOOLS,'selected_reviewer_action','data_quality_or_semantic_change',...YESNOS,'reviewer_note'];fields.forEach(f=>{const d=document.createElement('div');d.className='q';const l=document.createElement('label');l.textContent=LABELS[f];d.append(l);if(f==='reviewer_note'){const t=document.createElement('textarea');t.name=f;t.maxLength=2000;d.append(t)}else d.append(select(f,f==='selected_reviewer_action'?ACTIONS:f==='data_quality_or_semantic_change'?DIST:YN));q.append(d)});card.append(q)});
+document.getElementById('start').onclick=()=>{const reviewer=document.querySelector('input[name=reviewer]:checked');if(!reviewer||!independent.checked||!glossaryRead.checked){errors.textContent='Select R-C or R-D and confirm both attestations.';return}startedAt=new Date().toISOString();document.getElementById('started').textContent=' Started at '+startedAt;errors.textContent=''};
+function response(){return {qualification_version:VERSION,instrument_digest:DIGEST,reviewer_id:document.querySelector('input[name=reviewer]:checked')?.value||null,started_at:startedAt,submitted_at:new Date().toISOString(),independence_attestation:independent.checked,glossary_read_attestation:glossaryRead.checked,cases:[...document.querySelectorAll('.case')].map(card=>{const get=n=>card.querySelector(`[name=${n}]`).value;const row={case_id:card.dataset.id};BOOLS.forEach(f=>row[f]=get(f)==='YES'?true:get(f)==='NO'?false:null);row.selected_reviewer_action=get('selected_reviewer_action')||null;row.data_quality_or_semantic_change=get('data_quality_or_semantic_change')||null;YESNOS.forEach(f=>row[f]=get(f)||null);row.reviewer_note=get('reviewer_note').trim()||null;return row})}}
+document.getElementById('save').onclick=()=>{if(!startedAt){errors.textContent='Start the review first.';return}const r=response(),missing=r.cases.some(row=>Object.entries(row).some(([k,v])=>k!=='reviewer_note'&&v===null));if(missing){errors.textContent='Complete every required case field.';return}for(const row of r.cases){if(['REVIEWED_NOT_ACTIONABLE','DATA_QUALITY_HOLD','NEEDS_FOLLOWUP'].includes(row.selected_reviewer_action)&&!row.reviewer_note){errors.textContent=`${row.case_id} requires a reviewer note for that action.`;return}}errors.textContent='';const blob=new Blob([JSON.stringify(r,null,2)+'\n'],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`campready_phase5_4_v2_${r.reviewer_id}_response.json`;a.click();URL.revokeObjectURL(a.href)};
+</script></body></html>

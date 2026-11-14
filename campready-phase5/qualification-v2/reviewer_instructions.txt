@@ -1,0 +1,30 @@
+CAMPREADY PHASE 5-4 V2 — PROSPECTIVE BLINDED QUALIFICATION
+
+Read this glossary before reviewing any case. Confirm that it was read in the form.
+
+BOUNDARIES
+SOURCE FACT is persisted source/evidence information. SYSTEM CLASSIFICATION is system output. YOUR REVIEW is a separate human annotation. No case authorizes a trip-safety, road-passability, notification, delivery, disappearance, resolution, or source-silence-is-safe inference.
+
+MANUAL ACKNOWLEDGEMENT REQUIRED
+This means a human reviewer must ultimately record an explicit acknowledgement for the item before its review workflow is considered complete. It does not mean ACKNOWLEDGED must be the immediate next workflow state. An item may first be placed in DATA_QUALITY_HOLD or NEEDS_FOLLOWUP and still require later manual acknowledgement. ACKNOWLEDGED never means safe or notification-approved.
+
+DISTINCTION QUESTION
+Choose the basis that controls the observation, rather than copying a broad system label. A system record can expose both quality and unknown indicators.
+
+DATA_QUALITY
+Use when a retrieval, parser, provenance, or evidence-integrity failure means evidence could not be reliably obtained or interpreted.
+
+UNKNOWN
+Use when available system evidence does not support a determinate semantic conclusion, without claiming a semantic change. UNKNOWN does not mean safe. A temporary first-attempt transport failure that is successfully rescued does not by itself make the final accepted observation DATA_QUALITY.
+
+SEMANTIC_CHANGE
+Use when reliable accepted evidence supports an appearance or material semantic update.
+
+NEITHER
+Use only when none of the other three definitions describes the observation.
+
+WORKFLOW
+Select the immediate reviewer action separately from whether eventual manual acknowledgement is required. Guarded initial actions are DATA_QUALITY_HOLD or NEEDS_FOLLOWUP, not a direct valid/not-actionable disposition. Safe discretionary action differences are permitted only where the contract lists more than one acceptable action; every mandatory comprehension field must still pass.
+
+INDEPENDENCE
+Only R-C and R-D are eligible. Each reviewer works independently, does not inspect scoring materials or another response, and submits one immutable JSON export. R-A and R-B are not eligible V2 decisive reviewers.
