@@ -1,0 +1,421 @@
+{
+  "schema_version": "campready.phase5.qualification_expected_results.v5",
+  "qualification_version": "phase5-4-v5",
+  "never_reviewer_facing": true,
+  "contract": {
+    "percentage_threshold": null,
+    "zero_tolerance_categories": [
+      "GUARD",
+      "DATA_QUALITY_UNKNOWN",
+      "PROVENANCE",
+      "REVIEW_BOUNDARY",
+      "DISPOSITION_FIDELITY",
+      "FANOUT",
+      "UNSAFE_INFERENCE",
+      "ACKNOWLEDGEMENT_WORKFLOW"
+    ],
+    "ordinary_acknowledgement_required_field": false,
+    "free_text_semantics_scored": false,
+    "note_presence_actions": [
+      "REVIEWED_NOT_ACTIONABLE",
+      "DATA_QUALITY_HOLD",
+      "NEEDS_FOLLOWUP"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "Y501",
+      "acceptable_actions": [
+        "REVIEWED_VALID",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "SEMANTIC_CHANGE",
+      "guard": "NO",
+      "appearance": "YES",
+      "allowed_quality_defect_basis": [
+        "NONE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "VERIFY",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y502",
+      "acceptable_actions": [
+        "REVIEWED_VALID",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "SEMANTIC_CHANGE",
+      "guard": "NO",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "NONE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "COMPARE",
+          "PRIOR_CURRENT_STATE"
+        ],
+        [
+          "VERIFY",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y503",
+      "acceptable_actions": [
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "DATA_QUALITY",
+      "guard": "YES",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "FINAL_RETRIEVAL_FAILURE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "VERIFY",
+          "PERSISTED_EVIDENCE"
+        ],
+        [
+          "INSPECT",
+          "PROVENANCE_RECORD"
+        ],
+        [
+          "CONTACT",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y504",
+      "acceptable_actions": [
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "DATA_QUALITY",
+      "guard": "YES",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "FINAL_RETRIEVAL_FAILURE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "OBTAIN",
+          "OFFICIAL_SOURCE"
+        ],
+        [
+          "CONTACT",
+          "OFFICIAL_SOURCE"
+        ],
+        [
+          "CHECK",
+          "MISSING_EVIDENCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y505",
+      "acceptable_actions": [
+        "REVIEWED_VALID",
+        "REVIEWED_NOT_ACTIONABLE",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "UNKNOWN",
+      "guard": "NO",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "NONE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "VERIFY",
+          "PERSISTED_EVIDENCE"
+        ],
+        [
+          "CHECK",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y506",
+      "acceptable_actions": [
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "DATA_QUALITY",
+      "guard": "NO",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "PARSER_FAILURE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "INSPECT",
+          "PERSISTED_EVIDENCE"
+        ],
+        [
+          "OBTAIN",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y507",
+      "acceptable_actions": [
+        "REVIEWED_VALID",
+        "REVIEWED_NOT_ACTIONABLE",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "UNKNOWN",
+      "guard": "NO",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "NONE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "VERIFY",
+          "OFFICIAL_SOURCE"
+        ],
+        [
+          "CHECK",
+          "PERSISTED_EVIDENCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y508",
+      "acceptable_actions": [
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "DATA_QUALITY",
+      "guard": "NO",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "EVIDENCE_INTEGRITY_FAILURE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "INSPECT",
+          "PROVENANCE_RECORD"
+        ],
+        [
+          "CHECK",
+          "PERSISTED_EVIDENCE"
+        ],
+        [
+          "OBTAIN",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y509",
+      "acceptable_actions": [
+        "REVIEWED_VALID",
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "SEMANTIC_CHANGE",
+      "guard": "NO",
+      "appearance": "YES",
+      "allowed_quality_defect_basis": [
+        "NONE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "VERIFY",
+          "PERSISTED_EVIDENCE"
+        ],
+        [
+          "CHECK",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "ALLOWED_DISCRETIONARY_ACTION"
+    },
+    {
+      "case_id": "Y510",
+      "acceptable_actions": [
+        "NEEDS_FOLLOWUP"
+      ],
+      "distinction": "DATA_QUALITY",
+      "guard": "YES",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "FINAL_RETRIEVAL_FAILURE"
+      ],
+      "allowed_followup_pairs": [
+        [
+          "VERIFY",
+          "PERSISTED_EVIDENCE"
+        ],
+        [
+          "INSPECT",
+          "PROVENANCE_RECORD"
+        ],
+        [
+          "OBTAIN",
+          "OFFICIAL_SOURCE"
+        ],
+        [
+          "CONTACT",
+          "OFFICIAL_SOURCE"
+        ]
+      ],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "CONTRACTUALLY_REQUIRED_ACTION"
+    },
+    {
+      "case_id": "Y511",
+      "acceptable_actions": [
+        "REVIEWED_NOT_ACTIONABLE"
+      ],
+      "distinction": "SEMANTIC_CHANGE",
+      "guard": "NO",
+      "appearance": "YES",
+      "allowed_quality_defect_basis": [
+        "NONE"
+      ],
+      "allowed_followup_pairs": [],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "CONTRACTUALLY_REQUIRED_ACTION"
+    },
+    {
+      "case_id": "Y512",
+      "acceptable_actions": [
+        "ACKNOWLEDGED"
+      ],
+      "distinction": "DATA_QUALITY",
+      "guard": "YES",
+      "appearance": "NO",
+      "allowed_quality_defect_basis": [
+        "FINAL_RETRIEVAL_FAILURE"
+      ],
+      "allowed_followup_pairs": [],
+      "note_required_actions": [
+        "REVIEWED_NOT_ACTIONABLE",
+        "DATA_QUALITY_HOLD",
+        "NEEDS_FOLLOWUP"
+      ],
+      "disposition_classification": "CONTRACTUALLY_REQUIRED_ACTION"
+    }
+  ],
+  "universal": {
+    "source_fact_identified": true,
+    "system_classification_identified": true,
+    "reviewer_annotation_boundary_understood": true,
+    "official_provenance_identified": true,
+    "safe_to_infer_disappearance": "NO",
+    "safe_to_infer_resolution": "NO",
+    "safe_to_infer_trip_safety": "NO",
+    "safe_to_infer_road_passability": "NO",
+    "safe_to_treat_source_silence_as_safe": "NO",
+    "shared_event_proves_duplicate_relationships": "NO"
+  },
+  "acknowledgement_workflow": [
+    {
+      "scenario_id": "AW1",
+      "answers": {
+        "immediate_allowed_action": [
+          "DATA_QUALITY_HOLD",
+          "NEEDS_FOLLOWUP"
+        ],
+        "direct_new_to_acknowledged_permitted": "NO",
+        "eventual_manual_acknowledgement_required": "YES",
+        "acknowledgement_means_safety_approval": "NO",
+        "acknowledgement_means_notification_approval": "NO",
+        "source_silence_permits_semantic_resolution": "NO"
+      }
+    },
+    {
+      "scenario_id": "AW2",
+      "answers": {
+        "data_quality_hold_permitted": "YES",
+        "later_acknowledged_transition_available": "YES",
+        "eventual_acknowledgement_required": "NO",
+        "data_quality_alone_creates_acknowledgement_obligation": "NO",
+        "acknowledgement_means_safety_or_notification_approval": "NO"
+      }
+    },
+    {
+      "scenario_id": "AW3",
+      "answers": {
+        "needs_followup_allowed_immediate_action": "YES",
+        "eventual_acknowledgement_required": "YES",
+        "unresolved_followup_note_required": "YES",
+        "acknowledgement_erases_unresolved_condition": "NO",
+        "acknowledgement_makes_trip_safe": "NO",
+        "acknowledgement_authorizes_notification": "NO"
+      }
+    }
+  ]
+}

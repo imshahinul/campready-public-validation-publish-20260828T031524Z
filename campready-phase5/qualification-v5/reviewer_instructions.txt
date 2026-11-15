@@ -1,0 +1,15 @@
+CAMPREADY PHASE 5-4 V5 — INDEPENDENT REVIEWER INSTRUCTIONS
+
+Reviewers: only fresh decisive reviewers R-I and R-J. Work independently. Read the glossary before beginning. Use the displayed SOURCE FACT and SYSTEM CLASSIFICATION, then record YOUR REVIEW.
+
+The quality_defect_basis selection identifies the displayed acquisition/evidence defect. Select NONE when no defect controls the accepted observation. A rescued first failure followed by a successful accepted retrieval is not FINAL_RETRIEVAL_FAILURE.
+
+For NEEDS_FOLLOWUP, select a concrete non-NONE followup_operation and non-NONE followup_target supported by displayed facts. For every other action select NONE/NONE. Multiple truthful scopes may exist; do not infer an operational preference.
+
+A nonblank reviewer_note is required for REVIEWED_NOT_ACTIONABLE, DATA_QUALITY_HOLD, and NEEDS_FOLLOWUP. REVIEWED_VALID does not require a note. Notes are audit rationale only: vocabulary and synonyms are not scored. reviewer_note cannot override structured responses and should contain only bounded review rationale, not trip-safety, road-passability, notification, or unrepresented lifecycle conclusions. Any limited conservative unsafe-language rejection is not complete semantic validation; all mandatory unsafe judgments must be answered structurally.
+
+UNKNOWN remains distinct from DATA_QUALITY. Successful retrieval and parsing with relevance UNKNOWN and no quality defect may use REVIEWED_VALID, REVIEWED_NOT_ACTIONABLE, or NEEDS_FOLLOWUP; it may not use DATA_QUALITY_HOLD. A note cannot manufacture a quality defect.
+
+ACKNOWLEDGEMENT WORKFLOW is separate. AW1-AW3 preserve the frozen transition semantics. ACKNOWLEDGED is not safety approval, notification approval, semantic resolution, or delivery.
+
+The instrument is offline and prospective. Do not treat it as a trip-safety determination, a Phase 5-4 pass, or Phase 5-5 authorization.
