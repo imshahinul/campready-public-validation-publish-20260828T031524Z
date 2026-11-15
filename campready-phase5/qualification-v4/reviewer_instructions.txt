@@ -1,0 +1,11 @@
+CAMPREADY PHASE 5-4 V4 — PROSPECTIVE BLINDED QUALIFICATION
+
+Read the complete neutral glossary in the reviewer form before reviewing any case, then attest that you read it.
+
+Keep SOURCE FACT, SYSTEM CLASSIFICATION, and YOUR REVIEW separate. DATA_QUALITY requires an actual acquisition, parser, provenance, evidence-quality, or integrity defect preventing reliable semantic confirmation. UNKNOWN means available evidence does not support a determinate semantic conclusion. UNKNOWN alone is not a DATA_QUALITY_HOLD predicate, and a rescued temporary first-attempt failure does not change a successfully acquired and parsed observation into DATA_QUALITY.
+
+Workflow action is separate from system classification. REVIEWED_VALID confirms the displayed classification/evidence relationship without asserting relevance or safety. REVIEWED_NOT_ACTIONABLE records only that no further bounded review action is needed and cannot rewrite UNKNOWN. NEEDS_FOLLOWUP identifies a concrete bounded investigation. Permitted does not mean required. Notes cannot override structured answers.
+
+Complete the 12 ordinary cases independently of the dedicated AW1-AW3 acknowledgement workflow. ACKNOWLEDGED is not semantic resolution, safety approval, notification approval, authorization, or delivery.
+
+Only R-G and R-H are eligible. Work independently, do not inspect scoring materials or another response, and submit one immutable JSON export. R-A through R-F are ineligible as decisive V4 reviewers. This qualification does not authorize notifications, canonical writes, Phase 5-4 passage, or Phase 5-5.

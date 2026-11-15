@@ -1,0 +1,430 @@
+{
+  "schema_version": "campready.phase5.qualification_instrument.v4",
+  "qualification_version": "phase5-4-v4",
+  "purpose": "Prospective independent qualification of the frozen review contract; not a trip-safety determination, a Phase 5-4 result, or Phase 5-5 authorization.",
+  "glossary": {
+    "SOURCE FACT": "Persisted information obtained from an official source or its evidence record.",
+    "SYSTEM CLASSIFICATION": "A bounded classification produced by the system; it is not a human review annotation.",
+    "REVIEWER ANNOTATION": "A human workflow record kept separate from source facts and system classifications.",
+    "DATA_QUALITY": "A retrieval, parser, provenance, or evidence-integrity failure prevented reliable evidence acquisition or interpretation.",
+    "UNKNOWN": "Available system evidence does not support a determinate semantic conclusion and does not imply semantic change or safety. A successfully rescued temporary first-attempt transport failure does not by itself make the final accepted observation DATA_QUALITY.",
+    "guarded ALERT_DETAIL final failure": "A USFS ALERT_DETAIL logical request whose retrieval is FINAL_FAILED, with the required quality, provenance, retry, and no-inference shape. A rescued retry is not guarded.",
+    "workflow action": "The reviewer action recorded as a separate annotation.",
+    "transition permitted": "The workflow allows a transition.",
+    "transition required": "The frozen contract imposes an obligation. The existence of an allowed transition does not by itself make that transition mandatory.",
+    "manual acknowledgement": "A human-recorded explicit acknowledgement; it is not safety or notification approval.",
+    "ACKNOWLEDGED": "A terminal workflow envelope over the recorded disposition, not a semantic resolution, safety finding, notification authorization, or delivery record.",
+    "unresolved follow-up": "A condition that remains unresolved after NEEDS_FOLLOWUP; acknowledgement requires the prescribed unresolved-follow-up note and does not erase the condition.",
+    "REVIEWED_VALID": "Confirms the displayed system classification is supported by displayed official evidence; it does not rewrite UNKNOWN, create relevance, appearance, disappearance, or resolution, imply safety or actionability, or prevent future re-evaluation when evidence changes.",
+    "REVIEWED_NOT_ACTIONABLE": "Records only that no further bounded review action is needed; it does not rewrite UNKNOWN, establish known irrelevance or universal non-actionability, imply safety or road passability, treat source silence as safe, or authorize delivery.",
+    "DATA_QUALITY_HOLD": "Requires an actual evidence-quality, acquisition, parser, provenance, or integrity problem preventing reliable semantic confirmation; UNKNOWN alone is not that predicate.",
+    "NEEDS_FOLLOWUP": "Records that a concrete additional bounded investigation is required; it does not itself imply a guard or acknowledgement obligation."
+  },
+  "workflow_actions": [
+    "REVIEWED_VALID",
+    "REVIEWED_NOT_ACTIONABLE",
+    "DATA_QUALITY_HOLD",
+    "NEEDS_FOLLOWUP",
+    "ACKNOWLEDGED"
+  ],
+  "case_order": [
+    "X401",
+    "X402",
+    "X403",
+    "X404",
+    "X405",
+    "X406",
+    "X407",
+    "X408",
+    "X409",
+    "X410",
+    "X411",
+    "X412"
+  ],
+  "cases": [
+    {
+      "case_id": "X401",
+      "task_class": "SEMANTIC_APPEARANCE",
+      "evidence": {
+        "campground": "Juniper Basin",
+        "authority": "National Weather Service",
+        "source_role": "ACTIVE_ALERT",
+        "official_source_url": "https://api.weather.gov/alerts/urn:example:x401",
+        "source_evidence": "A newly persisted official ice event affects this campground relationship.",
+        "provenance_run_id": "v4-run-ridge-841",
+        "provenance_record_ref": "derived/v4/ridge.json#juniper"
+      },
+      "source_fact": {
+        "retrieval_status": "SUCCESS",
+        "parser_status": "SUCCESS",
+        "relevance_status": "RELEVANT",
+        "prior_accepted_state_ref": null,
+        "current_accepted_state_ref": "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+      },
+      "system_classification": {
+        "item_kind": "semantic",
+        "lifecycle_classification": "APPEARANCE",
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X402",
+      "task_class": "MATERIAL_UPDATE",
+      "evidence": {
+        "campground": "Hemlock Terrace",
+        "authority": "USDA Forest Service",
+        "source_role": "CAMPGROUND_PAGE",
+        "official_source_url": "https://www.fs.usda.gov/example/hemlock-terrace",
+        "source_evidence": "Accepted official evidence changed from a seasonal closure to an open status.",
+        "provenance_run_id": "v4-run-ridge-842",
+        "provenance_record_ref": "derived/v4/ridge.json#hemlock"
+      },
+      "source_fact": {
+        "retrieval_status": "SUCCESS",
+        "parser_status": "SUCCESS",
+        "relevance_status": "RELEVANT",
+        "prior_accepted_state_ref": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+        "current_accepted_state_ref": "sha256:5555555555555555555555555555555555555555555555555555555555555555"
+      },
+      "system_classification": {
+        "item_kind": "semantic",
+        "lifecycle_classification": "MATERIAL_UPDATE",
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X403",
+      "task_class": "GUARDED_FINAL_FAILURE_WITH_PRIOR",
+      "evidence": {
+        "campground": "Otter Creek",
+        "authority": "USDA Forest Service",
+        "source_role": "ALERT_DETAIL",
+        "official_source_url": "https://www.fs.usda.gov/example/alerts/otter-creek",
+        "source_evidence": "UNAVAILABLE (RETRIEVAL_FINAL_FAILED)",
+        "provenance_run_id": "v4-run-valley-943",
+        "provenance_record_ref": "derived/v4/valley.json#otter"
+      },
+      "source_fact": {
+        "retrieval_status": "FINAL_FAILED",
+        "parser_status": "NOT_RUN",
+        "retry_attempts": 3,
+        "retry_rescued": false,
+        "prior_accepted_state_ref": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+        "current_accepted_state_ref": "sha256:6666666666666666666666666666666666666666666666666666666666666666"
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "DATA_QUALITY",
+        "unknown_state": true,
+        "lifecycle_classification": "NONE",
+        "alert_detail_guard_required": true,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X404",
+      "task_class": "GUARDED_FINAL_FAILURE_WITHOUT_PRIOR",
+      "evidence": {
+        "campground": "Pine Lantern",
+        "authority": "USDA Forest Service",
+        "source_role": "ALERT_DETAIL",
+        "official_source_url": "https://www.fs.usda.gov/example/alerts/pine-lantern",
+        "source_evidence": "UNAVAILABLE (RETRIEVAL_FINAL_FAILED)",
+        "provenance_run_id": "v4-run-valley-944",
+        "provenance_record_ref": "derived/v4/valley.json#pine"
+      },
+      "source_fact": {
+        "retrieval_status": "FINAL_FAILED",
+        "parser_status": "NOT_RUN",
+        "retry_attempts": 4,
+        "retry_rescued": false,
+        "prior_accepted_state_ref": null,
+        "current_accepted_state_ref": null
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "DATA_QUALITY",
+        "unknown_state": true,
+        "lifecycle_classification": "NONE",
+        "alert_detail_guard_required": true,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X405",
+      "task_class": "RESCUED_RETRY_RELEVANCE_UNKNOWN",
+      "evidence": {
+        "campground": "Cedar Knoll",
+        "authority": "USDA Forest Service",
+        "source_role": "ALERT_DETAIL",
+        "official_source_url": "https://www.fs.usda.gov/example/alerts/cedar-knoll",
+        "source_evidence": "The second bounded attempt obtained parseable persisted official evidence; bounded relevance remains undetermined.",
+        "provenance_run_id": "v4-run-basin-045",
+        "provenance_record_ref": "derived/v4/basin.json#cedar"
+      },
+      "source_fact": {
+        "retrieval_status": "SUCCESS",
+        "parser_status": "SUCCESS",
+        "relevance_status": "UNKNOWN",
+        "retry_attempts": 2,
+        "retry_rescued": true,
+        "first_attempt_status": "FAILED"
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "NONE",
+        "unknown_state": true,
+        "lifecycle_classification": "NONE",
+        "alert_detail_guard_required": false,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X406",
+      "task_class": "PARSER_DATA_QUALITY",
+      "evidence": {
+        "campground": "Laurel Fork",
+        "authority": "USDA Forest Service",
+        "source_role": "CAMPGROUND_PAGE",
+        "official_source_url": "https://www.fs.usda.gov/example/laurel-fork",
+        "source_evidence": "The official page was retrieved, but the bounded parser could not produce reliable accepted evidence.",
+        "provenance_run_id": "v4-run-basin-046",
+        "provenance_record_ref": "derived/v4/basin.json#laurel"
+      },
+      "source_fact": {
+        "retrieval_status": "SUCCESS",
+        "parser_status": "FAILED",
+        "relevance_status": "NOT_EVALUATED"
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "DATA_QUALITY",
+        "unknown_state": true,
+        "lifecycle_classification": "NONE",
+        "alert_detail_guard_required": false,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X407",
+      "task_class": "EXPLICIT_UNKNOWN",
+      "evidence": {
+        "campground": "Granite Brook",
+        "authority": "USDA Forest Service",
+        "source_role": "CAMPGROUND_PAGE",
+        "official_source_url": "https://www.fs.usda.gov/example/granite-brook",
+        "source_evidence": "Retrieved and parsed official evidence is available, but bounded relevance remains undetermined.",
+        "provenance_run_id": "v4-run-creek-147",
+        "provenance_record_ref": "derived/v4/creek.json#granite"
+      },
+      "source_fact": {
+        "retrieval_status": "SUCCESS",
+        "parser_status": "SUCCESS",
+        "relevance_status": "UNKNOWN"
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "NONE",
+        "unknown_state": true,
+        "lifecycle_classification": "NONE",
+        "alert_detail_guard_required": false,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X408",
+      "task_class": "UNAVAILABLE_EVIDENCE_INTEGRITY",
+      "evidence": {
+        "campground": "Aspen Meadow",
+        "authority": "USDA Forest Service",
+        "source_role": "CAMPGROUND_PAGE",
+        "official_source_url": "https://www.fs.usda.gov/example/aspen-meadow",
+        "source_evidence": "UNAVAILABLE (EVIDENCE_INTEGRITY_MISMATCH)",
+        "provenance_run_id": "v4-run-creek-148",
+        "provenance_record_ref": "derived/v4/creek.json#aspen"
+      },
+      "source_fact": {
+        "retrieval_status": "SUCCESS",
+        "parser_status": "FAILED",
+        "relevance_status": "NOT_EVALUATED"
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "DATA_QUALITY",
+        "unknown_state": true,
+        "lifecycle_classification": "NONE",
+        "alert_detail_guard_required": false,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X409",
+      "task_class": "SHARED_UPSTREAM_FANOUT",
+      "evidence": {
+        "campground": "Willow Bend and Spruce Point",
+        "authority": "National Weather Service",
+        "source_role": "ACTIVE_ALERT",
+        "official_source_url": "https://api.weather.gov/alerts/urn:example:x409",
+        "source_evidence": "One persisted upstream storm event maps to two separately identified campground relationships.",
+        "provenance_run_id": "v4-run-forest-249",
+        "provenance_record_ref": "derived/v4/forest.json#fanout"
+      },
+      "source_fact": {
+        "upstream_event_count": 1,
+        "affected_relationship_ids": [
+          "observed:willow:x409",
+          "observed:spruce:x409"
+        ],
+        "retrieval_status": "SUCCESS",
+        "parser_status": "SUCCESS",
+        "relevance_status": "RELEVANT"
+      },
+      "system_classification": {
+        "item_kind": "semantic",
+        "lifecycle_classification": "APPEARANCE",
+        "relationship_semantics": "SHARED_EVENT_FANOUT",
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X410",
+      "task_class": "GUARDED_NEEDS_FOLLOWUP",
+      "evidence": {
+        "campground": "Beargrass Hollow",
+        "authority": "USDA Forest Service",
+        "source_role": "ALERT_DETAIL",
+        "official_source_url": "https://www.fs.usda.gov/example/alerts/beargrass-hollow",
+        "source_evidence": "Final retrieval failure remains unresolved and requires a concrete human investigation.",
+        "provenance_run_id": "v4-run-forest-250",
+        "provenance_record_ref": "derived/v4/forest.json#beargrass"
+      },
+      "source_fact": {
+        "retrieval_status": "FINAL_FAILED",
+        "parser_status": "NOT_RUN",
+        "retry_attempts": 3,
+        "retry_rescued": false,
+        "followup_open": true
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "DATA_QUALITY",
+        "unknown_state": true,
+        "alert_detail_guard_required": true,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X411",
+      "task_class": "SAFE_REVIEWED_NOT_ACTIONABLE",
+      "evidence": {
+        "campground": "Hickory Flats",
+        "authority": "National Weather Service",
+        "source_role": "ACTIVE_ALERT",
+        "official_source_url": "https://api.weather.gov/alerts/urn:example:x411",
+        "source_evidence": "The official event and provenance are valid; this bounded relationship needs no further review action.",
+        "provenance_run_id": "v4-run-plain-351",
+        "provenance_record_ref": "derived/v4/plain.json#hickory"
+      },
+      "source_fact": {
+        "retrieval_status": "SUCCESS",
+        "parser_status": "SUCCESS",
+        "relevance_status": "RELEVANT"
+      },
+      "system_classification": {
+        "item_kind": "semantic",
+        "lifecycle_classification": "APPEARANCE",
+        "review_only": true,
+        "reviewer_status": "NEW",
+        "notification_eligible": false
+      }
+    },
+    {
+      "case_id": "X412",
+      "task_class": "ACKNOWLEDGEMENT_PROVENANCE_RECONSTRUCTION",
+      "evidence": {
+        "campground": "Otter Creek",
+        "authority": "USDA Forest Service",
+        "source_role": "ALERT_DETAIL",
+        "official_source_url": "https://www.fs.usda.gov/example/alerts/otter-creek-history",
+        "source_evidence": "An immutable hold annotation exists; source, system, and reviewer records remain separately reconstructable.",
+        "provenance_run_id": "v4-run-plain-352",
+        "provenance_record_ref": "derived/v4/plain.json#otter-history"
+      },
+      "source_fact": {
+        "retrieval_status": "FINAL_FAILED",
+        "parser_status": "NOT_RUN",
+        "retry_attempts": 3,
+        "retry_rescued": false,
+        "annotation_history": [
+          "NEW",
+          "DATA_QUALITY_HOLD"
+        ],
+        "original_submission_immutable": true
+      },
+      "system_classification": {
+        "item_kind": "quality",
+        "data_quality_state": "DATA_QUALITY",
+        "unknown_state": true,
+        "alert_detail_guard_required": true,
+        "reviewer_status": "DATA_QUALITY_HOLD",
+        "acknowledgement_is_safety_approval": false,
+        "notification_eligible": false
+      }
+    }
+  ],
+  "acknowledgement_workflow_order": [
+    "AW1",
+    "AW2",
+    "AW3"
+  ],
+  "acknowledgement_workflow": [
+    {
+      "scenario_id": "AW1",
+      "title": "Final-failure timeline",
+      "scenario": "A NEW item records a USFS ALERT_DETAIL logical request that ended in FINAL_FAILED after bounded retries. The evidence record has the required quality, provenance, retry, and no-inference shape.",
+      "questions": [
+        "immediate_allowed_action",
+        "direct_new_to_acknowledged_permitted",
+        "eventual_manual_acknowledgement_required",
+        "acknowledgement_means_safety_approval",
+        "acknowledgement_means_notification_approval",
+        "source_silence_permits_semantic_resolution"
+      ]
+    },
+    {
+      "scenario_id": "AW2",
+      "title": "Quality hold without the final-failure guard",
+      "scenario": "A non-guard item has retrieval SUCCESS, parser FAILED, DATA_QUALITY, and is placed in DATA_QUALITY_HOLD. It is not an ALERT_DETAIL final retrieval failure.",
+      "questions": [
+        "data_quality_hold_permitted",
+        "later_acknowledged_transition_available",
+        "eventual_acknowledgement_required",
+        "data_quality_alone_creates_acknowledgement_obligation",
+        "acknowledgement_means_safety_or_notification_approval"
+      ]
+    },
+    {
+      "scenario_id": "AW3",
+      "title": "Open follow-up timeline",
+      "scenario": "A USFS ALERT_DETAIL logical request ended in FINAL_FAILED after bounded retries. The item is placed in NEEDS_FOLLOWUP and the underlying issue remains unresolved.",
+      "questions": [
+        "needs_followup_allowed_immediate_action",
+        "eventual_acknowledgement_required",
+        "unresolved_followup_note_required",
+        "acknowledgement_erases_unresolved_condition",
+        "acknowledgement_makes_trip_safe",
+        "acknowledgement_authorizes_notification"
+      ]
+    }
+  ]
+}
