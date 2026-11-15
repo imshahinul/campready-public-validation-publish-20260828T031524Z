@@ -1,0 +1,26 @@
+{
+  "schema_version":"campready.phase5.qualification_expected_results.v3",
+  "qualification_version":"phase5-4-v3",
+  "never_reviewer_facing":true,
+  "contract":{"percentage_threshold":null,"zero_tolerance_categories":["GUARD","DATA_QUALITY_UNKNOWN","PROVENANCE","REVIEW_BOUNDARY","FANOUT","UNSAFE_INFERENCE","ACKNOWLEDGEMENT_WORKFLOW"],"ordinary_acknowledgement_required_field":false,"safe_discretionary_actions_only_when_listed":true},
+  "cases":[
+    {"case_id":"V301","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES"},
+    {"case_id":"V302","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"NO"},
+    {"case_id":"V303","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO"},
+    {"case_id":"V304","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO"},
+    {"case_id":"V305","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"UNKNOWN","guard":"NO","appearance":"NO"},
+    {"case_id":"V306","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"NO","appearance":"NO"},
+    {"case_id":"V307","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"UNKNOWN","guard":"NO","appearance":"NO"},
+    {"case_id":"V308","acceptable_actions":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"NO","appearance":"NO"},
+    {"case_id":"V309","acceptable_actions":["REVIEWED_VALID","NEEDS_FOLLOWUP"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES"},
+    {"case_id":"V310","acceptable_actions":["NEEDS_FOLLOWUP"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO"},
+    {"case_id":"V311","acceptable_actions":["REVIEWED_NOT_ACTIONABLE"],"distinction":"SEMANTIC_CHANGE","guard":"NO","appearance":"YES"},
+    {"case_id":"V312","acceptable_actions":["ACKNOWLEDGED"],"distinction":"DATA_QUALITY","guard":"YES","appearance":"NO"}
+  ],
+  "universal":{"source_fact_identified":true,"system_classification_identified":true,"reviewer_annotation_boundary_understood":true,"official_provenance_identified":true,"safe_to_infer_disappearance":"NO","safe_to_infer_resolution":"NO","safe_to_infer_trip_safety":"NO","safe_to_infer_road_passability":"NO","safe_to_treat_source_silence_as_safe":"NO","shared_event_proves_duplicate_relationships":"NO"},
+  "acknowledgement_workflow":[
+    {"scenario_id":"AW1","answers":{"immediate_allowed_action":["DATA_QUALITY_HOLD","NEEDS_FOLLOWUP"],"direct_new_to_acknowledged_permitted":"NO","eventual_manual_acknowledgement_required":"YES","acknowledgement_means_safety_approval":"NO","acknowledgement_means_notification_approval":"NO","source_silence_permits_semantic_resolution":"NO"}},
+    {"scenario_id":"AW2","answers":{"data_quality_hold_permitted":"YES","later_acknowledged_transition_available":"YES","eventual_acknowledgement_required":"NO","data_quality_alone_creates_acknowledgement_obligation":"NO","acknowledgement_means_safety_or_notification_approval":"NO"}},
+    {"scenario_id":"AW3","answers":{"needs_followup_allowed_immediate_action":"YES","eventual_acknowledgement_required":"YES","unresolved_followup_note_required":"YES","acknowledgement_erases_unresolved_condition":"NO","acknowledgement_makes_trip_safe":"NO","acknowledgement_authorizes_notification":"NO"}}
+  ]
+}
