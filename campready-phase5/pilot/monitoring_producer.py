@@ -14,6 +14,7 @@ import importlib.util
 import json
 import os
 import sys
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Mapping
@@ -237,6 +238,11 @@ def _collect(fetcher: Callable[..., dict[str, Any]], now: datetime,
             requests.append({"site_id": site_id, "authority_id": "USFS", "source_family": "USFS_HTML",
                              "source_role": "ALERT_INDEX_INTERNAL", "official_source_url": index_url,
                              "retrieval_status": _result_status(index), "elapsed_ms": index.get("elapsed_ms")})
+        # The frozen parser is parameterized through module globals that its
+        # original study script initialized to one forest. Rebind those globals
+        # to this canonical index before invoking the unchanged parser logic.
+        parser["ALERT_INDEX"] = index_url
+        parser["ALERT_PREFIX"] = urllib.parse.urlsplit(index_url).path.rstrip("/") + "/"
         links = parser["extract_alert_links"](index["body"])[:100] if index["ok"] else []
         for url in sorted(set(links)):
             result = cache.get(url, authority="USFS", family="USFS_HTML", role="ALERT_DETAIL")
