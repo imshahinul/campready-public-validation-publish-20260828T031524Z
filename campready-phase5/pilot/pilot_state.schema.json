@@ -11,6 +11,7 @@
     "protocol_digest": {"type":["string","null"],"pattern":"^[0-9a-f]{64}$"},
     "cohort_digest": {"type":["string","null"],"pattern":"^[0-9a-f]{64}$"},
     "role_binding_digest": {"type":["string","null"],"pattern":"^[0-9a-f]{64}$"},
+    "start_transaction_id": {"type":"string","pattern":"^cr5start1-[0-9a-f]{64}$"},
     "valid_observation_count": {"type":"integer","minimum":0,"maximum":100},
     "control_sampling_rule_id": {"const":"INTAKE_SEQUENCE_MOD_5_MAX_20"},
     "stop_rule_id": {"const":"PHASE5_5B_FROZEN_STOP_HOLD_V1"},
@@ -19,5 +20,8 @@
   "allOf": [{
     "if": {"properties":{"state":{"const":"NOT_STARTED"}}},
     "then": {"properties":{"pilot_started_at":{"const":null},"valid_observation_count":{"const":0}}}
+  },{
+    "if": {"properties":{"state":{"const":"ACTIVE"}}},
+    "then": {"required":["start_transaction_id"]}
   }]
 }

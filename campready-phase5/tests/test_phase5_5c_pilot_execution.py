@@ -5,6 +5,7 @@ import json
 import sys
 import tempfile
 import unittest
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -19,7 +20,10 @@ from pilot_control import (BLINDED_EXCLUSIONS, HISTORY, blinded_secondary_packet
 from pilot_metrics import (comprehension_metrics, disagreement_metrics,
                            separated_workload, unknown_none_dq_hold_conflict)
 from pilot_store import (AppendOnlyJsonl, IntakeStore, PilotStores, canonical_bytes,
-                         initialize_evidence_root, live_counts, validate_observation)
+                         COHORT_DIGEST, CONTROL_RULE, EVIDENCE_ROOT, PROTOCOL_DIGEST,
+                         STOP_HOLD_RULE, initialize_evidence_root, live_counts,
+                         recover_start, start_pilot, validate_active_start,
+                         validate_observation)
 
 
 def digest(prefix, value):
@@ -64,8 +68,14 @@ class PilotExecutionTests(unittest.TestCase):
 
     def tearDown(self): self.temp.cleanup()
 
+    def prepare_start_root(self, root=None):
+        root = Path(root or self.root)
+        initialize_evidence_root(root, allow_test_root=True)
+        (root/"state"/"pilot_state.json").write_bytes(canonical_bytes(initial_state()) + b"\n")
+        return root
+
     def test_append_only_duplicate_and_earlier_bytes(self):
-        store = PilotStores(self.root, allow_test_root=True).observations
+        store = PilotStores(self.root, allow_test_root=True, bypass_start_guard=True).observations
         first = observation(); store.append(first); before = store.path.read_bytes()
         store.append(observation(2)); self.assertTrue(store.path.read_bytes().startswith(before))
         with self.assertRaisesRegex(ValueError, "DUPLICATE_ID_REJECTED"): store.append(first)
@@ -77,7 +87,7 @@ class PilotExecutionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "OBSERVATION_DERIVATION_INVALID"): validate_observation(conflict)
 
     def test_sequence_monotonicity_and_failed_intake_no_gap(self):
-        store = IntakeStore(self.root, allow_test_root=True)
+        store = IntakeStore(self.root, allow_test_root=True, bypass_start_guard=True)
         self.assertEqual(store.accept(intake(1))["intake_sequence"], 1)
         malformed = intake(2); malformed["extra"] = True
         with self.assertRaises(ValueError): store.accept(malformed)
@@ -95,7 +105,7 @@ class PilotExecutionTests(unittest.TestCase):
         self.assertNotIn("reviewer_disposition", packet); self.assertIn("source_evidence_ref", packet)
 
     def test_adjudication_and_correction_preserve_originals(self):
-        stores = PilotStores(self.root, allow_test_root=True)
+        stores = PilotStores(self.root, allow_test_root=True, bypass_start_guard=True)
         adj = {"schema_version":"campready.phase5.pilot_adjudication.v1", "adjudication_id":digest("cr5adjudication1-","a"),
                "observation_id":observation()["observation_id"], "primary_original_response":{"disposition":"DATA_QUALITY_HOLD"},
                "secondary_original_response":{"disposition":"REVIEWED_VALID"}, "difference_classification":"CONTRACT_CRITICAL_DISAGREEMENT",
@@ -184,6 +194,96 @@ class PilotExecutionTests(unittest.TestCase):
     def test_workload_categories_remain_separate(self):
         result=separated_workload([observation(review_minutes=2,adjudication_minutes=3,correction_minutes=4)], [{"work_class":"OPERATIONAL_MAINTENANCE","human_minutes":5}], 6)
         self.assertEqual(result,{"review_minutes":2.0,"adjudication_minutes":3.0,"correction_minutes":4.0,"operational_maintenance_minutes":5.0,"development_debugging_minutes":6.0})
+
+    def test_atomic_start_contract_repeated_rejection_and_observation_gate(self):
+        self.prepare_start_root()
+        self.assertEqual(validate_active_start(self.root,allow_test_root=True),"VALID_NOT_STARTED")
+        with self.assertRaisesRegex(ValueError,"VALID_ACTIVE_START_REQUIRED"):
+            PilotStores(self.root,allow_test_root=True).observations.append(observation())
+        fixed=lambda: datetime(2026,11,17,4,30,tzinfo=timezone.utc)
+        active=start_pilot(self.root,owner_authorized=True,verified_role_binding_digest="c"*64,
+                           allow_test_root=True,clock=fixed)
+        self.assertEqual(validate_active_start(self.root,allow_test_root=True),"VALID_ACTIVE_START")
+        self.assertEqual(active["state"],"ACTIVE"); self.assertEqual(active["valid_observation_count"],0)
+        self.assertEqual(active["pilot_started_at"],"2026-11-17T04:30:00.000000Z")
+        self.assertEqual(active["protocol_digest"],PROTOCOL_DIGEST)
+        self.assertEqual(active["cohort_digest"],COHORT_DIGEST)
+        self.assertEqual(active["role_binding_digest"],"c"*64)
+        self.assertEqual(active["control_sampling_rule_id"],CONTROL_RULE)
+        self.assertEqual(active["stop_rule_id"],STOP_HOLD_RULE)
+        events=(self.root/"state"/"start_events.jsonl").read_text().splitlines()
+        self.assertEqual(len(events),1); event=json.loads(events[0])
+        self.assertEqual(event["start_transaction_id"],active["start_transaction_id"])
+        self.assertEqual(event["pilot_started_at"],active["pilot_started_at"])
+        self.assertEqual(event["history"],list(HISTORY))
+        before=(active["pilot_started_at"],active["start_transaction_id"],events[0])
+        with self.assertRaisesRegex(ValueError,"PILOT_ALREADY_STARTED"):
+            start_pilot(self.root,owner_authorized=True,verified_role_binding_digest="d"*64,
+                        allow_test_root=True,clock=fixed)
+        persisted=json.loads((self.root/"state"/"pilot_state.json").read_text())
+        after_events=(self.root/"state"/"start_events.jsonl").read_text().splitlines()
+        self.assertEqual(before,(persisted["pilot_started_at"],persisted["start_transaction_id"],after_events[0]))
+        self.assertEqual(len(after_events),1); self.assertEqual(set(live_counts(self.root,allow_test_root=True).values()),{0})
+        PilotStores(self.root,allow_test_root=True).observations.append(observation())
+        self.assertEqual(live_counts(self.root,allow_test_root=True)["valid_observation_count"],1)
+
+    def test_start_rejects_wrong_malformed_and_non_null_prelaunch_state(self):
+        for index, bad in enumerate((
+            dict(initial_state(),state="HOLD"),
+            dict(initial_state(),pilot_started_at="2026-11-17T00:00:00Z"),
+            {"state":"NOT_STARTED"},
+        )):
+            root=self.root/f"bad-{index}"; self.prepare_start_root(root)
+            (root/"state"/"pilot_state.json").write_bytes(canonical_bytes(bad)+b"\n")
+            self.assertEqual(validate_active_start(root,allow_test_root=True),"INVALID_START_STATE")
+            with self.assertRaisesRegex(ValueError,"START_STATE_INVALID"):
+                start_pilot(root,owner_authorized=True,verified_role_binding_digest="a"*64,allow_test_root=True)
+
+    def test_start_interruption_classification_recovery_and_fail_closed_admission(self):
+        before_commit={"before_prepare","after_prepare","after_state_temp","before_record"}
+        after_commit={"after_record","before_activation","after_activation"}
+        for point in sorted(before_commit|after_commit):
+            root=self.root/point; self.prepare_start_root(root)
+            with self.assertRaisesRegex(RuntimeError,"SIMULATED_INTERRUPTION"):
+                start_pilot(root,owner_authorized=True,verified_role_binding_digest="b"*64,
+                            allow_test_root=True,clock=lambda:datetime(2026,11,17,tzinfo=timezone.utc),
+                            _failure_point=point)
+            classification=validate_active_start(root,allow_test_root=True)
+            expected="VALID_NOT_STARTED" if point=="before_prepare" else "INCOMPLETE_START_RECOVERABLE"
+            self.assertEqual(classification,expected)
+            with self.assertRaisesRegex(ValueError,"VALID_ACTIVE_START_REQUIRED"):
+                PilotStores(root,allow_test_root=True).observations.append(observation())
+            recovered=recover_start(root,allow_test_root=True)
+            self.assertEqual(recovered,"VALID_NOT_STARTED" if point in before_commit else "VALID_ACTIVE_START")
+            records=(root/"state"/"start_events.jsonl")
+            self.assertEqual(len(records.read_text().splitlines()) if records.exists() else 0,
+                             0 if point in before_commit else 1)
+
+    def test_concurrent_start_has_exactly_one_winner(self):
+        self.prepare_start_root()
+        def invoke(_):
+            try:
+                return start_pilot(self.root,owner_authorized=True,verified_role_binding_digest="e"*64,
+                                   allow_test_root=True,clock=lambda:datetime(2026,11,17,tzinfo=timezone.utc))["start_transaction_id"]
+            except ValueError as exc:
+                return str(exc)
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            results=list(pool.map(invoke,range(8)))
+        winners=[value for value in results if value.startswith("cr5start1-")]
+        self.assertEqual(len(winners),1); self.assertEqual(results.count("PILOT_ALREADY_STARTED"),7)
+        state=json.loads((self.root/"state"/"pilot_state.json").read_text())
+        event=json.loads((self.root/"state"/"start_events.jsonl").read_text())
+        self.assertEqual(state["start_transaction_id"],winners[0]); self.assertEqual(event["start_transaction_id"],winners[0])
+
+    def test_tampered_start_record_fails_closed_and_production_is_unstarted(self):
+        self.prepare_start_root(); start_pilot(self.root,owner_authorized=True,verified_role_binding_digest="f"*64,allow_test_root=True)
+        path=self.root/"state"/"start_events.jsonl"; event=json.loads(path.read_text()); event["cohort_digest"]="0"*64
+        path.write_bytes(canonical_bytes(event)+b"\n")
+        self.assertEqual(validate_active_start(self.root,allow_test_root=True),"INVALID_START_STATE")
+        with self.assertRaisesRegex(ValueError,"VALID_ACTIVE_START_REQUIRED"):
+            PilotStores(self.root,allow_test_root=True).observations.append(observation())
+        self.assertEqual(validate_active_start(EVIDENCE_ROOT),"VALID_NOT_STARTED")
+        self.assertEqual(set(live_counts(EVIDENCE_ROOT).values()),{0})
 
 
 if __name__ == "__main__": unittest.main()
