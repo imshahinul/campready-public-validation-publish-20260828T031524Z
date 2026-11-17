@@ -94,6 +94,9 @@ def validate_role_bindings(path: str | Path) -> dict[str, Any]:
     roles = {"PRIMARY_REVIEWER", "SECOND_REVIEWER", "OWNER_ADJUDICATOR"}
     if not isinstance(bindings, dict) or set(bindings) != roles or not all(isinstance(code, str) and code.strip() for code in bindings.values()):
         raise ValueError("ROLE_BINDING_INCOMPLETE")
+    placeholder_markers = ("REPLACE", "PLACEHOLDER", "<", ">")
+    if any(any(marker in code.upper() for marker in placeholder_markers) for code in bindings.values()):
+        raise ValueError("ROLE_BINDING_INCOMPLETE")
     if len(set(bindings.values())) != 3 or value.get("three_distinct_humans_attested") is not True or value.get("roles_frozen_before_pilot_started_at") is not True:
         raise ValueError("ROLE_BINDING_INCOMPLETE")
     parse_utc(value.get("owner_attested_at"))

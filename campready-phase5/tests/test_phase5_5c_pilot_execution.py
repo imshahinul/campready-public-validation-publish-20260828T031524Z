@@ -158,6 +158,13 @@ class PilotExecutionTests(unittest.TestCase):
         path.write_text(json.dumps(value)); result=validate_role_bindings(path)
         self.assertTrue(result["binding_present"]); self.assertEqual(len(set(result["stable_blinded_codes"].values())),3)
 
+    def test_role_binding_placeholders_are_incomplete(self):
+        path=self.root/"role_bindings.json"
+        value={"schema_version":"campready.phase5.pilot_role_bindings.v1","bindings":{"PRIMARY_REVIEWER":"REPLACE_WITH_YOUR_PRIMARY_CODE","SECOND_REVIEWER":"REPLACE_WITH_YOUR_SECONDARY_CODE","OWNER_ADJUDICATOR":"REPLACE_WITH_YOUR_OWNER_CODE"},"three_distinct_humans_attested":True,"roles_frozen_before_pilot_started_at":True,"owner_attested_at":"2026-11-17T00:00:00Z"}
+        path.write_text(json.dumps(value))
+        with self.assertRaisesRegex(ValueError,"ROLE_BINDING_INCOMPLETE"):
+            validate_role_bindings(path)
+
     def test_dry_run_live_separation_and_empty_counts(self):
         (self.root/"dry_run"/"fixture.json").write_text(json.dumps({"dry_run":True,"pilot_observation":False,"observation_id":"cr5dryrunobs1-synthetic"}))
         self.assertEqual(set(live_counts(self.root,allow_test_root=True).values()),{0})
