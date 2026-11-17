@@ -1,0 +1,168 @@
+{
+  "schema_version": "campready.phase5.pilot_protocol.v1",
+  "protocol_id": "CAMPREADY_PHASE5_5B_BOUNDED_INTERNAL_REVIEW_ONLY_PILOT_V1",
+  "protocol_version": "1.0.0",
+  "frozen": true,
+  "freeze_decision": "PASS_PHASE5_5B_BOUNDED_PILOT_PROTOCOL_FROZEN",
+  "execution_authorized": false,
+  "immutability": {
+    "rule": "After this freeze, these protocol artifacts and thresholds MUST NOT be edited. A prospective replacement version requires separate governance before any observation; after the first observation, this version remains immutable evidence and no replacement may alter interpretation of its observations.",
+    "post_hoc_threshold_mutation_permitted": false,
+    "append_only_evidence_required": true
+  },
+  "governance": {
+    "phase5_4_result": "CLOSE_PHASE5_4_HOLD_FINAL_HUMAN_QUALIFICATION_GATE_NOT_MET",
+    "phase5_5a_result": "PASS_PHASE5_5A_OWNER_OVERRIDE_BOUNDED_PILOT_AUTHORIZED",
+    "classification": "OWNER_OVERRIDE_AUTHORIZE_PHASE5_5_BOUNDED_INTERNAL_PILOT",
+    "required_history_statements": [
+      "Phase 5-4 did not pass its original two-human qualification gate.",
+      "Phase 5-5 proceeded under explicit owner governance override."
+    ],
+    "retained_findings": ["R-I final PASS", "R-J Y507 genuine individual comprehension error"],
+    "prohibited_history_claim": "Phase 5-5 followed successful Phase 5-4 qualification",
+    "residual_accepted_risk": "R-J Y507 genuine individual comprehension error"
+  },
+  "pilot_identity": {
+    "characteristics": ["INTERNAL", "REVIEW_ONLY", "HUMAN_MEDIATED", "BOUNDED", "NON_CONSUMER_FACING", "NON_NOTIFYING", "NON_DELIVERING"],
+    "evaluates": ["reviewer operation of the already-frozen review workflow", "reviewer comprehension", "guard and acknowledgement handling", "UNKNOWN versus DATA_QUALITY handling", "workload and operational maintenance burden"],
+    "does_not_evaluate": ["consumer conversion", "consumer engagement", "public usability", "automated notification effectiveness", "trip safety", "road passability", "national scalability"]
+  },
+  "observation_unit": "Exactly one review item presented to one PRIMARY_REVIEWER through the frozen review workflow, together with its source evidence, system classification, guard state, quality state, recorded reviewer disposition, applicable acknowledgement state, review timing, correction/disagreement record, and attributable maintenance impact. A raw fetch, source page, campground, or scheduler run alone is not an observation. A secondary review is part of the same observation, not a new observation.",
+  "cohort": {
+    "source": "campready-phase5/config.json at starting commit 2e07232f5f4ac949e10b23672fae4146791d5793",
+    "expansion_permitted": false,
+    "sites": [
+      {"site_id":"andrews-cove","campground_name":"Andrews Cove Campground","authority_family":"USFS","native_identifier":"USFS_RECAREA_ID:10487"},
+      {"site_id":"low-gap","campground_name":"Low Gap Campground","authority_family":"USFS","native_identifier":"USFS_RECAREA_ID:10491"},
+      {"site_id":"nc-van-hook-glade","campground_name":"Van Hook Glade Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:70521"},
+      {"site_id":"wv-big-rock","campground_name":"Big Rock Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:90200"},
+      {"site_id":"or-spinreel","campground_name":"Spinreel Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:63029"},
+      {"site_id":"or-cold-springs","campground_name":"Cold Springs Campground","authority_family":"USFS","native_identifier":"USFS_INFRA_SITE_ID:12617"},
+      {"site_id":"ncsp-carolina-beach","campground_name":"Carolina Beach State Park Campground","authority_family":"NC_STATE_PARKS","native_identifier":"carolina-beach-state-park"},
+      {"site_id":"ncsp-stone-mountain","campground_name":"Stone Mountain Family Campground","authority_family":"NC_STATE_PARKS","native_identifier":"stone-mountain-state-park"},
+      {"site_id":"nps-elkmont","campground_name":"Elkmont Campground","authority_family":"NPS","native_identifier":"63D37502-C1A6-44B7-A2C3-C4F784C03318"},
+      {"site_id":"nps-big-meadows","campground_name":"Big Meadows Campground","authority_family":"NPS","native_identifier":"75E4DC88-1332-456C-9F06-05E9F4E1CAB6"}
+    ],
+    "authority_families": ["USFS", "NC_STATE_PARKS", "NPS"],
+    "source_roles": ["ACTIVE_ALERT", "CAMPGROUND_PAGE", "ALERT_DETAIL"],
+    "event_categories": ["WEATHER_ALERT", "CAMPGROUND_CONDITION"],
+    "null_event_category_rule": "Quality-only observations retain event_category null and make no semantic event claim; no category may be added by this protocol."
+  },
+  "observation_window": {
+    "activation": "A separate Phase 5-5C execution-readiness authorization records pilot_started_at in UTC; no observation may precede it.",
+    "calendar_boundary": "14 consecutive 24-hour periods from pilot_started_at, ending at pilot_started_at plus 336 hours.",
+    "count_boundary": 100,
+    "completion_condition": "Normal collection ends immediately at the earlier of 100 structurally valid prospective observations or pilot_started_at plus 336 hours. An immediate STOP or repeated-error HOLD ends collection earlier.",
+    "open_ended": false,
+    "pre_protocol_backfill_permitted": false,
+    "historical_data_use": "Context only; never counted as a pilot observation or pilot metric denominator."
+  },
+  "reviewer_model": {
+    "human_count": 3,
+    "identity_model": "Exactly two authorized internal reviewers use stable blinded codes PRIMARY_REVIEWER and SECOND_REVIEWER; one separate OWNER_ADJUDICATOR uses a stable code. A sealed owner-held mapping binds each code to one human before execution and may not change during the pilot.",
+    "routine_review": "PRIMARY_REVIEWER independently reviews every item once through the frozen workflow.",
+    "secondary_review": "SECOND_REVIEWER independently reviews only the prospectively selected control sample without seeing the primary disposition, correction, or outcome.",
+    "adjudication": "OWNER_ADJUDICATOR resolves structured incompatibility and disagreement classification using frozen facts and contract. Adjudication preserves both original reviews and cannot rewrite them.",
+    "qualification_rule_reused": false,
+    "every_item_double_reviewed": false,
+    "role_substitution_permitted": false
+  },
+  "control_sample": {
+    "method": "Assign each eligible observation an immutable one-based intake_sequence before primary review. Select intake_sequence values divisible by 5 (5, 10, 15, ...).",
+    "selection_rate": "exactly every fifth intake item",
+    "maximum_selected": 20,
+    "outcome_blinded": true,
+    "post_outcome_cherry_picking_permitted": false,
+    "completion": "Every selected item admitted before collection ends must receive an independent secondary review and bounded adjudication before normal closeout.",
+    "pass_threshold_created": false
+  },
+  "y507_control": {
+    "contract": "For any unguarded item with relevance_status UNKNOWN and quality_defect_basis NONE, DATA_QUALITY_HOLD is not valid merely because relevance is UNKNOWN; UNKNOWN remains distinct from DATA_QUALITY and runtime semantics are unchanged.",
+    "derived_field": "unknown_none_dq_hold_conflict",
+    "derivation": "TRUE if and only if relevance_status == UNKNOWN AND quality_defect_basis == NONE AND reviewer_disposition == DATA_QUALITY_HOLD; otherwise FALSE.",
+    "measurement_only": true,
+    "rewrites_reviewer_or_runtime_state": false
+  },
+  "metrics": {
+    "disposition_comprehension_error_rate": {
+      "numerator": "Count of pilot observations with confirmed_structured_disposition_incompatibility == true after bounded adjudication. Each observation contributes at most one, even if multiple error classes apply.",
+      "denominator": "Count of pilot observations for which reviewer_disposition is non-null and recorded by PRIMARY_REVIEWER.",
+      "rate": "numerator / denominator; report NOT_MEASURABLE when denominator is zero.",
+      "report": ["count", "denominator", "rate", "UNKNOWN + basis NONE observations", "unknown_none_dq_hold_conflict count", "other structured disposition incompatibility count", "reviewer corrections required", "reviewer disagreements"],
+      "exclusions": ["system parser defects", "transport defects", "retrieval defects", "source defects", "ALLOWED_DISCRETIONARY_DIFFERENCE"]
+    },
+    "error_classes": ["UNKNOWN_DATA_QUALITY_CONFUSION", "GUARD_COMPREHENSION_ERROR", "DISPOSITION_ACTION_CONFLICT", "ACKNOWLEDGEMENT_WORKFLOW_ERROR", "PROVENANCE_COMPREHENSION_ERROR", "SOURCE_SYSTEM_REVIEW_BOUNDARY_ERROR", "UNSAFE_INFERENCE", "OTHER_REVIEWER_WORKFLOW_ERROR"],
+    "error_classification_rule": "Every confirmed comprehension error maps to at least one frozen class. Classes are not renamed, relaxed, or silently recategorized after observations begin.",
+    "disagreement": {
+      "report": ["reviewer disagreement count", "independently double-reviewed observation count", "reviewer disagreement rate"],
+      "rate": "disagreement count / independently double-reviewed observation count; NOT_MEASURABLE when denominator is zero.",
+      "classes": ["ALLOWED_DISCRETIONARY_DIFFERENCE", "CONTRACT_CRITICAL_DISAGREEMENT", "SAFETY_CRITICAL_DISAGREEMENT"],
+      "allowed_discretion_is_comprehension_error": false
+    },
+    "correction": ["reviewer corrections required", "correction reason", "whether correction occurred before any downstream state transition", "whether corrected item remained unresolved"],
+    "correction_rule": "A corrected human error remains counted; correction never erases the original event.",
+    "guard": ["guarded items reviewed", "guarded items initially routed to permitted hold/follow-up disposition", "guard bypass attempts/errors", "eventual acknowledgement required", "eventual acknowledgement completed", "unresolved guarded items"],
+    "unknown_data_quality": ["UNKNOWN observations", "DATA_QUALITY observations", "UNKNOWN + basis NONE observations", "DATA_QUALITY_HOLD on UNKNOWN + basis NONE", "rescued-retry UNKNOWN observations", "parser/retrieval/integrity DATA_QUALITY observations"],
+    "acknowledgement": ["guarded acknowledgement obligations", "completed acknowledgements", "outstanding acknowledgements", "non-guard DATA_QUALITY acknowledgements voluntarily used", "inappropriate assumptions that acknowledgement implies safety, notification approval, or semantic resolution"],
+    "workload": ["review duration per observation", "total review minutes", "adjudication minutes", "correction minutes", "maintenance minutes"],
+    "workload_separation": "Ordinary reviewer operating time, system/source operational maintenance, and development/debugging are reported separately.",
+    "maintenance": {
+      "contract": "campready.phase5.maintenance.v1",
+      "ledger": "append-only existing Phase 5 maintenance ledger",
+      "included": "Only OPERATIONAL_MAINTENANCE attributable to keeping the pilot functioning.",
+      "excluded": ["new feature development", "protocol design", "qualification redesign", "research analysis", "historical audit work", "ordinary reviewer operating time", "development/debugging effort"],
+      "report": "weekly operational maintenance minutes, record count, category/source-authority breakdown, and COMPLETE/PARTIAL/UNKNOWN status"
+    },
+    "system_retrieval": ["scheduler execution evidence", "retrieval first-attempt outcome", "retrieval eventual outcome", "source/role breakdown", "parser/data-quality failures", "guarded ALERT_DETAIL final failures"],
+    "composite_health_score_permitted": false
+  },
+  "interpretation_rules": [
+    "One isolated contained reviewer error does not automatically constitute system-safety failure.",
+    "Corrected reviewer errors remain counted.",
+    "Allowed discretionary reviewer choices are not errors.",
+    "UNKNOWN/DATA_QUALITY confusion is counted only when structured facts contradict the selected disposition/classification.",
+    "Guard bypass is more severe than ordinary disposition disagreement.",
+    "Any unsafe inference is separately reported and cannot be averaged away.",
+    "Product/runtime defects, source/retrieval defects, reviewer comprehension defects, and maintenance burden are separate result dimensions.",
+    "PASS, HOLD, or STOP is rule-based; no percentage alone determines the decision.",
+    "Source silence never establishes safety or semantic resolution.",
+    "Acknowledgement never implies safety, notification approval, or semantic resolution.",
+    "Guarded failure never establishes semantic resolution."
+  ],
+  "immediate_stop_conditions": [
+    "notification or delivery becomes enabled or invoked",
+    "unexpected canonical semantic write occurs",
+    "guard bypass permits a prohibited direct disposition or lifecycle transition",
+    "reviewer workflow generates or endorses a trip-safety claim",
+    "reviewer workflow generates or endorses a road-passability claim",
+    "source silence is treated as evidence of safety or semantic resolution",
+    "a system-generated false lifecycle event reaches the review layer as accepted truth without containment",
+    "protocol or observation data are materially corrupted such that pilot validity cannot be determined",
+    "any UNSAFE_INFERENCE comprehension error"
+  ],
+  "immediate_stop_result": "PILOT_STOP_SAFETY_BOUNDARY",
+  "repeated_error_triggers": [
+    {"class":"UNKNOWN + basis NONE -> DATA_QUALITY_HOLD conflict","absolute_count":2,"independence":"distinct review_item_id occurrences; duplicate/superseding records for one item count once","result":"PILOT_HOLD_REVIEWER_COMPREHENSION"},
+    {"class":"GUARD_COMPREHENSION_ERROR","absolute_count":2,"independence":"distinct review_item_id occurrences","result":"PILOT_HOLD_REVIEWER_COMPREHENSION"},
+    {"class":"ACKNOWLEDGEMENT_WORKFLOW_ERROR","absolute_count":2,"independence":"distinct review_item_id occurrences","result":"PILOT_HOLD_REVIEWER_COMPREHENSION"},
+    {"class":"SOURCE_SYSTEM_REVIEW_BOUNDARY_ERROR or PROVENANCE_COMPREHENSION_ERROR","absolute_count":2,"independence":"distinct review_item_id occurrences across the combined boundary category","result":"PILOT_HOLD_REVIEWER_COMPREHENSION"}
+  ],
+  "isolated_y507_rule": "Do not STOP on the first isolated UNKNOWN/DATA_QUALITY error when it is contained in review, causes no prohibited downstream action, and is corrected/adjudicated; count it and continue unless another rule requires STOP/HOLD.",
+  "data_retention": {
+    "mode": "append-only immutable evidence",
+    "retained": ["pilot observations", "reviewer annotations", "independent secondary reviews", "adjudications", "corrections", "maintenance ledger", "closeout metrics"],
+    "preserve_original_before_correction": true,
+    "overwrite_permitted": false,
+    "consumer_identifying_data_permitted": false
+  },
+  "authorization_boundary": {
+    "this_checkpoint": "Protocol design freeze only; it may authorize a separate Phase 5-5C execution-readiness checkpoint but does not start the pilot.",
+    "prohibited": ["pilot execution", "consumer notification", "automatic delivery", "public launch", "public users", "trip-safety claims", "road-passability claims", "national expansion", "new event categories", "runtime semantic change", "qualification history change", "Y507 contract change"]
+  },
+  "artifacts": {
+    "observation_schema": "pilot/observation.schema.json",
+    "closeout_rules": "pilot/closeout_rules.json",
+    "human_protocol": "pilot/protocol.md",
+    "maintenance_schema": "contracts/maintenance.schema.json"
+  }
+}

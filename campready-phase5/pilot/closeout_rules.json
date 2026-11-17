@@ -1,0 +1,32 @@
+{
+  "schema_version": "campready.phase5.pilot_closeout_rules.v1",
+  "frozen": true,
+  "percentage_alone_determines_decision": false,
+  "evaluation_order": ["INVALID", "STOP", "REPEATED_ERROR_HOLD", "OTHER_HOLD", "NORMAL_CLOSEOUT"],
+  "classes": {
+    "PILOT_CONTINUE_TO_CLOSEOUT": "Both prospective boundaries were applied; collection ended at the first normal completion boundary; control sample and accounting are complete; no STOP/HOLD rule fired. This means only bounded internal review operation was acceptable.",
+    "PILOT_HOLD_REVIEWER_COMPREHENSION": "A frozen repeated reviewer-comprehension trigger fired, or unresolved contract-critical comprehension evidence prevents acceptable closeout.",
+    "PILOT_HOLD_OPERATIONAL_BURDEN": "Complete separated workload and maintenance evidence shows burden requiring governance review; no numeric burden threshold is manufactured by this pilot.",
+    "PILOT_HOLD_SOURCE_RELIABILITY": "Separated source/retrieval evidence prevents interpretable or acceptable operation without being a reviewer error.",
+    "PILOT_STOP_SAFETY_BOUNDARY": "Any zero-tolerance immediate stop condition fired.",
+    "PILOT_INVALID_INSUFFICIENT_EVIDENCE": "Structural invalidity, material protocol corruption, incomplete required control review, or insufficient evidence makes validity indeterminable."
+  },
+  "normal_closeout_eligibility": [
+    "the prospective observation window reached its first normal completion boundary",
+    "every prospectively selected control-sample item completed independent review and adjudication",
+    "all observations validate structurally",
+    "no unresolved protocol-integrity issue exists",
+    "all required metrics are calculable or explicitly NOT_MEASURABLE",
+    "all guard and acknowledgement obligations are accounted for",
+    "the append-only maintenance ledger is complete with measurement status",
+    "both exact historical-transparency statements and retained R-I/R-J findings are included"
+  ],
+  "closeout_report_must_separate": ["product/runtime defects", "source/retrieval defects", "reviewer comprehension defects", "reviewer operating workload", "operational maintenance burden", "development/debugging effort"],
+  "success_does_not_authorize": ["pilot execution beyond the closed window", "consumer notification", "automatic delivery", "public launch", "public users", "trip-safety claims", "road-passability claims", "national expansion", "new event categories"],
+  "historical_transparency": ["Phase 5-4 did not pass its original two-human qualification gate.", "Phase 5-5 proceeded under explicit owner governance override.", "R-I final PASS", "R-J Y507 genuine individual comprehension error"],
+  "final_decision_mapping": {
+    "protocol_checkpoint_only": "PASS_PHASE5_5B_BOUNDED_PILOT_PROTOCOL_FROZEN",
+    "execution_started_by_this_checkpoint": false,
+    "next_possible_scope": "separate Phase 5-5C execution-readiness checkpoint"
+  }
+}
