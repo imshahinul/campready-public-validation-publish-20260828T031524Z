@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "campready.phase5.pilot_state.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","state","pilot_started_at","protocol_digest","cohort_digest","role_binding_digest","valid_observation_count","control_sampling_rule_id","stop_rule_id","history"],
+  "properties": {
+    "schema_version": {"const":"campready.phase5.pilot_state.v1"},
+    "state": {"enum":["NOT_STARTED","ACTIVE","HOLD","STOPPED","CLOSED"]},
+    "pilot_started_at": {"type":["string","null"],"format":"date-time"},
+    "protocol_digest": {"type":["string","null"],"pattern":"^[0-9a-f]{64}$"},
+    "cohort_digest": {"type":["string","null"],"pattern":"^[0-9a-f]{64}$"},
+    "role_binding_digest": {"type":["string","null"],"pattern":"^[0-9a-f]{64}$"},
+    "valid_observation_count": {"type":"integer","minimum":0,"maximum":100},
+    "control_sampling_rule_id": {"const":"INTAKE_SEQUENCE_MOD_5_MAX_20"},
+    "stop_rule_id": {"const":"PHASE5_5B_FROZEN_STOP_HOLD_V1"},
+    "history": {"const":["Phase 5-4 did not pass its original two-human qualification gate.","Phase 5-5 proceeded under explicit owner governance override."]}
+  },
+  "allOf": [{
+    "if": {"properties":{"state":{"const":"NOT_STARTED"}}},
+    "then": {"properties":{"pilot_started_at":{"const":null},"valid_observation_count":{"const":0}}}
+  }]
+}

@@ -1,0 +1,43 @@
+CAMPREADY PHASE 5-5C EXECUTION READINESS CONTRACT
+
+Historical transparency
+Phase 5-4 did not pass its original two-human qualification gate.
+Phase 5-5 proceeded under explicit owner governance override.
+
+Custody and sequencing
+Live evidence is permitted only beneath /Users/smshahinulislam/Desktop/campReady/audit/phase5_5_pilot/.
+Structurally rejected intake does not consume a sequence. Under an exclusive file lock, each accepted intake is assigned exactly len(valid prior intake)+1 and durably appended before primary review. Existing bytes are never rewritten. Corrections and adjudications are separate append-only records and never replace an original response.
+
+Operator walkthrough (documentation only; it does not start the pilot)
+1. Verify state is NOT_STARTED, pilot_started_at is null, and valid_observation_count is 0.
+2. Verify role_bindings.json has three distinct stable blinded codes and both owner attestations.
+3. Fetch normally; verify HEAD equals origin/main, divergence is 0/0, the tree is clean, and frozen protocol hashes match.
+4. Execute readiness validation and verify every live store is empty.
+5. Obtain a later, explicit owner start authorization. Phase 5-5C PASS alone is not authorization to execute start.
+6. In one exclusive-lock transaction, verify current tool/protocol hashes and role-binding digest again; verify NOT_STARTED and empty stores; write exactly one immutable UTC pilot_started_at, protocol digest, frozen cohort digest, role-binding digest, sampling rule identity, stop-rule identity, initial count 0, state ACTIVE, and start evidence. Never reset or restart the clock.
+7. Accept the first structurally valid intake; it receives immutable intake_sequence 1 before primary review.
+8. PRIMARY_REVIEWER independently records the original review.
+9. Sequence 5 is selected solely by intake_sequence modulo 5 and enters a blinded secondary packet.
+10. Append secondary review, adjudication, and correction separately; preserve both original reviews.
+11. Recompute metrics deterministically; corrections never erase confirmed errors.
+12. Evaluate immediate STOP first, then repeated-error HOLD, after every accepted event.
+13. End normal collection at the first of 100 valid observations or pilot_started_at + 336 hours; STOP/HOLD takes precedence.
+
+Prospective start authorization package (DO NOT EXECUTE DURING PHASE 5-5C)
+Required inputs: explicit owner authorization, current approved repository/tool/protocol hashes, frozen cohort digest, validated role-binding digest, and one current UTC timestamp.
+Required preconditions: clean synchronized repository; exact frozen protocol hashes; state NOT_STARTED; pilot_started_at null; all live counts zero; role bindings complete and frozen.
+Atomic output: one append-only start record and state ACTIVE with the same immutable pilot_started_at and digests, initial count 0, INTAKE_SEQUENCE_MOD_5_MAX_20, and PHASE5_5B_FROZEN_STOP_HOLD_V1.
+Prohibitions: no readiness command may activate; no implicit authorization; no clock reset/restart; no notification/delivery; no canonical product/runtime write.
+
+Role-binding owner-custody file shape
+{
+  "schema_version": "campready.phase5.pilot_role_bindings.v1",
+  "bindings": {
+    "PRIMARY_REVIEWER": "<stable blinded person code>",
+    "SECOND_REVIEWER": "<different stable blinded person code>",
+    "OWNER_ADJUDICATOR": "<third stable blinded person code>"
+  },
+  "three_distinct_humans_attested": true,
+  "roles_frozen_before_pilot_started_at": true,
+  "owner_attested_at": "<UTC timestamp ending Z or +00:00>"
+}

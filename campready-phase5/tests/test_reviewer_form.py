@@ -283,6 +283,13 @@ class ReviewerFormTests(unittest.TestCase):
         allowed = {
             "campready-phase5/qualification/reviewer_form.html",
             "campready-phase5/tests/test_reviewer_form.py",
+            # Phase 5-5C bounded pilot execution-readiness surface.
+            "campready-phase5/pilot/execution_readiness.txt",
+            "campready-phase5/pilot/pilot_control.py",
+            "campready-phase5/pilot/pilot_metrics.py",
+            "campready-phase5/pilot/pilot_state.schema.json",
+            "campready-phase5/pilot/pilot_store.py",
+            "campready-phase5/tests/test_phase5_5c_pilot_execution.py",
         }
         self.assertLessEqual(changed, allowed)
 
