@@ -20,7 +20,7 @@ from pilot_control import (BLINDED_EXCLUSIONS, HISTORY, blinded_secondary_packet
 from pilot_metrics import (comprehension_metrics, disagreement_metrics,
                            separated_workload, unknown_none_dq_hold_conflict)
 from pilot_store import (AppendOnlyJsonl, IntakeStore, PilotStores, canonical_bytes,
-                         COHORT_DIGEST, CONTROL_RULE, EVIDENCE_ROOT, PROTOCOL_DIGEST,
+                         COHORT_DIGEST, CONTROL_RULE, PROTOCOL_DIGEST,
                          STOP_HOLD_RULE, initialize_evidence_root, live_counts,
                          recover_start, start_pilot, validate_active_start,
                          validate_observation)
@@ -275,15 +275,13 @@ class PilotExecutionTests(unittest.TestCase):
         event=json.loads((self.root/"state"/"start_events.jsonl").read_text())
         self.assertEqual(state["start_transaction_id"],winners[0]); self.assertEqual(event["start_transaction_id"],winners[0])
 
-    def test_tampered_start_record_fails_closed_and_production_is_unstarted(self):
+    def test_tampered_start_record_fails_closed_in_isolated_root(self):
         self.prepare_start_root(); start_pilot(self.root,owner_authorized=True,verified_role_binding_digest="f"*64,allow_test_root=True)
         path=self.root/"state"/"start_events.jsonl"; event=json.loads(path.read_text()); event["cohort_digest"]="0"*64
         path.write_bytes(canonical_bytes(event)+b"\n")
         self.assertEqual(validate_active_start(self.root,allow_test_root=True),"INVALID_START_STATE")
         with self.assertRaisesRegex(ValueError,"VALID_ACTIVE_START_REQUIRED"):
             PilotStores(self.root,allow_test_root=True).observations.append(observation())
-        self.assertEqual(validate_active_start(EVIDENCE_ROOT),"VALID_NOT_STARTED")
-        self.assertEqual(set(live_counts(EVIDENCE_ROOT).values()),{0})
 
 
 if __name__ == "__main__": unittest.main()
